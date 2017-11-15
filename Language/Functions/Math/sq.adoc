@@ -1,0 +1,38 @@
+---
+title: sq()
+categories: [ "Functions" ]
+subCategories: [ "Math" ]
+---
+
+
+
+
+
+= sq(x)
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Calculates the square of a number: the number multiplied by itself.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`sq(x)`
+
+
+[float]
+=== Parameters
+`x`: the number, any data type
+
+[float]
+=== Returns
+The square of the number. (double)
+
+--
+// OVERVIEW SECTION ENDS

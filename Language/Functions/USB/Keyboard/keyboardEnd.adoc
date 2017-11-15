@@ -1,0 +1,68 @@
+---
+title: Keyboard.end()
+---
+
+
+
+
+= Keyboard.end()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Stops the keyboard emulation to a connected computer. To start keyboard emulation, use link:../keyboardbegin[Keyboard.begin()].
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Keyboard.end()`
+
+
+[float]
+=== Parameters
+Nothing
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+#include <Keyboard.h>
+
+void setup() {
+  //start keyboard communication
+  Keyboard.begin();
+  //send a keystroke
+  Keyboard.print("Hello!");
+  //end keyboard communication
+  Keyboard.end();
+}
+
+void loop() {
+ //do nothing
+}
+----
+
+--
+// HOW TO USE SECTION ENDS
