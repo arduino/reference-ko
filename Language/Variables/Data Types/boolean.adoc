@@ -16,8 +16,9 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
-A `boolean` holds one of two values, `true` or `false`. (Each `boolean` variable occupies one byte of memory.)
+=== 설명
+`boolean` 은 `true` 또는 `false` 둘 중 하나를 갖는다.
+(각 `boolean` 변수는 메모리의 1바이트를 차지한다.)
 
 
 [%hardbreaks]
@@ -33,14 +34,15 @@ A `boolean` holds one of two values, `true` or `false`. (Each `boolean` variable
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-This code shows how to use the `boolean` datatype.
+
+이 코드는 `boolean` 자료형을 어떻게 쓰는지 보여준다.
 
 [source,arduino]
 ----
 int LEDpin = 5;       // LED on pin 5
-int switchPin = 13;   // momentary switch on 13, other side connected to ground
+int switchPin = 13;   // momentary 스위치는 13에, 다른쪽은 ground 연결
 
 boolean running = false;
 
@@ -48,16 +50,16 @@ void setup()
 {
   pinMode(LEDpin, OUTPUT);
   pinMode(switchPin, INPUT);
-  digitalWrite(switchPin, HIGH);      // turn on pullup resistor
+  digitalWrite(switchPin, HIGH);      // 풀업 저항 켬
 }
 
 void loop()
 {
   if (digitalRead(switchPin) == LOW)
-  {  // switch is pressed - pullup keeps pin high normally
-    delay(100);                        // delay to debounce switch
-    running = !running;                // toggle running variable
-    digitalWrite(LEDpin, running);     // indicate via LED
+  {  // 스위치 눌림 - pullup keeps pin high normally
+    delay(100);                        // 스위치 디바운스를 위해 기다림
+    running = !running;                // 실행변수 토글
+    digitalWrite(LEDpin, running);     // LED를 통해 가리킴
   }
 }
 ----
@@ -71,7 +73,7 @@ void loop()
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../../variables/constants/constants[constants]
