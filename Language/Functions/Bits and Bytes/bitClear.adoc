@@ -17,7 +17,7 @@ subCategories: [ "Bits and Bytes" ]
 
 [float]
 === 설명
-숫자 변수의 한 비트릇 지움(0을 씀).
+숫자 변수의 한 비트 지움(0을 씀).
 [%hardbreaks]
 
 
