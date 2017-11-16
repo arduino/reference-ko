@@ -8,7 +8,7 @@ subCategories: [ "Constants" ]
 
 
 
-= Constants
+= 상수
 
 
 // OVERVIEW SECTION STARTS
@@ -16,16 +16,16 @@ subCategories: [ "Constants" ]
 --
 
 [float]
-== Description
-Constants are predefined expressions in the Arduino language. They are used to make the programs easier to read. We classify constants in groups:
+== 설명
+상수는 Arduino 언어에서 미리 정의된 표현식입니다. 그것들은 프로그램을 읽기 쉽게 하기 위해 사용됩니다. 그룹으로 상수를 분류합니다:
 
 [float]
-== Defining Logical Levels: true and false (Boolean Constants)
-There are two constants used to represent truth and falsity in the Arduino language: `true`, and `false`.
+== 논리 수준 정하기: true 그리고 false (Boolean 상수)
+아두이노 언어에서 참과 거짓을 표현하기 위해 사용되는 두 상수가 있습니다: `true`, 그리고 `false`.
 
 [float]
 === false
-`false` is the easier of the two to define. false is defined as 0 (zero).
+`false` 둘 중에 정의하기 쉽습니다. false 는 0 (zero)으로 정의됩니다.
 [%hardbreaks]
 
 [float]
