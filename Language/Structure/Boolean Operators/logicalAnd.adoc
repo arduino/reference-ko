@@ -9,7 +9,7 @@ subCategories: [ "Boolean Operators" ]
 
 
 
-= && Logical AND
+= && 논리 AND
 
 
 // OVERVIEW SECTION STARTS
