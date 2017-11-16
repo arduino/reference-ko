@@ -16,24 +16,25 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the absolute value of a number.
+=== 설명
+숫자의 절대값 계산.
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `abs(x)`
 
 [float]
-=== Parameters
-`x`: the number
+=== 매개변수
+`x`: 숫자
 
 [float]
-=== Returns
-`x`: if x is greater than or equal to 0.
+=== 반환
+`x`: x 가 0보다 크면.
 
-`-x`: if x is less than 0.
+`-x`: if x 0보다 작으면.
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,14 +48,15 @@ Calculates the absolute value of a number.
 
 
 [float]
-=== Notes and Warnings
-Because of the way the abs() function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results.
+=== 주의와 경고
+abs() 함수가 구현된 방법 때문에, 괄호 안에 다른 함수를 쓰는 것을 피하세요. 잘못된 결과가 나올 수 있음.
+
 [source,arduino]
 ----
-abs(a++);   // avoid this - yields incorrect results
+abs(a++);   // 이렇게 하지 마세요 - 잘못된 결과 나옴
 
-abs(a);         // use this instead -
-a++;        // keep other math outside the function
+abs(a);         // 대신 이것을 사용하세요 -
+a++;        // 함수 밖에서 다른 수학
 ----
 [%hardbreaks]
 
