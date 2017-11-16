@@ -16,12 +16,16 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
-A data type that takes up 1 byte of memory that stores a character value. Character literals are written in single quotes, like this: 'A' (for multiple characters - strings - use double quotes: "ABC").
+=== 설명
+문자 값을 저장하는 1바이트 메모리를 차지하는 자료형.
+문자 리터를은 작은 따옴표 안에, 이렇게 : 'A' (여러 문자 - 문자열 - 큰 따옴표: "ABC").
 
-Characters are stored as numbers however. You can see the specific encoding in the link:https://www.arduino.cc/en/Reference/ASCIIchart[ASCII chart]. This means that it is possible to do arithmetic on characters, in which the ASCII value of the character is used (e.g. 'A' + 1 has the value 66, since the ASCII value of the capital letter A is 65). See link:../../../functions/communication/serial/println[`Serial.println`] reference for more on how characters are translated to numbers.
+그러나 문자는 숫자로 저장된다. 특정 인코딩을 link:https://www.arduino.cc/en/Reference/ASCIIchart[ASCII chart] 에서 볼 수 있다.
+이것은 문자에 산술 연산이 가능하다는 것을 뜻하는데, 여기서 문자의 아스키 값이 쓰인다
+(e.g. 'A' + 1 은 66 값을 가지는데, 왜냐면 대문자 A의 ASCII 값은 65이기 때문).
+문자가 어떻게 숫자로 변환되는지에 대한 자세한 것은 link:../../../functions/communication/serial/println[`Serial.println`] 레퍼런스를 보시오.
 
-The char datatype is a signed type, meaning that it encodes numbers from -128 to 127. For an unsigned, one-byte (8 bit) data type, use the _byte_ data type.
+char 자료형은 부호있는 형이므로, 그것은 -128 에서 127 까지 숫자를 인코드함을 뜻한다. 부호없는 1바이트 (8비트) 형은 _byte_ 을 쓰시오.
 [%hardbreaks]
 
 --
@@ -35,13 +39,13 @@ The char datatype is a signed type, meaning that it encodes numbers from -128 to
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 
 [source,arduino]
 ----
   char myChar = 'A';
-  char myChar = 65;      // both are equivalent
+  char myChar = 65;      // 둘 다 같음.
 ----
 
 
@@ -54,7 +58,7 @@ The char datatype is a signed type, meaning that it encodes numbers from -128 to
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../../functions/communication/serial/println[Serial.println]
