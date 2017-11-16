@@ -16,23 +16,24 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Extracts the high-order (leftmost) byte of a word (or the second lowest byte of a larger data type).
+=== 설명
+high-order (가장 왼쪽) 바이트를 워드(또는 더 큰 자료형에서 두번째로 낮은 바이트)에서 추출
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `highByte(x)`
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== 매개변수
+`x`: 값
 
 [float]
-=== Returns
-byte
+=== 반환
+바이트
 
 --
 // OVERVIEW SECTION ENDS
@@ -43,7 +44,7 @@ byte
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../../variables/data-types/word[word()]
