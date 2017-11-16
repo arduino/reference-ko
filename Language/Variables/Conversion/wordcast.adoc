@@ -16,25 +16,26 @@ subCategories: [ "Conversion" ]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/word[word] data type.
+=== 설명
+값을 link:../../data-types/word[word] 자료형으로 변환.
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `word(x)` +
 `word(h, l)`
 
 [float]
 === Parameters
-`x`: a value of any type
+`x`: 값
 
-`h`: the high-order (leftmost) byte of the word
+`h`: high-order (가장 왼쪽) 바이트
 
-`l`: the low-order (rightmost) byte of the word
+`l`: low-order (가장 오른쪽) 바이트
 [float]
-=== Returns
+=== 반환
 `word`
 
 --
@@ -48,7 +49,7 @@ Converts a value to the link:../../data-types/word[word] data type.
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../data-types/word[word]
