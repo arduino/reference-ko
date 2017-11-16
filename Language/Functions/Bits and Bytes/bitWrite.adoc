@@ -16,27 +16,28 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Writes a bit of a numeric variable.
+=== 설명
+숫자 변수의 한 비트를 씀.
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `bitWrite(x, n, b)`
 
 
 [float]
-=== Parameters
-`x`: the numeric variable to which to write
+=== 매개변수
+`x`: 쓸 숫자
 
-`n`: which bit of the number to write, starting at 0 for the least-significant (rightmost) bit
+`n`: 쓸 비트, least-significant (가장 오른쪽) bit 0에서 시작
 
-`b`: the value to write to the bit (0 or 1)
+`b`: 비트에 쓸 값 (0 또는 1)
 
 [float]
-=== Returns
-Nothing
+=== 반환
+없음
 
 --
 // OVERVIEW SECTION ENDS
