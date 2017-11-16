@@ -1,6 +1,6 @@
 ---
 title: ";"
-title_expanded: semicolon
+title_expanded: 세미콜론
 categories: [ "Structure" ]
 subCategories: [ "Further Syntax" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Further Syntax" ]
 
 
 
-= ; Semicolon
+= ; 세미콜론
 
 
 // OVERVIEW SECTION STARTS
@@ -17,8 +17,8 @@ subCategories: [ "Further Syntax" ]
 --
 
 [float]
-=== Description
-Used to end a statement.
+=== 설명
+문장 끝에 쓴다.
 [%hardbreaks]
 
 --
@@ -32,7 +32,7 @@ Used to end a statement.
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
@@ -41,8 +41,9 @@ int a = 13;
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Forgetting to end a line in a semicolon will result in a compiler error. The error text may be obvious, and refer to a missing semicolon, or it may not. If an impenetrable or seemingly illogical compiler error comes up, one of the first things to check is a missing semicolon, in the immediate vicinity, preceding the line at which the compiler complained.
+=== 주의와 경고
+줄 끝에 세미콜론을 잊으면 컴파일러 에러가 날 거다. 에러 텍스트는 분명하고, 빠진 세미콜론을 참조하거나, 그러지 않을 수도 있다.
+뚫을 수 없거나 비논리적 컴파일러 에러로 보이는 컴파일러 에러가 오면, 가장 먼저 확인 할 것 중 하나가 컴파일러가 불평한 바로 전에 빠진 세미콜론이다.
 [%hardbreaks]
 
 --
@@ -56,7 +57,7 @@ Forgetting to end a line in a semicolon will result in a compiler error. The err
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 
