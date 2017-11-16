@@ -12,29 +12,29 @@ subCategories: [ "Bits and Bytes" ]
 
 
 // OVERVIEW SECTION STARTS
-Sets (writes a 1 to) a bit of a numeric variable.
+숫자 변수를 설정 (1을 씀) .
 [#overview]
 --
 
 [float]
-=== Description
+=== 설명
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `bitSet(x, n)`
 
 
 [float]
-=== Parameters
-`x`: the numeric variable whose bit to set
+=== 매개변수
+`x`: 비트를 쓸 숫자 변수
 
-`n`: which bit to set, starting at 0 for the least-significant (rightmost) bit
+`n`: 설정할 비트, 0에서 시작 least-significant (가장 오른쪽) bit
 
 [float]
-=== Returns
-Nothing
+=== 반환
+없음
 
 --
 // OVERVIEW SECTION ENDS
