@@ -16,8 +16,9 @@ subCategories: [ "Sketch" ]
 --
 
 [float]
-=== Description
-The `setup()` function is called when a sketch starts. Use it to initialize variables, pin modes, start using libraries, etc. The `setup()` function will only run once, after each powerup or reset of the Arduino board.
+=== 설명
+`setup()` 함수는 스케치를 시작할 때 불린다. 그것을 이용하여 변수, 핀 모드를 초기화하고, 라이브러리 사용 시작 등을 한다.
+`setup()` 함수는 아두이노 보드 전원 켜기 또는 리셋 후 한번만 실행된다.
 [%hardbreaks]
 
 --
@@ -29,7 +30,7 @@ The `setup()` function is called when a sketch starts. Use it to initialize vari
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
