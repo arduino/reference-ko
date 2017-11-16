@@ -1,6 +1,6 @@
 ---
 title: "+"
-title_expanded: "addition"
+title_expanded: "더하기"
 categories: [ "Structure" ]
 subCategories: [ "Arithmetic Operators" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Arithmetic Operators" ]
 
 
 
-= + Addition
+= + 더하기
 
 
 // OVERVIEW SECTION STARTS
@@ -17,23 +17,23 @@ subCategories: [ "Arithmetic Operators" ]
 --
 
 [float]
-=== Description
-*Addition* is one of the four primary arithmetic operations. The operator `+` (plus) operates on two operands to produce the sum.
+=== 설명
+*더하기* 는 4개 기본 연산 중 하나다. 연산자 `+` (plus) 는 두 피연산자를 연산하여 합을 만든다.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 sum = operand1 + operand2;
 ----
 
 [float]
-=== Parameters
-`sum` : variable. *Allowed data types:* int, float, double, byte, short, long +
-`operand1` : variable or constant. *Allowed data types:* int, float, double, byte, short, long +
-`operand2` : variable or constant. *Allowed data types:* int, float, double, byte, short, long
+=== 매개변수
+`sum` : 변수. *허용되는 자료형:* int, float, double, byte, short, long +
+`operand1` : 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long +
+`operand2` : 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long
 [%hardbreaks]
 --
 // OVERVIEW SECTION ENDS
@@ -46,28 +46,28 @@ sum = operand1 + operand2;
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
 int a = 5, b = 10, c = 0;
-c = a + b; // the variable 'c' gets a value of 15 after this statement is executed
+c = a + b; // 변수 'c' 는 이 문장이 실행되면 15가 된다
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. The addition operation can overflow if the result is larger than that which can be stored in the data type (e.g. adding 1 to an integer with the value 32,767 gives -32,768).
+=== 주의와 경고
+1. 더하기 연산은 결과가 자료형에 저장될 수 있는 것보다 크면 오버플로우 될 수 있다 (e.g. 1을 32,767에 더하면 -32,768 된다)
 
-2. If one of the numbers (operands) are of the type float or of type double, floating point math will be used for the calculation.
+2. 숫자(피연산자) 중 하나가 float 또는 type double 이면, 부동소수점 연산이 계산에 쓰인다.
 
-3. If the operands are of float / double data type and the variable that stores the sum is an integer, then only the integral part is stored and the fractional part of the number is lost.
+3. 피연산자가 float / double 자료형이고 합을 저장하는 변수가 정수형이면, 정수부분만 저장되고 소수부분은 잃는다
 
 [source,arduino]
 ----
 float a = 5.5, b = 6.6;
 int c = 0;
-c = a + b; // the variable 'c' stores a value of 12 only as opposed to the expected sum of 12.1
+c = a + b; // 변수 'c' 는 12.1 값이 아니라 12 를 저장한다
 ----
 [%hardbreaks]
 --
@@ -81,7 +81,7 @@ c = a + b; // the variable 'c' stores a value of 12 only as opposed to the expec
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 
