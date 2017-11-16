@@ -14,7 +14,7 @@ subCategories: [ "Analog I/O" ]
 === 설명
 아나로그 값(http://arduino.cc/en/Tutorial/PWM[PWM 파형])을 핀에 쓴다.
 LED를 다양한 밝기로 켜거나 다양한 속도로 모터를 돌리는 데 쓸 수 있다.
- `analogWrite()`을 부르면, 핀은 특정 듀티 사이클의 구형파를 만들어서 
+ `analogWrite()` 을 부르면, 핀은 특정 듀티 사이클의 구형파를 만들어서 
 같은 핀에 다음 `analogWrite()` (또는 `digitalRead()` 또는 `digitalWrite()` )가 불릴 때까지 있는다.
 대부분 pin에서 PWM 신호의 주파수는 약 490 Hz이다.
 우노에서 그리고 비슷한 보드에서, 핀 5와 6은 약 980 Hz 주파수를 가진다.
@@ -22,10 +22,10 @@ LED를 다양한 밝기로 켜거나 다양한 속도로 모터를 돌리는 데
 대부분의 아두이노 보드(tATmega168 또는 ATmega328P를 가진 것)에서,
 이 함수는 핀 3, 5, 6, 9, 10, 그리고 11에서 동작한다.
 아두이노 메가에서, 핀 2 - 13 그리고 44 - 46 에서 동작한다.
-ATmega8을 가진 오래된 아두이노 보드는 9, 10, 그리고 11 핀에서 `analogWrite()`만 지원한다.
-아두이노 DUE는 `analogWrite()`을 핀 2 에서 13까지, 그리고 핀 DAC0과 DAC1에서 지원한다.
+ATmega8을 가진 오래된 아두이노 보드는 9, 10, 그리고 11 핀에서 `analogWrite()` 만 지원한다.
+아두이노 DUE는 `analogWrite()` 을 핀 2 에서 13까지, 그리고 핀 DAC0과 DAC1에서 지원한다.
 PWM 핀과 달리, DAC0과 DAC1은 디지털에서 아나로그로 바꾸는 컨버터이며, 실제 아나로그 출력처럼 동작한다.
-`analogWrite()`을 부르기 전에 핀을 출력으로 설정하기 위해 `pinMode()`을 부를 필요가 없다.
+`analogWrite()` 을 부르기 전에 핀을 출력으로 설정하기 위해 `pinMode()` 을 부를 필요가 없다.
 `analogWrite` 함수는 아나로그 핀 또는 `analogRead` 함수와 아무 관련이 없다.
 [%hardbreaks]
 
