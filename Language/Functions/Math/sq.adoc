@@ -16,23 +16,24 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the square of a number: the number multiplied by itself.
+=== 설명
+숫자의 제곱 계산: 숫자에 자신을 곱함
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `sq(x)`
 
 
 [float]
-=== Parameters
-`x`: the number, any data type
+=== 매개변수
+`x`: 숫자, 자료형
 
 [float]
-=== Returns
-The square of the number. (double)
+=== 반환
+숫자의 제곱. (double)
 
 --
 // OVERVIEW SECTION ENDS
