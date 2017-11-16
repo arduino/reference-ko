@@ -18,7 +18,7 @@ subCategories: [ "Boolean Operators" ]
 
 [float]
 === 설명
-*논리 AND* 는 `true` 피연산자들이 `true` 일때*만* `true`가 된다.
+*논리 AND* 는 피연산자들이 `true` 일때*만* `true`가 된다.
 [%hardbreaks]
 
 --
