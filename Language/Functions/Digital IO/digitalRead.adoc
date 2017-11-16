@@ -16,23 +16,23 @@ subCategories: [ "Digital I/O" ]
 --
 
 [float]
-=== Description
-Reads the value from a specified digital pin, either `HIGH` or `LOW`.
+=== 설명
+특정 디지털 핀에서 값, `HIGH` 또는 `LOW` ,을 읽음
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `digitalRead(pin)`
 
 
 [float]
-=== Parameters
-`pin`: the number of the digital pin you want to read
+=== 매개변수
+`pin`: 읽으려는 디지털 핀 번호
 
 [float]
-=== Returns
-`HIGH` or `LOW`
+=== 반환
+`HIGH` 또는 `LOW`
 
 --
 // OVERVIEW SECTION ENDS
@@ -45,35 +45,36 @@ Reads the value from a specified digital pin, either `HIGH` or `LOW`.
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Sets pin 13 to the same value as pin 7, declared as an input.
+입력에서 선언된 것처럼 핀 13을 핀 7과 같은 값으로 설정
+
 
 //[source,arduino]
 ----
-int ledPin = 13;   // LED connected to digital pin 13
-int inPin = 7;     // pushbutton connected to digital pin 7
-int val = 0;       // variable to store the read value
+int ledPin = 13;   // LED 연결 디지털 핀 13
+int inPin = 7;     // pushbutton 연결 디지털 핀 7
+int val = 0;       // 읽은 값 저장할 변수
 
 void setup()
 {
-  pinMode(ledPin, OUTPUT);      // sets the digital pin 13 as output
-  pinMode(inPin, INPUT);        // sets the digital pin 7 as input
+  pinMode(ledPin, OUTPUT);      //디지털 핀 13을 출력으로
+  pinMode(inPin, INPUT);        // 디지털 7을 입력으로
 }
 
 void loop()
 {
-  val = digitalRead(inPin);     // read the input pin
-  digitalWrite(ledPin, val);    // sets the LED to the button's value
+  val = digitalRead(inPin);     // 입력 핀 읽음
+  digitalWrite(ledPin, val);    // LED 를 버튼의 값으로
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-If the pin isn't connected to anything, digitalRead() can return either HIGH or LOW (and this can change randomly).
+=== 주의와 경고
+핀이 아무데도 연결되지 않으면, digitalRead()은 HIGH 또는 LOW 를 반환할 수 있음(그리고 이 값은 임의로 바뀜).
 
-The analog input pins can be used as digital pins, referred to as A0, A1, etc.
+아나로고 입력 핀은 디지털 핀으로 쓰일 수 있음, A0, A1, 등
 
 --
 // HOW TO USE SECTION ENDS
@@ -84,7 +85,7 @@ The analog input pins can be used as digital pins, referred to as A0, A1, etc.
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# Tutorial: (http://arduino.cc/en/Tutorial/DigitalPins[Digital Pins])
