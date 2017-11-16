@@ -16,25 +16,27 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the minimum of two numbers.
+=== 설명
+두 숫자의 최소 계산.
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `min(x, y)`
 
 
 [float]
-=== Parameters
-`x`: the first number, any data type
+=== 매개변수
+`x`: 첫번째 수, 자료형
 
-`y`: the second number, any data type
+`y`: 두번째 수, 자료형
 
 [float]
-=== Returns
-The smaller of the two numbers.
+=== 반환
+두 수 중 작은 수.
+
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,28 +49,29 @@ The smaller of the two numbers.
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code ensures that it never gets above 100.
+이 코드는 100 넘는 수를 얻지 않을 것을 보장.
 
 [source,arduino]
 ----
-sensVal = min(sensVal, 100); // assigns sensVal to the smaller of sensVal or 100
-                             // ensuring that it never gets above 100.
+sensVal = min(sensVal, 100); // sensVal 에 sensVal 또는 100 중 작은 값
+                             // 100 넘는 수를 얻지 않을 것을 보장.
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Perhaps counter-intuitively, `max()` is often used to constrain the lower end of a variable's range, while `min()` is used to constrain the upper end of the range.
+=== 주의와 경고
+`max()` 는 주로 변수 값의 낮은 값을 제한하는 데 쓰이고, 반면 `min()` 은 높은 값을 제한하는 데 쓰임.
 
-Because of the way the `min()` function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results
+`min()`  함수가 구현된 방식 때문에, 괄호 안에 다른 함수를 쓰는 것을 피하세요. 그른 결과가 나올 수 있음.
+
 [source,arduino]
 ----
-min(a++, 100);   // avoid this - yields incorrect results
+min(a++, 100);   // 이것을 피하세요 - 그른 결과 나옴
 
 min(a, 100);
-a++;    // use this instead - keep other math outside the function
+a++;    // 대신 이렇게 쓰세요 - 함수 밖의 다른 수학 지킴
 ----
 
 --
