@@ -16,24 +16,25 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the maximum of two numbers.
+=== 설명
+두 수의 최대값 계산.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `max(x, y)`
 
 
 [float]
-=== Parameters
-`x`: the first number, any data type
-`y`: the second number, any data type
+=== 매개변수
+`x`: 첫번째 숫자, 자료형
+`y`: 두번째 숫자, 자료형
 
 [float]
-=== Returns
-The larger of the two parameter values.
+=== 반환
+두 매개변수 값 중 큰 값
+
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,28 +47,30 @@ The larger of the two parameter values.
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code ensures that sensVal is at least 20.
+이 코드는 sensVal 이 적어도 20임을 보장
+
 
 [source,arduino]
 ----
-sensVal = max(senVal, 20); // assigns sensVal to the larger of sensVal or 20
-                           // (effectively ensuring that it is at least 20)
+sensVal = max(senVal, 20); // sensVal을 sensVal 또는 20 중 큰 값 할당
+                           // (sensVal 이 적어도 20임을 보장)
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Perhaps counter-intuitively, `max()` is often used to constrain the lower end of a variable's range, while `min()` is used to constrain the upper end of the range.
+=== 주의와 경고
+`max()` 는 주로 낮은 값을 제한하는 데 쓰이고, `min()` 은 높은 값을 제한하는 데 쓰임.
 
-Because of the way the `max()` function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results
+`max()` 함수가 구현되는 방식 때문에, 괄호 안에 다른 함수를 쓰는 것을 피하시오. 그른 결과를 얻을 수 있음
+
 [source,arduino]
 ----
-max(a--, 0);   // avoid this - yields incorrect results
+max(a--, 0);   // 이것을 피하세요 - 그른 결과 나옴
 
-max(a, 0);           // use this instead -
-a--;     // keep other math outside the function
+max(a, 0);           // 대신 이렇게 쓰세요 -
+a--;     // 함수 밖 수학 지킴
 ----
 
 --
