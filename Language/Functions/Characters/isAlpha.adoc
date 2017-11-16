@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isAlpha()"
 categories: [ "Functions" ]
 subCategories: [ "Characters" ]
@@ -16,13 +16,14 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is alpha (that is a letter). Returns true if thisChar contains a letter. 
+=== 설명
+thisChar 가 알파(즉 문자)인지 분석.
+Analyse if a char is alpha (that is a letter). thisChar 가 문자를 포함하면 true 반환. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 isAlpha(thisChar)
@@ -30,11 +31,11 @@ isAlpha(thisChar)
 
 [float]
 === Parameters
-`thisChar`: variable. *Allowed data types:* char
+`thisChar`: 변수. *혀용 자료형:* char
 
 [float]
-=== Returns
-`true`: if thisChar is alpha.
+=== 반환
+`true`: thisChar 가 알파일 때.
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,11 +47,11 @@ isAlpha(thisChar)
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
-if (isAlpha(this))      // tests if this is a letter
+if (isAlpha(this))      // this 가 letter 인지
 {
 	Serial.println("The character is a letter");
 }
@@ -70,7 +71,7 @@ else
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
