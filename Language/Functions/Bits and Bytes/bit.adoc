@@ -16,23 +16,24 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Computes the value of the specified bit (bit 0 is 1, bit 1 is 2, bit 2 is 4, etc.).
+=== 설명
+특정 비트(bit)의 값을 계산한다(bit 0 은 1, bit 1 은 2, bit 2 는 4, 등.).
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `bit(n)`
 
 
 [float]
-=== Parameters
-`n`: the bit whose value to compute
+=== 매개변수
+`n`: 계산할 비트 값
 
 [float]
-=== Returns
-The value of the bit.
+=== 반환
+비트 값.
 
 --
 // OVERVIEW SECTION ENDS
