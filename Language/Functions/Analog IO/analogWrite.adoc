@@ -16,7 +16,7 @@ subCategories: [ "Analog I/O" ]
 LED를 다양한 밝기로 켜거나 다양한 속도로 모터를 돌리는 데 쓸 수 있다.
  `analogWrite()` 을 부르면, 핀은 특정 듀티 사이클의 구형파를 만들어서 
 같은 핀에 다음 `analogWrite()` (또는 `digitalRead()` 또는 `digitalWrite()` )가 불릴 때까지 있는다.
-대부분 pin에서 PWM 신호의 주파수는 약 490 Hz이다.
+대부분 핀에서 PWM 신호의 주파수는 약 490 Hz이다.
 우노에서 그리고 비슷한 보드에서, 핀 5와 6은 약 980 Hz 주파수를 가진다.
 [%hardbreaks]
 대부분의 아두이노 보드(tATmega168 또는 ATmega328P를 가진 것)에서, 이 함수는 핀 3, 5, 6, 9, 10, 그리고 11에서 동작한다.
