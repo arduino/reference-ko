@@ -4,52 +4,42 @@ categories: [ "Variables" ]
 subCategories: [ "Utilities" ]
 ---
 
-
-
-
-
 = sizeof
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-The sizeof operator returns the number of bytes in a variable type, or the number of bytes occupied by an array.
+=== 설명
+sizeof 연산자는 변수 형의 바이트 수, 또는 배열이 점유하는 바이트 수를 반환한다.
 [%hardbreaks]
 
-
 [float]
-=== Syntax
+=== 문법
 `sizeof(variable)`
 
+[float]
+=== 매개변수
+`variable`: 변수 또는 배열 (e.g. int, float, byte)
 
 [float]
-=== Parameters
-`variable`: any variable type or array (e.g. int, float, byte)
-
-[float]
-=== Returns
-Nothing
+=== 반확
+없음
 
 --
 // OVERVIEW SECTION ENDS
-
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The `sizeof` operator is useful for dealing with arrays (such as strings) where it is convenient to be able to change the size of the array without breaking other parts of the program.
+`sizeof`  연산자는 배열(문자열 같은)을 다룰 때 쓸모 있는데 여기서 프로그램의 다른 부분을 깨뜨리지 않고 배열 크기를 바꿀 수 있게 하기 편하다.
 
-This program prints out a text string one character at a time. Try changing the text phrase.
+이 프로그램은 한번에 한 글자씩 텍스스 문자열을 출력한다. 텍스트 구문을 바꾸는 것을 시도해 보시오.
 
 [source,arduino]
 ----
@@ -67,19 +57,19 @@ void loop() {
     Serial.write(myStr[i]);
     Serial.println();
   }
-  delay(5000); // slow down the program
+  delay(5000); // 프로그램을 느리게
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Note that `sizeof` returns the total number of bytes. So for larger variable types such as ints, the for loop would look something like this. Note also that a properly formatted string ends with the NULL symbol, which has ASCII value 0.
+=== 주의와 경고
+`sizeof` 는 전체 바이트 수를 반환하는 것을 주의하시오. int 와 같은 형의 큰 변수는, for 루프는 이렇게 보일 수 있다. 또 적절한 형식의 문자열이 NULL 로 끝나는데, 그것은 아스키 값 0을 갖는 것을 주의하세요.
 
 [source,arduino]
 ----
 for (i = 0; i < (sizeof(myInts)/sizeof(int)); i++) {
-  // do something with myInts[i]
+  // myInts[i] 가지고 무언가를 함
 }
 ----
 
