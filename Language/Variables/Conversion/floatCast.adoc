@@ -16,22 +16,23 @@ subCategories: [ "Conversion" ]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/float[float] data type.
+=== 설명
+값을 link:../../data-types/float[float] 자료형으로 변환.
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `float(x)`
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== 매개변수
+`x`: 값
 
 [float]
-=== Returns
+=== 반환
 `float`
 
 --
@@ -45,8 +46,8 @@ Converts a value to the link:../../data-types/float[float] data type.
 --
 
 [float]
-=== Notes and Warnings
-See the reference for link:../../data-types/float[float] for details about the precision and limitations of floating point numbers on Arduino.
+=== 주의와 경고
+아두이노 부동소수점 숫자의 정확도와 한계에 대해서 더 자세한 것은 link:../../data-types/float[float] 참조하세요.
 [%hardbreaks]
 
 --
@@ -59,7 +60,7 @@ See the reference for link:../../data-types/float[float] for details about the p
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 
 [role="language"]
