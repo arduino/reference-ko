@@ -16,25 +16,27 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the value of a number raised to a power. `Pow()` can be used to raise a number to a fractional power. This is useful for generating exponential mapping of values or curves.
+=== 설명
+숫자 거듭제곱 값 계산. `Pow()` 는 숫자를 분수 제곱하는 데 쓸 수 있다. 이것은 곡선의 지수 매핑을 생성할 때 쓸모 있다.
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `pow(base, exponent)`
 
 
 [float]
-=== Parameters
-`base`: the number (`float`)
+=== 매개변수
+`base`: 숫자 (`float`)
 
-`exponent`: the power to which the base is raised (`float`)
+`exponent`: base 를 거듭 곱할 횟수 (`float`)
 
 [float]
-=== Returns
-The result of the exponentiation. (`double`)
+=== 반환
+거듭제곱 결과. (`double`)
+
 
 --
 // OVERVIEW SECTION ENDS
@@ -45,9 +47,10 @@ The result of the exponentiation. (`double`)
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-See the (http://arduino.cc/playground/Main/Fscale[fscale]) function in the code library.
+코드 라이브러리에서 (http://arduino.cc/playground/Main/Fscale[fscale]) 함수를 보세요.
+
 
 --
 // HOW TO USE SECTION ENDS
@@ -58,7 +61,7 @@ See the (http://arduino.cc/playground/Main/Fscale[fscale]) function in the code 
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="definition"]
 * #DEFINITION# link:../../../variables/data-types/float[float]
