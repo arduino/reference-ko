@@ -68,22 +68,23 @@ subCategories: [ "Digital I/O" ]
 ----
 void setup()
 {
-  pinMode(13, OUTPUT);          // sets the digital pin 13 as output
+  pinMode(13, OUTPUT);          // 디지털 핀 13 을 출력으로
 }
 
 void loop()
 {
-  digitalWrite(13, HIGH);       // sets the digital pin 13 on
-  delay(1000);                  // waits for a second
-  digitalWrite(13, LOW);        // sets the digital pin 13 off
-  delay(1000);                  // waits for a second
+  digitalWrite(13, HIGH);       // 디지털 핀 13 켬
+  delay(1000);                  // 1초 기다림
+  digitalWrite(13, LOW);        // 디지털 핀 13 끔
+  delay(1000);                  // 1초 기다림
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The analog input pins can be used as digital pins, referred to as A0, A1, etc.
+=== 주의와 경고
+아나로그 입력 핀은 디지털 핀으로 쓰일 수 있고, A0, A1, 등으로 참조됨.
+
 
 --
 // HOW TO USE SECTION ENDS
@@ -94,7 +95,7 @@ The analog input pins can be used as digital pins, referred to as A0, A1, etc.
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/DigitalPins[Tutorial: Digital Pins]
