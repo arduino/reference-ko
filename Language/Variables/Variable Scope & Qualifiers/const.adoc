@@ -16,10 +16,11 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 --
 
 [float]
-=== Description
-The `const` keyword stands for constant. It is a variable _qualifier_ that modifies the behavior of the variable, making a variable "_read-only_". This means that the variable can be used just as any other variable of its type, but its value cannot be changed. You will get a compiler error if you try to assign a value to a `const` variable.
+=== 설명
+`const` 키워드는 상수를 나타낸다. 그것은 변수의 동작을 바꾸어 변수를 "_read-only_"으로 만드는 변수 _qualifier_ 이다. 변수는 다른 변수와 같이 쓰일 수 있지만 그 값은 바꿀 수 없다. `const` 변수에 값을 할당하려 하면 컴파일 에러 날 거다.
 
-Constants defined with the `const` keyword obey the rules of link:../scope[variable scoping] that govern other variables. This, and the pitfalls of using `#define`, makes the `const` keyword a superior method for defining constants and is preferred over using link:../../../structure/further-syntax/define[`#define`].
+`const` 키워드로 정의된 상수는 다른 변수를 통치하는 link:../scope[variable scoping] 규칙을 따른다.
+이것은, 그리고 `#define` 을 사용하는 함정은 `const`  키워드를 상수를 정의하고 우수한 방법으로 만들고, link:../../../structure/further-syntax/define[`#define`] 보다 선호된다.
 [%hardbreaks]
 
 --
@@ -33,7 +34,7 @@ Constants defined with the `const` keyword obey the rules of link:../scope[varia
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
@@ -44,20 +45,21 @@ float x;
 
 // ....
 
-x = pi * 2;    // it's fine to use consts in math
+x = pi * 2;    // const 를 수학에 쓰는 건 좋다
 
-pi = 7;        // illegal - you can't write to (modify) a constant
+pi = 7;        // 불법 - 상수에 쓸 (변경할) 수 없다
 
 
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-*`#define` or `const`*
+=== 주의와 경고
+*`#define` 또는 `const`*
 
-You can use either `const` or `#define` for creating numeric or string constants. For link:../../data-types/array[arrays], you will need to use `const`. In general `const` is preferred over `#define` for defining constants.
-
+`const` 나 `#define` 을 숫자 또는 문자열 상수를 만드는 데 쓸 수 있다.
+link:../../data-types/array[arrays] 를 위해, `const` 를 쓸 필요가 있을 거다.
+일반적으로 상수를 정의하는 데 `const` 가 `#define` 보다 좋다.
 
 --
 // HOW TO USE SECTION ENDS
@@ -68,7 +70,7 @@ You can use either `const` or `#define` for creating numeric or string constants
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../../structure/further-syntax/define[#define]
