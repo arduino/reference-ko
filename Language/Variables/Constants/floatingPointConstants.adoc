@@ -1,5 +1,5 @@
 ---
-title: Floating Point Constants
+title: 부동 소수점 상수
 categories: [ "Variables" ]
 subCategories: [ "Constants" ]
 ---
@@ -8,7 +8,7 @@ subCategories: [ "Constants" ]
 
 
 
-= Floating Point Constants
+= 부동 소수점 상수
 
 
 // OVERVIEW SECTION STARTS
@@ -16,8 +16,9 @@ subCategories: [ "Constants" ]
 --
 
 [float]
-=== Description
-Similar to integer constants, floating point constants are used to make code more readable. Floating point constants are swapped at compile time for the value to which the expression evaluates.
+=== 설명
+정수 상수와 비슷하게, 부동소수점 상수는 코드를 읽기 쉽게 하는데 쓰인다. 부동소수점 상수는 컴파일 타임에 식이 계산되는 값으로 바뀐다.
+
 [%hardbreaks]
 
 --
@@ -30,21 +31,22 @@ Similar to integer constants, floating point constants are used to make code mor
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
-n = 0.005;  // 0.005 is a floating point constant
+n = 0.005;  // 0.005 부동소수점 상수
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Floating point constants can also be expressed in a variety of scientific notation. 'E' and 'e' are both accepted as valid exponent indicators.
+=== 주의와 경고
+부동소수점 상수는 다양한 과학 표기로 표현될 수 있다. 'E' 와 'e' 둘 다 타당한 지수 지표로 허용된다.
+
 [%hardbreaks]
 
 |===
-|floating-point constant |evaluates to: |also evaluates to:
+|부동소수점 상수 |계산 : |또 계산:
 
 |10.0
 |10
@@ -72,7 +74,7 @@ Floating point constants can also be expressed in a variety of scientific notati
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 
