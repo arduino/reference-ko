@@ -16,25 +16,27 @@ subCategories: [ "External Interrupts" ]
 --
 
 [float]
-=== Description
-Turns off the given interrupt.
+=== 설명
+주어진 인터럽트를 끈다.
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `detachInterrupt()` +
-`detachInterrupt(pin)` 	(Arduino Due only)
+`detachInterrupt(pin)` 	(Arduino Due 만)
 
 [float]
-=== Parameters
-`interrupt`: the number of the interrupt to disable (see link:../attachinterrupt[attachInterrupt()] for more details).
+=== 매개변수
+`interrupt`: 비활성화할 인터럽트 번호 ( link:../attachinterrupt[attachInterrupt()] 더 자세한 정보).
 
-`pin`: the pin number of the interrupt to disable (Arduino Due only)
+
+`pin`: 비활성화할 핀 번호 (Arduino Due 만)
 
 [float]
-=== Returns
-Nothing
+=== 반환
+없음
 
 --
 // OVERVIEW SECTION ENDS
