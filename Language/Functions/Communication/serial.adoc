@@ -15,11 +15,16 @@ subCategories: [ "Communication" ]
 --
 
 [float]
-=== Description
-Used for communication between the Arduino board and a computer or other devices. All Arduino boards have at least one serial port (also known as a UART or USART): Serial. It communicates on digital pins 0 (RX) and 1 (TX) as well as with the computer via USB. Thus, if you use these functions, you cannot also use pins 0 and 1 for digital input or output. +
-You can use the Arduino environment's built-in serial monitor to communicate with an Arduino board. Click the serial monitor button in the toolbar and select the same baud rate used in the call to `begin()`.
+=== 설명
+아두이노 보드와 컴퓨터(또는 다른 장치) 사이에 통신할 때 쓰임.
+모든 아두이노 보드는 적어도 한 시리얼 포트(UART 또는 USART로도 알려짐)를 가진다: 시리얼. 그것은 디지털 핀 0(RX)과 1(TX)에서 USB를 통해 컴퓨터와 통신한다.
+따라서, 이들 기능을 사용한면, 핀 0과 1을 디지털 입력 또는 출력으로 쓸 수 없다. +
+아누이노 환경의 빌트인 시리얼 모니터를 아두이노 보드와 통신할 때 쓸 수 있다.
+툴바에서 시리얼 모니터 버튼을 누르고 `begin()` 을 부틀 때 쓴 같은 baud rate를 선택하세요.
+
 [%hardbreaks]
-Serial communication on pins TX/RX uses TTL logic levels (5V or 3.3V depending on the board). Don't connect these pins directly to an RS232 serial port; they operate at +/- 12V and can damage your Arduino board.
+TX/RX 핀의 시리얼 통신은 TTL 로직 레벨 (보드에 따라 5V 또는 3.3V)을 사용한다
+이들 핀을 RS232 시리얼 포트에 직접 연결하지 마세요; 그들은 +/- 12V에서 동작하고 아두이노 보드를 망가뜨릴 수 있다.
 [%hardbreaks]
 The *Arduino Mega* has three additional serial ports: `Serial1` on pins 19 (RX) and 18 (TX), `Serial2` on pins 17 (RX) and 16 (TX), `Serial3` on pins 15 (RX) and 14 (TX). To use these pins to communicate with your personal computer, you will need an additional USB-to-serial adaptor, as they are not connected to the Mega's USB-to-serial adaptor. To use them to communicate with an external TTL serial device, connect the TX pin to your device's RX pin, the RX to your device's TX pin, and the ground of your Mega to your device's ground.
 [%hardbreaks]
@@ -38,7 +43,7 @@ The *Arduino Leonardo* board uses `Serial1` to communicate via TTL (5V) serial o
 '''
 
 [float]
-=== Functions
+=== 함수
 link:../serial/ifserial[If] (Serial) +
 link:../serial/available[available()] +
 link:../serial/availableforwrite[availableForWrite()] +
@@ -70,7 +75,7 @@ link:../serial/serialevent[serialEvent()]
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/ReadAsciiString[ReadAsciiString^]
