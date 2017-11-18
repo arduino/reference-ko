@@ -9,33 +9,32 @@ Reference-ko 는 아두이노 문법의 언어 참조 문서 한국어 저장소
 == 내용 만들고 편집하기
 새 내용으로 기여하기 원하면, 새 파일을 (어떤 텍스트 또는 코드 편집기를 써도 됨)만들고 .adoc 으로 저장하세요.
 파일 이름에 괄호나 어떤 특수문자도 쓰지 마세요.
-In https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary.adoc[`reference-en/AsciiDoc_sample/AsciiDoc_Dictionary`] 에서 AsciiDoc 문법에 대한개요를 찾을 겁니다.
+In https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary.adoc[`reference-en/AsciiDoc_sample/AsciiDoc_Dictionary`] 에서 AsciiDoc 문법에 대한 개요를 찾을 겁니다.
 이것은 제목, 링크, 이미지, 표, 코드 그리고 다양한 임베드(비디오, 슬라이드쇼, 오디오 등)를 포함합니다.
 그것이 렌더 되는 것을 https://www.arduino.cc/reference/en/asciidoc_sample/asciidoc_dictionary/asciidoc_template-dictionary/[여기] 에서 볼 수 있습니다.
 
 언어 참조 또는 기존 내용 편집으로 기여하고 싶다면, reference-en/AsciiDoc_sample/Reference_Terms 에서 두 템플릿을 찾을 수 있습니다:
+* https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] 사용 ( https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[here] 에서 렌더) link:http://arduino.cc/en/Reference/AnalogWrite[analogWrite] 같은 용어.
 
-* Use https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] (rendered https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[here]) for terms such as link:http://arduino.cc/en/Reference/AnalogWrite[analogWrite].
-* Use https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (rendered https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[here]) for groups of functions such as link:http://arduino.cc/en/Reference/Serial[Serial].
+* https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] 사용 ( https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[here] 에서 렌더) link:http://arduino.cc/en/Reference/Serial[Serial] 같은 함수 그룹.
 
-Please note that every Reference file should include as least a Description, some Example Code, and links to other relevant infos (See Also section). 
+모든 참조 파일은 설명 적어도 하나, 예제 코드 몇, 그리고 다른 관련 정보(더 볼 것 섹션)에 대한 링크를 포함해야 함을 주의하세요.
 
-If you need to add images to the Asciidoc please create a folder called attachments in the same directory as the Asciidoc file. Images can be saved in SVG and PNG format, max size 200KB.
+Asciidoc에 이미지를 더할 필요가 있으면 attachments 라 불리는 폴더를 Asciidoc 파일과 같은 디렉토리에 만드세요. 이미지는 SVG와 PNG 형식으로 저장될 수 있고, 최대 크기는 200KB이다.
 
 == 깃허브 내용 기부
-If you are not familiar with Git you can contribute content directly on Github via their online interface. We put together a short Tutorial to show you how, https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[CHECK IT OUT!]
+Git에 친숙하지 않다면 온라인 인터페이스 Github에 직접 기여할 수 있습니다. 어떻게 하는지 여러분에게 보여주기 위해 짧은 투토리얼을 놓았으니, https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[체크해 보세요!]
 
-link:https://help.github.com/articles/editing-files-in-another-user-s-repository/[You can also follow this guide] (written by the Github team) to learn how to edit an .adoc file and propose a file change to the Arduino team.  
-When suggesting a change, please follow the guidelines described in the Reference template files.
+어떻게 파일을 편집하고 아두이노 팀에 파일 변경을 제안하는지 배우려면 link:https://help.github.com/articles/editing-files-in-another-user-s-repository/[이 가이드를 따를 수 있습니다]. (Github 팀에서 씀) 
+변경을 제안할 때는, 참조 템플릿 파일에 설명한 지침을 따르세요.
 
+== 당기기 요청 제출
 
-== Submitting a pull request
-We are glad you want to contribute to the Arduino Reference: that's the best way to help the community.
+우리는 여러분이 아두이노 참조에 기여하길 바라는 것에 기쁩니다: 그것은 공동체를 돕는 가장 좋은 길입니다.
 
-Your contribution is adding or modifying existing code or full descriptions, please always refer to an existing issue or open a new one before contributing. 
+여러분의 기여는 존재하는 코드 또는 전체 설명을 더하거나 바꾸는 것이니, 기여하기 전에 언제든지 존재하는 이슈를 참조하거나 새 이슈를 여세요.
 
-Please note that your contribution to the Arduino Reference is licensed under a Creative Commons Attribution-Share Alike 3.0 License. see https://creativecommons.org/licenses/by-sa/3.0/
-
+아두이노 참조에 대한 여러분의 기여는 Creative Commons Attribution-Share Alike 3.0 라이센스에 의거하여 라이센스됩니다. https://creativecommons.org/licenses/by-sa/3.0/ 를 보세요.
 
 === 폴더 구조
 [source]
@@ -58,4 +57,4 @@ reference-en
 
 ----
 
-Within the Language folder, the file tree follows the same structure as in the link:https://www.arduino.cc/reference/en[Arduino Reference webpage]
+언어 폴더 안에, 파일 트리는 link:https://www.arduino.cc/reference/en[Arduino Reference webpage] 와 똑같은 구조를 따릅니다.
