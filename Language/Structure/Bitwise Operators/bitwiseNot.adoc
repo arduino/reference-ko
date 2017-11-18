@@ -1,6 +1,6 @@
 ---
 title: "~"
-title_expanded: bitwise not
+title_expanded: 비트 not
 categories: [ "Structure" ]
 subCategories: [ "Bitwise Operators" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Bitwise Operators" ]
 
 
 
-= ~ Bitwise NOT
+= ~ 비트 NOT
 
 
 // OVERVIEW SECTION STARTS
@@ -49,8 +49,8 @@ int b = ~a;     // 이진수:  1111111110011000 = -104
 
 [float]
 === 주의와 경고
-이 연산의 결과로 -104 같은 음수를 보고 놀랄 수 있겠다. 이것은 int 변수의 가장 높은 비트가 소위 부호 비트이기 때문. 가장 높은 비트가 1이면, 숫자는 음수로 해석된다. 음 그리고 양의 숫자의 인코딩은 -104 같은 음수를 볼 수 있다.
-You might be surprised to see a negative number like -104 as the result of this operation. This is because the highest bit in an int variable is the so-called sign bit. If the highest bit is 1, the number is interpreted as negative. This encoding of positive and negative numbers is referred to as two's complement. For more information, see the Wikipedia article on http://en.wikipedia.org/wiki/Twos_complement[two's complement^].
+이 연산의 결과로 -104 같은 음수를 보고 놀랄 수 있겠다. 이것은 int 변수의 가장 높은 비트가 소위 부호 비트이기 때문. 가장 높은 비트가 1이면, 숫자는 음수로 해석된다.
+This encoding of positive and negative numbers is referred to as two's complement. For more information, see the Wikipedia article on http://en.wikipedia.org/wiki/Twos_complement[two's complement^].
 
 As an aside, it is interesting to note that for any integer x, ~x is the same as -x-1.
 
