@@ -1,16 +1,19 @@
 = Reference-ko
 
-Reference-ko is the repo for the Language Reference documentation of the Arduino syntax in Korean.
-All the Reference terms files are in AsciiDoc format.
+Reference-ko 는 아두이노 문법의 언어 참조 문서 한국어 저장소입니다.
+모든 참조 언어 파일은 AsciiDoc 형식입니다.
+아두이노 내용에 기여할 시간을 내주셔서 고맙습니다. 이것은 모든 아두이노 공동체에 실제 도움이 됩니다.
+이 프로젝트에 어떻게 기여하는지 더 배우고 싶으면 https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[this step by step tutorial] 을 보세요.
 
-Thank you for taking the time to contribute to Arduino content, this is really helpful to the whole Arduino Community. If you want to learn more on how to contribute to this project please check https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[this step by step tutorial].
 
-== Content Creation and Editing
-If you want to contribute new content, create a new file (with any text or code editor) and save it as .adoc.  
-Do not use parenthesis or any special character in the file name.  
-In https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary.adoc[`reference-en/AsciiDoc_sample/AsciiDoc_Dictionary`] you will find an overview on the AsciiDoc syntax. This includes Titles, Text, Links, Images, Tables, Code and various embeds (video, slideshow, audio and code). You can see it rendered https://www.arduino.cc/reference/en/asciidoc_sample/asciidoc_dictionary/asciidoc_template-dictionary/[here].
+== 내용 만들고 편집하기
+새 내용으로 기여하기 원하면, 새 파일을 (어떤 텍스트 또는 코드 편집기를 써도 됨)만들고 .adoc 으로 저장하세요.
+파일 이름에 괄호나 어떤 특수문자도 쓰지 마세요.
+In https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary.adoc[`reference-en/AsciiDoc_sample/AsciiDoc_Dictionary`] 에서 AsciiDoc 문법에 대한개요를 찾을 겁니다.
+이것은 제목, 링크, 이미지, 표, 코드 그리고 다양한 임베드(비디오, 슬라이드쇼, 오디오 등)를 포함합니다.
+그것이 렌더 되는 것을 https://www.arduino.cc/reference/en/asciidoc_sample/asciidoc_dictionary/asciidoc_template-dictionary/[여기] 에서 볼 수 있습니다.
 
-If you want to contribute to the Language Reference or edit existing content, you can find two templates in reference-en/AsciiDoc_sample/Reference_Terms:
+언어 참조 또는 기존 내용 편집으로 기여하고 싶다면, reference-en/AsciiDoc_sample/Reference_Terms 에서 두 템플릿을 찾을 수 있습니다:
 
 * Use https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] (rendered https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[here]) for terms such as link:http://arduino.cc/en/Reference/AnalogWrite[analogWrite].
 * Use https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (rendered https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[here]) for groups of functions such as link:http://arduino.cc/en/Reference/Serial[Serial].
@@ -19,7 +22,7 @@ Please note that every Reference file should include as least a Description, som
 
 If you need to add images to the Asciidoc please create a folder called attachments in the same directory as the Asciidoc file. Images can be saved in SVG and PNG format, max size 200KB.
 
-== Contribute Content on Github
+== 깃허브 내용 기부
 If you are not familiar with Git you can contribute content directly on Github via their online interface. We put together a short Tutorial to show you how, https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[CHECK IT OUT!]
 
 link:https://help.github.com/articles/editing-files-in-another-user-s-repository/[You can also follow this guide] (written by the Github team) to learn how to edit an .adoc file and propose a file change to the Arduino team.  
@@ -34,22 +37,22 @@ Your contribution is adding or modifying existing code or full descriptions, ple
 Please note that your contribution to the Arduino Reference is licensed under a Creative Commons Attribution-Share Alike 3.0 License. see https://creativecommons.org/licenses/by-sa/3.0/
 
 
-=== Folder Structure
+=== 폴더 구조
 [source]
 ----
 reference-en
 ├─ AsciiDoc_sample
-│   ├── AsciiDoc_Dictionary
-│   │   ├── AsciiDoc_Template-Dictionary.adoc
-│   │   └── attachments
-│   └── Reference_Terms
-│       ├── AsciiDoc_Template-Parent_Of_Entities.adoc
-│       ├── AsciiDoc_Template-Single_Entity.adoc
-│       └── attachments
+│   ├── AsciiDoc_Dictionary
+│   │   ├── AsciiDoc_Template-Dictionary.adoc
+│   │   └── attachments
+│   └── Reference_Terms
+│       ├── AsciiDoc_Template-Parent_Of_Entities.adoc
+│       ├── AsciiDoc_Template-Single_Entity.adoc
+│       └── attachments
 ├── Language
-│   ├── Functions
-│   ├── Structure
-│   └── Variables
+│   ├── Functions
+│   ├── Structure
+│   └── Variables
 ├── LICENCE.md
 └── README.adoc
 
