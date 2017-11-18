@@ -17,19 +17,23 @@ subCategories: [ "Bitwise Operators" ]
 --
 
 [float]
-=== Description
-The bitwise AND operator in C++ is a single ampersand `&`, used between two other integer expressions. Bitwise AND operates on each bit position of the surrounding expressions independently, according to this rule: if both input bits are 1, the resulting output is 1, otherwise the output is 0.
+=== 설명
+C++에서 비트 AND 연산자는 단일 앰퍼샌드 `&` 이며,  두 정수 식 사이에 사용된다. 비트 AND 연산자는 둘러싸인 식들의 각 비트 위치에서 독립적으로 연산, 즉 이 규칙으로 한다:
+각 입력이 1이면, 결과 출력은 1, 그렇지 않으면 결과는 0.
+
 [%hardbreaks]
 
-Another way of expressing this is:
+이것을 표현하는 다른 방법:
 
     0  0  1  1    operand1
     0  1  0  1    operand2
     ----------
-    0  0  0  1    (operand1 & operand2) - returned result
+    0  0  0  1    (operand1 & operand2) - 반환된 출력
 [%hardbreaks]
 
-In Arduino, the type int is a 16-bit value, so using & between two int expressions causes 16 simultaneous AND operations to occur.
+
+아두이노에서, int 형식은 16비트 값이므로,  두 정수 식 사이에 & 을 사용하면 16개 AND 연산이 동시에 발생한다.
+
 [%hardbreaks]
 
 --
@@ -42,23 +46,25 @@ In Arduino, the type int is a 16-bit value, so using & between two int expressio
 --
 
 [float]
-=== Example Code
-In a code fragment like:
+=== 예제 코드
+
+아래와 같은 코드 조각에서:
 
 [source,arduino]
 ----
-int a =  92;    // in binary: 0000000001011100
-int b = 101;    // in binary: 0000000001100101
-int c = a & b;  // result:    0000000001000100, or 68 in decimal.
+int a =  92;    // 2진수: 0000000001011100
+int b = 101;    // 2진수: 0000000001100101
+int c = a & b;  // 결과:    0000000001000100, 즉 10진수 68 
 ----
-Each of the 16 bits in a and b are processed by using the bitwise AND, and all 16 resulting bits are stored in c, resulting in the value 01000100 in binary, which is 68 in decimal.
+
+a와 b안의16비트의 각각은 비트 AND를 써서 처리되고, 16개 결과 비트는 c에 저장되어, 2진수 값 01000100이 되며, 10진수로는 68이다.
 [%hardbreaks]
 
-One of the most common uses of bitwise AND is to select a particular bit (or bits) from an integer value, often called masking. See below for an example
+비트 AND의 가장 일반적인 용도 중 하나는 정수에서 특정 비트(또는 비트들)을 선택하는 것이며, 주로 masking 이라 불린다. 아래 예를 보세요
 
 [source,arduino]
 ----
-PORTD = PORTD & B00000011;  // clear out bits 2 - 7, leave pins 0 and 1 untouched (xx & 11 == xx)
+PORTD = PORTD & B00000011;  // 비트 2 - 7을 0으로, 핀 0 과 1은 건드리지 않음 (xx & 11 == xx)
 ----
 
 --
@@ -70,7 +76,7 @@ PORTD = PORTD & B00000011;  // clear out bits 2 - 7, leave pins 0 and 1 untouche
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 
 [role="language"]
