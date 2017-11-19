@@ -9,7 +9,7 @@ subCategories: [ "Arithmetic Operators" ]
 
 
 
-= = Assignment (single equal sign)
+= = 할당 (등호)
 
 
 // OVERVIEW SECTION STARTS
@@ -17,8 +17,8 @@ subCategories: [ "Arithmetic Operators" ]
 --
 
 [float]
-=== Description
-The single equal sign `=` in the C programming language is called the assignment operator. It has a different meaning than in algebra class where it indicated an equation or equality. The assignment operator tells the microcontroller to evaluate whatever value or expression is on the right side of the equal sign, and store it in the variable to the left of the equal sign.
+=== 설명
+C 언어세서 등호기호 `=` 는 할당 연산자라 불린다. 등식 또는 같음을 나타내는 대수에서와 다른 뜻을 가지고 있다. 할당 연산자는 마이크로컨트롤러에게 등호 오른쪽의 값 또는 식을 등식 왼쪽 변수에 저장하도록 말한다.
 [%hardbreaks]
 
 --
@@ -32,22 +32,22 @@ The single equal sign `=` in the C programming language is called the assignment
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 
 
 [source,arduino]
 ----
-int sensVal;              // declare an integer variable named sensVal
-sensVal = analogRead(0);  // store the (digitized) input voltage at analog pin 0 in SensVal
+int sensVal;              // 이름 sensVal 인 정수 변수 선언 
+sensVal = analogRead(0);  // 아나로그 핀 0에 입력한 (디지털화 된) 입력 전압을 SensVal 에 저장
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. The variable on the left side of the assignment operator ( = sign ) needs to be able to hold the value stored in it. If it is not large enough to hold a value, the value stored in the variable will be incorrect.
+=== 주의와  경고
+1. 할당 연산자 ( = sign )의 왼쪽에 있는 변수는 변수에 지정된 값을 담을 수 있어야 한다. 값을 담기에 충분히 크지 않으면, 변수에 저장되는 값은 옳지 않을 수 있다.
 
-2. Don't confuse the assignment operator [ = ] (single equal sign) with the comparison operator [ == ] (double equal signs), which evaluates whether two expressions are equal.
+2. 할당 연산자 [ = ] (등호 1개)와  비교 연산자 [ == ] (등호 2개)(두 식이 같다고 계산함)와 헷갈리지 마세요.
 [%hardbreaks]
 
 --
@@ -58,7 +58,7 @@ sensVal = analogRead(0);  // store the (digitized) input voltage at analog pin 0
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE#  link:../../control-structure/if[if (conditional operators)]
