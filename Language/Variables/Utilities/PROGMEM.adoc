@@ -16,8 +16,9 @@ subCategories: [ "Utilities" ]
 --
 
 [float]
-=== Description
-Store data in flash (program) memory instead of SRAM. There's a description of the various http://www.arduino.cc/playground/Learning/Memory[types of memory] available on an Arduino board.
+=== 설명
+데이터를 SRAM 대신 플래시(프로그램) 메모리에 저장한다.
+There's a description of the various http://www.arduino.cc/playground/Learning/Memory[types of memory] available on an Arduino board.
 
 The `PROGMEM` keyword is a variable modifier, it should be used only with the datatypes defined in pgmspace.h. It tells the compiler "put this information into flash memory", instead of into SRAM, where it would normally go.
 
@@ -28,7 +29,7 @@ PROGMEM is part of the http://www.nongnu.org/avr-libc/user-manual/group\__avr__p
 
 
 [float]
-=== Syntax
+=== 문법
 const dataType variableName[] PROGMEM = {data0, data1, data3...};`
 
 `dataType` - any variable type
@@ -57,7 +58,7 @@ Using `PROGMEM` is also a two-step procedure. After getting the data into Flash 
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 The following code fragments illustrate how to read and write unsigned chars (bytes) and ints (2 bytes) to PROGMEM.
 
@@ -168,10 +169,10 @@ void loop()
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Please note that variables must be either globally defined, OR defined with the static keyword, in order to work with PROGMEM.
+=== 주의와 경고
+PROGMEM을 쓰기위해서는 변수는 광역으로 정의되거나, 또는 static 키워드로 정의되어야 함을 주의하세요.
 
-The following code will NOT work when inside a function:
+아래 코드는 함수 안에 있으면 동작하지 않을 거다:
 
 [source,arduino]
 ----
@@ -209,7 +210,7 @@ Serial.print(F("Write something on the Serial Monitor that is stored in FLASH"))
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/playground/Learning/Memory[Types of memory available on an Arduino board]
