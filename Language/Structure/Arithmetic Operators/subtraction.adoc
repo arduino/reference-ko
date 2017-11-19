@@ -9,7 +9,7 @@ subCategories: [ "Arithmetic Operators" ]
 
 
 
-= - Subtraction
+= - 빼기
 
 
 // OVERVIEW SECTION STARTS
@@ -17,13 +17,13 @@ subCategories: [ "Arithmetic Operators" ]
 --
 
 [float]
-=== Description
-*Subtraction* is one of the four primary arithmetic operations. The operator `-` (minus) operates on two operands to produce the difference of the second from the first.
+=== 설명
+*빼기*는 4개 기본 산술 연산 중 하나다. 연산자 `-` (빼기)는 첫번째에서 두번째를 뺀 두 피연산자의 차를 만든다.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 difference = operand1 - operand2;
@@ -31,9 +31,9 @@ difference = operand1 - operand2;
 
 [float]
 === Parameters
-`difference` : variable. *Allowed data types:* int, float, double, byte, short, long +
-`operand1` : variable or constant. *Allowed data types:* int, float, double, byte, short, long +
-`operand2` : variable or constant. *Allowed data types:* int, float, double, byte, short, long
+`difference` : 변수. *허용되는 자료형:* int, float, double, byte, short, long +
+`operand1` : 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long +
+`operand2` : 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long
 [%hardbreaks]
 
 --
@@ -47,28 +47,28 @@ difference = operand1 - operand2;
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
 int a = 5, b = 10, c = 0;
-c = a - b; // the variable 'c' gets a value of -5 after this statement is executed
+c = a - b; // 이 문이 실행되면 변수 'c' 는 -5 값을 얻는다.
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. The subtraction operation can overflow if the result is smaller than that which can be stored in the data type (e.g. subtracting 1 from an integer with the value -32,768 gives 32,767).
+=== 주의와 경고
+1. 결과가 저장할 수 있는 자료형보다 작으면((e.g. -32,768 에서 1을 빼면 32,767이 된다)
 
-2. If one of the numbers (operands) are of the type float or of type double, floating point math will be used for the calculation.
+2. 숫자 (피연산자) 중 하나가 float 또는 double 이면, 부동소수점 수학이 계산에 사용된다.
 
-3. If the operands are of float / double data type and the variable that stores the difference is an integer, then only the integral part is stored and the fractional part of the number is lost.
+3. 피연산자가 float / double 자료형이고 차가 저장되는 변수가 정수면, 정수부분만 저장되고 소수 부분은 잃는다.
 
 [source,arduino]
 ----
 float a = 5.5, b = 6.6;
 int c = 0;
-c = a - b; // the variable 'c' stores a value of -1 only as opposed to the expected difference of -1.1
+c = a - b; // 변수 'c' 는 -1.1이 아니고 -1 값만 저장 
 ----
 [%hardbreaks]
 
@@ -83,7 +83,7 @@ c = a - b; // the variable 'c' stores a value of -1 only as opposed to the expec
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 
