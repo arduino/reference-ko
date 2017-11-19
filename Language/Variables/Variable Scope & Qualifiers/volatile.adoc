@@ -8,7 +8,7 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 
 
 
-= volatile keyword
+= volatile 키워드
 
 
 // OVERVIEW SECTION STARTS
@@ -16,14 +16,15 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 --
 
 [float]
-=== Description
-`volatile` is a keyword known as a variable _qualifier_, it is usually used before the datatype of a variable, to modify the way in which the compiler and subsequent program treats the variable.
+=== 설명
+`volatile` 변수 _qualifier_ 로 알려진 키워드이며, 변수의 자료형 앞에 사용되어, 컴파일러와 후속 프로그램이 변수를 다루는 방법을 바꾼다.
 
-Declaring a variable volatile is a directive to the compiler. The compiler is software which translates your C/C++ code into the machine code, which are the real instructions for the Atmega chip in the Arduino.
+변수를 volatile 로 선언하는 것은 컴파일러에 대한 지시다. 컴파일러는 C/C++ 코드를 기계어로 번역하는 소프트웨어이며, 이것은  아두이노 안의 Atmega 칩을 위한 실제 명령이다.
 
-Specifically, it directs the compiler to load the variable from RAM and not from a storage register, which is a temporary memory location where program variables are stored and manipulated. Under certain conditions, the value for a variable stored in registers can be inaccurate.
+특히, 그것은 컴파일러가 변수를 저장 레지스터가 아니라 RAM으로 부터 변수를 로드하도록 지시하는데, 그것은 프로그램 변수가 저장되고 다루어지는 임시 메모리 위치이다. 어떤 조건에서, 레지스터에 저장된 변수에 대한 값은 부정확할 수 있다.
 
-A variable should be declared volatile whenever its value can be changed by something beyond the control of the code section in which it appears, such as a concurrently executing thread. In the Arduino, the only place that this is likely to occur is in sections of code associated with interrupts, called an interrupt service routine.
+변수는 그 값이 나타나는 코드 섹션을 의 넘어 바뀔 수 있을 때(예:동시 실행 thread 와 같은) 마다 volatile 로 선언되어야 한다. 
+아두이노에서, 이것이 발생할 만한 유일한 장소는 인터럽트와 관련한 코드섹션이며, 인터럽트 서비스 루틴이라 불린다.
 [%hardbreaks]
 
 --
@@ -37,13 +38,13 @@ A variable should be declared volatile whenever its value can be changed by some
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
 [source,arduino]
 ----
-// toggles LED when interrupt pin changes state
+// 인터럽트 핀이 상태를 바꿀 때마다 LED를 토글한다
 
 int pin = 13;
 volatile int state = LOW;
@@ -75,7 +76,7 @@ void blink()
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]
