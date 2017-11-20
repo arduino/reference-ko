@@ -1,6 +1,6 @@
 ---
 title: "*"
-title_expanded: "multiplication"
+title_expanded: "곱셈"
 categories: [ "Structure" ]
 subCategories: [ "Arithmetic Operators" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Arithmetic Operators" ]
 
 
 
-= * Multiplication
+= * 곱셈
 
 
 // OVERVIEW SECTION STARTS
@@ -17,23 +17,23 @@ subCategories: [ "Arithmetic Operators" ]
 --
 
 [float]
-=== Description
-*Multiplication* is one of the four primary arithmetic operations. The operator `*` (asterisk) operates on two operands to produce the product.
+=== 설명
+*곱셈* 은 4 기본 산술 연산 중 하나다. 연산자 `*` (asterisk) 는 두 피연산자릅 곱한다.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 product = operand1 * operand2;
 ----
 
 [float]
-=== Parameters
-`product` : variable. *Allowed data types:* int, float, double, byte, short, long  +
-`operand1` : variable or constant. *Allowed data types:* int, float, double, byte, short, long  +
-`operand2` : variable or constant. *Allowed data types:* int, float, double, byte, short, long
+=== 매개변수
+`product` : 변수. *허용되는 자료형:* int, float, double, byte, short, long  +
+`operand1` : 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long  +
+`operand2` : 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long
 [%hardbreaks]
 
 --
@@ -47,28 +47,29 @@ product = operand1 * operand2;
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
 int a = 5, b = 10, c = 0;
-c = a * b; // the variable 'c' gets a value of 50 after this statement is executed
+c = a * b; // 변수 'c' 는 이 연산이 실행된 후 50이 됨
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. The multiplication operation can overflow if the result is bigger than that which can be stored in the data type.
+=== 주의와 경고
+1. 곱셈 연산은 결과가 자료형에 저장될 수 있는 것보다 크면 오버플로우 될 수 있다.
 
-2. If one of the numbers (operands) are of the type float or of type double, floating point math will be used for the calculation.
+2. 숫자(피연산자) 중 하나가 float 또는 double 이면, 계산에 부동소수점 수학이 쓰인다.
 
-3. If the operands are of float / double data type and the variable that stores the product is an integer, then only the integral part is stored and the fractional part of the number is lost.
+3. 피연산자가 float / double 자료형이고 곱을 저장하는 변수가 정수면, 정수부분만 저장되고 소수부분은 잃는다.
+
 
 [source,arduino]
 ----
 float a = 5.5, b = 6.6;
 int c = 0;
-c = a * b; // the variable 'c' stores a value of 36 only as opposed to the expected product of 36.3
+c = a * b; // 변수 'c' 는 기대되는 값 36.3 이 아니라 36 값을 저장함
 ----
 [%hardbreaks]
 
@@ -83,7 +84,7 @@ c = a * b; // the variable 'c' stores a value of 36 only as opposed to the expec
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 
