@@ -1,6 +1,6 @@
 ---
 title: "/"
-title_expanded: "division"
+title_expanded: "나눗셈"
 categories: [ "Structure" ]
 subCategories: [ "Arithmetic Operators" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Arithmetic Operators" ]
 
 
 
-= / Division
+= / 나눗셈
 
 
 // OVERVIEW SECTION STARTS
@@ -18,22 +18,23 @@ subCategories: [ "Arithmetic Operators" ]
 
 [float]
 === Description
-*Division* is one of the four primary arithmetic operations. The operator `/` (slash) operates on two operands to produce the result.
+*나눗셈* 은 4개 기본 연산 중 하나다. 연산자 `/` (slash) 는 두 피연산자에 연산하여 결과를 얻는다.
+ 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 result = numerator / denominator;
 ----
 
 [float]
-=== Parameters
-`result` : variable. *Allowed data types:* int, float, double, byte, short, long  +
-`numerator` : variable or constant. *Allowed data types:* int, float, double, byte, short, long  +
-`denominator` : *non zero* variable or constant. *Allowed data types:* int, float, double, byte, short, long
+=== 매개변수
+`result` : 변수. *허용되는 자료형:* int, float, double, byte, short, long  +
+`numerator` : 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long  +
+`denominator` : *0 아닌* 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long
 [%hardbreaks]
 
 --
@@ -47,26 +48,26 @@ result = numerator / denominator;
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
 int a = 50, b = 10, c = 0;
-c = a / b; // the variable 'c' gets a value of 5 after this statement is executed
+c = a / b; // 변수 'c' 는 이 문장 실행후 5가 된다.
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. If one of the numbers (operands) are of the type float or of type double, floating point math will be used for the calculation.
+=== 주의와 경고
+1. 수(피연산자)중 하나가 float 또는 double이면, 계산에 부동소수정 수학이 사용된다.
 
-2. If the operands are of float / double data type and the variable that stores the sum is an integer, then only the integral part is stored and the fractional part of the number is lost.
+2. 피연산자가 float / double 자료형이고 결과를 저장하는 변수가 정수이면, 정수 부분만 저장되고 소수 부분은 잃는다.
 
 [source,arduino]
 ----
 float a = 55.5, b = 6.6;
 int c = 0;
-c = a / b; // the variable 'c' stores a value of 8 only as opposed to the expected result of 8.409
+c = a / b; // 변수 'c' 는 8을 저장하며, 8.409가 아님
 ----
 [%hardbreaks]
 
@@ -78,7 +79,7 @@ c = a / b; // the variable 'c' stores a value of 8 only as opposed to the expect
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 
