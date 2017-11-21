@@ -1,7 +1,7 @@
 ---
 title: bitWrite()
-categories: [ "함수" ]
-subCategories: [ "Bits and Bytes" ]
+categories: [ "Functions" ]
+subCategories: [ "비트 및 바이트" ]
 ---
 
 
