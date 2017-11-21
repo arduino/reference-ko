@@ -1,6 +1,6 @@
 ---
 title: min()
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "Math" ]
 ---
 

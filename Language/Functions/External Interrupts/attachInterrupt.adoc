@@ -1,6 +1,6 @@
 ---
 title: attachInterrupt()
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "External Interrupts" ]
 ---
 

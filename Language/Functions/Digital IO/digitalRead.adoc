@@ -1,6 +1,6 @@
 ---
 title: digitalRead()
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "Digital I/O" ]
 ---
 

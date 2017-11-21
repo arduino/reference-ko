@@ -1,6 +1,6 @@
 ---
 title: digitalWrite()
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "Digital I/O" ]
 ---
 

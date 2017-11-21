@@ -1,6 +1,6 @@
 ---
 title: bit()
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "Bits and Bytes" ]
 ---
 

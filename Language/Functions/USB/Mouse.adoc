@@ -1,6 +1,6 @@
 ---
 title: Mouse
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "USB" ]
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: bitWrite()
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "Bits and Bytes" ]
 ---
 

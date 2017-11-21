@@ -1,6 +1,6 @@
 ﻿---
 title: "isWhitespace()"
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "Characters" ]
 ---
 

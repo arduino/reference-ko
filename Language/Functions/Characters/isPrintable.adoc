@@ -1,6 +1,6 @@
 ﻿---
 title: "isPrintable()"
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "Characters" ]
 ---
 

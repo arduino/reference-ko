@@ -1,6 +1,6 @@
 ---
 title: randomSeed()
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "Random Numbers" ]
 ---
 

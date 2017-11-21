@@ -1,6 +1,6 @@
 ---
 title: interrupts()
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "Interrupts" ]
 ---
 

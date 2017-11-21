@@ -1,6 +1,6 @@
 ---
 title: analogReference()
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "Analog I/O" ]
 ---
 

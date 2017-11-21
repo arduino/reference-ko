@@ -1,6 +1,6 @@
 ---
 title: millis()
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "Time" ]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: shiftIn()
-categories: [ "Functions" ]
+categories: [ "함수" ]
 subCategories: [ "Advanced I/O" ]
 ---
 
