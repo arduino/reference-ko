@@ -1,7 +1,7 @@
 ﻿---
 title: "isSpace()"
-categories: [ "함수" ]
-subCategories: [ "Characters" ]
+categories: [ "Functions" ]
+subCategories: [ "문자" ]
 ---
 
 
