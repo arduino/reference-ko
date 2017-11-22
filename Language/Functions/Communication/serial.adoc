@@ -1,7 +1,7 @@
 ---
 title: serial
-categories: [ "함수" ]
-subCategories: [ "Communication" ]
+categories: [ "Functions" ]
+subCategories: [ "통신" ]
 ---
 
 
