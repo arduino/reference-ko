@@ -1,7 +1,7 @@
 ---
 title: analogWriteResolution()
-categories: [ "함수" ]
-subCategories: [ "Zero, Due & MKR Family" ]
+categories: [ "Functions" ]
+subCategories: [ "제로, 두에 및 MKR 제품군" ]
 ---
 
 
@@ -15,8 +15,8 @@ subCategories: [ "Zero, Due & MKR Family" ]
 --
 
 [float]
-=== Description
-`analogWriteResolution()` is an extension of the Analog API for the Arduino Due.
+=== 설명
+`analogWriteResolution()` 은 아두이노 두에를 위한 아날로그 API의 확장이다.
 
 `analogWriteResolution()` sets the resolution of the `analogWrite()` function. It defaults to 8 bits (values between 0-255) for backward compatibility with AVR based boards.
 
@@ -46,17 +46,17 @@ By setting the write resolution to 12 bits, you can use `analogWrite()` with val
 
 
 [float]
-=== Syntax
+=== 문법
 `analogWriteResolution(bits)`
 
 
 [float]
-=== Parameters
+=== 매개변수
 `bits`: determines the resolution (in bits) of the values used in the `analogWrite()` function. The value can range from 1 to 32. If you choose a resolution higher or lower than your board's hardware capabilities, the value used in `analogWrite()` will be either truncated if it's too high or padded with zeros if it's too low. See the note below for details.
 
 [float]
-=== Returns
-Nothing
+=== 반환
+없음.
 
 --
 // OVERVIEW SECTION ENDS
@@ -69,7 +69,7 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 Explain Code
 
@@ -117,7 +117,7 @@ void loop(){
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 If you set the `analogWriteResolution()` value to a value higher than your board's capabilities, the Arduino will discard the extra bits. For example: using the Due with `analogWriteResolution(16)` on a 12-bit DAC pin, only the first 12 bits of the values passed to `analogWrite()` will be used and the last 4 bits will be discarded.
 
 If you set the `analogWriteResolution()` value to a value lower than your board's capabilities, the missing bits will be *padded with zeros* to fill the hardware required size. For example: using the Due with analogWriteResolution(8) on a 12-bit DAC pin, the Arduino will add 4 zero bits to the 8-bit value used in `analogWrite()` to obtain the 12 bits required.
@@ -131,7 +131,7 @@ If you set the `analogWriteResolution()` value to a value lower than your board'
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../analog-io/analogwrite[analogWrite()]
