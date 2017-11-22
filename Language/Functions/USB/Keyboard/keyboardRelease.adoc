@@ -13,22 +13,22 @@ title: Keyboard.release()
 --
 
 [float]
-=== Description
+=== 설명
 Lets go of the specified key. See link:../keyboardpress[Keyboard.press()] for more information.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `Keyboard.release(key)`
 
 
 [float]
-=== Parameters
+=== 매개변수
 `key` : the key to release. `char`
 
 [float]
-=== Returns
+=== 반환
 `size_t` : the number of keys released
 
 --
@@ -42,7 +42,7 @@ Lets go of the specified key. See link:../keyboardpress[Keyboard.press()] for mo
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
