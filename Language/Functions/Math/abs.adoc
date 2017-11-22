@@ -1,7 +1,7 @@
 ---
 title: abs()
-categories: [ "함수" ]
-subCategories: [ "Math" ]
+categories: [ "Functions" ]
+subCategories: [ "수학" ]
 ---
 
 
