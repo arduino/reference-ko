@@ -1,7 +1,7 @@
 ---
 title: millis()
-categories: [ "함수" ]
-subCategories: [ "Time" ]
+categories: [ "Functions" ]
+subCategories: [ "시간" ]
 ---
 
 
