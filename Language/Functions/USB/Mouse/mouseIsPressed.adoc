@@ -13,18 +13,18 @@ title: Mouse.isPressed()
 --
 
 [float]
-=== Description
+=== 설명
 Checks the current status of all mouse buttons, and reports if any are pressed or not.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `Mouse.isPressed();` +
 `Mouse.isPressed(button);`
 
 [float]
-=== Parameters
+=== 매개변수
 When there is no value passed, it checks the status of the left mouse button.
 
 `button`: which mouse button to check - `char`
@@ -36,7 +36,7 @@ When there is no value passed, it checks the status of the left mouse button.
 * `MOUSE_MIDDLE`
 
 [float]
-=== Returns
+=== 반환
 `boolean` : reports whether a button is pressed or not.
 
 --
@@ -50,7 +50,7 @@ When there is no value passed, it checks the status of the left mouse button.
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
