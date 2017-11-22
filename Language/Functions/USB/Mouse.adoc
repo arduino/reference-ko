@@ -1,6 +1,6 @@
 ---
-title: Mouse
-categories: [ "함수" ]
+title: 마우스
+categories: [ "Functions" ]
 subCategories: [ "USB" ]
 
 ---
@@ -9,7 +9,7 @@ subCategories: [ "USB" ]
 
 
 
-= Mouse
+= 마우스
 
 
 // OVERVIEW SECTION STARTS
@@ -25,7 +25,7 @@ The mouse functions enable a 32u4 or SAMD micro based boards to to control curso
 
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 These core libraries allow the 32u4 and SAMD based boards (Leonardo, Esplora, Zero, Due and MKR Family) to appear as a native Mouse and/or Keyboard to a connected computer.
 [%hardbreaks]
 *A word of caution on using the Mouse and Keyboard libraries*: if the Mouse or Keyboard library is constantly running, it will be difficult to program your board. Functions such as `Mouse.move()` and `Keyboard.print()` will move your cursor or send keystrokes to a connected computer and should only be called when you are ready to handle them. It is recommended to use a control system to turn this functionality on, like a physical switch or only responding to specific input you can control.
@@ -39,7 +39,7 @@ When using the Mouse or Keyboard library, it may be best to test your output fir
 '''
 
 [float]
-=== Functions
+=== 함수들
 link:../mouse/mousebegin[Mouse.begin()] +
 link:../mouse/mouseclick[Mouse.click()] +
 link:../mouse/mouseend[Mouse.end()] +
@@ -59,7 +59,7 @@ link:../mouse/mouseispressed[Mouse.isPressed()]
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl]: Demonstrates the Mouse and Keyboard commands in one program.

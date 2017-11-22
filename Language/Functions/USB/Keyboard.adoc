@@ -1,6 +1,6 @@
 ---
 title: 키보드
-categories: [ "함수" ]
+categories: [ "Functions" ]
 subCategories: [ "USB" ]
 ---
 
@@ -25,7 +25,7 @@ The library supports the use of modifier keys. Modifier keys change the behavior
 // OVERVIEW SECTION ENDS
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 These core libraries allow the 32u4 and SAMD based boards (Leonardo, Esplora, Zero, Due and MKR Family) to appear as a native Mouse and/or 키보드 to a connected computer.
 [%hardbreaks]
 *A word of caution on using the Mouse and Keyboard libraries*: if the Mouse or Keyboard library is constantly running, it will be difficult to program your board. 함수 such as `Mouse.move()` and `Keyboard.print()` will move your cursor or send keystrokes to a connected computer and should only be called when you are ready to handle them. It is recommended to use a control system to turn this functionality on, like a physical switch or only responding to specific input you can control.
@@ -40,7 +40,7 @@ When using the Mouse or Keyboard library, it may be best to test your output fir
 '''
 
 [float]
-=== 함수
+=== 함수들
 link:../keyboard/keyboardbegin[Keyboard.begin()] +
 link:../keyboard/keyboardend[Keyboard.end()] +
 link:../keyboard/keyboardpress[Keyboard.press()] +
@@ -61,7 +61,7 @@ link:../keyboard/keyboardwrite[Keyboard.write()]
 --
 
 [float]
-=== 더 볼것
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl]: Demonstrates the Mouse and 키보드 commands in one program.
