@@ -1,7 +1,7 @@
 ---
 title: detachInterrupt()
-categories: [ "함수" ]
-subCategories: [ "External Interrupts" ]
+categories: [ "Functions" ]
+subCategories: [ "외부 인터럽트" ]
 ---
 
 
