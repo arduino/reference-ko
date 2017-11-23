@@ -1,7 +1,7 @@
 ---
 title: 정수 상수
 categories: [ "Variables" ]
-subCategories: [ "Constants" ]
+subCategories: [ "상수" ]
 ---
 
 
