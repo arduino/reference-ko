@@ -2,7 +2,7 @@
 title: "/* */"
 title_expanded: block comment
 categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+subCategories: [ "추가 문법" ]
 ---
 
 
