@@ -2,7 +2,7 @@
 title: "^"
 title_expanded: 비트 xor
 categories: [ "Structure" ]
-subCategories: [ "Bitwise Operators" ]
+subCategories: [ "비트 연산자" ]
 ---
 
 

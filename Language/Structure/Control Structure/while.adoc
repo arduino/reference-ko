@@ -16,12 +16,12 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
+=== 설명
 [%hardbreaks]
 A `while` loop will loop continuously, and infinitely, until the expression inside the parenthesis, () becomes false. Something must change the tested variable, or the while loop will never exit. This could be in your code, such as an incremented variable, or an external condition, such as testing a sensor.
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 while(condition){
@@ -41,7 +41,7 @@ The `condition` is a boolean expression that evaluates to `true` or `false`.
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
@@ -62,7 +62,7 @@ while(var < 200){
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 

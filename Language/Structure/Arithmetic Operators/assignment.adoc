@@ -2,7 +2,7 @@
 title: "="
 title_expanded: "assignment operator"
 categories: [ "Structure" ]
-subCategories: [ "Arithmetic Operators" ]
+subCategories: [ "산술 연산자" ]
 ---
 
 

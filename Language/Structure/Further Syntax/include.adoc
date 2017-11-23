@@ -63,7 +63,7 @@ prog_uint16_t myConstants[] PROGMEM = {0, 21140, 702  , 9128,  0, 25764, 8456,
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 

@@ -2,7 +2,7 @@
 title: "<<"
 title_expanded: bitshift left
 categories: [ "Structure" ]
-subCategories: [ "Bitwise Operators" ]
+subCategories: [ "비트 연산자" ]
 ---
 
 
@@ -17,20 +17,20 @@ subCategories: [ "Bitwise Operators" ]
 --
 
 [float]
-=== Description
+=== 설명
 The left shift operator `<<` causes the bits of the left operand to be shifted *left* by the number of positions specified by the right operand.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 variable << number_of_bits;
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `variable`: *Allowed data types:* byte, int, long +
 `number_of_bits`: a number that is < = 32. *Allowed data types:* int
 
@@ -44,7 +44,7 @@ variable << number_of_bits;
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
@@ -54,7 +54,7 @@ int b = a << 3;   // binary: 0000000000101000, or 40 in decimal
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 When you shift a value x by y bits (x << y), the leftmost y bits in x are lost, literally shifted out of existence:
 
 [source,arduino]
@@ -111,7 +111,7 @@ void printOut1(int c) {
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 
