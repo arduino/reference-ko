@@ -30,7 +30,7 @@ isAlpha(thisChar)
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `thisChar`: 변수. *혀용 자료형:* char
 
 [float]

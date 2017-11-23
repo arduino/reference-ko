@@ -16,26 +16,26 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== 설명
 Compares two strings for equality. The comparison is not case-sensitive, meaning the String("hello") is equal to the String("HELLO").
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.equalsIgnoreCase(string2)
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `string, string2`: variables of type String
 
 
 [float]
-=== Returns
+=== 반환
 `true`: if string equals string2 (ignoring case) 
 
 `false`: otherwise
@@ -52,7 +52,7 @@ string.equalsIgnoreCase(string2)
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

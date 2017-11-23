@@ -30,7 +30,7 @@ difference = operand1 - operand2;
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `difference` : 변수. *허용되는 자료형:* int, float, double, byte, short, long +
 `operand1` : 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long +
 `operand2` : 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long

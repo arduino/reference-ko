@@ -16,14 +16,14 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== 설명
 Get a substring of a String. The starting index is inclusive (the corresponding character is included in the substring), but the optional ending index is exclusive (the corresponding character is not included in the substring). If the ending index is omitted, the substring continues to the end of the String.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.substring(from)
@@ -32,7 +32,7 @@ string.substring(from, to)
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `string`: a variable of type String
 
 `from`: the index to start the substring at
@@ -41,7 +41,7 @@ string.substring(from, to)
 
 
 [float]
-=== Returns
+=== 반환
 The substring.
 
 --
@@ -57,7 +57,7 @@ The substring.
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

@@ -13,7 +13,7 @@ title: Serial.find()
 --
 
 [float]
-=== Description
+=== 설명
 Serial.find() reads data from the serial buffer until the target string of given length is found. The function returns true if target string is found, false if it times out.
 
 Serial.find() inherits from the link:../../stream[stream] utility class.
@@ -21,15 +21,15 @@ Serial.find() inherits from the link:../../stream[stream] utility class.
 
 
 [float]
-=== Syntax
+=== 문법
 `Serial.find(target)`
 
 [float]
-=== Parameters
+=== 매개변수
 `target` : the string to search for (char)
 
 [float]
-=== Returns
+=== 반환
 `boolean`
 
 --
@@ -41,7 +41,7 @@ Serial.find() inherits from the link:../../stream[stream] utility class.
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../stream[stream] +

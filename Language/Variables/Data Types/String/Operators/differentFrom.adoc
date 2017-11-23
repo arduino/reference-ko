@@ -17,25 +17,25 @@ subCategories: [ "StringObject Operator" ]
 --
 
 [float]
-=== Description
+=== 설명
 Compares two strings for difference. The comparison is case-sensitive, meaning the String "hello" is not equal to the String "HELLO". Functionally the same as string.equals()
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string1 != string2
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `string1, string2` - a string variable
 
 [float]
-=== Returns
+=== 반환
 `true`: if string1 is different from string2 
 
 `false`: otherwise
@@ -54,7 +54,7 @@ string1 != string2
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

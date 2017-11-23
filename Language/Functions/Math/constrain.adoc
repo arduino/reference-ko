@@ -16,24 +16,24 @@ subCategories: [ "수학" ]
 --
 
 [float]
-=== Description
+=== 설명
 Constrains a number to be within a range.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `constrain(x, a, b)`
 
 
 [float]
-=== Parameters
+=== 매개변수
 `x`: the number to constrain, all data types
 `a`: the lower end of the range, all data types
 `b`: the upper end of the range, all data types
 
 [float]
-=== Returns
+=== 반환
 x: if x is between a and b
 
 a: if x is less than a
@@ -51,7 +51,7 @@ b: if x is greater than b
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 The code limits the sensor values to between 10 to 150.
 

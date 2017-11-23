@@ -16,25 +16,25 @@ subCategories: [ "문자" ]
 --
 
 [float]
-=== Description
+=== 설명
 Analyse if a char is a white space, that is space, formfeed ('\f'), newline ('\n'), carriage return ('\r'), horizontal tab ('\t'), and vertical tab ('\v')). 
 Returns true if thisChar contains a white space. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 `isWhitespace(thisChar)`
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `thisChar`: variable. *Allowed data types:* char
 
 [float]
-=== Returns
+=== 반환
 `true`: if thisChar is a white space.
 
 --
@@ -47,7 +47,7 @@ Returns true if thisChar contains a white space.
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
@@ -71,7 +71,7 @@ else
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

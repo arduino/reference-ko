@@ -23,7 +23,7 @@ random 함수는 의사 난수를 만들어 낸다.
 
 
 [float]
-=== Syntax
+=== 문법
 `random(max)` +
 `random(min, max)`
 

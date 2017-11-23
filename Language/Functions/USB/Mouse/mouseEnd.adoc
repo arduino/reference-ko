@@ -76,7 +76,7 @@ void loop(){
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../mouseclick[Mouse.click()]

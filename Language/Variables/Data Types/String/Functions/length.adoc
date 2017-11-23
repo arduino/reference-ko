@@ -16,26 +16,26 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== 설명
 Returns the length of the String, in characters. (Note that this doesn't include a trailing null character.)
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.length()
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `string`: a variable of type String
 
 
 [float]
-=== Returns
+=== 반환
 The length of the String in characters.
 
 --
@@ -51,7 +51,7 @@ The length of the String in characters.
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

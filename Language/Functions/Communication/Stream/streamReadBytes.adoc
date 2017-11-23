@@ -13,7 +13,7 @@ title: Stream.readBytes()
 --
 
 [float]
-=== Description
+=== 설명
 `readBytes()` read characters from a stream into a buffer. The function terminates if the determined length has been read, or it times out (see link:../streamSetTimeout[setTimeout()]).
 
 `readBytes()` returns the number of bytes placed in the buffer. A 0 means no valid data was found.
@@ -23,12 +23,12 @@ This function is part of the Stream class, and is called by any class that inher
 
 
 [float]
-=== Syntax
+=== 문법
 `stream.readBytes(buffer, length)`
 
 
 [float]
-=== Parameters
+=== 매개변수
 `stream` : an instance of a class that inherits from Stream.
 
 `buffer` : the buffer to store the bytes in (`char[]` or `byte[]`)
@@ -36,7 +36,7 @@ This function is part of the Stream class, and is called by any class that inher
 `length` : the number of bytes to `read(int)`
 
 [float]
-=== Returns
+=== 반환
 The number of bytes placed in the buffer (`size_t`)
 
 --

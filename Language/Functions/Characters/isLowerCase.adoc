@@ -16,24 +16,24 @@ subCategories: [ "문자" ]
 --
 
 [float]
-=== Description
+=== 설명
 Analyse if a char is lower case (that is a letter in lower case). Returns true if thisChar contains a letter in lower case. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 `isLowerCase(thisChar)`
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `thisChar`: variable. *Allowed data types:* char
 
 [float]
-=== Returns
+=== 반환
 `true`: if thisChar is lower case.
 
 --
@@ -46,7 +46,7 @@ Analyse if a char is lower case (that is a letter in lower case). Returns true i
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

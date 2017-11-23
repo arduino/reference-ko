@@ -13,25 +13,25 @@ title: Serial.println()
 --
 
 [float]
-=== Description
+=== 설명
 Prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or '\r') and a newline character (ASCII 10, or '\n'). This command takes the same forms as link:../print[Serial.print().
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `Serial.println(val)` +
 `Serial.println(val, format)`
 
 
 [float]
-=== Parameters
+=== 매개변수
 `val`: the value to print - any data type
 
 `format`: specifies the number base (for integral data types) or number of decimal places (for floating point types)
 
 [float]
-=== Returns
+=== 반환
 `size_t`: `println()` returns the number of bytes written, though reading that number is optional
 --
 // OVERVIEW SECTION ENDS
@@ -44,7 +44,7 @@ Prints data to the serial port as human-readable ASCII text followed by a carria
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 

@@ -16,7 +16,7 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
+=== 설명
 `void` 키워드는 함수 선언에서만 쓰인다.
 그것은 함수가 불릴 때 함수에서 아무 정보도 반환하지 않을 것을 기대하는 것을 가리킨다.
 

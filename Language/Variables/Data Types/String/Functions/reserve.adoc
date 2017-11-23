@@ -16,26 +16,26 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== 설명
 The String reserve() function allows you to allocate a buffer in memory for manipulating strings.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.reserve(size)
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `size`: unsigned int declaring the number of bytes in memory to save for string manipulation 
 
 
 [float]
-=== Returns
+=== 반환
 None
 --
 // OVERVIEW SECTION ENDS
@@ -45,7 +45,7 @@ None
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
@@ -80,7 +80,7 @@ void loop() {
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

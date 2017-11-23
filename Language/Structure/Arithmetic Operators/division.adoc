@@ -17,7 +17,7 @@ subCategories: [ "산술 연산자" ]
 --
 
 [float]
-=== Description
+=== 설명
 *나눗셈* 은 4개 기본 연산 중 하나다. 연산자 `/` (slash) 는 두 피연산자에 연산하여 결과를 얻는다.
  
 [%hardbreaks]

@@ -16,14 +16,14 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== 설명
 Modify in place a string removing chars from the provided index to the end of the string or from the provided index to index plus count.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.remove(index)
@@ -32,14 +32,14 @@ string.remove(index, count)
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `index`: a variable of type unsigned int
 
 `count`: a variable of type unsigned int
 
 
 [float]
-=== Returns
+=== 반환
 None
 
 --
@@ -55,7 +55,7 @@ None
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

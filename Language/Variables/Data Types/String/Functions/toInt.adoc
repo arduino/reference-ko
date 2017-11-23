@@ -16,26 +16,26 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== 설명
 Converts a valid String to an integer. The input string should start with an integer number. If the string contains non-integer numbers, the function will stop performing the conversion.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.toInt()
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `string`: a variable of type String
 
 
 [float]
-=== Returns
+=== 반환
 `long`
 
 If no valid conversion could be performed because the string doesn't start with a integer number, a zero is returned.
@@ -53,7 +53,7 @@ If no valid conversion could be performed because the string doesn't start with 
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

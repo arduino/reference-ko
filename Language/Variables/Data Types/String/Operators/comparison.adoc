@@ -17,7 +17,7 @@ subCategories: [ "StringObject Operator" ]
 --
 
 [float]
-=== Description
+=== 설명
 Compares two strings for equality. The comparison is case-sensitive, meaning the String "hello" is not equal to the String "HELLO". Functionally the same as string.equals()
 
 
@@ -25,18 +25,18 @@ Compares two strings for equality. The comparison is case-sensitive, meaning the
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string1 == string2
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `string1, string2` - a string variable
 
 [float]
-=== Returns
+=== 반환
 The nth char of the string. Same as charAt().
 `true`: if string1 equals string2
  
@@ -55,7 +55,7 @@ The nth char of the string. Same as charAt().
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

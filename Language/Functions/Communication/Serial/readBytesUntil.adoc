@@ -13,7 +13,7 @@ title: Serial.readBytesUntil()
 --
 
 [float]
-=== Description
+=== 설명
 Serial.readBytesUntil() reads characters from the serial buffer into an array. The function terminates if the terminator character is detected, the determined length has been read, or it times out (see link:../settimeout[Serial.setTimeout()]).
 
 `Serial.readBytesUntil()` returns the number of characters read into the buffer. A 0 means no valid data was found.
@@ -23,12 +23,12 @@ Serial.readBytesUntil() reads characters from the serial buffer into an array. T
 
 
 [float]
-=== Syntax
+=== 문법
 `Serial.readBytesUntil(character, buffer, length)`
 
 
 [float]
-=== Parameters
+=== 매개변수
 `character` : the character to search for (`char`)
 
 `buffer`: the buffer to store the bytes in (`char[]` or `byte[]`)
@@ -36,7 +36,7 @@ Serial.readBytesUntil() reads characters from the serial buffer into an array. T
 `length` : the number of bytes to read (`int`)
 
 [float]
-=== Returns
+=== 반환
 `size_t`
 
 --
@@ -48,7 +48,7 @@ Serial.readBytesUntil() reads characters from the serial buffer into an array. T
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../stream[Stream]

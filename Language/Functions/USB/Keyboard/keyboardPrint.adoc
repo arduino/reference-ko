@@ -71,7 +71,7 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 When you use the `Keyboard.print()` command, the Arduino takes over your keyboard! Make sure you have control before you use the command. A pushbutton to toggle the keyboard control state is effective.
 
 --

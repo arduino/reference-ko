@@ -28,7 +28,7 @@ subCategories: [ "Conversion" ]
 `word(h, l)`
 
 [float]
-=== Parameters
+=== 매개변수
 `x`: 값
 
 `h`: high-order (가장 왼쪽) 바이트

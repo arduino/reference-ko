@@ -16,21 +16,21 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== 설명
 The String replace() function allows you to replace all instances of a given character with another character. You can also use replace to replace substrings of a string with a different substring.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.replace(substring1, substring2)
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `string`: a variable of type String
 
 `substring1`: another variable of type String
@@ -40,7 +40,7 @@ string.replace(substring1, substring2)
 
 
 [float]
-=== Returns
+=== 반환
 None
 --
 // OVERVIEW SECTION ENDS
@@ -55,7 +55,7 @@ None
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

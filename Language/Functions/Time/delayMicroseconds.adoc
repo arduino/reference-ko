@@ -16,7 +16,7 @@ subCategories: [ "시간" ]
 --
 
 [float]
-=== Description
+=== 설명
 Pauses the program for the amount of time (in microseconds) specified as parameter. There are a thousand microseconds in a millisecond, and a million microseconds in a second.
 
 Currently, the largest value that will produce an accurate delay is 16383. This could change in future Arduino releases. For delays longer than a few thousand microseconds, you should use `delay()` instead.
@@ -24,16 +24,16 @@ Currently, the largest value that will produce an accurate delay is 16383. This 
 
 
 [float]
-=== Syntax
+=== 문법
 `delayMicroseconds(us)`
 
 
 [float]
-=== Parameters
+=== 매개변수
 `us`: the number of microseconds to pause (`unsigned int`)
 
 [float]
-=== Returns
+=== 반환
 Nothing
 
 --
@@ -47,7 +47,7 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 The code configures pin number 8 to work as an output pin. It sends a train of pulses of approximately 100 microseconds period. The approximation is due to execution of the other instructions in the code. 
 
@@ -71,7 +71,7 @@ void loop()
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 This function works very accurately in the range 3 microseconds and up. We cannot assure that delayMicroseconds will perform precisely for smaller delay-times.
 
 As of Arduino 0018, delayMicroseconds() no longer disables interrupts.
