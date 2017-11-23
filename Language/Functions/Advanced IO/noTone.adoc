@@ -2,7 +2,7 @@
 title: noTone()
 title_expanded: ""
 categories: [ "Functions" ]
-subCategories: [ "Advanced I/O" ]
+subCategories: [ "고급 입출력" ]
 aliases: [ /language/functions/advanced-io/noTone/ ]
 ---
 
@@ -15,23 +15,24 @@ aliases: [ /language/functions/advanced-io/noTone/ ]
 --
 
 [float]
-=== Description
-Stops the generation of a square wave triggered by `tone()`. Has no effect if no tone is being generated.
+=== 설명
+`tone()` 에 의해 트리거된 구형파의 생성을 멈춘다. tone 가 생성되지 않았을 때는 아무 효과 없다.
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `noTone(pin)`
 
 
 [float]
-=== Parameters
-`pin`: the pin on which to stop generating the tone
+=== 매개변수
+`pin`: tone 생성을 멈출 핀
 
 [float]
-=== Returns
-Nothing
+=== 반환
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,8 +45,9 @@ Nothing
 --
 
 [float]
-=== Notes and Warnings
-If you want to play different pitches on multiple pins, you need to call noTone() on one pin before calling `tone()` on the next pin.
+=== 주의와 경고
+여러 핀에서 다른 피치를 연주하려면, 다음 핀에 `tone()` 을 부르기 전에  noTone() 을 부를 필요가 있다.
+
 [%hardbreaks]
 
 --

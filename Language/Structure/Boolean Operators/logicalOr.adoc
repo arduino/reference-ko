@@ -1,6 +1,6 @@
 ---
 title: "||"
-title_expanded: logical or
+title_expanded: 논리 or
 categories: [ "Structure" ]
 subCategories: [ "Boolean Operators" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Boolean Operators" ]
 
 
 
-= || Logical OR
+= || 논리 OR
 
 
 // OVERVIEW SECTION STARTS
@@ -17,8 +17,8 @@ subCategories: [ "Boolean Operators" ]
 --
 
 [float]
-=== Description
-*Logical OR* results in a `true` if either of the two operands is `true`.
+=== 설명
+*논리 OR* 는 두 피연산자 중 하나가 `true` 면 `true` 가 된다.
 [%hardbreaks]
 
 --
@@ -31,21 +31,22 @@ subCategories: [ "Boolean Operators" ]
 --
 
 [float]
-=== Example Code
-This operator can be used inside the condition of an link:../../control-structure/if[if] statement.
+=== 예제 코드
+이 연산자는 link:../../control-structure/if[if] 문의 조건 안에 쓸 수 있다.
+
 
 [source,arduino]
 ----
-if (x > 0 || y > 0) { // if either x or y is greater than zero
-  // statements
+if (x > 0 || y > 0) { // x 또는 y 가 0보다 크면
+  // 문
 }
 ----
 
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Do not confuse the boolean || (double pipe) operator with the bitwise OR operator | (single pipe).
+=== 주의와 경고
+boolean || (이중 pipe) 연산자와 bitwise OR 연산자 | (단일 pipe)를 헷갈리지 마시오.
 [%hardbreaks]
 
 --
@@ -57,7 +58,7 @@ Do not confuse the boolean || (double pipe) operator with the bitwise OR operato
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../bitwise-operators/bitwiseor[| Bitwise OR]

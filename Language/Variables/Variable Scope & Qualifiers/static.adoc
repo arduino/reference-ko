@@ -16,10 +16,10 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 --
 
 [float]
-=== Description
-The `static` keyword is used to create variables that are visible to only one function. However unlike local variables that get created and destroyed every time a function is called, static variables persist beyond the function call, preserving their data between function calls.
+=== 설명
+`static` 키워드는 오직 한 함수에서만 볼 수 있는 변수를 만들 때 쓴다. 그러나 함수가 불릴 때마다 만들어졌다 사라지는 지역 변수와 달리 static 변수는 함수 호출을 넘어 계속되며, 함수 호출 사이에 자료를 보존한다.
 
-Variables declared as static will only be created and initialized the first time a function is called. 
+static 으로 선언된 변수는 함수가 처음 불릴 때 한 번만 만들어지고 초기화된다.
 [%hardbreaks]
 
 --
@@ -33,7 +33,7 @@ Variables declared as static will only be created and initialized the first time
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
@@ -61,7 +61,7 @@ void setup()
 }
 
 void loop()
-{        //  tetst randomWalk function
+{        //  randomWalk 함수 테스트
   stepsize = 5;
   thisTime = randomWalk(stepsize);
   Serial.println(thisTime);
@@ -69,16 +69,16 @@ void loop()
 }
 
 int randomWalk(int moveSize){
-  static int  place;     // variable to store value in random walk - declared static so that it stores
-                         // values in between function calls, but no other functions can change its value
+  static int  place;     // variable to store value in random walk - static 으로 선언되어서 
+                         // 다른 함수가 그 값을 바꿀 수 없음
 
   place = place + (random(-moveSize, moveSize + 1));
 
-  if (place < randomWalkLowRange){                              // check lower and upper limits
-    place = randomWalkLowRange + (randomWalkLowRange - place);  // reflect number back in positive direction
+  if (place < randomWalkLowRange){                              // 위와 아래 한계 체크
+    place = randomWalkLowRange + (randomWalkLowRange - place);  // 양의 방향에서 뒤로 가는 것을 반영
   }
   else if(place > randomWalkHighRange){
-    place = randomWalkHighRange - (place - randomWalkHighRange);  // reflect number back in negative direction
+    place = randomWalkHighRange - (place - randomWalkHighRange);  // 양의 방향에서 뒤로 가는 것을 반영
   }
 
   return place;

@@ -16,8 +16,8 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
-A byte stores an 8-bit unsigned number, from 0 to 255.
+=== 설명
+byte 는 8비트 부호없는 숫자, 0부터 255까지,를 저장항다.
 [%hardbreaks]
 
 --
@@ -31,8 +31,8 @@ A byte stores an 8-bit unsigned number, from 0 to 255.
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== 예제 코드
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
 [source,arduino]
@@ -48,7 +48,7 @@ A byte stores an 8-bit unsigned number, from 0 to 255.
 --
 
 [float]
-=== See also
+=== 더 볼 
 
 [role="language"]
 * #LANGUAGE# link:../../conversion/bytecast[byte()]

@@ -1,7 +1,7 @@
 ---
 title: analogReadResolution()
 categories: [ "Functions" ]
-subCategories: [ "Zero, Due & MKR Family" ]
+subCategories: [ "제로, 두에 및 MKR 제품군" ]
 ---
 
 
@@ -15,8 +15,8 @@ subCategories: [ "Zero, Due & MKR Family" ]
 --
 
 [float]
-=== Description
-analogReadResolution() is an extension of the Analog API for the Arduino Due, Zero and MKR Family.
+=== 설명
+analogReadResolution() 은 아두이노 두에, 제로 그리고 MKR 제품군을 위한 아날로그 API의 확장이다.
 
 Sets the size (in bits) of the value returned by `analogRead()`. It defaults to 10 bits (returns values between 0-1023) for backward compatibility with AVR based boards.
 
@@ -25,17 +25,17 @@ The *Due, Zero and MKR Family* boards have 12-bit ADC capabilities that can be a
 
 
 [float]
-=== Syntax
+=== 문법
 `analogReadResolution(bits)`
 
 
 [float]
-=== Parameters
+=== 매개변수
 `bits`: determines the resolution (in bits) of the value returned by the `analogRead()` function. You can set this between 1 and 32. You can set resolutions higher than 12 but values returned by `analogRead()` will suffer approximation. See the note below for details.
 
 [float]
-=== Returns
-Nothing
+=== 반환
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,7 +48,7 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 The code shows how to use ADC with different resolutions.
 
@@ -88,7 +88,7 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 If you set the `analogReadResolution()` value to a value higher than your board's capabilities, the Arduino will only report back at its highest resolution, padding the extra bits with zeros.
 
 For example: using the Due with `analogReadResolution(16)` will give you an approximated 16-bit number with the first 12 bits containing the real ADC reading and the last 4 bits *padded with zeros*.
@@ -106,7 +106,7 @@ Using a 16 bit resolution (or any resolution *higher* than actual hardware capab
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of the analog input pins]

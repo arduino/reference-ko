@@ -16,8 +16,9 @@ subCategories: [ "Sketch" ]
 --
 
 [float]
-=== Description
-After creating a link:../setup[setup()] function, which initializes and sets the initial values, the `loop()` function does precisely what its name suggests, and loops consecutively, allowing your program to change and respond. Use it to actively control the Arduino board.
+=== 설명
+link:../setup[setup()] 함수를 생성한 후, 그것은 초기 변수를 초기화하고 설정하는데, `loop()` 함수는 그 이름이 암시하는 것을 정확하게 하며,ㄹ
+루프를 반복하여, 프로그램이 바뀌고 응답할 수 있게 허용한다. 그것을 사용하여 아두이노 보드를 능동적으로 제어하시오.
 [%hardbreaks]
 
 --
@@ -29,20 +30,20 @@ After creating a link:../setup[setup()] function, which initializes and sets the
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 [source,arduino]
 ----
 int buttonPin = 3;
 
-// setup initializes serial and the button pin
+// setup 은 시리얼과 버튼 핀을 초기화함
 void setup()
 {
   beginSerial(9600);
   pinMode(buttonPin, INPUT);
 }
 
-// loop checks the button pin each time,
-// and will send serial if it is pressed
+// loop 는 버튼 핀을 매번 체크하고,
+// 그것이 눌려지면 시리얼을 보냄
 void loop()
 {
   if (digitalRead(buttonPin) == HIGH)

@@ -1,7 +1,7 @@
 ---
 title: tan()
 categories: [ "Functions" ]
-subCategories: [ "Trigonometry" ]
+subCategories: [ "삼각법" ]
 ---
 
 
@@ -16,23 +16,24 @@ subCategories: [ "Trigonometry" ]
 --
 
 [float]
-=== Description
-Calculates the tangent of an angle (in radians). The result will be between negative infinity and infinity.
+=== 설명
+각(라디안)의 탄젠트 계산. 결과는 음의 무한과 무한 사이.
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `tan(rad)`
 
 
 [float]
-=== Parameters
-`rad`: The angle in Radians (`float`).
+=== 매개변수
+`rad`: 라디안 각 (`float`).
 
 [float]
-=== Returns
-The tangent of the angle (`double`).
+=== 반환
+각의 탄젠트 (`double`).
 
 --
 // OVERVIEW SECTION ENDS
@@ -43,7 +44,7 @@ The tangent of the angle (`double`).
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../../variables/data-types/float[float]

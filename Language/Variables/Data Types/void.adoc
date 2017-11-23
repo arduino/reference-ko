@@ -17,7 +17,9 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Description
-The `void` keyword is used only in function declarations. It indicates that the function is expected to return no information to the function from which it was called.
+`void` 키워드는 함수 선언에서만 쓰인다.
+그것은 함수가 불릴 때 함수에서 아무 정보도 반환하지 않을 것을 기대하는 것을 가리킨다.
+
 [%hardbreaks]
 
 --
@@ -31,14 +33,14 @@ The `void` keyword is used only in function declarations. It indicates that the 
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code shows how to use `void`.
+이코드는 `void` 사용법을 보여준다.
 
 [source,arduino]
 ----
-// actions are performed in the functions "setup" and "loop"
-// but  no information is reported to the larger program
+// 행동은 함수 "setup" 그리고 "loop" 에수 수행된다
+//  그러나 더 큰 프로그램에서는 보고되는 정보가 없다
 
 void setup()
 {
@@ -61,7 +63,7 @@ void loop()
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../constants/integerconstants[Integer Constants]

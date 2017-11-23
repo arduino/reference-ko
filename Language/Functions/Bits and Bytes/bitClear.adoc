@@ -1,7 +1,7 @@
 ---
 title: bitClear()
 categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+subCategories: [ "비트 및 바이트" ]
 ---
 
 
@@ -16,25 +16,25 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Clears (writes a 0 to) a bit of a numeric variable.
+=== 설명
+숫자 변수의 한 비트 지움(0을 씀).
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `bitClear(x, n)`
 
 
 [float]
-=== Parameters
-`x`: the numeric variable whose bit to clear
+=== 매개변수
+`x`: 비트를 지울 숫자 변수
 
-`n`: which bit to clear, starting at 0 for the least-significant (rightmost) bit
+`n`: 지울 비트, 0에서 시작 least-significant (가장 오른쪽) bit
 
 [float]
-=== Returns
-Nothing
+=== 반환
+없음
 
 --
 // OVERVIEW SECTION ENDS

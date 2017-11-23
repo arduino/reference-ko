@@ -1,7 +1,7 @@
 ---
 title: bitRead()
 categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+subCategories: [ "비트 및 바이트" ]
 ---
 
 
@@ -16,26 +16,26 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Reads a bit of a number.
+=== 설명
+숫자의 한 비트를 읽음.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `bitRead(x, n)`
 
 
 [float]
-=== Parameters
-`x`: the number from which to read
+=== 매개변수
+`x`: 읽을 숫자
 
-`n`: which bit to read, starting at 0 for the least-significant (rightmost) bit
+`n`: 읽을 비트, least-significant (가장 오른쪽) bit 0에서 시작
 
 
 [float]
-=== Returns
-the value of the bit (0 or 1).
+=== 반환
+비트의 값 (0 또는 1).
 
 --
 // OVERVIEW SECTION ENDS

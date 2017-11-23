@@ -16,24 +16,31 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
-Datatype for floating-point numbers, a number that has a decimal point. Floating-point numbers are often used to approximate analog and continuous values because they have greater resolution than integers. Floating-point numbers can be as large as 3.4028235E+38 and as low as -3.4028235E+38. They are stored as 32 bits (4 bytes) of information.
+=== 설명
+부동소수점 숫자, 소수점을 가진 수를 위한 자료형.
+부동소수점 수는 아나로그와 연속 값을 근사하는데 자주 쓰이는데 왜냐면 정수보다 큰 해상도를 갖기 때문이다.
+부동소수점 수는 3.4028235E+38 까지 클 수 있고 -3.4028235E+38 까지 작을 수 있다. 32비트(4바이트) 정보를 저장한다.
 
-Floats have only 6-7 decimal digits of precision. That means the total number of digits, not the number to the right of the decimal point. Unlike other platforms, where you can get more precision by using a double (e.g. up to 15 digits), on the Arduino, double is the same size as float.
+float 는 6-7자리까지만 정밀하다. 그건 숫자의 전체 자리수를 뜻한다. 소수점 오른쪽의 자리수가 아님.
+double(e.g. 15자리)을 써서 좀더 정밀도를 얻을 수 있는 다른 플랫폼과 달리, 아두이노에서는 double 은 float 와 같은 크기다.
+ 
+부동소수점 숫자는 정확하지 않고, 비교할 때 이상한 결과가 나올 수 있다. 예를 들어 6.0 / 3.0 이 2.0과 같지 않을 수 있다.
+대신 숫자들의 차이의 절대값이 어떤 작은 수보다 작은지 체크해야한다.
 
-Floating point numbers are not exact, and may yield strange results when compared. For example 6.0 / 3.0 may not equal 2.0. You should instead check that the absolute value of the difference between the numbers is less than some small number.
+부동소수점 수학은 계산할 때 정수보다 매우 느리므로, 심각한 타이밍 기능을 위해 루프가 최고로 실행되야 하는 경우에는 피해야 한다.
+프로그래머는 속도를 올리기 위해 때때로 부동소수점을 정수 수학으로 변환하는 길을 간다.
 
-Floating point math is also much slower than integer math in performing calculations, so should be avoided if, for example, a loop has to run at top speed for a critical timing function. Programmers often go to some lengths to convert floating point calculations to integer math to increase speed.
+float 로 수학을 하면, 소수점을 더해야 하며, 그러지 않으면 int 로 취급된다.
+더 자세한 것은 link:../../constants/floatingpointconstants[Floating point] 상수 페이지를 보세요.
 
-If doing math with floats, you need to add a decimal point, otherwise it will be treated as an int. See the link:../../constants/floatingpointconstants[Floating point] constants page for details.
 [%hardbreaks]
 
 [float]
-=== Syntax
+=== 문법
 `float var=val;`
 
-`var` - your float variable name
-`val` - the value you assign to that variable
+`var` - float 변수 이름
+`val` - 변수에 할당할 값
 [%hardbreaks]
 
 --
@@ -47,7 +54,7 @@ If doing math with floats, you need to add a decimal point, otherwise it will be
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
@@ -61,8 +68,8 @@ If doing math with floats, you need to add a decimal point, otherwise it will be
   float z;
 
   x = 1;
-  y = x / 2;            // y now contains 0, ints can't hold fractions
-  z = (float)x / 2.0;   // z now contains .5 (you have to use 2.0, not 2)
+  y = x / 2;            // y 는 0이 되고, int 는 분수를 저장할 수 없다.
+  z = (float)x / 2.0;   // z 는 이제 .5 가 됨 (2.0을 써야 하며 2는 안 됨)
 ----
 
 
@@ -75,7 +82,7 @@ If doing math with floats, you need to add a decimal point, otherwise it will be
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 

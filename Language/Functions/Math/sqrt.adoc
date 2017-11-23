@@ -1,7 +1,7 @@
 ---
 title: sqrt()
 categories: [ "Functions" ]
-subCategories: [ "Math" ]
+subCategories: [ "수학" ]
 ---
 
 
@@ -12,27 +12,28 @@ subCategories: [ "Math" ]
 
 
 // OVERVIEW SECTION STARTS
-Calculates the square root of a number.
+숫자의 제곱근 반환.
 [#overview]
 --
 
 [float]
-=== Description
+=== 설명
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `sqrt(x)`
 
 
 [float]
-=== Parameters
-`x`: the number, any data type
+=== 매개변수
+`x`: 숫자, 자료형
 
 [float]
-=== Returns
-The number's square root. (double)
+=== 반환
+숫자의 제곱근. (double)
+
 
 --
 // OVERVIEW SECTION ENDS

@@ -1,7 +1,7 @@
 ---
 title: sin()
 categories: [ "Functions" ]
-subCategories: [ "Trigonometry" ]
+subCategories: [ "삼각법" ]
 ---
 
 
@@ -16,23 +16,24 @@ subCategories: [ "Trigonometry" ]
 --
 
 [float]
-=== Description
-Calculates the sine of an angle (in radians). The result will be between -1 and 1.
+=== 설명
+각(라디안)의 사인 계산. 결과는 -1과 1 사이.
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `sin(rad)`
 
 
 [float]
-=== Parameters
-`rad`: The angle in Radians (`float`).
+=== 매개변수
+`rad`: 라디안 각 (`float`).
 
 [float]
-=== Returns
-The sine of the angle (`double`).
+=== 반환
+각의 사인 값 (`double`).
 
 --
 // OVERVIEW SECTION ENDS
@@ -43,7 +44,7 @@ The sine of the angle (`double`).
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../../variables/data-types/float[float]

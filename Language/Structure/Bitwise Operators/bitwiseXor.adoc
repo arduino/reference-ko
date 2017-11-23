@@ -1,6 +1,6 @@
 ---
 title: "^"
-title_expanded: bitwise xor
+title_expanded: 비트 xor
 categories: [ "Structure" ]
 subCategories: [ "Bitwise Operators" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Bitwise Operators" ]
 
 
 
-= ^ Bitwise XOR
+= ^ 비트 XOR
 
 
 // OVERVIEW SECTION STARTS
@@ -17,16 +17,18 @@ subCategories: [ "Bitwise Operators" ]
 --
 
 [float]
-=== Description
-There is a somewhat unusual operator in C++ called bitwise EXCLUSIVE OR, also known as bitwise XOR. (In English this is usually pronounced "eks-or".) The bitwise XOR operator is written using the caret symbol `^`. A bitwise XOR operation results in a 1 only if the input bits are different, else it results in a 0.
+=== 설명
+C++에는 비트 배타적 OR(비트 XOR로도 알려짐)라 불리는다소 일반적이지 않은 연산자가 있다. (영어에서 보통 "엑스-오어"로 발음.) 비트 XOR 연산자는 캐럿 기호 `^` 를 쓴다.
+비트 XOR 연산자는 입력 비트들이 서로 다르면 1이되고, 아니면 0이 된다.
+
 [%hardbreaks]
 
-Precisely,
+정확히,
 
     0  0  1  1    operand1
     0  1  0  1    operand2
     ----------
-    0  1  1  0    (operand1 ^ operand2) - returned result
+    0  1  1  0    (operand1 ^ operand2) - 반환 결과
 [%hardbreaks]
 
 --
@@ -39,17 +41,18 @@ Precisely,
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
-int x = 12;     // binary: 1100
-int y = 10;     // binary: 1010
-int z = x ^ y;  // binary: 0110, or decimal 6
+int x = 12;     // 2진수: 1100
+int y = 10;     // 2진수: 1010
+int z = x ^ y;  // 2진수: 0110, 즉 10진수 6
 ----
 [%hardbreaks]
+^ 연산자는 정수식의 어떤 비트들을 토글(0을 1로, 1을 0으로 바꿈))에 주로 쓰인다.
 
-The ^ operator is often used to toggle (i.e. change from 0 to 1, or 1 to 0) some of the bits in an integer expression. In a bitwise OR operation if there is a 1 in the mask bit, that bit is inverted; if there is a 0, the bit is not inverted and stays the same. Below is a program to blink digital pin 5.
+In a bitwise OR operation if there is a 1 in the mask bit, that bit is inverted; if there is a 0, the bit is not inverted and stays the same. Below is a program to blink digital pin 5.
 
 [source,arduino]
 ----
@@ -76,7 +79,7 @@ delay(100);
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]

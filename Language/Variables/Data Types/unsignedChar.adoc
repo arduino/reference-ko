@@ -16,12 +16,12 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
-An unsigned data type that occupies 1 byte of memory. Same as the link:../byte[byte] datatype.
+=== 설명
+unsigned data 자료형은 1바이트 메모리를 차지한다. link:../byte[byte] 자료형과 같다.
 
-The unsigned char datatype encodes numbers from 0 to 255.
+unsigned char 자료형은 0 에서 255 까지 숫자를 인코딩한다.
 
-For consistency of Arduino programming style, the byte data type is to be preferred.
+아두이노 프로그램 일관성을 위해, byte 자료형이 선호된다.
 [%hardbreaks]
 
 --
@@ -35,7 +35,7 @@ For consistency of Arduino programming style, the byte data type is to be prefer
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
@@ -53,7 +53,7 @@ unsigned char myChar = 240;
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../../functions/communication/serial/println[Serial.println]

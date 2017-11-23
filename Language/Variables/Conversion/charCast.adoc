@@ -16,22 +16,23 @@ subCategories: [ "Conversion" ]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/char[char] data type.
+=== 설명
+값을 link:../../data-types/char[char] 자료형으로 변환
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `char(x)`
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== 매개변수
+`x`: 값
 
 [float]
-=== Returns
+=== 반환
 `char`
 
 --
@@ -44,7 +45,7 @@ Converts a value to the link:../../data-types/char[char] data type.
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../data-types/char[char]

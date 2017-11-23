@@ -17,14 +17,15 @@ subCategories: [ "Further Syntax" ]
 --
 
 [float]
-=== Description
-`#include` is used to include outside libraries in your sketch. This gives the programmer access to a large group of standard C libraries (groups of pre-made functions), and also libraries written especially for Arduino.
+=== 설명
+`#include` 는 외부 라이브러리를 스케치 안에 포함할 때 쓰인다. 이것은 프로그래머가 표준 C 라이브러리(이미 만들어진 함수) 그리고 특히 아두이노를 위해 쓰여진 라이브러리 그룹에 대한 접근을 제공한다.
 [%hardbreaks]
 
-The main reference page for AVR C libraries (AVR is a reference to the Atmel chips on which the Arduino is based) is http://www.nongnu.org/avr-libc/user-manual/modules.html[here^].
+AVR C 라이브러리 (AVR은 아두이노가 기반인 Atmel 칩에 대한 참조)에 대한 주요 참조 페이지가 http://www.nongnu.org/avr-libc/user-manual/modules.html[here^] 이다.
+
 [%hardbreaks]
 
-Note that `#include`, similar to link:../define[`#define`], has no semicolon terminator, and the compiler will yield cryptic error messages if you add one.
+`#include`,  link:../define[`#define`] 비슷한, 는 세미콜론 종결자가 없고, 추가하면 컴파일러가 암호 같은 에러 메시지를 낼 거다.
 [%hardbreaks]
 
 --
@@ -38,7 +39,8 @@ Note that `#include`, similar to link:../define[`#define`], has no semicolon ter
 --
 
 [float]
-=== Example Code
+=== 예제 코드
+이 예는 _ram_ 대신 _flash_ 라이브러리를 포함한다
 This example includes a library that is used to put data into the program space _flash_ instead of _ram_. This saves the ram space for dynamic memory needs and makes large lookup tables more practical.
 
 

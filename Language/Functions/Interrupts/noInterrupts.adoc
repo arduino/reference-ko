@@ -1,7 +1,7 @@
 ---
 title: noInterrupts()
 categories: [ "Functions" ]
-subCategories: [ "Interrupts" ]
+subCategories: [ "인터럽트" ]
 ---
 
 
@@ -16,23 +16,24 @@ subCategories: [ "Interrupts" ]
 --
 
 [float]
-=== Description
-Disables interrupts (you can re-enable them with `interrupts()`). Interrupts allow certain important tasks to happen in the background and are enabled by default. Some functions will not work while interrupts are disabled, and incoming communication may be ignored. Interrupts can slightly disrupt the timing of code, however, and may be disabled for particularly critical sections of code.
+=== 설명
+인터럽트를 비활성화한다(다시 활성화 하려면 `interrupts()`). 인터럽트는 어떤 중요한 작업이 백그라운드에서 발생하는 것을 허용하며 기본적으로 활성화되어 있다. 어떤 함수는인터럽트가 비활성화된 동안 동작하지 않으며, 들어오는 통신이 무시될 수 있다.
+그러나, 인터럽트는 코드의 타이밍을  조금 방해할 수 있그, 특히 중요한 코드 섹션에서는 사용불가능하게 될 수 있다.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `noInterrupts()`
 
 
 [float]
-=== Parameters
-Nothing
+=== 매개변수
+없음
 
 [float]
-=== Returns
-Nothing
+=== 반환
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -45,9 +46,10 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code shows how to enable interrupts.
+이 코드는 인터럽트를 가능하게 하는 방법을 보여준다.
+
 
 [source,arduino]
 ----
@@ -56,9 +58,9 @@ void setup() {}
 void loop()
 {
   noInterrupts();
-  // critical, time-sensitive code here
+  // 여기에 중요한 시간에 민감한 코드
   interrupts();
-  // other code here
+  // 다른 코드는 여기
 }
 ----
 

@@ -1,7 +1,7 @@
 ---
 title: digitalWrite()
 categories: [ "Functions" ]
-subCategories: [ "Digital I/O" ]
+subCategories: [ "디지털 입출력" ]
 ---
 
 
@@ -16,32 +16,37 @@ subCategories: [ "Digital I/O" ]
 --
 
 [float]
-=== Description
-Write a `HIGH` or a `LOW` value to a digital pin.
+=== 설명
+`HIGH` 또는 `LOW` 값을 디지털 핀에 쓴다.
 
-If the pin has been configured as an `OUTPUT` with `pinMode()`, its voltage will be set to the corresponding value: 5V (or 3.3V on 3.3V boards) for `HIGH`, 0V (ground) for `LOW`.
+핀이 `pinMode()` 로 OUTPUT` 으로 설정되면, 그 전압은 해당 값으로 설정될 거다: 5V (또는 3.3V 보드에서 3.3V) 는 `HIGH`, 0V (ground) 는 `LOW`.
 [%hardbreaks]
 
-If the pin is configured as an `INPUT`, `digitalWrite()` will enable (`HIGH`) or disable (`LOW`) the internal pullup on the input pin. It is recommended to set the `pinMode()` to `INPUT_PULLUP` to enable the internal pull-up resistor. See the digital pins tutorial for more information.
+핀이 `INPUT` 으로 설정되면, `digitalWrite()` 는  (`HIGH`) 를 활성화 또는 (`LOW`) 를 비활성화 입력 핀의 내부 풀업.
+`pinMode()` 를 `INPUT_PULLUP` 으로 설정하여 내부 풀업 저항을 활성화하는 것을 권장한다.
+
+디지털 핀 투토리얼에 더 많은 정보가 있다.
 [%hardbreaks]
 
-If you do not set the `pinMode()` to `OUTPUT`, and connect an LED to a pin, when calling `digitalWrite(HIGH)`, the LED may appear dim. Without explicitly setting `pinMode()`, `digitalWrite()` will have enabled the internal pull-up resistor, which acts like a large current-limiting resistor.
+`pinMode()` 를 `OUTPUT` 로 설정하지 않고, LED를 핀에 연결하면, `digitalWrite(HIGH)` 가 불릴 때, LED 가 흐리게 나타날 수 있다.
+명시적으로 `pinMode()` 를 설정하지 않으면, `digitalWrite()` 는 내부 풀업 자항을 가능하게 할 것이고, 그것은 큰 현재 제한 저항처럼 동작한다.
+
 [%hardbreaks]
 
 [float]
-=== Syntax
+=== 문법
 `digitalWrite(pin, value)`
 
 
 [float]
-=== Parameters
-`pin`: the pin number
+=== 매개변수
+`pin`: 핀 번호
 
-`value`: `HIGH` or `LOW`
+`value`: `HIGH` 또는 `LOW`
 
 [float]
-=== Returns
-Nothing
+=== 반환
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -54,30 +59,32 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code makes the digital pin 13 an `OUTPUT` and toggles it by alternating between `HIGH` and `LOW` at one second pace.
+이 코드는 디지털 핀 13을 `OUTPUT` 로 만들고  그것을 `HIGH` 와 `LOW` 사이를 1초 상에 토글한다
+
 
 //[source,arduino]
 ----
 void setup()
 {
-  pinMode(13, OUTPUT);          // sets the digital pin 13 as output
+  pinMode(13, OUTPUT);          // 디지털 핀 13 을 출력으로
 }
 
 void loop()
 {
-  digitalWrite(13, HIGH);       // sets the digital pin 13 on
-  delay(1000);                  // waits for a second
-  digitalWrite(13, LOW);        // sets the digital pin 13 off
-  delay(1000);                  // waits for a second
+  digitalWrite(13, HIGH);       // 디지털 핀 13 켬
+  delay(1000);                  // 1초 기다림
+  digitalWrite(13, LOW);        // 디지털 핀 13 끔
+  delay(1000);                  // 1초 기다림
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The analog input pins can be used as digital pins, referred to as A0, A1, etc.
+=== 주의와 경고
+아나로그 입력 핀은 디지털 핀으로 쓰일 수 있고, A0, A1, 등으로 참조됨.
+
 
 --
 // HOW TO USE SECTION ENDS
@@ -88,7 +95,7 @@ The analog input pins can be used as digital pins, referred to as A0, A1, etc.
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/DigitalPins[Tutorial: Digital Pins]

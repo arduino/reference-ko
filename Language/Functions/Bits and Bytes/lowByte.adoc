@@ -1,7 +1,7 @@
 ---
 title: lowByte()
 categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+subCategories: [ "비트 및 바이트" ]
 ---
 
 
@@ -16,23 +16,24 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Extracts the low-order (rightmost) byte of a variable (e.g. a word).
+=== 설명
+변수의 low-order (가장 오른쪽) 바이트를 추출(e.g. word)
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `lowByte(x)`
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== 매개변수
+`x`: 값
 
 [float]
-=== Returns
-byte
+=== 반환
+바이트
 --
 // OVERVIEW SECTION ENDS
 
@@ -42,7 +43,7 @@ byte
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../../variables/data-types/word[word()]

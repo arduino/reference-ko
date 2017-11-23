@@ -1,6 +1,6 @@
 ---
 title: "&&"
-title_expanded: logical and
+title_expanded: 논리 and
 categories: [ "Structure" ]
 subCategories: [ "Boolean Operators" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Boolean Operators" ]
 
 
 
-= && Logical AND
+= && 논리 AND
 
 
 // OVERVIEW SECTION STARTS
@@ -17,8 +17,8 @@ subCategories: [ "Boolean Operators" ]
 --
 
 [float]
-=== Description
-*Logical AND* results in `true` *only* if both operands are `true`.
+=== 설명
+*논리 AND* 는 피연산자들이 `true` 일때*만* `true`가 된다.
 [%hardbreaks]
 
 --
@@ -31,20 +31,21 @@ subCategories: [ "Boolean Operators" ]
 --
 
 [float]
-=== Example Code
-This operator can be used inside the condition of an link:../../control-structure/if[if] statement.
+=== 예제 코드
+이 연산자는 link:../../control-structure/if[if] 문의 조건 안에 쓰일 수 있다.
+
 
 [source,arduino]
 ----
-if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) { // if BOTH the switches read HIGH
-    // statements
+if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) { // 두 스위치 다 HIGH
+    // 문
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Make sure you don't mistake the boolean AND operator, && (double ampersand) for the bitwise AND operator & (single ampersand). They are entirely different beasts.
+=== 주의와 경고
+boolean AND 연산자, && (이중 &) 와 bitwise AND 연산자 & (단일 ampersand)를 실수하지 마시오. 그들은 완전히 다른 녀석이다.
 
 --
 // HOW TO USE SECTION ENDS
@@ -55,7 +56,7 @@ Make sure you don't mistake the boolean AND operator, && (double ampersand) for 
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../bitwise-operators/bitwiseand[& (Bitwise AND)]

@@ -13,22 +13,22 @@ title: Keyboard.releaseAll()
 --
 
 [float]
-=== Description
+=== 설명
 Lets go of all keys currently pressed. See link:../keyboardpress[Keyboard.press()] for additional information.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `Keyboard.releaseAll()`
 
 
 [float]
-=== Parameters
+=== 매개변수
 Nothing
 
 [float]
-=== Returns
+=== 반환
 Nothing
 
 --
@@ -41,7 +41,7 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
