@@ -9,7 +9,7 @@ subCategories: [ "포인터 액세스 연산자" ]
 
 
 
-= * Dereference Operator
+= * 역참조 연산자
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,9 @@ subCategories: [ "포인터 액세스 연산자" ]
 
 [float]
 === 설명
-Dereferencing is one of the features specifically for use with pointers. The asterisk operator `*` is used for this purpose. If `p` is a pointer, then `*p` represents the value contained in the address pointed by `p`.
+역참조는 특히 포인터와 함께 쓰기 위한 기능 중 하나다.
+이 별표 연산자 `*` 는 이 목적으로 쓰인다.
+`p` 가 포인터이면, `*p` 는 `p` 가 가리키는 주소가 포함하는 값을 나타낸다.
 [%hardbreaks]
 
 --
@@ -35,17 +37,19 @@ Dereferencing is one of the features specifically for use with pointers. The ast
 
 [source,arduino]
 ----
-int *p;       // declare a pointer to an int data type
+int *p;       // pointer 를 int 자료형으로
 int i = 5, result = 0;
-p = &i;       // now 'p' contains the address of 'i'
-result = *p;  // 'result' gets the value at the address pointed by 'p'
+p = &i;       // 이제 'p' 는  'i' 의 주소를 포함
+result = *p;  // 'result' 는 'p'가 가리키는 주소에서의 값을 얻는다.
               // i.e., it gets the value of 'i' which is 5
 ----
 [%hardbreaks]
 
 [float]
 === 주의와 경고
-Pointers are one of the complicated subjects for beginners in learning C, and it is possible to write the vast majority of Arduino sketches without ever encountering pointers. However for manipulating certain data structures, the use of pointers can simplify the code, and and knowledge of manipulating pointers is handy to have in one's toolkit.
+포인터는 C를 배우는 초보자를위한 복잡한 과목 중 하나이며, 포인터를 만날 필요없이 대다수의 Arduino 스케치를 작성할 수 있다. 
+그러나 특정 데이터 구조를 다루기 위해 포인터를 사용하면 코드를 단순화 할 수 있으며, 포인터 다루는 지식은 하나의 툴킷에 포함하는 것이 편하다.
+
 [%hardbreaks]
 
 --
