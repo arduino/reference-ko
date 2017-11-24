@@ -1,6 +1,6 @@
 ---
 title: "/* */"
-title_expanded: block comment
+title_expanded: 블록 주석
 categories: [ "Structure" ]
 subCategories: [ "추가 문법" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "추가 문법" ]
 
 
 
-= /* */ Block Comment
+= /* */ 블록 주석
 
 
 // OVERVIEW SECTION STARTS
@@ -18,10 +18,13 @@ subCategories: [ "추가 문법" ]
 
 [float]
 === 설명
-*Comments* are lines in the program that are used to inform yourself or others about the way the program works. They are ignored by the compiler, and not exported to the processor, so they don't take up any space in the microcontroller's flash memory. Comments' only purpose is to help you understand (or remember), or to inform others about how your program works.
+*주석* 은 여러분 자신 또는 다른 사람에게 프로그램이 동작하는 방식을 알리는 줄이다.
+그것은 컴파일러에서는 무시되고, 프로세서에 보내지지 않으므로, 마이크로컨트롤러 안에 공간을 차지하지 않는다.
+주석의 목적은 여러분(또는 멤버)를 돕거나, 프로그램이 어떻게 동작하는지 다른 사람에게 알리는 것이다.
 [%hardbreaks]
 
-The beginning of a *block comment* or a *multi-line comment* is marked by the symbol `/\*` and the symbol `*/` marks its end. This type of a comment is called so as this can extend over more than one line; once the compiler reads the `/\*` it ignores whatever follows unitl it enounters a `*/`.
+*블록 주석* 또는 *여러줄 주석*시작은 기호 `/\*` 로 나타내고 기호 `*/` 는 그 끝을 나타낸다.
+이 형식의 주석은 한 줄 이상으로 확장될 수 있으므로 그렇게 불린다; 컴파일러가 `/\*` 을 읽으면 `*/` 를 만날 때까지 따라오는 모든 것을 무시한다.
 
 // NOTE TO THE EDITOR: The '\' before the '*' in certain places are to escape the '*' from making the text bolder.
 // In places were '\' is not used before '*', it is not actually required.
@@ -50,17 +53,19 @@ The beginning of a *block comment* or a *multi-line comment* is marked by the sy
 */
 
 /*
-  if (gwb == 0){   // single line comment is OK inside a multi-line comment
-  x = 3;           /* but not another multi-line comment - this is invalid */
+  if (gwb == 0){   // 여러줄 주석 안에 한줄 주석 좋다OK inside a multi-line comment
+  x = 3;           /* 그러나 여러줄 주석이 있다 - 이건 안 된다 */
   }
-// don't forget the "closing" comment - they have to be balanced!
+// 주석 닫는 것을 잊지 마세요.- 짝이 맞아야 함!
 */
 ----
 [%hardbreaks]
 
 [float]
 === 주의와 경고
-When experimenting with code, "commenting out" parts of your program is a convenient way to remove lines that may be buggy. This leaves the lines in the code, but turns them into comments, so the compiler just ignores them. This can be especially useful when trying to locate a problem, or when a program refuses to compile and the compiler error is cryptic or unhelpful.
+코드를 시험할 때, 프로그램 일부를 "주석 처리" 하는 것은 버그가 있을 수도 있는 줄을 없애는편리한 방법이다.
+이것은 코드에 줄을 남기지만, 주석으로 바뀌므로, 컴파일러는 무시한다.
+이것은 프로그램을 자리잡게 할 때, 또는 프로그램이 컴파일을 거부하고 컴파일러 에러는 암호같아서 도움이 안 될 때 특히 쓸모 있다.
 [%hardbreaks]
 
 --
