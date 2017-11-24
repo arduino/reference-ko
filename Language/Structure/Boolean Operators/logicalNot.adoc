@@ -2,7 +2,7 @@
 title: "!"
 title_expanded: 논리적 not
 categories: [ "Structure" ]
-subCategories: [ "Boolean Operators" ]
+subCategories: [ "부울 연산자" ]
 ---
 
 
