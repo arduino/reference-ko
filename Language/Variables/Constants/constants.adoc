@@ -17,28 +17,29 @@ subCategories: [ "상수" ]
 
 [float]
 == 설명
-상수는 Arduino 언어에서 미리 정의된 표현식입니다. 그것들은 프로그램을 읽기 쉽게 하기 위해 사용됩니다. 그룹으로 상수를 분류합니다:
+상수는 Arduino 언어에서 미리 정의된 표현식이다. 그것들은 프로그램을 읽기 쉽게 하기 위해 사용된다. 그룹으로 상수를 분류한다:
 
 [float]
 == 논리 수준 정하기: true 그리고 false (Boolean 상수)
-아두이노 언어에서 참과 거짓을 표현하기 위해 사용되는 두 상수가 있습니다: `true`, 그리고 `false`.
+아두이노 언어에서 참과 거짓을 표현하기 위해 사용되는 두 상수가 있다: `true`, 그리고 `false`.
 
 [float]
 === false
-`false` 둘 중에 정의하기 쉽습니다. false 는 0 (zero)으로 정의됩니다.
+`false` 둘 중에 정의하기 쉽다. false 는 0 (zero)으로 정의된다.
 [%hardbreaks]
 
 [float]
 === true
-`true` is often said to be defined as 1, which is correct, but true has a wider definition. Any integer which is non-zero is true, in a Boolean sense. So -1, 2 and -200 are all defined as true, too, in a Boolean sense.
-[%hardbreaks]
+`true` 는 1로 정의된다고 흔히 말하지만, 맞지만, true는 더 넓은 정의가 있다.
+영 아닌 정수는 부울 의미로 true이다. 그래서 부울 의미로 -1, 2 그리고 -200 모두 true로 정의된다.
 
-Note that the `true` and `false` constants are typed in lowercase unlike `HIGH`, `LOW`, `INPUT`, and `OUTPUT`.
+[%hardbreaks]
+`true` 및 `false` 상수는  `HIGH`, `LOW`, `INPUT`, 그리고 `OUTPUT` 와 달리 소문자로 침을 유의하라.
 [%hardbreaks]
 
 [float]
-== Defining Pin Levels: HIGH and LOW
-When reading or writing to a digital pin there are only two possible values a pin can take/be-set-to: `HIGH` and `LOW`.
+== 핀 수준 정의: HIGH 및 LOW
+디지털 핀에 읽거나 쓸 때 핀이 얻고/설정 할 수 있는 것은 오직 두 값만 있다: `HIGH` 및 `LOW`.
 
 [float]
 === HIGH
@@ -74,7 +75,7 @@ When a pin is configured to `OUTPUT` with `pinMode()`, and set to `LOW` with `di
 Digital pins can be used as `INPUT`, `INPUT_PULLUP`, or `OUTPUT`. Changing a pin with `pinMode()` changes the electrical behavior of the pin.
 
 [float]
-=== Pins Configured as INPUT
+=== INPUT 으로 구성ᅟ된 핀
 Arduino (ATmega) pins configured as `INPUT` with `pinMode()` are said to be in a _high-impedance_ state. Pins configured as `INPUT` make extremely small demands on the circuit that they are sampling, equivalent to a series resistor of 100 Megohms in front of the pin. This makes them useful for reading a sensor.
 [%hardbreaks]
 
@@ -88,7 +89,7 @@ If a pull-up resistor is used, the input pin will be `HIGH` when the switch is o
 [%hardbreaks]
 
 [float]
-=== Pins Configured as INPUT_PULLUP
+=== INPUT_PULLUP으로 구성된 핀
 The ATmega microcontroller on the Arduino has internal pull-up resistors (resistors that connect to power internally) that you can access. If you prefer to use these instead of external pull-up resistors, you can use the `INPUT_PULLUP` argument in `pinMode()`.
 [%hardbreaks]
 
@@ -99,7 +100,7 @@ Pins configured as inputs with either `INPUT` or `INPUT_PULLUP` can be damaged o
 [%hardbreaks]
 
 [float]
-=== Pins Configured as OUTPUT
+=== OUTPUT으로 구성된 핀
 Pins configured as `OUTPUT` with `pinMode()` are said to be in a _low-impedance_ state. This means that they can provide a substantial amount of current to other circuits. ATmega pins can source (provide current) or sink (absorb current) up to 40 mA (milliamps) of current to other devices/circuits. This makes them useful for powering LEDs because LEDs typically use less than 40 mA. Loads greater than 40 mA (e.g. motors) will require a transistor or other interface circuitry.
 [%hardbreaks]
 
@@ -107,7 +108,7 @@ Pins configured as outputs can be damaged or destroyed if they are connected to 
 [%hardbreaks]
 
 [float]
-== Defining built-ins: LED_BUILTIN
+== 빌트 인 정의 : LED_BUILTIN
 Most Arduino boards have a pin connected to an on-board LED in series with a resistor. The constant `LED_BUILTIN` is the number of the pin to which the on-board LED is connected. Most boards have this LED connected to digital pin 13.
 
 --
