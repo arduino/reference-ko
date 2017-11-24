@@ -2,7 +2,7 @@
 title: "=="
 title_expanded: equal to
 categories: [ "Structure" ]
-subCategories: [ "Comparison Operators" ]
+subCategories: [ "비교 연산자" ]
 ---
 
 
