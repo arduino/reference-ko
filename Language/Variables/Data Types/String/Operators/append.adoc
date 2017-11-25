@@ -2,7 +2,7 @@
 title: "+="
 title_expanded: append
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Operator" ]
+subCategories: [ "스트링개체 연산자" ]
 ---
 
 
