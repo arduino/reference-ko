@@ -1,7 +1,7 @@
 ﻿---
 title: "length()"
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+subCategories: [ "스트링개체 함수" ]
 ---
 
 
