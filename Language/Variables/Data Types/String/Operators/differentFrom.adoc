@@ -1,6 +1,6 @@
 ﻿---
 title: "!="
-title_expanded: different from
+title_expanded: 다름
 categories: [ "Data Types" ]
 subCategories: [ "스트링개체 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "스트링개체 연산자" ]
 
 
 
-= != Different From
+= != 다름
 
 
 // OVERVIEW SECTION STARTS
@@ -18,8 +18,7 @@ subCategories: [ "스트링개체 연산자" ]
 
 [float]
 === 설명
-Compares two strings for difference. The comparison is case-sensitive, meaning the String "hello" is not equal to the String "HELLO". Functionally the same as string.equals()
-
+두 스트링이 다른지 비교. 비교는 대소문자 구별하며, 이는 "hello" 와 "HELLO" 가 다름을 뜻한다. 기능적으로 string.equals() 와 같다.
 [%hardbreaks]
 
 
@@ -36,9 +35,9 @@ string1 != string2
 
 [float]
 === 반환
-`true`: if string1 is different from string2 
+`true`: string1 이 string2 와 다르면
 
-`false`: otherwise
+`false`: 아니면
 
 --
 

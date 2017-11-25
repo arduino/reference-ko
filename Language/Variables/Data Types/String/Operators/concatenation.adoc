@@ -9,7 +9,7 @@ subCategories: [ "스트링개체 연산자" ]
 
 
 
-= + Concatenation
+= + 연결
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,7 @@ subCategories: [ "스트링개체 연산자" ]
 
 [float]
 === 설명
-Combines, or concatenates two strings into one new String. The second string is appended to the first, and the result is placed in a new String. Works the same as string.concat().
+두 개 스트링을 연결하여 한 개 스트링 안에 넣는다. 두번째 스트링은 첫번째에 더해지고 결과는 새 스트링에 들어간다. 동작은 string.concat()와 같다.
 
 [%hardbreaks]
 
@@ -37,6 +37,7 @@ string3 = string1 + string 2; string3 += string2;
 [float]
 === 반환
 new String that is the combination of the original two Strings.
+새 스트링은 두 개의 원래  스트링의 조합이다.
 
 --
 

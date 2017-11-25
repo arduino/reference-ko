@@ -1,6 +1,6 @@
-﻿---
+---
 title: "+="
-title_expanded: append
+title_expanded: 덧붙이기
 categories: [ "Data Types" ]
 subCategories: [ "스트링개체 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "스트링개체 연산자" ]
 
 
 
-= += Append
+= += 덧붙이기
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,7 @@ subCategories: [ "스트링개체 연산자" ]
 
 [float]
 === 설명
-It concatenates Strings with other data.
+스트링에 다른 데이터를 연결한다.
 
 [%hardbreaks]
 
@@ -32,11 +32,11 @@ string += data
 
 [float]
 === 매개변수
-None
+없음
 
 [float]
 === 반환
-None
+없음
 
 --
 

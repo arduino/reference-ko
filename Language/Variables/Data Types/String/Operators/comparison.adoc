@@ -1,6 +1,6 @@
 ﻿---
 title: "=="
-title_expanded: comparison
+title_expanded: 비교
 categories: [ "Data Types" ]
 subCategories: [ "스트링개체 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "스트링개체 연산자" ]
 
 
 
-= == Comparison
+= == 비교
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,8 @@ subCategories: [ "스트링개체 연산자" ]
 
 [float]
 === 설명
-Compares two strings for equality. The comparison is case-sensitive, meaning the String "hello" is not equal to the String "HELLO". Functionally the same as string.equals()
+두 스트링이 같은지 비교한다. 결과는 대소문자 구별하며, 이는 "hello"는 "HELLO"와 같지 않다는 것을 뜻한다. 기능적으로 string.equals()와 같다.
+
 
 
 [%hardbreaks]
@@ -33,14 +34,15 @@ string1 == string2
 
 [float]
 === 매개변수
-`string1, string2` - a string variable
+`string1, string2` - a string 변수
 
 [float]
 === 반환
-The nth char of the string. Same as charAt().
-`true`: if string1 equals string2
+스트링의 n 번째 문자. charAt() 과 같다.
+
+`true`: string1 이 string2 와 같으면
  
-`false`: otherwise
+`false`: 아니면
 --
 
 // OVERVIEW SECTION ENDS
