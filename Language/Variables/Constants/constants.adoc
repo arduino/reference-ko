@@ -69,21 +69,22 @@ subCategories: [ "상수" ]
 핀이 `pinMode()` 에서 `INPUT` 로 설정되고, `digitalRead()` 로 읽을 때, 아두이노(ATmega)는 아래의 경우 LOW 를 보고한다:
 
   - 핀에 1.5V 이하 전압이 존재(5V 보드)
-
   - 핀에 약 1.0V 이하  전압이 존재(3.3V 보드)
 
 핀이 `pinMode()` 에서 OUTPUT 로 설정되고, `digitalWrite()` 에서 `LOW` 로 설정될 때, 핀은 0 V에 있다(5V 와 3.3V 보드 둘다)
 In this state it can sink current, e.g. light an LED that is connected through a series resistor to +5 volts (or +3.3 volts).
+이 상태에서 전류를 공급할 수 있다. 직렬 저항에서 5V(또는 +3.3V)에 연결된 LED 불을 밝힌다.
 [%hardbreaks]
 
 [float]
 == 디지털 핀 모드 정의: INPUT, INPUT_PULLUP, 그리고 OUTPUT
 디지털 핀은 `INPUT`, `INPUT_PULLUP`, 또는 `OUTPUT` 로 쓰일 수 있다.
-Changing a pin with `pinMode()` changes the electrical behavior of the pin.
 `pinMode()` 로 핀을 바꾸면 핀의 전기적 동작이 바뀐다.
 [float]
 === INPUT 으로 구성ᅟ된 핀
-Arduino (ATmega) pins configured as `INPUT` with `pinMode()` are said to be in a _high-impedance_ state. Pins configured as `INPUT` make extremely small demands on the circuit that they are sampling, equivalent to a series resistor of 100 Megohms in front of the pin. This makes them useful for reading a sensor.
+`pinMode()` 에서 `INPUT` 로 설정된 아두이노(ATmega)는 _high-impedance_ state 에 있다고 말한다.
+`INPUT` 로 구성된 핀들은 그들이 샘플링 하는 데 극도로 작은 요구를 하고, 핀 앞에는 100 메가 옴의 직렬 저항과 동일합니다. 
+이것은 센서를 읽기 좋게 만든다.
 [%hardbreaks]
 
 If you have your pin configured as an `INPUT`, and are reading a switch, when the switch is in the open state the input pin will be "floating", resulting in unpredictable results. In order to assure a proper reading when the switch is open, a pull-up or pull-down resistor must be used. The purpose of this resistor is to pull the pin to a known state when the switch is open. A 10 K ohm resistor is usually chosen, as it is a low enough value to reliably prevent a floating input, and at the same time a high enough value to not not draw too much current when the switch is closed. See the http://arduino.cc/en/Tutorial/DigitalReadSerial[Digital Read Serial^] tutorial for more information.
