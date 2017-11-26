@@ -17,8 +17,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Copies the string's characters to the supplied buffer.
-
+스트링의 문자를 제공된 버퍼에 복사.
 [%hardbreaks]
 
 
@@ -31,15 +30,15 @@ string.getBytes(buf, len)
 
 [float]
 === 매개변수
-`string`: a variable of type String
+`string`: 스트링 형 변수
 
-`buf`: the buffer to copy the characters into (_byte []_)
+`buf`: 문자를 복사해 넣을 버퍼(_byte []_)
 
-`len`: the size of the buffer (_unsigned int_)
+`len`: 버퍼의 크기 (_unsigned int_)
 
 [float]
 === 반환
-None
+없음
 
 --
 // OVERVIEW SECTION ENDS

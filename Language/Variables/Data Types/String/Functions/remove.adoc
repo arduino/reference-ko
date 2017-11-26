@@ -17,8 +17,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Modify in place a string removing chars from the provided index to the end of the string or from the provided index to index plus count.
-
+제공된 index에서 스트링 끝까지 또는 제공된 index에서 인덱스 더하기 count 까지 문자를 없앤 스트링으로 바꿈.
 [%hardbreaks]
 
 
@@ -33,14 +32,14 @@ string.remove(index, count)
 
 [float]
 === 매개변수
-`index`: a variable of type unsigned int
+`index`: unsigned int 형 변수
 
-`count`: a variable of type unsigned int
+`count`: unsigned int  형 변수
 
 
 [float]
 === 반환
-None
+없음
 
 --
 // OVERVIEW SECTION ENDS

@@ -17,8 +17,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-The String reserve() function allows you to allocate a buffer in memory for manipulating strings.
-
+스트링 reserve() 함수는 스트링을 다루기 위해 메모리 안에 버퍼를 할당하는 것을 허용한다.
 [%hardbreaks]
 
 
@@ -31,7 +30,8 @@ string.reserve(size)
 
 [float]
 === 매개변수
-`size`: unsigned int declaring the number of bytes in memory to save for string manipulation 
+`size`: unsigned int 문자열을 다루기 위해 메모리 안에 저장되는 바이트 수 선언
+
 
 
 [float]

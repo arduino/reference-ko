@@ -17,7 +17,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Access a particular character of the String.
+스트링의 특정 문자 액세스
 
 [%hardbreaks]
 
@@ -31,14 +31,15 @@ string.charAt(n)
 
 [float]
 === 매개변수
-`string`: a variable of type String
+`string`: string 형 변수
 
-`n`: a variable of type unsigned int
+`n`: unsigned int 형 변수
 
 
 [float]
 === 반환
-The n'th character of the String.
+
+스트링의 n번째 문자
 
 --
 // OVERVIEW SECTION ENDS

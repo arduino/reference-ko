@@ -17,8 +17,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Returns the length of the String, in characters. (Note that this doesn't include a trailing null character.)
-
+스트링의 길이를 반환(이것은 뒤따라오는 널 문자를 포함하지 않음을 주의)
 [%hardbreaks]
 
 
@@ -31,12 +30,12 @@ string.length()
 
 [float]
 === 매개변수
-`string`: a variable of type String
+`string`: 스트링 형 변수
 
 
 [float]
 === 반환
-The length of the String in characters.
+문자안의 스트링의 길이
 
 --
 // OVERVIEW SECTION ENDS

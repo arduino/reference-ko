@@ -17,8 +17,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Get a lower-case version of a String. As of 1.0, toLowerCase() modifies the string in place rather than returning a new one.
-
+소문자 버전 스트링을 얻는다. 1.0 부터, toUpperCase() 는 새 스트링을 반환하는 대신 스트링을 바꾼다.
 [%hardbreaks]
 
 
@@ -31,12 +30,12 @@ string.toLowerCase()
 
 [float]
 === 매개변수
-`string`: a variable of type String
+`string`: 스트링 형 변수
 
 
 [float]
 === 반환
-None
+없음
 
 --
 // OVERVIEW SECTION ENDS

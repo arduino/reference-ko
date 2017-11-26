@@ -17,8 +17,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Get a version of the String with any leading and trailing whitespace removed. As of 1.0, trim() modifies the string in place rather than returning a new one.
-
+앞뒤 공백을 없앤 스트링 버전을 얻는다. 1.0부터 trim ()은 새로운 스트링을 반환하지 않고 스트링을 바꾼다.
 [%hardbreaks]
 
 
@@ -31,12 +30,12 @@ string.trim()
 
 [float]
 === 매개변수
-`string`: a variable of type String
+`string`: 스트링 형 변수
 
 
 [float]
 === 반환
-None
+없음
 
 --
 // OVERVIEW SECTION ENDS

@@ -17,8 +17,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Sets a character of the String. Has no effect on indices outside the existing length of the String.
-
+스트링의 한 문자를 설정한다. 스트링 길이 밖에 있는 인덱스에는 아무 효과 없다.
 [%hardbreaks]
 
 
@@ -31,11 +30,11 @@ string.setCharAt(index, c)
 
 [float]
 === 매개변수
-`string`: a variable of type String
+`string`: 스트링 형 변수
 
-`index`: the index to set the character at
+`index`: 문자를 설정한 위치의 인덱스
 
-`c`: the character to store to the given location
+`c`: 주어진 위치에 저장할 문자
 
 
 [float]
