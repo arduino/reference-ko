@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<="
 title_expanded: 더 작거나 같은
 categories: [ "Data Types" ]
