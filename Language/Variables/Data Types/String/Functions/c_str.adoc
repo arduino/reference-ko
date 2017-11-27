@@ -17,7 +17,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Converts the contents of a string as a C-style, null-terminated string. Note that this gives direct access to the internal String buffer and should be used with care. In particular, you should never modify the string through the pointer returned. When you modify the String object, or when it is destroyed, any pointer previously returned by c_str() becomes invalid and should not be used any longer.
+스트링의 내용을 C-형식, 널-종료 스트링으로 변환한다.이것은 내부 스트링 버퍼에 직접 액세스하므로 조심해야 한다. 특히, 반환된 포인터를 통해 스트링을 바꾸면 안 된다. 스트링 개체를 바꿀 때, 또는 깨졌을 때, c_str() 에 의해 이전에 반환된 포인터는 무효가 되고 더이상 쓸 수 없다.
 
 [%hardbreaks]
 
@@ -35,8 +35,7 @@ none
 
 [float]
 === 반환
-A pointer to the C-style version of the invoking string.
-
+호출하는 스트링의 C-형식 버전에 대한 포인터
 --
 // OVERVIEW SECTION ENDS
 
