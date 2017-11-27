@@ -17,10 +17,14 @@ subCategories: [ "자료형" ]
 
 [float]
 === 설명
-An array is a collection of variables that are accessed with an index number. Arrays in the C programming language, on which Arduino is based, can be complicated, but using simple arrays is relatively straightforward.
-=== Creating (Declaring) an Array
+배열은 인덱스 번호로 접근되는 변수의 모임이다.
+아두이노의 기반인 C 프로그램 언어의 배열은 복잡해질수 있지만, 단순한 배열 사용은 비교적 간단하다.
+
+=== 변수 생성(선억)
 
 All of the methods below are valid ways to create (declare) an array.
+아래의 방법은 모두 배열을 생성(선언)하는 타당한 방법이다
+
 [source,arduino]
 ----
   int myInts[6];
@@ -28,20 +32,20 @@ All of the methods below are valid ways to create (declare) an array.
   int mySensVals[6] = {2, 4, -8, 3, 2};
   char message[6] = "hello";
 ----
-You can declare an array without initializing it as in myInts.
+myInts 에서 처럼 초기화 하지 않고 배열을 선언할 수 있다.
 {empty} +
-In myPins we declare an array without explicitly choosing a size. The compiler counts the elements and creates an array of the appropriate size.
+myPins에서 명시적으로 크기를 선택하지 않고 배열을 선언한다. 컴파일러는 요소를 세고 적절한 크기의 배열을 만든다.
 {empty} +
-Finally you can both initialize and size your array, as in mySensVals. Note that when declaring an array of type char, one more element than your initialization is required, to hold the required null character.
+마지막으로 배열을 mySensVals에서 처럼 초기화와 크기 지정할 수 있다. char 형 배열을 선언할 때, 널 문자를 저장하기 위해 초기화 보다 하나 더 요소가 필요하다.
 [%hardbreaks]
 
 [float]
-=== Accessing an Array
-Arrays are zero indexed, that is, referring to the array initialization above, the first element of the array is at index 0, hence
+=== 배열에 접근하기
+배열은 0 인덱스인데, 즉, 위의 배열 초기화를 참조하면, 배열의 첫 요소는 인덱스 0에 있으므로, 따라서
 
-`mySensVals[0] == 2, mySensVals[1] == 4,` and so forth.
+`mySensVals[0] == 2, mySensVals[1] == 4,` 등등.
 
-It also means that in an array with ten elements, index nine is the last element. Hence:
+이것은 또한 10개 요소를 가진 배열에서 인덱스 9는 마지만 요소임을 뜻한다. 따라서:
 
 [source,arduino]
 ----
@@ -49,25 +53,25 @@ int myArray[10]={9,3,2,4,3,2,7,8,9,11};
      // myArray[9]    contains 11
      // myArray[10]   is invalid and contains random information (other memory address)
 ----
-For this reason you should be careful in accessing arrays. Accessing past the end of an array (using an index number greater than your declared array size - 1) is reading from memory that is in use for other purposes. Reading from these locations is probably not going to do much except yield invalid data. Writing to random memory locations is definitely a bad idea and can often lead to unhappy results such as crashes or program malfunction. This can also be a difficult bug to track down.
-[%hardbreaks]
 
-Unlike BASIC or JAVA, the C compiler does no checking to see if array access is within legal bounds of the array size that you have declared.
+이런 까닭에 배열에 액세스할 때 조심해야 한다.배열 끝을 지나서 액세스하면(선언한 배열크기 - 1 보다 큰 인덱스 번호 사용) 다른 목적으로 사용중인 메모리를 읽는다. 이 위치에서부터 읽는 것은 무효 데이터를 얻는 것 말고는 아무일을 안 할 겁니다. 임의 메모리 위치에 쓰는 것은 분명 나쁜 생각이며, 충돌 또는 프로그램 오작동 같은 불행한 결과가 될 수 있다. 찾기 어려운 버그가 될 수 있다.
+[%hardbreaks]
+베이식이나 자바와 달리, C 컴파일러는 배열 액세스가 선언한 배열 크기 법적 범위 안에 있는지 체크하지 않는다.
 [%hardbreaks]
 
 [float]
-=== To assign a value to an array:
+=== 값을 배열에 할당:
 `mySensVals[0] = 10;`
 [%hardbreaks]
 
 [float]
-=== To retrieve a value from an array:
+=== 배열에서 값을 추출:
 `x = mySensVals[4];`
 [%hardbreaks]
 
 [float]
-=== Arrays and FOR Loops
-Arrays are often manipulated inside for loops, where the loop counter is used as the index for each array element. For example, to print the elements of an array over the serial port, you could do something like this:
+=== 배열과 FOR 루프
+배열은 종종 for 루프 안애서 다루어지며, 여기서 루프 카운터가 각 배열 요소의 인덱스로 사용된다. 예를들어, 시리얼 포트를 통해 배열의 요소를 인쇄하려면, 아래와 같이 할 수 있다:
 
 [source,arduino]
 ----
@@ -88,7 +92,7 @@ for (i = 0; i < 5; i = i + 1) {
 
 [float]
 === 예제 코드
-For a complete program that demonstrates the use of arrays, see the (http://www.arduino.cc/en/Tutorial/KnightRider[Knight Rider example]) from the (http://www.arduino.cc/en/Main/LearnArduino[Tutorials]).
+배열의 사용을 보여주는 완전한 프로그램은 (http://www.arduino.cc/en/Main/LearnArduino[Tutorials]) 에서 http://www.arduino.cc/en/Tutorial/KnightRider[Knight Rider example] 을 참고하세요.
 
 --
 // HOW TO USE SECTION ENDS
