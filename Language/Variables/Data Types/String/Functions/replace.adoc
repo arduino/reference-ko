@@ -17,8 +17,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-The String replace() function allows you to replace all instances of a given character with another character. You can also use replace to replace substrings of a string with a different substring.
-
+스트링 replace () 함수는 주어진 문자의 모든 인스턴스를 다른 문자로 바꾸는 것을 허용한다. replace 를 사용하여 문자열의 하위 문자열을 다른 하위 문자열로 바꿀 수도 있다.
 [%hardbreaks]
 
 
@@ -31,17 +30,17 @@ string.replace(substring1, substring2)
 
 [float]
 === 매개변수
-`string`: a variable of type String
+`string`: 스트링 형 변수
 
-`substring1`: another variable of type String
+`substring1`: 다른 스트링 형 변수
 
-`substring2`: another variable of type String
+`substring2`: 또 다른 스트링 형 변수
 
 
 
 [float]
 === 반환
-None
+없음
 --
 // OVERVIEW SECTION ENDS
 

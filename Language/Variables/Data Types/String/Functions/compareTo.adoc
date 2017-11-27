@@ -17,7 +17,8 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Compares two Strings, testing whether one comes before or after the other, or whether they're equal. The strings are compared character by character, using the ASCII values of the characters. That means, for example, that 'a' comes before 'b' but after 'A'. Numbers come before letters.
+두 스트링을 비교하여 하나가 다른 하나보다 먼저 오는지, 같은지 테스트한다.
+스트링은 문자마다 비교되며, 문자의 아스키 값을 사용한다. 즉, 예를들어,  'a'는 'b'앞에 오지만 'A'뒤에 온다. 숫자는 문자 앞에 온다.
 
 [%hardbreaks]
 
@@ -31,18 +32,18 @@ string.compareTo(string2)
 
 [float]
 === 매개변수
-`string`: a variable of type String
+`string`: 스트링 형 변수
 
-`string2`: another variable of type String
+`string2`: 스트링 형 다른 변수
 
 
 [float]
 === 반환
-`a negative number`: if string comes before string2
+`음수`: string 이 string2 앞에
 
-`0`: if string equals string2
+`0`: string 이 string2 와 같음
 
-`a positive number`: if string comes after string2
+`양수`: string 이 string2 뒤에
 --
 
 // OVERVIEW SECTION ENDS

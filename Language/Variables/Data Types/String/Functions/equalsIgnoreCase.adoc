@@ -17,7 +17,6 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Compares two strings for equality. The comparison is not case-sensitive, meaning the String("hello") is equal to the String("HELLO").
 두 스트링이 같은지 비교. 대소문자 구별 안 하며, String("hello") 가 String("HELLO")와 같음을 뜻함.
 [%hardbreaks]
 

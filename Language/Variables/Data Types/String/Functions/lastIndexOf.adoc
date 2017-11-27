@@ -17,8 +17,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Locates a character or String within another String. By default, searches from the end of the String, but can also work backwards from a given index, allowing for the locating of all instances of the character or String.
-
+문자 또는 스트링을 다른 스트링에서 찾는다. 기본적으로, 스트링 끝에서 검색하지만, 주어진 인덱스에서 거꾸로 가며 문자 또는 문자열의 모든 인스턴스를 찾을 수 있다.
 [%hardbreaks]
 
 
@@ -33,16 +32,17 @@ string.lastIndexOf(val, from)
 
 [float]
 === 매개변수
-`string`: a variable of type String
+`string`: 스트링 형 변수
 
-`val`: the value to search for - char or String
+`val`: 찾을 값 - char 또는 스트링
 
 `from`: the index to work backwards from
 
 
 [float]
 === 반환
-The index of val within the String, or -1 if not found.
+
+스트링 안에 있는 값의 인덱스, 못 찾으면 -1.
 
 --
 // OVERVIEW SECTION ENDS
