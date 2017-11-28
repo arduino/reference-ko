@@ -17,7 +17,10 @@ subCategories: [ "시간" ]
 
 [float]
 === 설명
-Returns the number of microseconds since the Arduino board began running the current program. This number will overflow (go back to zero), after approximately 70 minutes. On 16 MHz Arduino boards (e.g. Duemilanove and Nano), this function has a resolution of four microseconds (i.e. the value returned is always a multiple of four). On 8 MHz Arduino boards (e.g. the LilyPad), this function has a resolution of eight microseconds.
+아두이노 보드가 현재 프로그램을 돌리기 시작한 후의 마이크로 초 수를 반환한다.
+이 수는 약 70분 후 오버플로우(0으로 돌아감)된다.
+16MHz 아두이노 보드(e.g. Duemilanove 및 Nano)에서, 이 함수는 4 마이크로 초 분해능(즉 반환값은 언제나 4의 배수)을 갖는다.
+8MHz 아두이노 보드(e.g. LilyPad)에서, 이 함수는 8 마이크로 초 분해능을 갖는다.
 [%hardbreaks]
 
 
@@ -28,7 +31,7 @@ Returns the number of microseconds since the Arduino board began running the cur
 
 [float]
 === 매개변수
-Nothing
+없음
 
 [float]
 === 반환
@@ -47,8 +50,7 @@ Returns the number of microseconds since the Arduino board began running the cur
 [float]
 === 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code returns the number of microseconds since the Arduino board began.
-
+아두이노 보드가 시작한 후의 마이크로 초 수를 반환한다.
 [source,arduino]
 ----
 unsigned long time;
@@ -60,15 +62,14 @@ void loop(){
   Serial.print("Time: ");
   time = micros();
 
-  Serial.println(time);  //prints time since program started
-  delay(1000);           // wait a second so as not to send massive amounts of data
+  Serial.println(time);  // 프로그램 시작후 지난 시간
+  delay(1000);           // 1초 기다림
 }
 ----
 [%hardbreaks]
 
 [float]
 === 주의와 경고
-There are 1,000 microseconds in a millisecond and 1,000,000 microseconds in a second.
-
+1 밀리초는 1천 초, 1초는 1백만 초.
 --
 // HOW TO USE SECTION ENDS

@@ -17,9 +17,9 @@ subCategories: [ "시간" ]
 
 [float]
 === 설명
-Pauses the program for the amount of time (in microseconds) specified as parameter. There are a thousand microseconds in a millisecond, and a million microseconds in a second.
+매개변수에 지정된 시간(마이크로 초)동안 프로그램을 멈춘다. 1밀리초는 1000 마이크로 초, 1초는 100만 마이크로 초.
+현재, 정확한 delay를 만드는 가장 큰 값은 16383. 미래의 아두이노 릴리스에서 바뀔 수 있다. delay 가 몇 천 마이크로 초 보다 길면, 대신 `delay()` 를 써야 한다.
 
-Currently, the largest value that will produce an accurate delay is 16383. This could change in future Arduino releases. For delays longer than a few thousand microseconds, you should use `delay()` instead.
 [%hardbreaks]
 
 
@@ -30,11 +30,11 @@ Currently, the largest value that will produce an accurate delay is 16383. This 
 
 [float]
 === 매개변수
-`us`: the number of microseconds to pause (`unsigned int`)
+`us`: 멈출 마이크로 초 (`unsigned int`)
 
 [float]
 === 반환
-Nothing
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -49,32 +49,30 @@ Nothing
 [float]
 === 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code configures pin number 8 to work as an output pin. It sends a train of pulses of approximately 100 microseconds period. The approximation is due to execution of the other instructions in the code. 
+이 코드는 핀번호 8이 출력 핀으로 동작하도록 구성한다. 약 100 마이크로 초의 펄스 열을 보낸다. 근사값은 코드에서 다른 명령 실행으로 인한 것이다.
 
 [source,arduino]
 ----
-int outPin = 8;                 // digital pin 8
+int outPin = 8;                 // 디지털 핀 8
 
 void setup()
 {
-  pinMode(outPin, OUTPUT);      // sets the digital pin as output
+  pinMode(outPin, OUTPUT);      // 디지털 핀을 출력으로
 }
 
 void loop()
 {
-  digitalWrite(outPin, HIGH);   // sets the pin on
-  delayMicroseconds(50);        // pauses for 50 microseconds
-  digitalWrite(outPin, LOW);    // sets the pin off
-  delayMicroseconds(50);        // pauses for 50 microseconds
+  digitalWrite(outPin, HIGH);   // 핀을 켠다
+  delayMicroseconds(50);        // 50 마이크로 초 쉰다
+  digitalWrite(outPin, LOW);    // 핀을 끈다
+  delayMicroseconds(50);        // 50 마이크로 초 쉰다
 }
 ----
 [%hardbreaks]
 
 [float]
 === 주의와 경고
-This function works very accurately in the range 3 microseconds and up. We cannot assure that delayMicroseconds will perform precisely for smaller delay-times.
-
-As of Arduino 0018, delayMicroseconds() no longer disables interrupts.
-
+이 함수는 3 마이크로 초 이상 범위에서 매우 정확하게 돌아간다. delayMicroseconds 가 작은 지연시간동안 정확히 수행한다고 보장할 수 없다.
+아두이노 0018 현재, delayMicroseconds() 는 더이상 인터럽트를 비활성화 하지 않는다.
 --
 // HOW TO USE SECTION ENDS
