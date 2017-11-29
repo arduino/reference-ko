@@ -1,6 +1,6 @@
 ---
 title: "%"
-title_expanded: "modulo"
+title_expanded: "나머지"
 categories: [ "Structure" ]
 subCategories: [ "산술 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "산술 연산자" ]
 
 
 
-= % Modulo
+= % 나머지
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,8 @@ subCategories: [ "산술 연산자" ]
 
 [float]
 === 설명
-*Modulo* operation calculates the remainder when one integer is divided by another. It is useful for keeping a variable within a particular range (e.g. the size of an array). The `%` (percent) symbol is used to carry out modulo operation.
+*나머지* 연산자는 한 정수가 다른 정수를 나눌 때나머지를 계산한다. 변수를 특정 범위 안에 유지할 때 쓸모 있다(e.g. 베열 크기)
+`%` (퍼센트) 기호가 나머지 연산할 때 쓰인다.
 [%hardbreaks]
 
 
@@ -31,9 +32,9 @@ remainder = dividend % divisor;
 
 [float]
 === 매개변수
-`remainder` : variable. *Allowed data types:* int, float, double +
-`dividend` : variable or constant. *Allowed data types:* int +
-`divisor` : *non zero* variable or constant. *Allowed data types:* int
+`remainder` : 변수. *허용되는 자료형:* int, float, double +
+`dividend` : 변수 또는 상수. *허용되는 자료형:* int +
+`divisor` : *0 아닌* 변수 또는 상수. *허용되는 자료형:* int
 [%hardbreaks]
 
 --
@@ -51,15 +52,15 @@ remainder = dividend % divisor;
 [source,arduino]
 ----
 int x = 0;
-x = 7 % 5;    // x now contains 2
-x = 9 % 5;    // x now contains 4
-x = 5 % 5;    // x now contains 0
-x = 4 % 5;    // x now contains 4
+x = 7 % 5;    // x 는 2
+x = 9 % 5;    // x 는 4
+x = 5 % 5;    // x 는 0
+x = 4 % 5;    // x 는 4
 ----
 
 [source,arduino]
 ----
-/* update one value in an array each time through a loop */
+/* 루프를 통해 매번 배열에서 값 하나를 업데이트 */
 
 int values[10];
 int i = 0;
@@ -69,14 +70,14 @@ void setup() {}
 void loop()
 {
   values[i] = analogRead(0);
-  i = (i + 1) % 10;   // modulo operator rolls over variable
+  i = (i + 1) % 10;   // 나머지 연산자는 변수를 롤오버
 }
 ----
 [%hardbreaks]
 
 [float]
 === 주의와 경고
-The modulo operator does not work on floats.
+나머지 연산자는 부동소수점에서 동작 안 한다.
 [%hardbreaks]
 
 --
