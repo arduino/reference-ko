@@ -18,7 +18,7 @@ subCategories: [ "제어 구조" ]
 [float]
 === 설명
 [%hardbreaks]
-`break` is used to exit from a link:../for[for], link:../while[while] or link:../dowhile[do...while] loop, bypassing the normal loop condition. It is also used to exit from a link:../switchcase[switch case] statement.
+`break` 는 link:../for[for], link:../while[while] 또는 link:../dowhile[do...while] loop 로부터 빠져나가 정상 루프를 건너 뛰는데 쓰인다. link:../switchcase[switch case] 문으로부터 빠져나갈 때도 쓰인다.
 [%hardbreaks]
 
 --
@@ -32,7 +32,7 @@ subCategories: [ "제어 구조" ]
 --
 [float]
 === 예제 코드
-In the following code, the control exits the `for` loop when the sensor value exceeds the threshold.
+아래 코드에서, 센서값이 임계값을 넘을 때 제어는 `for` 를 빠져나간다.
 [source,arduino]
 ----
 for (x = 0; x < 255; x ++)
