@@ -13,7 +13,7 @@ title: Serial.flush()
 --
 
 [float]
-=== Description
+=== 설명
 Waits for the transmission of outgoing serial data to complete. (Prior to Arduino 1.0, this instead removed any buffered incoming serial data.)
 
 `flush()` inherits from the link:../flush[Stream] utility class.
@@ -21,7 +21,7 @@ Waits for the transmission of outgoing serial data to complete. (Prior to Arduin
 
 
 [float]
-=== Syntax
+=== 문법
 `Serial.flush()`
 
 _Arduino Mega only:_
@@ -32,11 +32,11 @@ _Arduino Mega only:_
 
 
 [float]
-=== Parameters
+=== 매개변수
 Nothing
 
 [float]
-=== Returns
+=== 반환
 Nothing
 
 --
@@ -48,7 +48,7 @@ Nothing
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../begin[begin()]

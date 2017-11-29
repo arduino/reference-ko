@@ -1,7 +1,7 @@
 ﻿---
 title: "toInt()"
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+subCategories: [ "스트링개체 함수" ]
 ---
 
 
@@ -16,30 +16,28 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Converts a valid String to an integer. The input string should start with an integer number. If the string contains non-integer numbers, the function will stop performing the conversion.
-
+=== 설명
+타당한 스트링을 정수로 변환. 입력 스트링은 정수로 시작해야 함. 스트링이 정수 아닌 숫자를 포함하면, 함수는 변환을 멈춘다.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.toInt()
 ----
 
 [float]
-=== Parameters
-`string`: a variable of type String
+=== 매개변수
+`string`: 스트링 형 변수
 
 
 [float]
-=== Returns
+=== 반환
 `long`
 
-If no valid conversion could be performed because the string doesn't start with a integer number, a zero is returned.
-
+스트링이 정수로 시작하지 않아서 타당한 변환이 수행되지 않으면, 0을 반환한다.
 --
 // OVERVIEW SECTION ENDS
 
@@ -53,7 +51,7 @@ If no valid conversion could be performed because the string doesn't start with 
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

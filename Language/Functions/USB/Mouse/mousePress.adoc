@@ -84,7 +84,7 @@ void loop(){
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 When you use the `Mouse.press()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
 
 --
@@ -96,7 +96,7 @@ When you use the `Mouse.press()` command, the Arduino takes over your mouse! Mak
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../mouseclick[Mouse.click()]

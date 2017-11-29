@@ -2,7 +2,7 @@
 title: "=="
 title_expanded: equal to
 categories: [ "Structure" ]
-subCategories: [ "Comparison Operators" ]
+subCategories: [ "비교 연산자" ]
 ---
 
 
@@ -17,20 +17,20 @@ subCategories: [ "Comparison Operators" ]
 --
 
 [float]
-=== Description
+=== 설명
 Compares the variable on the left with the value or variable on the right of the operator. Returns true when the two operands are equal. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 x == y;   // is true if x is equal to y and it is false if x is not equal to y
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `x`: variable. *Allowed data types:* int, float, double, byte, short, long +
 `y`: variable or constant. *Allowed data types:* int, float, double, byte, short, long
 
@@ -44,7 +44,7 @@ x == y;   // is true if x is equal to y and it is false if x is not equal to y
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
@@ -65,7 +65,7 @@ if (x==y)      // tests if x is equal to y
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 

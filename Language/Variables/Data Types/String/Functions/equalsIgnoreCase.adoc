@@ -1,7 +1,7 @@
 ﻿---
 title: "equalsIgnoreCase()"
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+subCategories: [ "스트링개체 함수" ]
 ---
 
 
@@ -16,29 +16,28 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Compares two strings for equality. The comparison is not case-sensitive, meaning the String("hello") is equal to the String("HELLO").
-
+=== 설명
+두 스트링이 같은지 비교. 대소문자 구별 안 하며, String("hello") 가 String("HELLO")와 같음을 뜻함.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.equalsIgnoreCase(string2)
 ----
 
 [float]
-=== Parameters
-`string, string2`: variables of type String
+=== 매개변수
+`string, string2`: 스트링 형 변수
 
 
 [float]
-=== Returns
-`true`: if string equals string2 (ignoring case) 
+=== 반환
+`true`: string 과 string2 이 같으면(대소문자 무시) 
 
-`false`: otherwise
+`false`: 아니면
 --
 // OVERVIEW SECTION ENDS
 
@@ -52,7 +51,7 @@ string.equalsIgnoreCase(string2)
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

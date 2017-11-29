@@ -1,7 +1,7 @@
 ---
 title: switchCase
 categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+subCategories: [ "제어 구조" ]
 ---
 
 
@@ -16,7 +16,7 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
+=== 설명
 Like link:../if[if] statements, link:../switchcase[switch case] controls the flow of programs by allowing programmers to specify different code that should be executed in various conditions. In particular, a switch statement compares the value of a variable to the values specified in case statements. When a case statement is found whose value matches that of the variable, the code in that case statement is run.
 [%hardbreaks]
 
@@ -25,7 +25,7 @@ The link:../break[break] keyword exits the switch statement, and is typically us
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 switch (var) {
@@ -42,12 +42,12 @@ switch (var) {
 
 
 [float]
-=== Parameters
+=== 매개변수
 `var`: a variable whose value to compare with various cases. *Allowed data types:* int, char +
 `label1`, `label2`: constants. *Allowed data types:* int, char
 
 [float]
-=== Returns
+=== 반환
 Nothing
 
 --
@@ -61,7 +61,7 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
@@ -92,7 +92,7 @@ Nothing
 --
 
 [float]
-=== See also
+=== 더 볼 것
 [role="language"]
 
 --

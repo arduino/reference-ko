@@ -16,7 +16,7 @@ subCategories: [ "고급 입출력" ]
 --
 
 [float]
-=== Description
+=== 설명
 Reads a pulse (either HIGH or LOW) on a pin. For example, if value is HIGH, `pulseInLong()` waits for the pin to go `HIGH`, starts timing, then waits for the pin to go `LOW` and stops timing. Returns the length of the pulse in microseconds or 0 if no complete pulse was received within the timeout.
 
 The timing of this function has been determined empirically and will probably show errors in shorter pulses. Works on pulses from 10 microseconds to 3 minutes in length. Please also note that if the pin is already high when the function is called, it will wait for the pin to go LOW and then HIGH before it starts counting. This routine can be used only if interrupts are activated. Furthermore the highest resolution is obtained with large intervals.
@@ -24,20 +24,20 @@ The timing of this function has been determined empirically and will probably sh
 
 
 [float]
-=== Syntax
+=== 문법
 `pulseInLong(pin, value)`
 
 `pulseInLong(pin, value, timeout)`
 
 [float]
-=== Parameters
+=== 매개변수
 `pin`: the number of the pin on which you want to read the pulse. (int)
 
 `value`: type of pulse to read: either link:../../../variables/constants/constants/[HIGH] or link:../../../variables/constants/constants/[LOW]. (int)
 
 `timeout` (optional): the number of microseconds to wait for the pulse to start; default is one second (unsigned long)
 [float]
-=== Returns
+=== 반환
 the length of the pulse (in microseconds) or 0 if no pulse started before the timeout (unsigned long)
 
 --
@@ -51,7 +51,7 @@ the length of the pulse (in microseconds) or 0 if no pulse started before the ti
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 The example calculated the time duration of a pulse on pin 7.
 
@@ -71,7 +71,7 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 This function relies on micros() so cannot be used in link:../../interrupts/nointerrupts[noInterrupts()] context.
 
 --

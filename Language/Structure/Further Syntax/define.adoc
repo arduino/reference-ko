@@ -2,7 +2,7 @@
 title: "#define"
 title_expanded: define
 categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+subCategories: [ "추가 문법" ]
 ---
 
 
@@ -17,7 +17,7 @@ subCategories: [ "Further Syntax" ]
 --
 
 [float]
-=== Description
+=== 설명
 `#define` is a useful C component that allows the programmer to give a name to a constant value before the program is compiled. Defined constants in arduino don't take up any program memory space on the chip. The compiler will replace references to these constants with the defined value at compile time.
 [%hardbreaks]
 
@@ -28,7 +28,7 @@ In general, the link:../../../variables/variable-scope\--qualifiers/const[const]
 [%hardbreaks]
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 #define constantName value
@@ -47,7 +47,7 @@ Note that the # is necessary.
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
@@ -57,7 +57,7 @@ Note that the # is necessary.
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 There is no semicolon after the #define statement. If you include one, the compiler will throw cryptic errors further down the page.
 
 [source,arduino]
@@ -84,7 +84,7 @@ Similarly, including an equal sign after the #define statement will also generat
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE#	link:../../../variables/variable-scope\--qualifiers/const[const]

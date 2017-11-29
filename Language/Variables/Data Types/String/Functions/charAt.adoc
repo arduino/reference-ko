@@ -1,7 +1,7 @@
 ﻿---
 title: "charAt()"
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+subCategories: [ "스트링개체 함수" ]
 ---
 
 
@@ -16,29 +16,30 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Access a particular character of the String.
+=== 설명
+스트링의 특정 문자 액세스
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.charAt(n)
 ----
 
 [float]
-=== Parameters
-`string`: a variable of type String
+=== 매개변수
+`string`: string 형 변수
 
-`n`: a variable of type unsigned int
+`n`: unsigned int 형 변수
 
 
 [float]
-=== Returns
-The n'th character of the String.
+=== 반환
+
+스트링의 n번째 문자
 
 --
 // OVERVIEW SECTION ENDS
@@ -53,7 +54,7 @@ The n'th character of the String.
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

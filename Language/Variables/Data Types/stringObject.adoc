@@ -1,7 +1,7 @@
 ﻿---
 title: "String()"
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "자료형" ]
 ---
 
 
@@ -16,7 +16,7 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
+=== 설명
 Constructs an instance of the String class. There are multiple versions that construct Strings from different data types (i.e. format them as sequences of characters), including:
 
 * a constant string of characters, in double quotes (i.e. a char array)
@@ -53,7 +53,7 @@ gives you the String "1101", which is the binary representation of 13.
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 String(val)
@@ -62,13 +62,13 @@ String(val, decimalPlaces)
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `val`:  a variable to format as a String - *Allowed data types:* string, char, byte, int, long, unsigned int, unsigned long, float, double +
 `base` (optional): the base in which to format an integral value
 `decimalPlaces` (*only if val is float or double*): the desired decimal places
 
 [float]
-=== Returns
+=== 반환
 an instance of the String class.
 
 --
@@ -81,7 +81,7 @@ an instance of the String class.
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 All of the following are valid declarations for Strings.
 [source,arduino]
 ----
@@ -152,7 +152,7 @@ String stringOne =  String(5.698, 3);                                // using a 
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 

@@ -1,7 +1,7 @@
 ﻿---
 title: "equals()"
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+subCategories: [ "스트링개체 함수" ]
 ---
 
 
@@ -16,29 +16,28 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Compares two strings for equality. The comparison is case-sensitive, meaning the String "hello" is not equal to the String "HELLO".
-
+=== 설명
+두 스트링이 같은지 비교. 대소문자 구별, 즉 "hello"는 "HELLO"와 같지 않다.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.equals(string2)
 ----
 
 [float]
-=== Parameters
-`string, string2`: variables of type String
+=== 매개변수
+`string, string2`: 스트링 형 변수
 
 
 [float]
-=== Returns
-`true`: if string equals string2 
+=== 반환
+`true`: string 이 string2 와 같으면
 
-`false`: otherwise
+`false`: 아니면
 --
 // OVERVIEW SECTION ENDS
 
@@ -52,7 +51,7 @@ string.equals(string2)
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

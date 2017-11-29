@@ -16,7 +16,7 @@ subCategories: [ "아날로그 입출력" ]
 --
 
 [float]
-=== Description
+=== 설명
 Configures the reference voltage used for analog input (i.e. the value used as the top of the input range). The options are:
 
 * DEFAULT: the default analog reference of 5 volts (on 5V Arduino boards) or 3.3 volts (on 3.3V Arduino boards)
@@ -28,16 +28,16 @@ Configures the reference voltage used for analog input (i.e. the value used as t
 
 
 [float]
-=== Syntax
+=== 문법
 `analogReference(type)`
 
 
 [float]
-=== Parameters
+=== 매개변수
 `type`: which type of reference to use (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, or EXTERNAL).
 
 [float]
-=== Returns
+=== 반환
 Nothing
 
 --
@@ -51,7 +51,7 @@ Nothing
 --
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 After changing the analog reference, the first few readings from `analogRead()` may not be accurate.
 
 *Don't use anything less than 0V or more than 5V for external reference voltage on the AREF pin! If you're using an external reference on the AREF pin, you must set the analog reference to EXTERNAL before calling `analogRead()`.* Otherwise, you will short together the active reference voltage (internally generated) and the AREF pin, possibly damaging the microcontroller on your Arduino board.
@@ -68,7 +68,7 @@ Alternatively, you can connect the external reference voltage to the AREF pin th
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of analog input pins]

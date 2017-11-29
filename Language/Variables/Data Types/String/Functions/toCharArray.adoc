@@ -1,7 +1,7 @@
 ﻿---
 title: "toCharArray()"
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+subCategories: [ "스트링개체 함수" ]
 ---
 
 
@@ -16,30 +16,29 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Copies the string's characters to the supplied buffer.
-
+=== 설명
+스트리의 문자를 제공되는 버퍼에 복사.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.toCharArray(buf, len)
 ----
 
 [float]
-=== Parameters
-`string`: a variable of type String
+=== 매개변수
+`string`: 스트링 형 변수
 
-`buf`: the buffer to copy the characters into (_char []_)
+`buf`: 문자를 복사해 넣을 버퍼 (_char []_)
 
-`len`: the size of the buffer (_unsigned int_)
+`len`: 버퍼 크기 (_unsigned int_)
 
 [float]
-=== Returns
-None
+=== 반환
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -54,7 +53,7 @@ None
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

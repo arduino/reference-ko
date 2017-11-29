@@ -1,7 +1,7 @@
 ﻿---
 title: "startsWith()"
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+subCategories: [ "스트링개체 함수" ]
 ---
 
 
@@ -16,29 +16,29 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Tests whether or not a String starts with the characters of another String.
+=== 설명
+스트링이 다른 스트링의 문자들로 시작하는지 아닌지 테스트
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.startsWith(string2)
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `string, string2`: a variable of type String
 
 
 [float]
-=== Returns
-`true`: if string starts with the characters of string2
+=== 반환
+`true`: string 이 string2의 문자들로 시작하면
 
-`false`: otherwise
+`false`: 아니면
 --
 // OVERVIEW SECTION ENDS
 
@@ -52,7 +52,7 @@ string.startsWith(string2)
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

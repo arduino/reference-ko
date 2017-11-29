@@ -13,7 +13,7 @@ title: Serial.parseFloat()
 --
 
 [float]
-=== Description
+=== 설명
 `Serial.parseFloat()` returns the first valid floating point number from the Serial buffer. Characters that are not digits (or the minus sign) are skipped. `parseFloat()` is terminated by the first character that is not a floating point number.
 
 `Serial.parseFloat()` inherits from the link:../../stream[Stream] utility class.
@@ -21,16 +21,16 @@ title: Serial.parseFloat()
 
 
 [float]
-=== Syntax
+=== 문법
 `Serial.parseFloat()`
 
 
 [float]
-=== Parameters
+=== 매개변수
 Nothing
 
 [float]
-=== Returns
+=== 반환
 `float`
 
 --
@@ -42,7 +42,7 @@ Nothing
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../stream[stream()]

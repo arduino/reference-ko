@@ -2,7 +2,7 @@
 title: "--"
 title_expanded: decrement
 categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+subCategories: [ "복합 연산자" ]
 ---
 
 
@@ -17,13 +17,13 @@ subCategories: [ "Compound Operators" ]
 --
 
 [float]
-=== Description
+=== 설명
 Decrements the value of a variable by 1.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 x-- ;   // decrement x by one and returns the old value of x
@@ -31,11 +31,11 @@ x-- ;   // decrement x by one and returns the old value of x
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `x`: variable. *Allowed data types:* integer, long (possibly unsigned)
 
 [float]
-=== Returns
+=== 반환
 The original or newly decremented value of the variable.
 
 --
@@ -48,7 +48,7 @@ The original or newly decremented value of the variable.
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
@@ -67,7 +67,7 @@ y = x--;      // x contains 0, but y still contains 1
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 

@@ -16,7 +16,7 @@ subCategories: [ "외부 인터럽트" ]
 --
 
 [float]
-=== Description
+=== 설명
 *Digital Pins With Interrupts*
 
 The first parameter to attachInterrupt is an interrupt number. Normally you should use digitalPinToInterrupt(pin) to translate the actual digital pin to the specific interrupt number. For example, if you connect to pin 3, use digitalPinToInterrupt(3) as the first parameter to attachInterrupt.
@@ -36,7 +36,7 @@ The first parameter to attachInterrupt is an interrupt number. Normally you shou
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 
 *Note* +
 Inside the attached function, `delay()` won't work and the value returned by `millis()` will not increment. Serial data received while in the function may be lost. You should declare as volatile any variables that you modify within the attached function. See the section on ISRs below for more information.
@@ -59,14 +59,14 @@ Typically global variables are used to pass data between an ISR and the main pro
 For more information on interrupts, see http://gammon.com.au/interrupts[Nick Gammon's notes].
 
 [float]
-=== Syntax
+=== 문법
 `attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);`	(recommended) +
 `attachInterrupt(interrupt, ISR, mode);`	(not recommended) + 
 `attachInterrupt(pin, ISR, mode);`	(not recommended Arduino Due, Zero, MKR1000, 101 only)
 
 
 [float]
-=== Parameters
+=== 매개변수
 `interrupt`: 	the number of the interrupt (`int`) +
 `pin`: 	      the pin number 	            _(Arduino Due, Zero, MKR1000 only)_ +
 `ISR`: 	      the ISR to call when the interrupt occurs; this function must take no parameters and return nothing. This function is sometimes referred to as an interrupt service routine. +
@@ -80,7 +80,7 @@ For more information on interrupts, see http://gammon.com.au/interrupts[Nick Gam
 * *HIGH* to trigger the interrupt whenever the pin is high.
 
 [float]
-=== Returns
+=== 반환
 Nothing
 
 --
@@ -91,7 +91,7 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 

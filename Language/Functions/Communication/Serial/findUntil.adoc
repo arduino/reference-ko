@@ -13,7 +13,7 @@ title: Serial.findUntil()
 --
 
 [float]
-=== Description
+=== 설명
 `Serial.findUntil()` reads data from the serial buffer until a target string of given length or terminator string is found.
 
 The function returns true if the target string is found, false if it times out.
@@ -23,17 +23,17 @@ The function returns true if the target string is found, false if it times out.
 
 
 [float]
-=== Syntax
+=== 문법
 `Serial.findUntil(target, terminal)`
 
 
 [float]
-=== Parameters
+=== 매개변수
 `target` : the string to search for (char)
 `terminal` : the terminal string in the search (char)
 
 [float]
-=== Returns
+=== 반환
 `boolean`
 
 --
@@ -47,7 +47,7 @@ The function returns true if the target string is found, false if it times out.
 --
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 
 --
 // HOW TO USE SECTION ENDS
@@ -58,7 +58,7 @@ The function returns true if the target string is found, false if it times out.
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../stream[stream] +

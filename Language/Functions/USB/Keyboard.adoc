@@ -16,7 +16,7 @@ subCategories: [ "USB" ]
 
 [float]
 === 설명
-The 키보드 함수 enable a 32u4 or SAMD micro based boards to send keystrokes to an attached computer through their micro's native USB port.
+키보드 함수는 32u4 또는 SAMD 마이크로 기반 보드가 키 입력을 마이크로의 기본 USB 포트를 통해 연결된 컴퓨터에 보내는 것을 가능하게 한다.
 [%hardbreaks]
 *Note: Not every possible ASCII character, particularly the non-printing ones, can be sent with the Keyboard library.* +
 The library supports the use of modifier keys. Modifier keys change the behavior of another key when pressed simultaneously. link:../keyboard/keyboardmodifiers[See here] for additional information on supported keys and their use.

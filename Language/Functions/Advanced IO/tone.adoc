@@ -34,7 +34,7 @@ subCategories: [ "고급 입출력" ]
 [%hardbreaks]
 
 [float]
-=== Parameters
+=== 매개변수
 `pin`: tone 생성할 핀
 
 `frequency`: tone 의 주파수 (hertz )- `unsigned int`

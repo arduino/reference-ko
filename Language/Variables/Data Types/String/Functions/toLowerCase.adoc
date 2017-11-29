@@ -1,7 +1,7 @@
 ﻿---
 title: "toLowerCase()"
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+subCategories: [ "스트링개체 함수" ]
 ---
 
 
@@ -16,27 +16,26 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Get a lower-case version of a String. As of 1.0, toLowerCase() modifies the string in place rather than returning a new one.
-
+=== 설명
+소문자 버전 스트링을 얻는다. 1.0 부터, toUpperCase() 는 새 스트링을 반환하는 대신 스트링을 바꾼다.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.toLowerCase()
 ----
 
 [float]
-=== Parameters
-`string`: a variable of type String
+=== 매개변수
+`string`: 스트링 형 변수
 
 
 [float]
-=== Returns
-None
+=== 반환
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -51,7 +50,7 @@ None
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

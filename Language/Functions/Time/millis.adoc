@@ -16,24 +16,25 @@ subCategories: [ "시간" ]
 --
 
 [float]
-=== Description
-Returns the number of milliseconds since the Arduino board began running the current program. This number will overflow (go back to zero), after approximately 50 days.
+=== 설명
+아두이노 보드가 현재 프로그램을 돌리기 시작한 후 지난 밀리 초 수를 반환합. 이 숫자는 약 50 일 후에 오버플로우(0이 된다).
+
+
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 `time = millis()`
 
 
 [float]
-=== Parameters
+=== 매개변수
 Nothing
 
 [float]
-=== Returns
-Number of milliseconds since the program started (unsigned long)
-
+=== 반환
+프로그램 시작 후 지난 시간(unsigned long)
 --
 // OVERVIEW SECTION ENDS
 
@@ -45,10 +46,10 @@ Number of milliseconds since the program started (unsigned long)
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code reads the milllisecond since the Arduino board began.
 
+이 코드는 아두이노 보드가 시작 후 지난 밀리 초 시간을 읽는다.
 [source,arduino]
 ----
 unsigned long time;
@@ -60,16 +61,15 @@ void loop(){
   Serial.print("Time: ");
   time = millis();
 
-  Serial.println(time);    //prints time since program started
-  delay(1000);             // wait a second so as not to send massive amounts of data
+  Serial.println(time);    //프로그램 시작후 지난 시간 출력
+  delay(1000);             // 1초 기다림
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Please note that the return value for millis() is an unsigned long, logic errors may occur if a programmer tries to do arithmetic with smaller data types such as int's. Even signed long may encounter errors as its maximum value is half that of its unsigned counterpart.
-
+=== 주의와 경고
+millis ()의 반환 값은 unsigned long 이므로 프로그래머가 int 와 같은 작은 자료형으로 산술을 수행하려고하면 논리 오류가 발생할 수 있다. 부호 있는 long 의 최대 값은 부호없는 것의 값의 절반이므로 오류가 발생할 수 있다.
 --
 // HOW TO USE SECTION ENDS
 
@@ -79,7 +79,7 @@ Please note that the return value for millis() is an unsigned long, logic errors
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay]

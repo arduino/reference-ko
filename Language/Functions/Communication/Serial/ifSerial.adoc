@@ -13,7 +13,7 @@ title: if(Serial)
 --
 
 [float]
-=== Description
+=== 설명
 Indicates if the specified Serial port is ready.
 
 On the Leonardo, `if (Serial)` indicates whether or not the USB CDC serial connection is open. For all other instances, including `if (Serial1)` on the Leonardo, this will always return true.
@@ -23,7 +23,7 @@ This was introduced in Arduino IDE 1.0.1.
 
 
 [float]
-=== Syntax
+=== 문법
 _All boards:_
 
 `if (Serial)`
@@ -39,11 +39,11 @@ _Arduino Mega specific:_
 `if (Serial3)`
 
 [float]
-=== Parameters
+=== 매개변수
 Nothing
 
 [float]
-=== Returns
+=== 반환
 `boolean` : returns true if the specified serial port is available. This will only return false if querying the Leonardo's USB CDC serial connection before it is ready.
 
 --
@@ -57,7 +57,7 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 

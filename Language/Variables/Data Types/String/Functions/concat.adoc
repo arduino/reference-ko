@@ -1,7 +1,7 @@
 ﻿---
 title: "concat()"
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+subCategories: [ "스트링개체 함수" ]
 ---
 
 
@@ -16,28 +16,27 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Appends the parameter to a String.
-
+=== 설명
+매개변수를 스트링에 더함.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.concat(parameter)
 ----
 
 [float]
-=== Parameters
-`parameter`: *Allowed types are* String, string, char, byte, int, unsigned int, long, unsigned long, float, double, __FlashStringHelper(F() macro).
+=== 매개변수
+`parameter`: *허용되는 자료형* String, string, char, byte, int, unsigned int, long, unsigned long, float, double, __FlashStringHelper(F() macro).
 
 [float]
-=== Returns
-`true`: success
+=== 반환
+`true`: 성공
 
-`false`: failure (in which case the string is left unchanged).
+`false`: 실패 (이경우 스트링은 바뀌지 않음).
 
 --
 // OVERVIEW SECTION ENDS
@@ -52,7 +51,7 @@ string.concat(parameter)
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

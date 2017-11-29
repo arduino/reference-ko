@@ -2,7 +2,7 @@
 title: ";"
 title_expanded: 세미콜론
 categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+subCategories: [ "추가 문법" ]
 ---
 
 

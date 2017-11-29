@@ -1,7 +1,7 @@
 ﻿---
 title: "toFloat()"
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+subCategories: [ "스트링개체 함수" ]
 ---
 
 
@@ -16,26 +16,26 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== 설명
 Converts a valid String to a float. The input string should start with a digit. If the string contains non-digit characters, the function will stop performing the conversion. For example, the strings "123.45", "123", and "123fish" are converted to 123.45, 123.00, and 123.00 respectively. Note that "123.456" is approximated with 123.46. Note too that floats have only 6-7 decimal digits of precision and that longer strings might be truncated.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.toFloat()
 ----
 
 [float]
-=== Parameters
+=== 매개변수
 `string`: a variable of type String
 
 
 [float]
-=== Returns
+=== 반환
 `float`
 
 If no valid conversion could be performed because the string doesn't start with a digit, a zero is returned.
@@ -53,7 +53,7 @@ If no valid conversion could be performed because the string doesn't start with 
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

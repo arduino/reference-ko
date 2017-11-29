@@ -1,15 +1,15 @@
-﻿---
+---
 title: "+="
-title_expanded: append
+title_expanded: 덧붙이기
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Operator" ]
+subCategories: [ "스트링개체 연산자" ]
 ---
 
 
 
 
 
-= += Append
+= += 덧붙이기
 
 
 // OVERVIEW SECTION STARTS
@@ -17,26 +17,26 @@ subCategories: [ "StringObject Operator" ]
 --
 
 [float]
-=== Description
-It concatenates Strings with other data.
+=== 설명
+스트링에 다른 데이터를 연결한다.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string += data
 ----
 
 [float]
-=== Parameters
-None
+=== 매개변수
+없음
 
 [float]
-=== Returns
-None
+=== 반환
+없음
 
 --
 
@@ -52,7 +52,7 @@ None
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

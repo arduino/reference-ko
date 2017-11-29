@@ -17,8 +17,10 @@ subCategories: [ "USB" ]
 --
 
 [float]
-=== Description
-The mouse functions enable a 32u4 or SAMD micro based boards to to control cursor movement on a connected computer through their micro's native USB port. When updating the cursor position, it is always relative to the cursor's previous location.
+=== 설명
+마우스 함수를 사용하면 32u4 또는 SAMD 마이크로 기반 보드가 마이크로의 기본 USB 포트를 통해 연결된 컴퓨터에서 커서 이동을 제어할 수 있다.
+커서 위치를 업데이트 할 때는 늘 커서의 이전 위치를 기준으로 한다.
+
 [%hardbreaks]
 --
 // OVERVIEW SECTION ENDS
@@ -26,7 +28,7 @@ The mouse functions enable a 32u4 or SAMD micro based boards to to control curso
 
 [float]
 === 주의와 경고
-These core libraries allow the 32u4 and SAMD based boards (Leonardo, Esplora, Zero, Due and MKR Family) to appear as a native Mouse and/or Keyboard to a connected computer.
+이러한 핵심 라이브러리는 32u4 및 SAMD 기반 보드 (Leonardo, Esplora, 제로, 두에 및 MKR 제품군)가 연결된 컴퓨터에 기본 마우스 및 / 또는 키보드로 표시되는 것을 허용한다.
 [%hardbreaks]
 *A word of caution on using the Mouse and Keyboard libraries*: if the Mouse or Keyboard library is constantly running, it will be difficult to program your board. Functions such as `Mouse.move()` and `Keyboard.print()` will move your cursor or send keystrokes to a connected computer and should only be called when you are ready to handle them. It is recommended to use a control system to turn this functionality on, like a physical switch or only responding to specific input you can control.
 [%hardbreaks]

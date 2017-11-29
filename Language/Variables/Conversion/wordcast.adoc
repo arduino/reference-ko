@@ -1,7 +1,7 @@
 ---
 title: word()
 categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+subCategories: [ "변환" ]
 ---
 
 
@@ -28,7 +28,7 @@ subCategories: [ "Conversion" ]
 `word(h, l)`
 
 [float]
-=== Parameters
+=== 매개변수
 `x`: 값
 
 `h`: high-order (가장 왼쪽) 바이트

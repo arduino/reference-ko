@@ -1,7 +1,7 @@
 ﻿---
 title: "length()"
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+subCategories: [ "스트링개체 함수" ]
 ---
 
 
@@ -16,27 +16,26 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Returns the length of the String, in characters. (Note that this doesn't include a trailing null character.)
-
+=== 설명
+스트링의 길이를 반환(이것은 뒤따라오는 널 문자를 포함하지 않음을 주의)
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.length()
 ----
 
 [float]
-=== Parameters
-`string`: a variable of type String
+=== 매개변수
+`string`: 스트링 형 변수
 
 
 [float]
-=== Returns
-The length of the String in characters.
+=== 반환
+문자안의 스트링의 길이
 
 --
 // OVERVIEW SECTION ENDS
@@ -51,7 +50,7 @@ The length of the String in characters.
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

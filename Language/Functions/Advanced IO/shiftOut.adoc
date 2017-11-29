@@ -12,7 +12,7 @@ subCategories: [ "고급 입출력" ]
 --
 
 [float]
-=== Description
+=== 설명
 Shifts out a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. Each bit is written in turn to a data pin, after which a clock pin is pulsed (taken high, then low) to indicate that the bit is available.
 
 Note- if you're interfacing with a device that's clocked by rising edges, you'll need to make sure that the clock pin is low before the call to `shiftOut()`, e.g. with a call to `digitalWrite(clockPin, LOW)`.
@@ -22,12 +22,12 @@ This is a software implementation; see also the linkhttps://www.arduino.cc/en/Re
 
 
 [float]
-=== Syntax
+=== 문법
 `shiftOut(dataPin, clockPin, bitOrder, value)`
 
 
 [float]
-=== Parameters
+=== 매개변수
 `dataPin`: the pin on which to output each bit (int)
 
 `clockPin`: the pin to toggle once the dataPin has been set to the correct value (int)
@@ -38,7 +38,7 @@ This is a software implementation; see also the linkhttps://www.arduino.cc/en/Re
 `value`: the data to shift out. (byte)
 
 [float]
-=== Returns
+=== 반환
 Nothing
 
 --
@@ -52,7 +52,7 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 For accompanying circuit, see the http://arduino.cc/en/Tutorial/ShiftOut[tutorial on controlling a 74HC595 shift register].
 
@@ -97,7 +97,7 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 The dataPin and clockPin must already be configured as outputs by a call to link:../../digital-io/pinmode[pinMode()].
 
 shiftOut is currently written to output 1 byte (8 bits) so it requires a two step operation to output values larger than 255.

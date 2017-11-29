@@ -16,7 +16,7 @@ subCategories: [ "고급 입출력" ]
 --
 
 [float]
-=== Description
+=== 설명
 Shifts in a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. For each bit, the clock pin is pulled high, the next bit is read from the data line, and then the clock pin is taken low.
 
 If you're interfacing with a device that's clocked by rising edges, you'll need to make sure that the clock pin is low before the first call to `shiftIn()`, e.g. with a call to `digitalWrite(clockPin, LOW)`.
@@ -26,12 +26,12 @@ Note: this is a software implementation; Arduino also provides an link:https://w
 
 
 [float]
-=== Syntax
+=== 문법
 `byte incoming = shiftIn(dataPin, clockPin, bitOrder)`
 
 
 [float]
-=== Parameters
+=== 매개변수
 `dataPin`: the pin on which to input each bit (int)
 
 `clockPin`: the pin to toggle to signal a read from *dataPin*
@@ -40,7 +40,7 @@ Note: this is a software implementation; Arduino also provides an link:https://w
 (Most Significant Bit First, or, Least Significant Bit First)
 
 [float]
-=== Returns
+=== 반환
 the value read (byte)
 
 --

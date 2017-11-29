@@ -1,7 +1,7 @@
 ﻿---
 title: "endsWith()"
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+subCategories: [ "스트링개체 함수" ]
 ---
 
 
@@ -16,31 +16,31 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Tests whether or not a String ends with the characters of another String.
+=== 설명
+한 스트링이 다른 스트링의 문자들로 끝나는지 테스트.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 string.endsWith(string2)
 ----
 
 [float]
-=== Parameters
-`string`: a variable of type String
+=== 매개변수
+`string`: 스트링 형 변수
 
-`string2`: another variable of type String
+`string2`: 또다른 스트링 형 변수
 
 
 [float]
-=== Returns
-`true`: if string ends with the characters of string2
+=== 반환
+`true`: string 이 string2의 문자들로 끝날 때
 
-`false`: otherwise
+`false`: 아니면
 
 --
 // OVERVIEW SECTION ENDS
@@ -55,7 +55,7 @@ string.endsWith(string2)
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

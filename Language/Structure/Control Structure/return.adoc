@@ -1,7 +1,7 @@
 ---
 title: return
 categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+subCategories: [ "제어 구조" ]
 ---
 
 
@@ -16,13 +16,13 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
+=== 설명
 Terminate a function and return a value from a function to the calling function, if desired.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 return;
@@ -32,7 +32,7 @@ return value; // both forms are valid
 
 
 [float]
-=== Parameters
+=== 매개변수
 `value': any variable or constant type
 
 --
@@ -46,7 +46,7 @@ return value; // both forms are valid
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 A function to compare a sensor input to a threshold
 
 [source,arduino]
@@ -88,7 +88,7 @@ return;
 --
 
 [float]
-=== See also
+=== 더 볼 것
 [role="language"]
 
 --

@@ -2,14 +2,14 @@
 title: "&"
 title_expanded: reference opearator
 categories: [ "Structure" ]
-subCategories: [ "Pointer Access Operators" ]
+subCategories: [ "포인터 액세스 연산자" ]
 ---
 
 
 
 
 
-= & Reference Operator
+= & 참조 연산자
 
 
 // OVERVIEW SECTION STARTS
@@ -17,8 +17,8 @@ subCategories: [ "Pointer Access Operators" ]
 --
 
 [float]
-=== Description
-Referencing is one of the features specifically for use with pointers. The ampersand operator `&` is used for this purpose. If `x` is a variable, then `&x` represents the address of the variable `x`.
+=== 설명
+참조는 특별히 포인터와 함께 쓰이는 기능 중 하나다. 앰퍼샌드 연산자 `&` 는 이 목적에 쓰인다.  `x` 가 변수면,  `&x` 는 값 `x` 의 주소를 가리킨다.
 [%hardbreaks]
 
 --
@@ -31,21 +31,22 @@ Referencing is one of the features specifically for use with pointers. The amper
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 
 [source,arduino]
 ----
-int *p;       // declare a pointer to an int data type
+int *p;       // int 자료형에 대한 포인터 선언
 int i = 5, result = 0;
-p = &i;       // now 'p' contains the address of 'i'
-result = *p;  // 'result' gets the value at the address pointed by 'p'
-              // i.e., it gets the value of 'i' which is 5
+p = &i;       // 'p'  'i' 의 주소를 포함
+result = *p;  // 'result' 는 'p' 가 가리키는 주소 값을 얻음
+              // i.e., 'i' 의 값을 얻는데 그것은 5
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Pointers are one of the complicated subjects for beginners in learning C, and it is possible to write the vast majority of Arduino sketches without ever encountering pointers. However for manipulating certain data structures, the use of pointers can simplify the code, and knowledge of manipulating pointers is handy to have in one's toolkit.
+=== 주의와 경고
+포인터는 C를 배우는 초보자에게 복잡한 주제 중 하나이며, 어마어마한 아두이노 스케치를 포인터를 만나지 않고 쓸 수 있다.
+그러나 어떤 자료 구조를 다룰 때는, 포인터를 사용하면 코드를 간단하게 할 수 있고, 포인터를 다루는 지식은 툴킷에 갖고 있는 것이 편하다.
 [%hardbreaks]
 
 
@@ -60,7 +61,7 @@ Pointers are one of the complicated subjects for beginners in learning C, and it
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 

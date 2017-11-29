@@ -13,7 +13,7 @@ title: Serial.parseInt()
 --
 
 [float]
-=== Description
+=== 설명
 Looks for the next valid integer in the incoming serial `stream.parseInt()` inherits from the link:../../stream[Stream] utility class.
 
 
@@ -26,7 +26,7 @@ In particular:
 
 
 [float]
-=== Syntax
+=== 문법
 `Serial.parseInt()`
 `Serial.parseInt(char skipChar)`
 
@@ -38,11 +38,11 @@ _Arduino Mega only:_
 
 
 [float]
-=== Parameters
+=== 매개변수
 `skipChar`: used to skip the indicated char in the search. Used for example to skip thousands divider.
 
 [float]
-=== Returns
+=== 반환
 `long` : the next valid integer
 
 --
@@ -54,7 +54,7 @@ _Arduino Mega only:_
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../begin[begin()] +

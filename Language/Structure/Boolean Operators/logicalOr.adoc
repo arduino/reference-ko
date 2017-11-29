@@ -2,7 +2,7 @@
 title: "||"
 title_expanded: 논리 or
 categories: [ "Structure" ]
-subCategories: [ "Boolean Operators" ]
+subCategories: [ "부울 연산자" ]
 ---
 
 

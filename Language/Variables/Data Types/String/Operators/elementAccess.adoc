@@ -2,7 +2,7 @@
 title: "[] "
 title_expanded: element access
 categories: [ "Data Types" ]
-subCategories: [ "StringObject Operator" ]
+subCategories: [ "스트링개체 연산자" ]
 ---
 
 
@@ -17,30 +17,31 @@ subCategories: [ "StringObject Operator" ]
 --
 
 [float]
-=== Description
-Allows you access to the individual characters of a string.
+=== 설명
+스트링의 개별 문자에 접근하는 것을 허용.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 char thisChar = string1[n]
 ----
 
 [float]
-=== Parameters
-`char thisChar` - a character variable
+=== 매개변수
+`char thisChar` - 문자 변수
 
-`string1` - a string variable
+`string1` - 스트링 변수
 
-`int n` - a numeric variable
+`int n` - 숫자 변수
 
 [float]
-=== Returns
+=== 반환
 The nth char of the string. Same as charAt().
+스트링의 n번째 문자. charAt()와 같음.
 
 --
 
@@ -56,7 +57,7 @@ The nth char of the string. Same as charAt().
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

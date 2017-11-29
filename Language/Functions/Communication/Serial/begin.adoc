@@ -13,7 +13,7 @@ title: Serial.begin()
 --
 
 [float]
-=== Description
+=== 설명
 Sets the data rate in bits per second (baud) for serial data transmission. For communicating with the computer, use one of these rates: 300, 600, 1200, 2400, 4800, 9600, 14400, 19200, 28800, 38400, 57600, or 115200. You can, however, specify other rates - for example, to communicate over pins 0 and 1 with a component that requires a particular baud rate.
 
 An optional second argument configures the data, parity, and stop bits. The default is 8 data bits, no parity, one stop bit.
@@ -21,7 +21,7 @@ An optional second argument configures the data, parity, and stop bits. The defa
 
 
 [float]
-=== Syntax
+=== 문법
 `Serial.begin(speed)`
 `Serial.begin(speed, config)`
 
@@ -37,7 +37,7 @@ _Arduino Mega only:_
 
 
 [float]
-=== Parameters
+=== 매개변수
 `speed`: in bits per second (baud) - `long`
 
 `config`: sets data, parity, and stop bits. Valid values are
@@ -68,7 +68,7 @@ _Arduino Mega only:_
 `SERIAL_8O2` +
 
 [float]
-=== Returns
+=== 반환
 Nothing
 
 --
@@ -82,7 +82,7 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
