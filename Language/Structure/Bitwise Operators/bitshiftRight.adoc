@@ -1,6 +1,6 @@
 ---
 title: ">>"
-title_expanded: bitshift right
+title_expanded: 오른쪽으로 비트 옮김
 categories: [ "Structure" ]
 subCategories: [ "비트 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "비트 연산자" ]
 
 
 
-= >> Bitshift Right
+= >> 오른쪽으로 비트 옮김
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,7 @@ subCategories: [ "비트 연산자" ]
 
 [float]
 === 설명
-The right shift operator `>>` causes the bits of the left operand to be shifted *right* by the number of positions specified by the right operand.
+오른쪽으로 비트 옮김 연산자 `<<` 는왼쪽 피연산자의 비트가 오른쪽 피연산자에 의해 지정된 위치 수 만큼 오른쪽으로 옮기도록 한다.
 [%hardbreaks]
 
 
@@ -26,13 +26,13 @@ The right shift operator `>>` causes the bits of the left operand to be shifted 
 === 문법
 [source,arduino]
 ----
-variable >> number_of_bits;
+변수 >> 비트 수;
 ----
 
 [float]
 === 매개변수
-`variable`: *Allowed data types:* byte, int, long +
-`number_of_bits`: a number that is < = 32. *Allowed data types:* int
+`변수`: *허용되는 자료형:* byte, int, long +
+`비트 수`: 숫자 < = 32. *허용되는 자료형:* int
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,8 +48,8 @@ variable >> number_of_bits;
 
 [source,arduino]
 ----
-int a = 40;       // binary: 0000000000101000
-int b = a >> 3;   // binary: 0000000000000101, or 5 in decimal
+int a = 5;       // 이진수: 0000000000101000
+int b = a >> 3;   // 이진수: 0000000000000101, 즉 십진수 5 
 ----
 [%hardbreaks]
 
