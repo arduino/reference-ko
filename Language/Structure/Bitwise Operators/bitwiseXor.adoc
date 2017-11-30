@@ -51,20 +51,19 @@ int z = x ^ y;  // 2진수: 0110, 즉 10진수 6
 ----
 [%hardbreaks]
 ^ 연산자는 정수식의 어떤 비트들을 토글(0을 1로, 1을 0으로 바꿈))에 주로 쓰인다.
-
-In a bitwise OR operation if there is a 1 in the mask bit, that bit is inverted; if there is a 0, the bit is not inverted and stays the same. Below is a program to blink digital pin 5.
+비트 XOR 연산에서 마스크 비트에 1이 있으면 그 비트는 뒤집힌다. 0이 있으면 비트는 뒤집히지 않고 그대로 있다. 아래는 디지털 핀 5가 깜박이는 프로그램.
 
 [source,arduino]
 ----
 // Blink_Pin_5
 // demo for Exclusive OR
 void setup(){
-DDRD = DDRD | B00100000; // set digital pin five as OUTPUT
+DDRD = DDRD | B00100000; // 디지털 핀 5를 OUTPUT 으로
 Serial.begin(9600);
 }
 
 void loop(){
-PORTD = PORTD ^ B00100000;  // invert bit 5 (digital pin 5), leave others untouched
+PORTD = PORTD ^ B00100000;  // 비트 5 (디지털 5) 뒤집기, 다른 것은 그대로
 delay(100);
 }
 ----
