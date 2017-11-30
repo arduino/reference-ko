@@ -1,6 +1,6 @@
 ---
 title: "<<"
-title_expanded: bitshift left
+title_expanded: 왼쪽으로 비트 옮김
 categories: [ "Structure" ]
 subCategories: [ "비트 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "비트 연산자" ]
 
 
 
-= << Bitshift Left
+= << 왼쪽으로 비트 옮김
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,8 @@ subCategories: [ "비트 연산자" ]
 
 [float]
 === 설명
-The left shift operator `<<` causes the bits of the left operand to be shifted *left* by the number of positions specified by the right operand.
+왼쪽으로 비트 옮김 연산자 `<<` 는 왼쪽 피연산자의 비트를 오른쪽 피연산자에 의해 지정된 위치 수 만큼 왼쪽으로 옮긴다.
+
 [%hardbreaks]
 
 
@@ -26,13 +27,13 @@ The left shift operator `<<` causes the bits of the left operand to be shifted *
 === 문법
 [source,arduino]
 ----
-variable << number_of_bits;
+변수 << 비트 수;
 ----
 
 [float]
 === 매개변수
-`variable`: *Allowed data types:* byte, int, long +
-`number_of_bits`: a number that is < = 32. *Allowed data types:* int
+`변수`: *허용되는 자료형:* byte, int, long +
+`비트 수`: 숫자 < = 32. *허용되는 자료형:* int
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,27 +49,25 @@ variable << number_of_bits;
 
 [source,arduino]
 ----
-int a = 5;        // binary: 0000000000000101
-int b = a << 3;   // binary: 0000000000101000, or 40 in decimal
+int a = 5;        // 이진수: 0000000000000101
+int b = a << 3;   // 이진수: 0000000000101000, 즉 십진수 40 
 ----
 [%hardbreaks]
 
 [float]
 === 주의와 경고
-When you shift a value x by y bits (x << y), the leftmost y bits in x are lost, literally shifted out of existence:
-
+값 x를 y 비트 옮기면(x << y), 가장 왼쪽에 있는 y 비트를 잃어 문자 그대로 존재하지 않게 됨:
 [source,arduino]
 ----
-int x = 5;        // binary: 0000000000000101
+int x = 5;        // 이진수: 0000000000000101
 int y = 14;
-int result = x << y;  // binary: 0100000000000000 - the first 1 in 101 was discarded
+int result = x << y;  // 이진수: 0100000000000000 - 101에서 처음의 1은 버려짐
 ----
-
-If you are certain that none of the ones in a value are being shifted into oblivion, a simple way to think of the left-shift operator is that it multiplies the left operand by 2 raised to the right operand power. For example, to generate powers of 2, the following expressions can be employed:
+값의 어떤 것도 망각으로 옮겨지지 않는다고 확신한다면, 왼쪽 쉬프트 연산자를 생각하는 간단한 방법은 왼쪽 피연산자에 2의 오른쪽 피연산자 제곱을 곱하는 것이다. 예를 들어 2의 거듭제곱을 생성하려면 다음 표현식을 사용할 수 있다:
 
 [source,arduino]
 ----
-   Operation  Result
+   연산       결과
    ---------  ------
     1 <<  0      1
     1 <<  1      2
@@ -81,11 +80,10 @@ If you are certain that none of the ones in a value are being shifted into obliv
     ...
 ----
 
-The following example can be used to print out the value of a received byte to the serial monitor, using the left shift operator to move along the byte from bottom(LSB) to top (MSB), and print out its Binary value:
-
+다음 예제는 왼쪽으로 옮김 연산자를 사용하여 바이트를 바닥(LSB)에서 꼭대기(MSB)로 옮기고 이진 값을 출력하여, 받은 바이트 값을 시리얼 모니터에 출력하는 데 사용할 수 있다:
 [source,arduino]
 ----
-// Prints out Binary value (1 or 0) of byte
+// 이진값 (1 or 0) 출력
 void printOut1(int c) {
   for (int bits = 7; bits > -1; bits--) {
     // Compare bits 7-0 in byte
@@ -120,4 +118,3 @@ void printOut1(int c) {
 
 --
 //SEE ALSO SECTION ENDS
-

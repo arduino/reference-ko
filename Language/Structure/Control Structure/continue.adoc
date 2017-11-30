@@ -18,7 +18,8 @@ subCategories: [ "제어 구조" ]
 [float]
 === 설명
 [%hardbreaks]
-The `continue` statement skips the rest of the current iteration of a loop (link:../for[for], link:../while[while], or link:../dowhile[do...while]). It continues by checking the conditional expression of the loop, and proceeding with any subsequent iterations.
+`continue` 문은 루프(link:../for[for], link:../while[while], 또는 link:../dowhile[do...while])의 현재 반복의 나머지를 건너뛴다.
+루프의 조건식을 체크하고 다른 일련의 반복을 진행한다.
 [%hardbreaks]
 
 --
@@ -33,12 +34,12 @@ The `continue` statement skips the rest of the current iteration of a loop (link
 
 [float]
 === 예제 코드
-The following code writes the value of 0 to 255 to the `PWMpin`, but skips the values in the range of 41 to 119.
+아래 코드는 0에서 255까지의 코드 값을 `PWMpin` 에 쓰지만, 41에서 119 의 범위 값은 건너뛴다.
 [source,arduino]
 ----
 for (x = 0; x <= 255; x ++)
 {
-    if (x > 40 && x < 120){      // create jump in values
+    if (x > 40 && x < 120){      // 값 중 건너뛸 것을 만듦
         continue;
     }
 

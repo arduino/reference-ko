@@ -17,7 +17,7 @@ subCategories: [ "제어 구조" ]
 
 [float]
 === 설명
-Terminate a function and return a value from a function to the calling function, if desired.
+함수를 마치고 원한다면 함수를 부른 함수로 값을 반환한다.
 [%hardbreaks]
 
 
@@ -27,13 +27,13 @@ Terminate a function and return a value from a function to the calling function,
 ----
 return;
 
-return value; // both forms are valid
+return value; // 두가지 모두 타당
 ----
 
 
 [float]
 === 매개변수
-`value': any variable or constant type
+`value': 변수 또는 상수
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,7 +47,7 @@ return value; // both forms are valid
 
 [float]
 === 예제 코드
-A function to compare a sensor input to a threshold
+센서 입력을 임계치와 비교하는 함수
 
 [source,arduino]
 ----
@@ -60,8 +60,7 @@ A function to compare a sensor input to a threshold
     }
 }
 ----
-
-The return keyword is handy to test a section of code without having to "comment out" large sections of possibly buggy code.
+return 키워드는 버그 있을 수 있는 코드의 큰 섹션을 "주석 처리" 않고도 섹션을 테스트하는데 편하다
 [source,arduino]
 ----
 void loop(){

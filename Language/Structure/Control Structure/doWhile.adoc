@@ -18,19 +18,17 @@ subCategories: [ "제어 구조" ]
 [float]
 === 설명
 [%hardbreaks]
-The `do...while` loop works in the same manner as the link:../while[while] loop, with the exception that the condition is tested at the end of the loop, so the do loop will always run at least once.
-
+`do...while` 루프는 조건이 루프 끝에서 테스트되는 것을 제외하면 link:../while[while] 루프와 같은 방법으로 동작하므로, 루프는 적어도 한번 돈다.
 [float]
 === 문법
 [source,arduino]
 ----
 do
 {
-    // statement block
+    // 문 블럭
 } while (condition);
 ----
-The `condition` is a boolean expression that evaluates to `true` or `false`.
-
+`condition` 은 `true` 또는 `false` 를 계산하는 부울 식이다.
 --
 // OVERVIEW SECTION ENDS
 
@@ -48,8 +46,8 @@ The `condition` is a boolean expression that evaluates to `true` or `false`.
 ----
 do
 {
-  delay(50);          // wait for sensors to stabilize
-  x = readSensors();  // check the sensors
+  delay(50);          // 센서 안정화를 위해 기다림
+  x = readSensors();  // 센서 확인
 
 } while (x < 100);
 ----
