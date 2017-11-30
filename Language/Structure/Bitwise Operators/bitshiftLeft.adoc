@@ -18,7 +18,7 @@ subCategories: [ "비트 연산자" ]
 
 [float]
 === 설명
-왼쪽으로 비트 옮김 연산자 `<<` 는왼쪽 피연산자의 비트가 오른쪽 피연산자에 의해 지정된 위치 수 만큼 왼쪽으로 옮기도록 한다.
+왼쪽으로 비트 옮김 연산자 `<<` 는 왼쪽 피연산자의 비트를 오른쪽 피연산자에 의해 지정된 위치 수 만큼 왼쪽으로 옮긴다.
 
 [%hardbreaks]
 
@@ -56,8 +56,7 @@ int b = a << 3;   // 이진수: 0000000000101000, 즉 십진수 40
 
 [float]
 === 주의와 경고
-When you shift a value x by y bits (x << y), the leftmost y bits in x are lost, literally shifted out of existence:
-x를 y 비트 옮기면,  가장 왼쪽에있는 y 비트를 잃어 문자 그대로 존재하지 않게 됨.
+값 x를 y 비트 옮기면(x << y), 가장 왼쪽에 있는 y 비트를 잃어 문자 그대로 존재하지 않게 됨:
 [source,arduino]
 ----
 int x = 5;        // 이진수: 0000000000000101
@@ -68,7 +67,7 @@ int result = x << y;  // 이진수: 0100000000000000 - 101에서 처음의 1은 
 
 [source,arduino]
 ----
-   연산      결과
+   연산       결과
    ---------  ------
     1 <<  0      1
     1 <<  1      2
@@ -81,10 +80,10 @@ int result = x << y;  // 이진수: 0100000000000000 - 101에서 처음의 1은 
     ...
 ----
 
-다음 예제는 왼쪽으로 옮김 연산자를 사용하여 바이트를 아래쪽 (LSB)에서 위쪽 (MSB)으로 이동하고 이진 값을 출력하여, 받은 바이트 값을 직렬 모니터에 인쇄하는 데 사용할 수 있다:
+다음 예제는 왼쪽으로 옮김 연산자를 사용하여 바이트를 아래쪽(LSB)에서 위쪽(MSB)으로 이동하고 이진 값을 출력하여, 받은 바이트 값을 시리얼 모니터에 출력하는 데 사용할 수 있다:
 [source,arduino]
 ----
-// Prints out Binary value (1 or 0) of byte
+// 이진값 (1 or 0) 출력
 void printOut1(int c) {
   for (int bits = 7; bits > -1; bits--) {
     // Compare bits 7-0 in byte
@@ -119,4 +118,3 @@ void printOut1(int c) {
 
 --
 //SEE ALSO SECTION ENDS
-
