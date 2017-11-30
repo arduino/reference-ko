@@ -52,9 +52,9 @@ int b = ~a;     // 이진수:  1111111110011000 = -104
 이 연산의 결과로 -104 같은 음수를 보고 놀랄 수 있겠다. 이것은 int 변수의 가장 높은 비트가 소위 부호 비트이기 때문. 가장 높은 비트가 1이면, 숫자는 음수로 해석된다.
 이 양수와 음수 인코딩은 2의 보수라고 불린다. 자세한 내용은, 위키백과 http://en.wikipedia.org/wiki/Twos_complement[two's complement^] 를 보세요.
 
-As an aside, it is interesting to note that for any integer x, ~x is the same as -x-1.
+어떤 정수 x 에 대해, ~x 는 -x-1 과 같다는 것을 주목하는 것이 흠미롭다.
 
-At times, the sign bit in a signed integer expression can cause some unwanted surprises.
+때로 부호있는 정수 식에서 부호 비트는 원치않는 놀라움을 일으킬 수 있다.
 [%hardbreaks]
 
 --
