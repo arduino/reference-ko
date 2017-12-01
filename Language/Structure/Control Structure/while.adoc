@@ -8,7 +8,7 @@ subCategories: [ "제어 구조" ]
 
 
 
-= while loop
+= while 루프
 
 
 // OVERVIEW SECTION STARTS
@@ -18,18 +18,18 @@ subCategories: [ "제어 구조" ]
 [float]
 === 설명
 [%hardbreaks]
-A `while` loop will loop continuously, and infinitely, until the expression inside the parenthesis, () becomes false. Something must change the tested variable, or the while loop will never exit. This could be in your code, such as an incremented variable, or an external condition, such as testing a sensor.
+`while` 루프는 계속, 무한히 돌아가며, 괄호 안의 식이 거짓이 될 때까지 돈다. 무엇인가가 테스트 변수를 바꾸어야 하며, 아니면 while 루프는 끝나지 않는다.
+여러분의 코드에서 이것은 증가변수 또는 센서 테스트 같은 외부 조건일 수 있다.
 
 [float]
 === 문법
 [source,arduino]
 ----
 while(condition){
-  // statement(s)
+  // 문
 }
 ----
-The `condition` is a boolean expression that evaluates to `true` or `false`.
-
+`condition` 은 `true` 또는 `false` 으로 평가되는 부울 식이다.
 --
 // OVERVIEW SECTION ENDS
 
@@ -47,7 +47,7 @@ The `condition` is a boolean expression that evaluates to `true` or `false`.
 ----
 var = 0;
 while(var < 200){
-  // do something repetitive 200 times
+  // 200번 반복
   var++;
 }
 ----

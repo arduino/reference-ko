@@ -8,7 +8,7 @@ subCategories: [ "제어 구조" ]
 
 
 
-= if (conditional) and ==, !=, <, > (comparison operators)
+= if (조건) 그리고 ==, !=, <, > (비교 연산자)
 
 
 // OVERVIEW SECTION STARTS
@@ -17,6 +17,7 @@ subCategories: [ "제어 구조" ]
 [float]
 === 설명
 The `if` statement checks for a condition and executes the proceeding statement or set of statements if the condition is 'true'.
+`if` 문은 조건을 체크하기 위해 쓰며 조건이 'true'이면 따라오는 문 또는 문장 세트를 실행한다.
 [%hardbreaks]
 
 [float]
@@ -31,12 +32,12 @@ if (condition)
 
 [float]
 === 매개변수
-condition: a boolean expression i.e., can be `true` or `false`
+condition: 부울 식 i.e., `true` 또는 `false`
 
 [float]
 === 예제 코드
+하나의 문 뒤에 중괄호를 생략할 수 있다. 그러면, 다음 줄(세미코론에 의해 정의 됨)만이 조건문이 된다.
 
-The brackets may be omitted after an if statement. If this is done, the next line (defined by the semicolon) becomes the only conditional statement.
 [%hardbreaks]
 
 [source,arduino]
@@ -51,29 +52,30 @@ if (x > 120){ digitalWrite(LEDpin, HIGH); }
 if (x > 120){
   digitalWrite(LEDpin1, HIGH);
   digitalWrite(LEDpin2, HIGH);
-}                                 // all are correct
+}                                 // 모두 옳음
 ----
 [%hardbreaks]
 
 
 [float]
 === 주의와 경고
-The statements being evaluated inside the parentheses require the use of one or more operators shown below.
+괄호 안에서 계산되는 식은 아래에 보이는 하나 또는 이상의 연산자 사용이 필요하다.
 [%hardbreaks]
 
-*Comparison Operators:*
+*비교 연산자:*
 
- x == y (x is equal to y)
- x != y (x is not equal to y)
- x <  y (x is less than y)
- x >  y (x is greater than y)
- x <= y (x is less than or equal to y)
- x >= y (x is greater than or equal to y)
+ x == y (x가 y와 같음)
+ x != y (x가 y와 같지 않음 )
+ x <  y (x가 y보다 작음)
+ x >  y (x가 y보다 큼)
+ x <= y (x가 y보다 작거나 같음)
+ x >= y (x가 y보다 크거나 같음)
 
+실수로 등호 하나(e.g. `if (x = 10)` )만 사용하는 것을 주의하세요. 등호 하나는 할당 연산자이고, `x` 를 10으로 설정. (값 10을 변수 `x` 에 넣음)
+대신 등호 두개(e.g. `if (x == 10)` ) 사용해야 하는데, 이것은 비교 연산자이고, `x` 가 10과 같은지 아닌지 테스트한다.
+뒤의 문은 `x` 가 10과 같을 때만 참이지만, 앞의 문은 언제나 참이다.
 
-Beware of accidentally using the single equal sign (e.g. `if (x = 10)` ). The single equal sign is the assignment operator, and sets `x` to 10 (puts the value 10 into the variable `x`). Instead use the double equal sign (e.g. `if (x == 10)` ), which is the comparison operator, and tests _whether_ `x` is equal to 10 or not. The latter statement is only true if `x` equals 10, but the former statement will always be true.
-
-This is because C evaluates the statement `if (x=10)` as follows: 10 is assigned to `x` (remember that the single equal sign is the (http://arduino.cc/en/Reference/Assignment[assignment operator^])), so `x` now contains 10. Then the 'if' conditional evaluates 10, which always evaluates to `TRUE`, since any non-zero number evaluates to TRUE. Consequently, `if (x = 10)` will always evaluate to `TRUE`, which is not the desired result when using an 'if' statement. Additionally, the variable `x` will be set to 10, which is also not a desired action.
+이것은 C  언어가 문 `if (x=10)` 를 다음과 같이 계산하기 때문: 10이 `x` 에 할당됨( 등호 하나는 (http://arduino.cc/en/Reference/Assignment[assignment operator^]) 임을 기억하세요). 그러면 'if' 조건은 10으로 평가되는데, 이것은 언제나 `TRUE` 으로 계산되는데, 왜냐면 0 아닌 모든 정수는 TRUE 로 평가되기 때문이다. 결과적으로 `if (x = 10)` 는 언제나 `TRUE` 으로 평가되며, 이것은 'if'문을 사용할 때 원하는 결과가 아니다. 게다가 `x` 는 10으로 설정되는데, 이것 역시 원하는 행동이 아니다.
 [%hardbreaks]
 
 --

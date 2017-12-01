@@ -60,17 +60,17 @@ return value; // 두가지 모두 타당
     }
 }
 ----
-return 키워드는 버그 있을 수 있는 코드의 큰 섹션을 "주석 처리" 않고도 섹션을 테스트하는데 편하다
+return 키워드는 버그 있을 수 있는 코드의 큰 섹션을 "주석 처리" 않고도 섹션을 테스트 하는데 편하다
 [source,arduino]
 ----
 void loop(){
 
-// brilliant code idea to test here
+// 빛나는 코드 아이디어 테스트는 여기에
 
 return;
 
-// the rest of a dysfunctional sketch here
-// this code will never be executed
+// 나머지 역기능 스케치는 여기에
+// 이 코드는 실행 안 됨
 }
 ----
 [%hardbreaks]

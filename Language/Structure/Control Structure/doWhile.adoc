@@ -1,5 +1,5 @@
 ---
-title: do...While
+title: do... while
 categories: [ "Structure" ]
 subCategories: [ "제어 구조" ]
 ---
@@ -8,7 +8,7 @@ subCategories: [ "제어 구조" ]
 
 
 
-= do...while loop
+= do...while 루프
 
 
 // OVERVIEW SECTION STARTS
