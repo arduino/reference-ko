@@ -18,7 +18,7 @@ subCategories: [ "비트 연산자" ]
 
 [float]
 === 설명
-오른쪽으로 비트 옮김 연산자 `<<` 는왼쪽 피연산자의 비트가 오른쪽 피연산자에 의해 지정된 위치 수 만큼 오른쪽으로 옮기도록 한다.
+오른쪽으로 비트 옮김 연산자 `>>` 는 왼쪽 피연산자의 비트가 오른쪽 피연산자에 의해 지정된 위치 수 만큼 오른쪽으로 옮기도록 한다.
 [%hardbreaks]
 
 
@@ -55,7 +55,9 @@ int b = a >> 3;   // 이진수: 0000000000000101, 즉 십진수 5
 
 [float]
 === 주의와 경고
-When you shift x right by y bits (x >> y), and the highest bit in x is a 1, the behavior depends on the exact data type of x. If x is of type int, the highest bit is the sign bit, determining whether x is negative or not, as we have discussed above. In that case, the sign bit is copied into lower bits, for esoteric historical reasons:
+x를 y비트 오른쪽으로 옮기면(x >> y), 그리고 최상위 비트가 1이면, 그 결과는 x의 정확한 자료형에 달려있다.
+x가 int 형이면, 최상위 비트는 부호 비트, x가 음인지 아닌지 결정하는데, 위에서 논한 바와 같다.
+이경우, 부호 비트는 낮은 비트들에 복사되는데, 이는 비공식적인 역사적 까닭 때문 :
 
 [source,arduino]
 ----
@@ -63,7 +65,7 @@ int x = -16;     // binary: 1111111111110000
 int y = 3;
 int result = x >> y;  // binary: 1111111111111110
 ----
-This behavior, called sign extension, is often not the behavior you want. Instead, you may wish zeros to be shifted in from the left. It turns out that the right shift rules are different for unsigned int expressions, so you can use a typecast to suppress ones being copied from the left:
+부호 확장이라고 하는이 동작은, 종종 원하는 동작이 아니다. 대신, 왼쪽에서 0을 옮기는 게 좋다. unsigned int 표현식에 대해서는 오른쪽으로 옮김 규칙이 다르므로 형 변환을 사용하여 왼쪽으로부터 복사되는 것을 억제 할 수 있다:
 
 [source,arduino]
 ----
@@ -71,8 +73,8 @@ int x = -16;                   // binary: 1111111111110000
 int y = 3;
 int result = (unsigned int)x >> y;  // binary: 0001111111111110
 ----
-If you are careful to avoid sign extension, you can use the right-shift operator `>>` as a way to divide by powers of 2. For example:
 
+부호 확장을 피하는 주의를 하면, 오른쪽으로 옮김 연산자 `>>`  를 2의 거듭제곱으로 나누는 방법으로 쓸 수 있다. 예를 들어:
 [source,arduino]
 ----
 int x = 1000;
