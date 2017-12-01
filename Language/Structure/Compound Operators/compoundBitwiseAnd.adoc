@@ -1,6 +1,6 @@
 ---
 title: "&="
-title_expanded: compound bitwise and
+title_expanded: 복합 비트 AND
 categories: [ "Structure" ]
 subCategories: [ "복합 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "복합 연산자" ]
 
 
 
-= &= Compound Bitwise AND
+= &= 복합 비트 AND
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,9 @@ subCategories: [ "복합 연산자" ]
 
 [float]
 === 설명
-The compound bitwise AND operator `&=` is often used with a variable and a constant to force particular bits in a variable to the LOW state (to 0). This is often referred to in programming guides as "clearing" or "resetting" bits.
+The compound bitwise AND operator `&=` is often used with a variable and a constant to force particular bits in a variable to the LOW state (to 0).
+복합 비트 AND 연산자 `&=` 
+This is often referred to in programming guides as "clearing" or "resetting" bits.
 [%hardbreaks]
 
 A review of the Bitwise AND `&` operator:
