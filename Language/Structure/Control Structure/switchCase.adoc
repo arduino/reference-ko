@@ -1,5 +1,5 @@
 ---
-title: switchCase
+title: switch case
 categories: [ "Structure" ]
 subCategories: [ "제어 구조" ]
 ---
@@ -8,7 +8,7 @@ subCategories: [ "제어 구조" ]
 
 
 
-= switch...case statement
+= switch...case 문
 
 
 // OVERVIEW SECTION STARTS
@@ -17,10 +17,10 @@ subCategories: [ "제어 구조" ]
 
 [float]
 === 설명
-Like link:../if[if] statements, link:../switchcase[switch case] controls the flow of programs by allowing programmers to specify different code that should be executed in various conditions. In particular, a switch statement compares the value of a variable to the values specified in case statements. When a case statement is found whose value matches that of the variable, the code in that case statement is run.
+link:../if[if] 문과 같이, link:../switchcase[switch case] 는 다양한 조건에서 실행되어야 하는 다른 코드를 프로그래머가 지정하는 것을 허용하여, 프로그램의 흐름을 제어한다.
+특히, switch 문은 변수 값을 case 문에 지정된 값과 비교한다. case 문이 그 값이 변수 값과 같은 것을 찾으면 해당 case 문에 있는 코드가 실행된다.
 [%hardbreaks]
-
-The link:../break[break] keyword exits the switch statement, and is typically used at the end of each case. Without a break statement, the switch statement will continue executing the following expressions ("falling-through") until a break, or the end of the switch statement is reached.
+link:../break[break] 키워드는 switch 문을 빠져 나오고, 각 case의 끝에 전형적으로 쓰인다. break 문이 없으면, switch 문이 break 나올 때까지 (break 안 나오면  switch 문 끝날 때까지) 다음 문장을 계속 실행("falling-through")한다.
 [%hardbreaks]
 
 
@@ -43,12 +43,12 @@ switch (var) {
 
 [float]
 === 매개변수
-`var`: a variable whose value to compare with various cases. *Allowed data types:* int, char +
-`label1`, `label2`: constants. *Allowed data types:* int, char
+`var`: 다양한 case 와 비교할 변수 값. *허용되는 자료형:* int, char +
+`label1`, `label2`: 상수. *허용되는 자료형:* int, char
 
 [float]
 === 반환
-Nothing
+없음
 
 --
 // OVERVIEW SECTION ENDS

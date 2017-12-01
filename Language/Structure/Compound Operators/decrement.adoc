@@ -1,6 +1,6 @@
 ---
 title: "--"
-title_expanded: decrement
+title_expanded: 감소
 categories: [ "Structure" ]
 subCategories: [ "복합 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "복합 연산자" ]
 
 
 
-= -- Decrement
+= -- 감소
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,7 @@ subCategories: [ "복합 연산자" ]
 
 [float]
 === 설명
-Decrements the value of a variable by 1.
+변수 값을 1 감소.
 [%hardbreaks]
 
 
@@ -26,17 +26,17 @@ Decrements the value of a variable by 1.
 === 문법
 [source,arduino]
 ----
-x-- ;   // decrement x by one and returns the old value of x
---x ;   // decrement x by one and returns the new value of x
+x-- ;   // x 를 1 감소시키고 옛 x 값 반환
+--x ;   // x 를 1 감소시키고 새 x 값 반환
 ----
 
 [float]
 === 매개변수
-`x`: variable. *Allowed data types:* integer, long (possibly unsigned)
+`x`: 변수. *허용되는 자료형:* integer, long (unsigned 가능)
 
 [float]
 === 반환
-The original or newly decremented value of the variable.
+변수의 원래 또는 새로 감소된 값.
 
 --
 // OVERVIEW SECTION ENDS

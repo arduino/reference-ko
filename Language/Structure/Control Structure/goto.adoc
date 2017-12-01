@@ -17,7 +17,7 @@ subCategories: [ "제어 구조" ]
 
 [float]
 === 설명
-Transfers program flow to a labeled point in the program
+프로그램 흐름을 프로그램에서 가리키는 라벨로 보낸다
 [%hardbreaks]
 
 
@@ -27,7 +27,7 @@ Transfers program flow to a labeled point in the program
 ----
 label:
 
-goto label; // sends program flow to the label
+goto label; // 프로그램 흐름을 label 로 보냄
 ----
 
 --
@@ -60,9 +60,9 @@ bailout:
 
 [float]
 === 주의와 경고
-The use of `goto` is discouraged in C programming, and some authors of C programming books claim that the `goto` statement is never necessary, but used judiciously, it can simplify certain programs. The reason that many programmers frown upon the use of goto is that with the unrestrained use of `goto` statements, it is easy to create a program with undefined program flow, which can never be debugged.
-
-With that said, there are instances where a `goto` statement can come in handy, and simplify coding. One of these situations is to break out of deeply nested link:../for[for] loops, or link:../if[if] logic blocks, on a certain condition.
+C 프로그램에서 `goto` 사용은 권장하지 않고, C 프로그램 책의 어떤 저자는 `goto` 이 절대 필요하지 않다고 하지만, 신중하게 쓰이면, 어떤 프로그램을 간단하게 할 수 있다.
+많은 프로그래머가 goto 사용을 싫어하는 까닭은 `goto` 문 사용이 제한되지 않으면, 정의되지 않는 프로그램 흐름을 만들기 쉬운데, 이러면 버그를 잡을 수 없다.
+그렇긴 하지만, `goto` 문이 편리하고, 코딩을 간단하게 할 때도 있다. 그런 상황 중 하나는 깊게 중첩된 link:../for[for] 루프 또는 link:../if[if] 논리 블록에서 어떤 조건에서 빠져 나올 때다.
 [%hardbreaks]
 
 --
