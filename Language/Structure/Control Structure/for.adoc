@@ -8,7 +8,7 @@ subCategories: [ "제어 구조" ]
 
 
 
-= for loop
+= for 루프
 
 
 // OVERVIEW SECTION STARTS
@@ -17,7 +17,8 @@ subCategories: [ "제어 구조" ]
 
 [float]
 === 설명
-The `for` statement is used to repeat a block of statements enclosed in curly braces. An increment counter is usually used to increment and terminate the loop. The `for` statement is useful for any repetitive operation, and is often used in combination with arrays to operate on collections of data/pins.
+`for` 문은 중괄호로 둘러싸인 문의 블록을 반복할 때 사용된다
+증가 카운터가 루프를 증가하고 끝내는 데 쓰인다. `for` 문은 반복 연산에 쓸모있고, 자료/핀의 모임에서 연산하는 배열을 가진 조합에 자주 쓰인다.
 [%hardbreaks]
 
 
@@ -67,7 +68,9 @@ void loop()
 
 [float]
 === 주의와 경고
-The C `for` loop is much more flexible than `for` loops found in some other computer languages, including BASIC. Any or all of the three header elements may be omitted, although the semicolons are required. Also the statements for initialization, condition, and increment can be any valid C statements with unrelated variables, and use any C datatypes including floats. These types of unusual `for` statements may provide solutions to some rare programming problems.
+C `for` 루프는 다른 컴퓨터 언어, BASIC 포함,에서 발견되는 `for` 루프보다 좀더 유연하다.
+세미콜론은 필요하지만 3개 헤더 요소중 어느 것도 생략될 수 있다. 
+Also the statements for initialization, condition, and increment can be any valid C statements with unrelated variables, and use any C datatypes including floats. These types of unusual `for` statements may provide solutions to some rare programming problems.
 [%hardbreaks]
 
 For example, using a multiplication in the increment line will generate a logarithmic progression:
@@ -79,10 +82,10 @@ println(x);
 }
 ----
 
-Generates: 2,3,4,6,9,13,19,28,42,63,94
+생성하는 것: 2,3,4,6,9,13,19,28,42,63,94
 [%hardbreaks]
 
-Another example, fade an LED up and down with one `for` loop:
+다른 예는, LED를 하나의 `for` 루프로 점점 밝게 그리고 어둡게:
 
 [source,arduino]
 ----
@@ -91,7 +94,7 @@ void loop()
    int x = 1;
    for (int i = 0; i > -1; i = i + x){
       analogWrite(PWMpin, i);
-      if (i == 255) x = -1;             // switch direction at peak
+      if (i == 255) x = -1;             // 정점에서 방향 바꿈
       delay(10);
    }
 }
