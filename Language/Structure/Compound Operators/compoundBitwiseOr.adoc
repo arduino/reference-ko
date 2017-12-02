@@ -1,6 +1,6 @@
 ---
 title: "|="
-title_expanded: compound bitwise or
+title_expanded: 복합 비트 OR
 categories: [ "Structure" ]
 subCategories: [ "복합 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "복합 연산자" ]
 
 
 
-= |= Compound Bitwise OR
+= |= 복합 비트 OR
 
 
 // OVERVIEW SECTION STARTS
@@ -18,28 +18,28 @@ subCategories: [ "복합 연산자" ]
 
 [float]
 === 설명
-The compound bitwise OR operator `|=` is often used with a variable and a constant to "set" (set to 1) particular bits in a variable.
+복합 비트 OR 연산자 `|=` 는 때때로 변수와 상수와 함께 쓰이고, 변수 안의 특정 비트를 "설정"(1로 설정)하는데 쓰인다.
 [%hardbreaks]
 
-A review of the Bitwise OR `|` operator:
+비트 OR `|` 연산자 다시 보기:
 
    0  0  1  1    operand1
    0  1  0  1    operand2
    ----------
-   0  1  1  1    (operand1 | operand2) - returned result
+   0  1  1  1    (operand1 | operand2) - 결과 반환
 [%hardbreaks]
 
 [float]
 === 문법
 [source,arduino]
 ----
-x |= y;   // equivalent to x = x | y;
+x |= y;   //  x = x | y; 와 같음
 ----
 
 [float]
 === 매개변수
-`x`: variable. *Allowed data types:* char, int, long +
-`y`: variable or constant. *Allowed data types:* char, int, long
+`x`: 변수. *허용되는 자료형:* char, int, long +
+`y`: 변수 또는 상수. *허용되는 자료형:* char, int, long
 
 --
 // OVERVIEW SECTION ENDS
@@ -52,13 +52,13 @@ x |= y;   // equivalent to x = x | y;
 
 [float]
 === 예제 코드
-Bits that are "bitwise ORed" with 0 are unchanged, so if myByte is a byte variable,
+0과 비트 OR 되는 비트들은 바뀌지 않으므로, 만약 myByte 가 byte 변수라면,
 [source,arduino]
 ----
 myByte | B00000000 = myByte;
 ----
+1과 비트 OR 되는 비트들은 1로 설정되므로:
 
-Bits that are "bitwise ORed" with 1 are set to 1 so:
 [source,arduino]
 ----
 myByte | B11111111 = B11111111;
@@ -67,31 +67,31 @@ myByte | B11111111 = B11111111;
 
 [float]
 === 주의와 경고
-Because we are dealing with bits in a bitwise operator - it is convenient to use the binary formatter with constants. The numbers are still the same value in other representations, they are just not as easy to understand. Also, B00000000 is shown for clarity, but zero in any number format is zero.
+우리는 비트 연산자 안에서 비트를 다루므로 - 이진 포매터를 상수와 함께 쓰는 게 편하다.
+숫자는 다른 표현의 같은 값, 그들은 이해하기 쉽지 않다. 또, 명료성을 위해 B00000000 이 보여지지만, 0은 어떤 숫자 형태로든 0 이다.
 [%hardbreaks]
+결과적으로 - 변수의 0과 1을 설정하기 위해, 변수의 나머지를 그대로 두려면, 복합 비트 OR 연산자 (|=)를 상수 B00000011과 함께 쓴다.
 
-Consequently - to set bits 0 & 1 of a variable, while leaving the rest of the variable unchanged, use the compound bitwise OR operator (|=) with the constant B00000011
-
-   1  0  1  0  1  0  1  0    variable
-   0  0  0  0  0  0  1  1    mask
+   1  0  1  0  1  0  1  0    변수
+   0  0  0  0  0  0  1  1    마스크
    ----------------------
    1  0  1  0  1  0  1  1
 
-    bits unchanged
-                     bits set
+    비트 안 바뀜
+                     비트 설정
 
 
-Here is the same representation with the variables bits replaced with the symbol x
+여기에 변수가 기호 x로 대체된 같은 표현이 있다.
 
-   x  x  x  x  x  x  x  x    variable
-   0  0  0  0  0  0  1  1    mask
+   x  x  x  x  x  x  x  x    변수
+   0  0  0  0  0  0  1  1    마스크
    ----------------------
    x  x  x  x  x  x  1  1
 
-    bits unchanged
-                     bits set
+    비트 안 바뀜
+                     비트 설정
 
-So if:
+그래서 만약:
 [source,arduino]
 ----
 myByte =  B10101010;

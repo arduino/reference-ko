@@ -18,30 +18,29 @@ subCategories: [ "복합 연산자" ]
 
 [float]
 === 설명
-The compound bitwise AND operator `&=` is often used with a variable and a constant to force particular bits in a variable to the LOW state (to 0).
-복합 비트 AND 연산자 `&=` 
-This is often referred to in programming guides as "clearing" or "resetting" bits.
+복합 비트 AND 연산자 `&=` 는 때때로 변수와 상수와 함께 쓰여 변수의 특정 비트를 LOW 상태(0으로) 만든다.
+이것은 때때로 프로그래밍 가이드에서 "지우기 " 또는 "재설정" 비트로 참조된다.
 [%hardbreaks]
 
-A review of the Bitwise AND `&` operator:
+비트 AND `&` 연산자 다시보기:
 
    0  0  1  1    operand1
    0  1  0  1    operand2
    ----------
-   0  0  0  1    (operand1 & operand2) - returned result
+   0  0  0  1    (operand1 & operand2) - 반환 결과
 [%hardbreaks]
 
 [float]
 === 문법
 [source,arduino]
 ----
-x &= y;   // equivalent to x = x & y;
+x &= y;   //  x = x & y; 와 같음
 ----
 
 [float]
 === 매개변수
-`x`: variable. *Allowed data types:* char, int, long +
-`y`: variable or constant. *Allowed data types:* char, int, long
+`x`: 변수. *허용되는 자료 형:* char, int, long +
+`y`: 변수 또는 상수. *허용되는 자료 형:* char, int, long
 
 --
 // OVERVIEW SECTION ENDS
@@ -54,14 +53,14 @@ x &= y;   // equivalent to x = x & y;
 
 [float]
 === 예제 코드
-Bits that are "bitwise ANDed" with 0 are cleared to 0 so, if myByte is a byte variable,
 
+0과 비트 AND 되는 비트는 0으로 되므로, myByte가 byte 변수면,
 [source,arduino]
 ----
 myByte & B00000000 = 0;
 ----
 
-Bits that are "bitwise ANDed" with 1 are unchanged so,
+1과 비트 AND 되는 비트는 바뀌지 않으므로,
 
 [source,arduino]
 ----
@@ -71,9 +70,11 @@ myByte & B11111111 = myByte;
 
 [float]
 === 주의와 경고
-Because we are dealing with bits in a bitwise operator - it is convenient to use the binary formatter with constants. The numbers are still the same value in other representations, they are just not as easy to understand. Also, B00000000 is shown for clarity, but zero in any number format is zero (hmmm something philosophical there?)
+우리는 비트 연산자 안에서 비트를 다루므로 - 이진 포매터를 상수와 함께 쓰는 게 편하다.
+숫자는 다른 표현의 같은 값, 그들은 이해하기 쉽지 않다. 또, 명료성을 위해 B00000000 이 보여지지만, 0은 어떤 숫자 형태로든 0 이다.(흠... 거기 뭔가 철학적인?)
 
-Consequently - to clear (set to zero) bits 0 & 1 of a variable, while leaving the rest of the variable unchanged, use the compound bitwise AND operator (&=) with the constant B11111100
+결과적으로 - 변수의 0과 1을 설정하기 위해, 변수의 나머지를 그대로 두려면, 복합 비트 AND 연산자 (&=)를 상수 B11111100과 함께 쓴다.
+
 
    1  0  1  0  1  0  1  0    variable
    1  1  1  1  1  1  0  0    mask
@@ -83,7 +84,7 @@ Consequently - to clear (set to zero) bits 0 & 1 of a variable, while leaving th
     bits unchanged
                      bits cleared
 
-Here is the same representation with the variable's bits replaced with the symbol x
+여기에 변수가 기호 x로 대체된 같은 표현이 있다.
 
    x  x  x  x  x  x  x  x    variable
    1  1  1  1  1  1  0  0    mask
@@ -93,7 +94,7 @@ Here is the same representation with the variable's bits replaced with the symbo
     bits unchanged
                      bits cleared
 
-So if:
+그래서 :
 
 [source,arduino]
 ----
