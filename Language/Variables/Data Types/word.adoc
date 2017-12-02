@@ -17,7 +17,7 @@ subCategories: [ "자료형" ]
 
 [float]
 === 설명
-word는 16비트 부호없는 숫자, 0에서 65535까지,를 저장한다. unsigned int 와 같다.
+word는 16비트 부호없는 숫자, 0에서 65535까지를 저장한다. unsigned int 와 같다.
 
 [%hardbreaks]
 

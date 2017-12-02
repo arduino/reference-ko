@@ -22,8 +22,7 @@ subCategories: [ "자료형" ]
 
 === 변수 생성(선억)
 
-All of the methods below are valid ways to create (declare) an array.
-아래의 방법은 모두 배열을 생성(선언)하는 타당한 방법이다
+아래 방법은 모두 배열을 생성(선언)하는 타당한 방법이다
 
 [source,arduino]
 ----

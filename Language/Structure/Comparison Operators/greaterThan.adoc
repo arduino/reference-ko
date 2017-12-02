@@ -31,8 +31,8 @@ x > y;   // is true if x is bigger than y and it is false if x is equal or small
 
 [float]
 === 매개변수
-`x`: variable. *Allowed data types:* int, float, double, byte, short, long +
-`y`: variable or constant. *Allowed data types:* int, float, double, byte, short, long
+`x`: variable. *허용되는 자료형:* int, float, double, byte, short, long +
+`y`: variable or constant. *허용되는 자료형:* int, float, double, byte, short, long
 
 --
 // OVERVIEW SECTION ENDS

@@ -31,7 +31,7 @@ Returns true if thisChar contains a white space.
 
 [float]
 === 매개변수
-`thisChar`: variable. *Allowed data types:* char
+`thisChar`: variable. *허용되는 자료형:* char
 
 [float]
 === 반환
