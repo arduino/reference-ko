@@ -65,7 +65,7 @@ String(val, decimalPlaces)
 === 매개변수
 `val`:  a variable to format as a String - *허용되는 자료형:* string, char, byte, int, long, unsigned int, unsigned long, float, double +
 `base` (optional): the base in which to format an integral value
-`decimalPlaces` (*only if val is float or double*): the desired decimal places
+`decimalPlaces` (*val 이 float 또는  double*): the desired decimal places
 
 [float]
 === 반환
@@ -102,7 +102,7 @@ String stringOne =  String(5.698, 3);                                // using a 
 
 
 [float]
-=== Functions
+=== 함수
 
 [role="language"]
 * #LANGUAGE# link:../string/functions/charat[charAt()]
@@ -130,7 +130,7 @@ String stringOne =  String(5.698, 3);                                // using a 
 * #LANGUAGE# link:../string/functions/trim[trim()]
 
 [float]
-=== Operators
+=== 연산자
 
 [role="language"]
 * #LANGUAGE# link:../string/operators/elementaccess[[\] (element access)]

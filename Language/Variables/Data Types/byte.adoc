@@ -17,7 +17,7 @@ subCategories: [ "자료형" ]
 
 [float]
 === 설명
-byte 는 8비트 부호없는 숫자, 0부터 255까지,를 저장항다.
+byte 는 8비트 부호없는 숫자, 0부터 255까지를 저장한다.
 [%hardbreaks]
 
 --
@@ -32,7 +32,7 @@ byte 는 8비트 부호없는 숫자, 0부터 255까지,를 저장항다.
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant code
 
 
 [source,arduino]
@@ -48,7 +48,7 @@ byte 는 8비트 부호없는 숫자, 0부터 255까지,를 저장항다.
 --
 
 [float]
-=== 더 볼 
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE# link:../../conversion/bytecast[byte()]

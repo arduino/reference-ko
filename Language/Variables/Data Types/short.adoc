@@ -40,7 +40,7 @@ short 는 16비트 자료형이다.
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant code
 
 
 [source,arduino]

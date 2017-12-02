@@ -19,7 +19,7 @@ subCategories: [ "자료형" ]
 === 설명
 long 변수는 숫자 저장을 위한 확장된 크기 변수이며, 32비트(4바이트)를 저장한다. -2,147,483,648 부터 2,147,483,647 까지.
 
-정수로 수학을 하면, 숫자 중 적어도 하나는 L이 따라와야 하며, 그것이 강제로 long으로 된다. 자세한 건 link:../../constants/integerconstants[Integer Constants] 페이지를 보라
+정수로 수학을 하면, 숫자 중 적어도 하나는 L이 따라와야 하며, 그것이 강제로 long으로 된다. 자세한 건 link:../../constants/integerconstants[Integer Constants] 페이지를 보세요.
 
 [%hardbreaks]
 
