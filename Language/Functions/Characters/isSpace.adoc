@@ -30,7 +30,7 @@ Analyse if a char is the space character. Returns true if thisChar contains the 
 
 [float]
 === 매개변수
-`thisChar`: variable. *Allowed data types:* char
+`thisChar`: variable. *허용되는 자료형:* char
 
 [float]
 === 반환

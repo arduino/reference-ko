@@ -19,7 +19,7 @@ subCategories: [ "자료형" ]
 === 설명
 텍스트 스트링은 두 가지로 나타낼 수 있다.
 String 자료형을 쓸 수 있는데, 그것은 버전 0019 핵심 부분이며, 또는 스트링을 문자와 널로 끝나는 형의 배열로 만들 수 있다. 이 페이지는 후자의 방법을 설명한다.
-스트링 개체는, 좀더 많은 메모리의 기능성을 주는데, 자세한 것은 link:../stringobject[String object] 페이지ᅟ를 보세요.
+스트링 개체는 좀더 많은 메모리의 기능성을 주는데, 자세한 것은 link:../stringobject[String object] 페이지ᅟ를 보세요.
 [%hardbreaks]
 
 [float]
@@ -43,15 +43,15 @@ String 자료형을 쓸 수 있는데, 그것은 버전 0019 핵심 부분이며
 * Str6 처럼 배열을 초기화하고, 여분 공간을 남겨서 초기화
 
 *널 끝내기*
-일반적으로, 문자열은 널 문자(아스키 코드 0)로 끝난다. 이것은 함수가 문자열의 끝이 어디인지 알 수 있다. 그렇지 않으면, 실제로는 문자열의 부분이 아닌 후속 바이트를 계속 읽을 것이다.
-이것은 문자열이 당신이 원하는 것을 담기 위해 문자 하나 더 공간을 가져야 함을 뜻한다. 그것이 Str2 와 Str5 가 문자를 필요로 하는 까닭이다.
- only seven - the last position is automatically filled with a null character. Str4 will be automatically sized to eight characters, one for the extra null. In Str3, we've explicitly included the null character (written '\0') ourselves.
 
-Note that it's possible to have a string without a final null character (e.g. if you had specified the length of Str2 as seven instead of eight). This will break most functions that use strings, so you shouldn't do it intentionally. If you notice something behaving strangely (operating on characters not in the string), however, this could be the problem.
+일반적으로, 문자열은 널 문자(아스키 코드 0)로 끝난다. 이것은 함수가 문자열의 끝이 어디인지 알 수 있게 한다. 그러지 않으면, 실제로는 문자열의 부분이 아닌 후속 바이트를 계속 읽을 것이다.
+이것은 문자열이 당신이 원하는 것을 담기 위해 문자 하나 더 공간을 가져야 함을 뜻한다. 그것이 "arduino"가 7일지라도 Str2 와 Str5 가 8개 문자(마지막 자리는 자동으로 널 문자로 채워짐)를 필요로 하는 까닭이다. Str4는 자동으로 8자로 되며, 하나는 추가 널이다. Str3에서, 명시적으로 널 문자('\0'로 씀)를 포함했다.
+
+마지막 널 문자 없는 스트링이 있을 수 있음(Str2의 길이를 8대신 7로 지정한다면)을 주의하세요. 이것은 스트링을 사용하는 대부분의 함수를 깨뜨릴 것이므로, 일부러 이렇게 하면 안 된다. 뭔가 이상한 행동을 발견하면(스트링에 없는 문자를 연산할 때) 문제가 될 수 있다.
 
 *작은 따옴표 큰 따옴표?*
 
-Strings are always defined inside double quotes ("Abc") and characters are always defined inside single quotes('A').
+스트링은 큰 따옴표("Abc")로 정의되고 문자들은 늘 작은따옴표('A')안에 정의된다.
 
 *긴 문자열 줄 바꾸기*
 
@@ -66,9 +66,9 @@ char myString[] = "This is the first line"
 
 *문자열의 배열*
 
-It is often convenient, when working with large amounts of text, such as a project with an LCD display, to setup an array of strings. Because strings themselves are arrays, this is in actually an example of a two-dimensional array.
+대량 텍스트로 작업할 때, 예를들어 LCD디스플레이를 가진 프로젝트에서, 스트링의 배열을 설정하는 것이 편할 때가 종종 있다. 스트링 자체가 배열이므로, 이것은 사실상 2차원 배열의 예이다.
 
-In the code below, the asterisk after the datatype `char` "`char*`" indicates that this is an array of "`pointers`". All array names are actually pointers, so this is required to make an array of arrays. Pointers are one of the more esoteric parts of C for beginners to understand, but it isn't necessary to understand pointers in detail to use them effectively here.
+아래 코드에서, `char` 자료형 뒤의 별 "`char*`" 은 이것이 "`pointers`"의 배열임을 뜻한다. 모든 배열 이름은 사실 포인터이므로, 배열의 배열을 만드는 것이 필요하다. 포인터들은 초보자가 이해하기 어려운 C의 가장 심오한 것 중 하나지만, 여기서 그것을 사용하는 것을 자세히 이해하지 않아도 된다.
 
 --
 // OVERVIEW SECTION ENDS
@@ -82,7 +82,7 @@ In the code below, the asterisk after the datatype `char` "`char*`" indicates th
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant code
 
 
 [source,arduino]
