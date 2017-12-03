@@ -1,6 +1,6 @@
 ---
 title: "!"
-title_expanded: 논리적 not
+title_expanded: 논리 NOT
 categories: [ "Structure" ]
 subCategories: [ "부울 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "부울 연산자" ]
 
 
 
-= ! 논리적 NOT
+= ! 논리 NOT
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,7 @@ subCategories: [ "부울 연산자" ]
 
 [float]
 === 설명
-*논리적 NOT* 은 피연산자가 `false` 면 결과는 `true` 이며, 그 반대도 된다.
+*논리 NOT* 은 피연산자가 `false` 면 결과는 `true` 이며, 그 반대도 된다.
 [%hardbreaks]
 
 --
@@ -45,7 +45,7 @@ boolean 값을 뒤집는 데 쓸 수 있다.
 
 [source,arduino]
 ----
-x = !y;   // y 의 뒤집어진 값이 x 에 저장된다.
+x = !y;   // y 의 뒤집어진 값이 x에 저장된다.
 ----
 
 
@@ -53,7 +53,7 @@ x = !y;   // y 의 뒤집어진 값이 x 에 저장된다.
 
 [float]
 === 주의와 경고
-bitwise not ~ (물결)은 boolean not ! (느낌표)와 많이 달라 보이지만 어느 곳에서 그걸 원하는지 여러분이 확실히 알아야 합니다.
+비트 not ~ (물결)은 논리 not ! (느낌표)와 많이 달라 보이지만 어느 곳에서 그걸 원하는지 여러분이 확실히 알아야 합니다.
 
 
 --

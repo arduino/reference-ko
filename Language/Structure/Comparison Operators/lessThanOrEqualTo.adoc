@@ -1,6 +1,6 @@
 ---
 title: "<="
-title_expanded: less than or equal to
+title_expanded: 작거나 같음
 categories: [ "Structure" ]
 subCategories: [ "비교 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "비교 연산자" ]
 
 
 
-= <= Less Than or Equal To
+= <= 작거나 같음
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,7 @@ subCategories: [ "비교 연산자" ]
 
 [float]
 === 설명
-Compares the variable on the left with the value or variable on the right of the operator. Returns true when the operand on the left is less (smaller) than or equal to the operand on the right. 
+왼쪽 변수와 연산자 오른쪽 변수를 비교. 왼쪽 피연산자가 오른쪽 피연산자보다 작거나 같으면 true 반환.
 [%hardbreaks]
 
 
@@ -32,7 +32,7 @@ x <= y;   // is true if x is smaller than or equal to y and it is false if x is 
 [float]
 === 매개변수
 `x`: variable. *허용되는 자료형:* int, float, double, byte, short, long +
-`y`: variable or constant. *허용되는 자료형:* int, float, double, byte, short, long
+`y`: 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,16 +48,16 @@ x <= y;   // is true if x is smaller than or equal to y and it is false if x is 
 
 [source,arduino]
 ----
-if (x<=y)      // tests if x is less (smaller) than or equal to y
+if (x<=y)      // x가 y보다 작거나 같으면
 {
-// do something only if the comparison result is true
+// 
 }
 ----
 [%hardbreaks]
 
 [float]
 === 주의와 경고
-Negative numbers are smaller than positive numbers. 
+음수는 양수보다 작다.
 [%hardbreaks]
 
 --
