@@ -3,7 +3,7 @@
 Reference-ko 는 아두이노 문법의 언어 참조 문서 한국어 저장소입니다.
 모든 참조 언어 파일은 AsciiDoc 형식입니다.
 아두이노 내용에 기여할 시간을 내주셔서 고맙습니다. 이것은 모든 아두이노 공동체에 실제 도움이 됩니다.
-이 프로젝트에 어떻게 기여하는지 더 배우고 싶으면 https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[this step by step tutorial] 을 보세요.
+이 프로젝트에 어떻게 기여하는지 더 배우고 싶으면 https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[step by step tutorial] 을 보세요.
 
 
 == 내용 만들고 편집하기
