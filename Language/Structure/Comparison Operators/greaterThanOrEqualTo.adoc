@@ -1,6 +1,6 @@
 ---
 title: ">="
-title_expanded: greater than or equal to
+title_expanded: 크거나 같음
 categories: [ "Structure" ]
 subCategories: [ "비교 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "비교 연산자" ]
 
 
 
-= >= Greater Than or Equal To
+= >= 크거나 같음
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,7 @@ subCategories: [ "비교 연산자" ]
 
 [float]
 === 설명
-Compares the variable on the left with the value or variable on the right of the operator. Returns true when the operand on the left is greater (bigger) than or equal to the operand on the right. 
+왼쪽 변수와 연산자 오른쪽 변수를 비교. 왼쪽 피연산자가 오른쪽 피연산자보다 크거나 같으면 true 반환.
 [%hardbreaks]
 
 
@@ -26,13 +26,13 @@ Compares the variable on the left with the value or variable on the right of the
 === 문법
 [source,arduino]
 ----
-x >= y;   // is true if x is bigger than or equal to y and it is false if x is smaller than y
+x >= y;   //x가 y 보다 크거나 같으면 참
 ----
 
 [float]
 === 매개변수
-`x`: variable. *허용되는 자료형:* int, float, double, byte, short, long +
-`y`: variable or constant. *허용되는 자료형:* int, float, double, byte, short, long
+`x`: 변수. *허용되는 자료형:* int, float, double, byte, short, long +
+`y`: 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long
 
 --
 // OVERVIEW SECTION ENDS
@@ -57,7 +57,7 @@ if (x>=y)      // tests if x is greater (bigger) than or equal to y
 
 [float]
 === 주의와 경고
-Positive numbers are greater than negative numbers. 
+양수는 음수보다 크다.
 [%hardbreaks]
 
 --

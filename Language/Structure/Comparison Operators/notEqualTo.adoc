@@ -1,6 +1,6 @@
 ---
 title: "!="
-title_expanded: not equal to
+title_expanded: 같지 않음
 categories: [ "Structure" ]
 subCategories: [ "비교 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "비교 연산자" ]
 
 
 
-= != Not Equal To
+= != 같지 않음
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,7 @@ subCategories: [ "비교 연산자" ]
 
 [float]
 === 설명
-Compares the variable on the left with the value or variable on the right of the operator. Returns true when the two operands are not equal. 
+왼쪽 변수와 연산자 오른쪽 변수를 비교. 두 피연산자가 같지 않으면 true 반환.
 [%hardbreaks]
 
 
@@ -26,13 +26,13 @@ Compares the variable on the left with the value or variable on the right of the
 === 문법
 [source,arduino]
 ----
-x != y;   // is false if x is equal to y and it is true if x is not equal to y
+x != y;   // x와 y가 같으면 거짓, x와 y가 같지 않으면 참
 ----
 
 [float]
 === 매개변수
-`x`: variable. *허용되는 자료형:* int, float, double, byte, short, long +
-`y`: variable or constant. *허용되는 자료형:* int, float, double, byte, short, long
+`x`: 변수. *허용되는 자료형:* int, float, double, byte, short, long +
+`y`: 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,9 +48,9 @@ x != y;   // is false if x is equal to y and it is true if x is not equal to y
 
 [source,arduino]
 ----
-if (x!=y)      // tests if x is not equal to y
+if (x!=y)      // x 가 y 와 같지 않으면
 {
-// do something only if the comparison result is true
+// 비교결과 참일 때 무엇을 함
 }
 ----
 [%hardbreaks]
