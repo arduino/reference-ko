@@ -1,6 +1,6 @@
 ---
 title: "!"
-title_expanded: 논리적 not
+title_expanded: 논리 NOT
 categories: [ "Structure" ]
 subCategories: [ "부울 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "부울 연산자" ]
 
 
 
-= ! 논리적 NOT
+= ! 논리 NOT
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,7 @@ subCategories: [ "부울 연산자" ]
 
 [float]
 === 설명
-*논리적 NOT* 은 피연산자가 `false` 면 결과는 `true` 이며, 그 반대도 된다.
+*논리 NOT* 은 피연산자가 `false` 면 결과는 `true` 이며, 그 반대도 된다.
 [%hardbreaks]
 
 --
