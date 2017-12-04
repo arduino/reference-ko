@@ -1,6 +1,6 @@
 ---
 title: "&"
-title_expanded: bitwise and
+title_expanded: 비트 AND
 categories: [ "Structure" ]
 subCategories: [ "비트 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "비트 연산자" ]
 
 
 
-= & Bitwise AND
+= & 비트 AND
 
 
 // OVERVIEW SECTION STARTS
