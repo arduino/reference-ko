@@ -17,8 +17,7 @@ subCategories: [ "인터럽트" ]
 
 [float]
 === 설명
-인터럽트를 비활성화한다(다시 활성화 하려면 `interrupts()`). 인터럽트는 어떤 중요한 작업이 백그라운드에서 발생하는 것을 허용하며 기본적으로 활성화되어 있다. 어떤 함수는인터럽트가 비활성화된 동안 동작하지 않으며, 들어오는 통신이 무시될 수 있다.
-그러나, 인터럽트는 코드의 타이밍을  조금 방해할 수 있그, 특히 중요한 코드 섹션에서는 사용불가능하게 될 수 있다.
+인터럽트를 비활성화한다(다시 활성화 하려면 `interrupts()` ). 인터럽트는 어떤 중요한 작업이 백그라운드에서 발생하는 것을 허용하며 기본적으로 활성화되어 있다. 어떤 함수는 인터럽트가 비활성화된 동안 동작하지 않으며, 들어오는 통신이 무시될 수 있다. 그러나, 인터럽트는 코드의 타이밍을  조금 방해할 수 있고, 특히 중요한 코드 섹션에서는 비활성화 될 수 있다.
 [%hardbreaks]
 
 
@@ -47,7 +46,7 @@ subCategories: [ "인터럽트" ]
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant code
 이 코드는 인터럽트를 가능하게 하는 방법을 보여준다.
 
 
