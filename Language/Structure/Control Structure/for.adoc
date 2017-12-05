@@ -26,12 +26,12 @@ subCategories: [ "제어 구조" ]
 === 문법
 [source,arduino]
 ----
-for (initialization; condition; increment) {
-	//statement(s);
+for (초기화; 조건; 증가) {
+	//문 ;
 }
 ----
 
-The *initialization* happens first and exactly once. Each time through the loop, the *condition* is tested; if it's `true`, the statement block, and the *increment* is executed, then the *condition* is tested again. When the *condition* becomes `false`, the loop ends.
+*초기화* 는 처음에 딱 한 번만. 루프에서 매번, *조건* 이 테스트된다; 그것이 `true` 이면, 문 블록과 *증가* 가 실행되며, 그러면 *조건* 이 다시 테스트된다. *조건* 이 `false` 되면, 루프는 끝난다.
 [%hardbreaks]
 
 --
