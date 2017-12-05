@@ -1,6 +1,6 @@
 ---
 title: "|"
-title_expanded: bitwise or
+title_expanded: 비트 OR
 categories: [ "Structure" ]
 subCategories: [ "비트 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "비트 연산자" ]
 
 
 
-= | Bitwise OR
+= | 비트 OR
 
 
 // OVERVIEW SECTION STARTS

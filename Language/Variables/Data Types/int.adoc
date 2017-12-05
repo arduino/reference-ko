@@ -21,14 +21,14 @@ subCategories: [ "자료형" ]
 
 안드로이드 우노(그리고 다른 ATmega 기반 보드)에서 int 는 16비트(2바이트) 값을 저장한다.
 이 값은 -32,768 에서 32,767 (최소값 -2^15 과 최대값 (2^15) - 1).
-아두이노 Due와 SAND 기반 보드(MKR1000과 Zero 같은)에서, int 는 32비트 (4바티트) 값을 저장한다.
+아두이노 두에와 SAND 기반 보드(MKR1000과 제로 같은)에서, int 는 32비트 (4바이트) 값을 저장한다.
 이것은 -2,147,483,648 에서 2,147,483,647 까지(최소값 -2^31 과 최대값 (2^31) - 1).
 
 int 의 음수는 (http://en.wikipedia.org/wiki/2%27s_complement[2's complement math])라는 기술로 저장한다.
-가장높은 비트, 때때로 "sign" bit 로 참조되는, 는 숫자를 음수라고 표시한다. 비트의 나머지는 거꾸로 되고 1이 더해진다.
+가장 높은 비트(때때로 "부호" 비트라고 참조됨)는 숫자를 음수라고 표시한다. 비트의 나머지는 거꾸로 되고 1이 더해진다.
 
 아두이노는 음수를 주의깊게 다루므로, 산술연산은 예상대로 투명하게 동작한다.
-그러나, link:../../../structure/bitwise-operators/bitshiftright/[bitshift right operator] (>>) 를 다룰 때 예상치 못한 복잡함이 생길 수 있다.
+그러나, link:../../../structure/bitwise-operators/bitshiftright/[오른쪽으로 비트 옮김 연산자] (>>) 와 함께 다룰 때 예상치 못한 복잡함이 생길 수 있다.
 [%hardbreaks]
 
 
@@ -62,7 +62,7 @@ int 의 음수는 (http://en.wikipedia.org/wiki/2%27s_complement[2's complement 
 
 [float]
 === 주의와 경고
-부호 있는 변수가 최대 또는 최소 용량을 넘어가면 _overflow_ 된다.
+부호 있는 변수가 최대 또는 최소 용량을 넘어가면 _오버플로우_ 된다.
 오버플로우의 결과는 예측할 수 없으므로 피해야 한다.
 오버플로우의 전형적인 증상은 그 최대용량에서 최소로 또는 반대로 변수 "rolling over" 이지만, 언제나 그런 건 아니다.
 이 동작을 원하면, link:../unsignedint/[unsigned int] 를 쓰시오.

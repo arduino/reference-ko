@@ -1,6 +1,6 @@
 ---
 title: "="
-title_expanded: "assignment operator"
+title_expanded: "할당 연산자"
 categories: [ "Structure" ]
 subCategories: [ "산술 연산자" ]
 ---
