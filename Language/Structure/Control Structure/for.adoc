@@ -70,10 +70,11 @@ void loop()
 === 주의와 경고
 C `for` 루프는 다른 컴퓨터 언어, BASIC 포함,에서 발견되는 `for` 루프보다 좀더 유연하다.
 세미콜론은 필요하지만 3개 헤더 요소중 어느 것도 생략될 수 있다. 
-Also the statements for initialization, condition, and increment can be any valid C statements with unrelated variables, and use any C datatypes including floats. These types of unusual `for` statements may provide solutions to some rare programming problems.
+초기화, 조건, 그리고 증가는 관련 없는 변수를 가진 어떤 타당한 C 문도 될 수 있고, float 를 포함한 어떤 C 자료형을 쓴다.
+이런식의 평범하지 않은 `for` 문 형식은 드문 프로그램 문제에 대한 해결책을 제공할 수 있다.
 [%hardbreaks]
 
-For example, using a multiplication in the increment line will generate a logarithmic progression:
+예를 들어, 증가 행에 곱셈을 쓰면 로그 진행률을 생성할 것이다:
 
 [source,arduino]
 ----
