@@ -14,7 +14,7 @@ title: Keyboard.end()
 
 [float]
 === 설명
-Stops the keyboard emulation to a connected computer. To start keyboard emulation, use link:../keyboardbegin[Keyboard.begin()].
+연결된 컴퓨터에 키보드 흉내를 멈춘다. 키보드 흉내를 시작하려면, link:../keyboardbegin[Keyboard.begin()].
 [%hardbreaks]
 
 
@@ -25,11 +25,11 @@ Stops the keyboard emulation to a connected computer. To start keyboard emulatio
 
 [float]
 === 매개변수
-Nothing
+없음
 
 [float]
 === 반환
-Nothing
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -43,7 +43,7 @@ Nothing
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant cod
 
 
 [source,arduino]
@@ -51,11 +51,11 @@ Nothing
 #include <Keyboard.h>
 
 void setup() {
-  //start keyboard communication
+  // 키보드 통신 시작
   Keyboard.begin();
   //send a keystroke
   Keyboard.print("Hello!");
-  //end keyboard communication
+  // 키보드 통신 끝
   Keyboard.end();
 }
 
