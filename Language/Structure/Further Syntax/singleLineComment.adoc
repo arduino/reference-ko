@@ -36,7 +36,7 @@ subCategories: [ "추가 문법" ]
 
 [float]
 === 예제 코드
-줄을 주석으로 표시하는 두 방법:
+줄을 주석으로 표시하는 두 방법이 있다:
 [source,arduino]
 ----
 // Pin 13 has an LED connected on most Arduino boards.
