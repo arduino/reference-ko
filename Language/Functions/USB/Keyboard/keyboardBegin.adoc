@@ -14,7 +14,7 @@ title: Keyboard.begin()
 
 [float]
 === 설명
-When used with a Leonardo or Due board, `Keyboard.begin()` starts emulating a keyboard connected to a computer. To end control, use link:../keyboardend[Keyboard.end()].
+레오나르도 또는 두에 보드와 함께 쓰면, `Keyboard.begin()` 이 컴퓨터에 연결된 키보드를 흉내낼 수 있다. 제어를 끝내려면, link:../keyboardend[Keyboard.end()].
 [%hardbreaks]
 
 
@@ -25,11 +25,11 @@ When used with a Leonardo or Due board, `Keyboard.begin()` starts emulating a ke
 
 [float]
 === 매개변수
-Nothing
+없음
 
 [float]
 === 반환
-Nothing
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -43,7 +43,7 @@ Nothing
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant code
 
 
 [source,arduino]
