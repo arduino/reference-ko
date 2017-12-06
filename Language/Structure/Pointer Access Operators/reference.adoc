@@ -1,6 +1,6 @@
 ---
 title: "&"
-title_expanded: reference opearator
+title_expanded: 참조 연산자
 categories: [ "Structure" ]
 subCategories: [ "포인터 액세스 연산자" ]
 ---
@@ -18,7 +18,7 @@ subCategories: [ "포인터 액세스 연산자" ]
 
 [float]
 === 설명
-참조는 특별히 포인터와 함께 쓰이는 기능 중 하나다. 앰퍼샌드 연산자 `&` 는 이 목적에 쓰인다.  `x` 가 변수면,  `&x` 는 값 `x` 의 주소를 가리킨다.
+참조는 특별히 포인터와 함께 쓰이는 기능 중 하나다. 앰퍼샌드 연산자 `&` 가 이 목적에 쓰인다.  `x` 가 변수면,  `&x` 는 값 `x` 의 주소를 가리킨다.
 [%hardbreaks]
 
 --
