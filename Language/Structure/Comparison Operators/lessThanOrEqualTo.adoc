@@ -31,7 +31,7 @@ x <= y;   // is true if x is smaller than or equal to y and it is false if x is 
 
 [float]
 === 매개변수
-`x`: variable. *허용되는 자료형:* int, float, double, byte, short, long +
+`x`: 변수. *허용되는 자료형:* int, float, double, byte, short, long +
 `y`: 변수 또는 상수. *허용되는 자료형:* int, float, double, byte, short, long
 
 --
