@@ -18,10 +18,11 @@ subCategories: [ "비트 연산자" ]
 
 [float]
 === 설명
-The bitwise OR operator in C++ is the vertical bar symbol, |. Like the & operator, | operates independently each bit in its two surrounding integer expressions, but what it does is different (of course). The bitwise OR of two bits is 1 if either or both of the input bits is 1, otherwise it is 0.
+비트 OR 연산자는 C++에서 세로 막대 | 이며, | 는  & 연산자처럼 둘러싸는 정수식 안에 있는 각 비트에 독립적으로 연산하지만, 그것이 하는 것 (물론) 다르다.
+2 비트의 비트 OR 는 둘 중 하나 이상의 입력 비트가 1이면 1이고, 아니면 0이다.
 [%hardbreaks]
 
-In other words:
+다른 말로:
 
     0  0  1  1    operand1
     0  1  0  1    operand2
@@ -43,13 +44,13 @@ In other words:
 
 [source,arduino]
 ----
-int a =  92;    // in binary: 0000000001011100
-int b = 101;    // in binary: 0000000001100101
-int c = a | b;  // result:    0000000001111101, or 125 in decimal.
+int a =  92;    // 이진수: 0000000001011100
+int b = 101;    // 이진수: 0000000001100101
+int c = a | b;  // 결과:    0000000001111101, 즉 십진수 125 
 ----
 [%hardbreaks]
 
-One of the most common uses of the Bitwise OR is to set multiple bits in a bit-packed number.
+비트 OR 을 가장 자주 사용되는 것 중 하나는, 비트로 채워진 숫자의 여러 비트를 설정하는 것이다.
 
 [source,arduino]
 ----
