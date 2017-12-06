@@ -40,6 +40,7 @@ int i = 5, result = 0;
 p = &i;       // 이제 'p' 는  'i' 의 주소를 포함
 result = *p;  // 'result' 는 'p'가 가리키는 주소에서의 값을 얻음
               // 즉 'i'의 값 5
+
 ----
 [%hardbreaks]
 
