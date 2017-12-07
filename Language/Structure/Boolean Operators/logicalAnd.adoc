@@ -1,6 +1,6 @@
 ---
 title: "&&"
-title_expanded: 논리 and
+title_expanded: 논리 AND
 categories: [ "Structure" ]
 subCategories: [ "부울 연산자" ]
 ---
@@ -18,7 +18,7 @@ subCategories: [ "부울 연산자" ]
 
 [float]
 === 설명
-*논리 AND* 는 피연산자들이 `true` 일때*만* `true`가 된다.
+*논리 AND* 는 피연산자들이 `true` 일때 *만* `true`가 된다.
 [%hardbreaks]
 
 --
@@ -45,7 +45,7 @@ if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) { // 두 스위치 다 HI
 
 [float]
 === 주의와 경고
-boolean AND 연산자, && (이중 &) 와 bitwise AND 연산자 & (단일 ampersand)를 실수하지 마시오. 그들은 완전히 다른 녀석이다.
+논리 AND 연산자 && (이중 앰퍼샌드) 와 비트 AND 연산자 & (단일 앰퍼샌드)를 실수하지 마시오. 그들은 완전히 다른 녀석이다.
 
 --
 // HOW TO USE SECTION ENDS
