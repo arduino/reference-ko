@@ -17,7 +17,8 @@ subCategories: [ "인터럽트" ]
 
 [float]
 === 설명
-Re-enables interrupts (after they've been disabled by link:../nointerrupts[nointerrupts()]. Interrupts allow certain important tasks to happen in the background and are enabled by default. Some functions will not work while interrupts are disabled, and incoming communication may be ignored. Interrupts can slightly disrupt the timing of code, however, and may be disabled for particularly critical sections of code.
+interrupts 를 다시 가능하게 (link:../nointerrupts[nointerrupts()] 에 의해 불가능하게 된 후).
+Interrupts allow certain important tasks to happen in the background and are enabled by default. Some functions will not work while interrupts are disabled, and incoming communication may be ignored. Interrupts can slightly disrupt the timing of code, however, and may be disabled for particularly critical sections of code.
 [%hardbreaks]
 
 
@@ -28,11 +29,11 @@ Re-enables interrupts (after they've been disabled by link:../nointerrupts[noint
 
 [float]
 === 매개변수
-Nothing
+없음
 
 [float]
 === 반환
-Nothing
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,8 +47,8 @@ Nothing
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code enables Interrupts.
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+이 코드는 Interrupts 를 가능하게 한다.
 
 [source,arduino]
 ----

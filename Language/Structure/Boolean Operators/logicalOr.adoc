@@ -1,6 +1,6 @@
 ---
 title: "||"
-title_expanded: 논리 or
+title_expanded: 논리 OR
 categories: [ "Structure" ]
 subCategories: [ "부울 연산자" ]
 ---
