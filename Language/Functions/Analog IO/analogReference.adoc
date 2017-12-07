@@ -17,10 +17,11 @@ subCategories: [ "아날로그 입출력" ]
 
 [float]
 === 설명
-Configures the reference voltage used for analog input (i.e. the value used as the top of the input range). The options are:
+아날로그 입력에 쓰이는 참조 전압(즉 입력 범위 꼭대기에 쓰이는 값)을 구성. 옵션은 :
 
-* DEFAULT: the default analog reference of 5 volts (on 5V Arduino boards) or 3.3 volts (on 3.3V Arduino boards)
-* INTERNAL: an built-in reference, equal to 1.1 volts on the ATmega168 or ATmega328P and 2.56 volts on the ATmega8 (not available on the Arduino Mega)
+
+* DEFAULT: 5V 의 기본 아날로그 참조 값(5V 아두이노 보드에서) 또는 3.3 V (3.3V 아두이노 보드에서)
+* INTERNAL: 내장된 참조, 1.1 V ATmega168 또는ATmega328P 에서, 그리고 2.56 V ATmega8 에서(아두이노 메가에서는 안 됨)
 * INTERNAL1V1: a built-in 1.1V reference (Arduino Mega only)
 * INTERNAL2V56: a built-in 2.56V reference (Arduino Mega only)
 * EXTERNAL: the voltage applied to the AREF pin (0 to 5V only) is used as the reference.
@@ -38,7 +39,7 @@ Configures the reference voltage used for analog input (i.e. the value used as t
 
 [float]
 === 반환
-Nothing
+없음
 
 --
 // OVERVIEW SECTION ENDS
