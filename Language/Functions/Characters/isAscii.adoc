@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-Analyse if a char is Ascii. Returns true if thisChar contains an Ascii character. 
+char가 아스키인지 분석. thisChar 가 아스키 문자를 포함하면 true 반환.
 [%hardbreaks]
 
 
@@ -30,11 +30,11 @@ Analyse if a char is Ascii. Returns true if thisChar contains an Ascii character
 
 [float]
 === 매개변수
-`thisChar`: variable. *허용되는 자료형:* char
+`thisChar`: 변수. *허용되는 자료형:* char
 
 [float]
 === 반환
-`true`: if thisChar is Ascii.
+`true`: thisChar 가 Ascii 이면.
 
 --
 // OVERVIEW SECTION ENDS

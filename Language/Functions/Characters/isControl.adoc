@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-Analyse if a char is a control character. Returns true if thisChar is a control character. 
+제어문자인지 분석. thisChar이 제어문자이면 true 반환.
 [%hardbreaks]
 
 
@@ -30,7 +30,7 @@ Analyse if a char is a control character. Returns true if thisChar is a control 
 
 [float]
 === 매개변수
-`thisChar`: variable. *허용되는 자료형:* char
+`thisChar`: 변수. *허용되는 자료형:* char
 
 [float]
 === 반환

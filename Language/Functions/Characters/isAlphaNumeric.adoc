@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-Analyse if a char is alphanumeric (that is a letter or a numbers). Returns true if thisChar contains either a number or a letter. 
+thisChar 가 alphanumeric(글자 또는 숫자)인지 분석. thisChar 가 글자 또는 숫자를 포함하면 true 반환.
 [%hardbreaks]
 
 
@@ -30,11 +30,11 @@ Analyse if a char is alphanumeric (that is a letter or a numbers). Returns true 
 
 [float]
 === 매개변수
-`thisChar`: variable. *허용되는 자료형:* char
+`thisChar`: 변수. *허용되는 자료형:* char
 
 [float]
 === 반환
-`true`: if thisChar is alphanumeric.
+`true`: thisChar 가 alphanumeric 이면.
 
 --
 // OVERVIEW SECTION ENDS
