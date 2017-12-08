@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-Analyse if a char is lower case (that is a letter in lower case). Returns true if thisChar contains a letter in lower case. 
+소문자인지 분석. thisChar가 소문자를 포함하면 true 반환.
 [%hardbreaks]
 
 
@@ -30,11 +30,11 @@ Analyse if a char is lower case (that is a letter in lower case). Returns true i
 
 [float]
 === 매개변수
-`thisChar`: variable. *허용되는 자료형:* char
+`thisChar`: 변수. *허용되는 자료형:* char
 
 [float]
 === 반환
-`true`: if thisChar is lower case.
+`true`: thisChar 가 소문자이면.
 
 --
 // OVERVIEW SECTION ENDS

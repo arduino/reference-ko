@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-Analyse if a char is printable with some content (space is printable but has no content). Returns true if thisChar is printable. 
+내용을 출력가능한지(스페이스는 출력가능하지만 내용은 없음). thisChar 가 어떤 내용을 출력가능하면 true 반환.
 [%hardbreaks]
 
 

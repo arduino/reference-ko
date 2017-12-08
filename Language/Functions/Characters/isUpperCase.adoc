@@ -18,6 +18,7 @@ subCategories: [ "문자" ]
 [float]
 === 설명
 Analyse if a char is upper case (that is a letter in upper case). Returns true if thisChar is upper case. 
+대문자인지 분석. thisChar가 대문자이면 true 반환
 [%hardbreaks]
 
 
@@ -30,11 +31,11 @@ Analyse if a char is upper case (that is a letter in upper case). Returns true i
 
 [float]
 === 매개변수
-`thisChar`: variable. *허용되는 자료형:* char
+`thisChar`: 변수. *허용되는 자료형:* char
 
 [float]
 === 반환
-`true`: if thisChar is upper case.
+`true`: thisChar 가 대문자이면.
 
 --
 // OVERVIEW SECTION ENDS
