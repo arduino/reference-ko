@@ -23,7 +23,7 @@ subCategories: [ "아날로그 입출력" ]
 * DEFAULT: 5V 의 기본 아날로그 참조 값(5V 아두이노 보드에서) 또는 3.3 V (3.3V 아두이노 보드에서)
 * INTERNAL: 내장된 참조, 1.1 V ATmega168 또는ATmega328P 에서, 그리고 2.56 V ATmega8 에서(아두이노 메가에서는 안 됨)
 * INTERNAL1V1: 내장된 1.1V 참조 (아두이노 메가 전용)
-* INTERNAL2V56: a built-in 2.56V reference (Arduino Mega only)
+* INTERNAL2V56: 내장된 2.56V 참조 (아두이노 메가 전용)
 * EXTERNAL: the voltage applied to the AREF pin (0 to 5V only) is used as the reference.
 [%hardbreaks]
 
@@ -35,7 +35,7 @@ subCategories: [ "아날로그 입출력" ]
 
 [float]
 === 매개변수
-`type`: which type of reference to use (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, or EXTERNAL).
+`type`: 사용할 참조 타입 (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, 또는 EXTERNAL).
 
 [float]
 === 반환
