@@ -17,9 +17,13 @@ subCategories: [ "고급 입출력" ]
 
 [float]
 === 설명
-Reads a pulse (either HIGH or LOW) on a pin. For example, if *value* is *HIGH*, `pulseIn()` waits for the pin to go *HIGH*, starts timing, then waits for the pin to go *LOW* and stops timing. Returns the length of the pulse in microseconds. Gives up and returns 0 if no pulse starts within a specified time out.
+핀에서 펄스(HIGH 또는 LOW)를 읽는다.
+예를들어, *값* 이 *HIGH* 이면, `pulseIn()` 는 핀이 *HIGH* 로 갈 때를 기다리고, 타이밍을 시작하고, 그러면 핀이 *LOW* 가 될 때를 기다리고 타이밍을 멈춘다.
+펄스의 길이를 마이크로 초로 반환한다. 특정 타임 아웃 안에 펄스 시작 없으면 포기하고 0을 반환.
+이 함수의 타이밍은 경험적으로 결정되어 긴 펄스에서 에러를 보일 수도 있다.
+10 마이크로 초에서 3분 길이까지 동작한다.
 
-The timing of this function has been determined empirically and will probably show errors in longer pulses. Works on pulses from 10 microseconds to 3 minutes in length.
+
 [%hardbreaks]
 
 
@@ -31,14 +35,14 @@ The timing of this function has been determined empirically and will probably sh
 
 [float]
 === 매개변수
-`pin`: the number of the pin on which you want to read the pulse. (int)
+`pin`: 펄스를 읽을 핀 번호. (int)
 
-`value`: type of pulse to read: either link:../../../variables/constants/constants/[HIGH] or link:../../../variables/constants/constants/[LOW]. (int)
+`value`: 읽을 펄스 형: either link:../../../variables/constants/constants/[HIGH] 또는 link:../../../variables/constants/constants/[LOW]. (int)
 
-`timeout` (optional): the number of microseconds to wait for the pulse to start; default is one second (unsigned long)
+`timeout` (옵션): 펄스 시작을 기다릴 마이크로 초 수; 기본값은 1초 (unsigned long)
 [float]
 === 반환
-the length of the pulse (in microseconds) or 0 if no pulse started before the timeout (unsigned long)
+펄스 길이 (마이크로 초) 또는 0(타임아웃 시작되기전에 펄스 없으면) (unsigned long)
 
 --
 // OVERVIEW SECTION ENDS
@@ -52,8 +56,9 @@ the length of the pulse (in microseconds) or 0 if no pulse started before the ti
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The example calculated the time duration of a pulse on pin 7.
+// Describe what the example code is all about and add relevant code
+
+이 예는 핀 7에서 펄스의 지속시간을 계산.
 
 [source,arduino]
 ----
