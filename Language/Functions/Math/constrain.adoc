@@ -17,7 +17,7 @@ subCategories: [ "수학" ]
 
 [float]
 === 설명
-Constrains a number to be within a range.
+숫자를 어느 범위로 제한.
 [%hardbreaks]
 
 
@@ -28,17 +28,17 @@ Constrains a number to be within a range.
 
 [float]
 === 매개변수
-`x`: the number to constrain, all data types
-`a`: the lower end of the range, all data types
-`b`: the upper end of the range, all data types
+`x`: 제한할 수, 모든 자료형
+`a`: 범위의 하한, 모든 자료형
+`b`: 범위의 상한, 모든 자료형
 
 [float]
 === 반환
-x: if x is between a and b
+x: x가 a 와 b 사이에 있으면
 
-a: if x is less than a
+a: x가 a 보다 작으면
 
-b: if x is greater than b
+b: x가 a 보다 크면
 
 --
 // OVERVIEW SECTION ENDS
@@ -52,12 +52,11 @@ b: if x is greater than b
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code limits the sensor values to between 10 to 150.
-
+// Describe what the example code is all about and add relevant code
+이 코드는 센서 값을 10에서 150 사이로 제한.
 [source,arduino]
 ----
-sensVal = constrain(sensVal, 10, 150);    // limits range of sensor values to between 10 and 150
+sensVal = constrain(sensVal, 10, 150);    // 센서 값을 10에서 150 사이로 제한. 
 ----
 
 --

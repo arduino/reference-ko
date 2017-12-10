@@ -1,5 +1,5 @@
 ---
-title: constants
+title: 상수
 categories: [ "Variables" ]
 subCategories: [ "상수" ]
 ---
@@ -81,9 +81,9 @@ In this state it can sink current, e.g. light an LED that is connected through a
 디지털 핀은 `INPUT`, `INPUT_PULLUP`, 또는 `OUTPUT` 로 쓰일 수 있다.
 `pinMode()` 로 핀을 바꾸면 핀의 전기적 동작이 바뀐다.
 [float]
-=== INPUT 으로 구성ᅟ된 핀
+=== INPUT 으로 구성된 핀
 `pinMode()` 에서 `INPUT` 로 설정된 아두이노(ATmega)는 _high-impedance_ state 에 있다고 말한다.
-`INPUT` 로 구성된 핀들은 그들이 샘플링 하는 데 극도로 작은 요구를 하고, 핀 앞에는 100 메가 옴의 직렬 저항과 동일합니다. 
+`INPUT` 으로 구성된 핀들은 그들이 샘플링 하는 데 극도로 작은 요구를 하고, 핀 앞에는 100 메가 옴의 직렬 저항과 동일. 
 이것은 센서를 읽기 좋게 만든다.
 [%hardbreaks]
 
@@ -116,8 +116,8 @@ Pins configured as outputs can be damaged or destroyed if they are connected to 
 [%hardbreaks]
 
 [float]
-== 빌트 인 정의 : LED_BUILTIN
-Most Arduino boards have a pin connected to an on-board LED in series with a resistor. The constant `LED_BUILTIN` is the number of the pin to which the on-board LED is connected. Most boards have this LED connected to digital pin 13.
+== 내장된 정의 : LED_BUILTIN
+대부분의 아두이노 보드는 저항에 직렬로 온보드에 연결된 핀을 갖고 있다. 상수 `LED_BUILTIN`  은 온보드 LED가 연결된 핀 번호이다. 대개의 보드는 이 LED가 디지털 13에 연결되어 있다.
 
 --
 // OVERVIEW SECTION ENDS
