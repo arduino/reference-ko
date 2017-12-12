@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isWhitespace()"
 categories: [ "Functions" ]
 subCategories: [ "문자" ]
@@ -17,8 +17,8 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-Analyse if a char is a white space, that is space, formfeed ('\f'), newline ('\n'), carriage return ('\r'), horizontal tab ('\t'), and vertical tab ('\v')). 
-Returns true if thisChar contains a white space. 
+thisChar 가 공백(즉 formfeed ('\f'), newline ('\n'), carriage return ('\r'), horizontal tab ('\t'), 그리고 vertical tab ('\v'))인지 분석.
+thisChar 가 공백일 때 true 반환.
 [%hardbreaks]
 
 
@@ -31,11 +31,11 @@ Returns true if thisChar contains a white space.
 
 [float]
 === 매개변수
-`thisChar`: variable. *허용되는 자료형:* char
+`thisChar`: 변수. *허용되는 자료형:* char
 
 [float]
 === 반환
-`true`: if thisChar is a white space.
+`true`: thisChar가 공백일 때.
 
 --
 // OVERVIEW SECTION ENDS
