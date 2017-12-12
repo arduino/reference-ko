@@ -30,7 +30,7 @@ subCategories: [ "시간" ]
 
 [float]
 === 매개변수
-Nothing
+없음
 
 [float]
 === 반환

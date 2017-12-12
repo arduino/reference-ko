@@ -35,8 +35,7 @@ subCategories: [ "시간" ]
 
 [float]
 === 반환
-Returns the number of microseconds since the Arduino board began running the current program.(unsigned long)
-
+아두이노 보드가 현재 프로그램을 돌리기 시작한 후 지난 마이크로 초 수를 반환. (unsigned long)
 --
 // OVERVIEW SECTION ENDS
 

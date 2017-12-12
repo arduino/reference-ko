@@ -17,21 +17,20 @@ subCategories: [ "수학" ]
 
 [float]
 === 설명
-Re-maps a number from one range to another. That is, a value of *fromLow* would get mapped to *toLow*, a value of *fromHigh* to *toHigh*, values in-between to values in-between, etc.
+숫자를 한 범위에서 다른 곳으로 변환한다. 즉, *fromLow* 의 값은 *toLow* 으로 변환되고, *fromHigh* 값은 *toHigh* 으로, 값들 사이의 값은 값들 사이의 값으로, 등등.
+값을 범위 안으로 제한하지 않는데, 왜냐면 범위 밖의 값이 때때로 의도되고 쓸모있기 때문. 범위 제한이 필요하면, `constrain()` 함수를 이 함수 전 또는 후에 쓸 수 있다.
 
-Does not constrain values to within the range, because out-of-range values are sometimes intended and useful. The `constrain()` function may be used either before or after this function, if limits to the ranges are desired.
-
-Note that the "lower bounds" of either range may be larger or smaller than the "upper bounds" so the `map()` function may be used to reverse a range of numbers, for example
+어떤 범위의 "하한"이 "상한" 보다 크거나 작을 수 있으므로  `map()` 함수는 숫자의 범위를 뒤집는데 쓸 수 있다. 예를 들어
 
 `y = map(x, 1, 50, 50, 1);`
 
-The function also handles negative numbers well, so that this example
+이 함수는 음수도 잘 다루므로, 이 예는
 
 `y = map(x, 1, 50, 50, -100);`
 
-is also valid and works well.
+이 역시 타당하며 잘 돌아간다.
 
-The `map()` function uses integer math so will not generate fractions, when the math might indicate that it should do so. Fractional remainders are truncated, and are not rounded or averaged.
+`map()` 함수는 정수 수학을 쓰므로, 수학이 그렇게 해야 할 때, 분수를 만들지 않음을 주의하세요. 분수 나머지는 잘리며, 반올림되거나 평균되지 않는다.
 [%hardbreaks]
 
 
@@ -42,19 +41,19 @@ The `map()` function uses integer math so will not generate fractions, when the 
 
 [float]
 === 매개변수
-`value`: the number to map
+`value`: 변환할 수
 
-`fromLow`: the lower bound of the value's current range
+`fromLow`: 현재 범위 값의 하한
 
-`fromHigh`: the upper bound of the value's current range
+`fromHigh`: 현재 범위 값의 상한
 
-`toLow`: the lower bound of the value's target range
+`toLow`: 목표 범위 값의 하한
 
-`toHigh`: the upper bound of the value's target range
+`toHigh`: 목표 범위 값의 상한
 
 [float]
 === 반환
-The mapped value.
+변환된 값.
 
 --
 // OVERVIEW SECTION ENDS
@@ -68,7 +67,7 @@ The mapped value.
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant code
 
 
 [source,arduino]
@@ -86,9 +85,9 @@ void loop()
 [%hardbreaks]
 
 [float]
-=== Appendix
+=== 부록
 
-For the mathematically inclined, here's the whole function
+수학적으로 기울이면, 여기에 전체 함수가 있다
 
 [source,arduino]
 ----
