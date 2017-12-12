@@ -71,7 +71,7 @@ subCategories: [ "제로, 두에 및 MKR 제품군" ]
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 예제코드
 
 [source,arduino]
@@ -119,7 +119,7 @@ void loop(){
 
 [float]
 === 주의와 경고
-`analogWriteResolution()` 값을 보드의 기능보다 높은 값으로 설정하면 아두이노는 여분의 비트를 무시합니다. 예를 들어, 12비트 DAC 핀에서 `analogWriteResolution(16)` 을 사용하면 'analogWrite()'에 전달 된 값의 처음 12비트 만 사용되며 마지막 4비트는 무시됩니다.
+`analogWriteResolution()` 값을 보드의 기능보다 높은 값으로 설정하면 아두이노는 여분의 비트를 무시합니다. 예를 들어, 12비트 DAC 핀에서 `analogWriteResolution(16)` 을 사용하면 `analogWrite()` 에 전달 된 값의 처음 12비트 만 사용되며 마지막 4비트는 무시됩니다.
 
 `analogWriteResolution()` 값을 보드의 기능보다 낮은 값으로 설정하면 누락 된 비트에 하드웨어 필요 크기를 채우기 위해 0이 채워집니다. 예를 들어, 12 비트 DAC 핀에서 `analogWriteResolution(8)` 을 사용하여 Due를 사용하면 아두이노는 `analogWrite()` 에 사용 된 8비트 값에 4개의 0비트를 추가하여 필요한 12비트를 얻습니다.
 
