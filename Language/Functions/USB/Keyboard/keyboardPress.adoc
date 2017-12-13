@@ -14,9 +14,9 @@ title: Keyboard.press()
 
 [float]
 === 설명
-When called, `Keyboard.press()` functions as if a key were pressed and held on your keyboard. Useful when using link:../keyboardmodifiers[modifier keys]. To end the key press, use link:../keyboardrelease[Keyboard.release()] or link:../keyboardreleaseall[Keyboard.releaseAll()].
+`Keyboard.press()` 가 호출되면 키보드에서 키를 누른 상태로 유지되는 것처럼 작동합니다.  link:../keyboardmodifiers[modifier keys]를 사용할 때 유용합니다. 키눌림을 끝내려면 link:../keyboardrelease[Keyboard.release()] 또는 link:../keyboardreleaseall[Keyboard.releaseAll()]를 사용하십시오.
 
-It is necessary to call link:../keyboardbegin[Keyboard.begin()] before using `press()`.
+`press()`를 사용하기전에 link:../keyboardbegin[Keyboard.begin()]를 호출해야합니다.
 [%hardbreaks]
 
 
@@ -27,11 +27,11 @@ It is necessary to call link:../keyboardbegin[Keyboard.begin()] before using `pr
 
 [float]
 === 매개변수
-`char` : the key to press
+`char` : 누른상태로 표시할 키.
 
 [float]
 === 반환
-`size_t` : number of key presses sent.
+`size_t` : 전송된 누림키의 수.
 
 --
 // OVERVIEW SECTION ENDS
