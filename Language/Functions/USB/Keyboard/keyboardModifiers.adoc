@@ -14,20 +14,20 @@ title: Keyboard Modifiers
 
 [float]
 === 설명
-The `Keyboard.write()` and `Keyboard.press()` and `Keyboard.release()` commands don’t work with every possible ASCII character, only those that correspond to a key on the keyboard. For example, backspace works, but many of the other non-printable characters produce unpredictable results. For capital letters (and other keys), what’s sent is shift plus the character (i.e. the equivalent of pressing both of those keys on the keyboard).
+`Keyboard.write()` 와 `Keyboard.press()` 와 `Keyboard.release()` 명령은 모든 ASCII 문자에 대응하여 작동하지 않습니다. 특히 키보드로 입력 할 수없는 ASCII 문자는 더욱 주의해야 합니다. 예를 들어, 백 스페이스는 작동하지만 인쇄 할 수없는 다른 문자는 예측할 수없는 결과를 가져옵니다. 예를 들어 대문자(및 다른 특수문자)의 경우 전송된 소문자(혹은 숫자)와 Shift문자가 입력되는 것으로 간주됩니다.
 [%hardbreaks]
-A modifier key is a special key on a computer keyboard that modifies the normal action of another key when the two are pressed in combination.
+수정키(Modifier)는 두 키를 조합하여 누르면 다른 키의 정상적인 동작을 수정하는 컴퓨터 키보드의 특수 키입니다.
 [%hardbreaks]
-For more on ASCII values and the characters or functions they represent, see http://www.asciitable.com/[asciitable.com]
+ASCII 값과 이들이 나타내는 문자 또는 함수에 대한 자세한 내용은, 여기를 참조 http://www.asciitable.com/[asciitable.com]
 [%hardbreaks]
-For multiple key presses use link:../keyboardpress[Keyboard.press]()
+다중 키 누름 사용은 여기를 참조하세요: link:../keyboardpress[Keyboard.press]()
 [%hardbreaks]
-The Leonardo's definitions for modifier keys are listed below:
+수정키에 대한 Leonardo의 정의는 다음과 같습니다:
 [%hardbreaks]
 
 
 |===
-|Key	|Hexadecimal value	|Decimal value
+|Key	|16진수 값	|10진수 값
 
 |KEY_LEFT_CTRL	|0x80	|128
 |KEY_LEFT_SHIFT	|0x81	|129
