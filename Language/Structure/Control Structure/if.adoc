@@ -16,7 +16,6 @@ subCategories: [ "제어 구조" ]
 --
 [float]
 === 설명
-The `if` statement checks for a condition and executes the proceeding statement or set of statements if the condition is 'true'.
 `if` 문은 조건을 체크하기 위해 쓰며 조건이 'true'이면 따라오는 문 또는 문장 세트를 실행한다.
 [%hardbreaks]
 
