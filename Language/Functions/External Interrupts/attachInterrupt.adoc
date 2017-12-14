@@ -17,19 +17,21 @@ subCategories: [ "외부 인터럽트" ]
 
 [float]
 === 설명
-*Digital Pins With Interrupts*
+*인터럽트 가진 디지털 핀*
 
-The first parameter to attachInterrupt is an interrupt number. Normally you should use digitalPinToInterrupt(pin) to translate the actual digital pin to the specific interrupt number. For example, if you connect to pin 3, use digitalPinToInterrupt(3) as the first parameter to attachInterrupt.
+attachInterrupt 의 첫 매개변수는 인터럽트 번호다.
+일반적으로 digitalPinToInterrupt(pin) 을 써서 실제 디지털 핀을 특정 인터럽트 번호로 변환해야 한다.
+예를 들어, 핀 3에 연결하면, digitalPinToInterrupt(3) 를 attachInterrupt 에 대한 첫번째 매개변수로 쓰세요.
 
 [options="header"]
 |===================================================
-|Board                             |Digital Pins Usable For Interrupts
-|Uno, Nano, Mini, other 328-based  |2, 3
-|Mega, Mega2560, MegaADK           |2, 3, 18, 19, 20, 21
+|보드                             |인터럽트에 쓸 수 있는 디지털 핀
+|우노, 나노, 미니 기타 328-기반  |2, 3
+|메가, 메가2560, 메가ADK           |2, 3, 18, 19, 20, 21
 |Micro, Leonardo, other 32u4-based |0, 1, 2, 3, 7
-|Zero                              |all digital pins, except 4
+|제로                              |all digital pins, except 4
 |MKR1000 Rev.1                     |0, 1, 4, 5, 6, 7, 8, 9, A1, A2
-|Due                               |all digital pins
+|두에                               |all digital pins
 |101                               |all digital pins (Only pins 2, 5, 7, 8, 10, 11, 12, 13 work with *CHANGE*)
 |===================================================
 
@@ -38,18 +40,18 @@ The first parameter to attachInterrupt is an interrupt number. Normally you shou
 [float]
 === 주의와 경고
 
-*Note* +
+*주의* +
 Inside the attached function, `delay()` won't work and the value returned by `millis()` will not increment. Serial data received while in the function may be lost. You should declare as volatile any variables that you modify within the attached function. See the section on ISRs below for more information.
 [%hardbreaks]
 
 [float]
-== Using Interrupts
+== 인터럽트 사용하기
 Interrupts are useful for making things happen automatically in microcontroller programs, and can help solve timing problems. Good tasks for using an interrupt may include reading a rotary encoder, or monitoring user input.
 
 If you wanted to insure that a program always caught the pulses from a rotary encoder, so that it never misses a pulse, it would make it very tricky to write a program to do anything else, because the program would need to constantly poll the sensor lines for the encoder, in order to catch pulses when they occurred. Other sensors have a similar interface dynamic too, such as trying to read a sound sensor that is trying to catch a click, or an infrared slot sensor (photo-interrupter) trying to catch a coin drop. In all of these situations, using an interrupt can free the microcontroller to get some other work done while not missing the input.
 
 [float]
-== About Interrupt Service Routines
+== 인터럽트 서비스 루틴에 대하여
 ISRs are special kinds of functions that have some unique limitations most other functions do not have. An ISR cannot have any parameters, and they shouldn't return anything.
 
 Generally, an ISR should be as short and fast as possible. If your sketch uses multiple ISRs, only one can run at a time, other interrupts will be executed after the current one finishes in an order that depends on the priority they have. millis() relies on interrupts to count, so it will never increment inside an ISR. Since delay() requires interrupts to work, it will not work if called inside an ISR. micros() works initially, but will start behaving erratically after 1-2 ms. delayMicroseconds() does not use any counter, so it will work as normal.
@@ -60,17 +62,17 @@ For more information on interrupts, see http://gammon.com.au/interrupts[Nick Gam
 
 [float]
 === 문법
-`attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);`	(recommended) +
-`attachInterrupt(interrupt, ISR, mode);`	(not recommended) + 
-`attachInterrupt(pin, ISR, mode);`	(not recommended Arduino Due, Zero, MKR1000, 101 only)
+`attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);`	(권고) +
+`attachInterrupt(interrupt, ISR, mode);`	(권하지 않음) + 
+`attachInterrupt(pin, ISR, mode);`	(권하지 않음 Arduino Due, Zero, MKR1000, 101 전용)
 
 
 [float]
 === 매개변수
-`interrupt`: 	the number of the interrupt (`int`) +
-`pin`: 	      the pin number 	            _(Arduino Due, Zero, MKR1000 only)_ +
-`ISR`: 	      the ISR to call when the interrupt occurs; this function must take no parameters and return nothing. This function is sometimes referred to as an interrupt service routine. +
-`mode`: 	     defines when the interrupt should be triggered. Four constants are predefined as valid values: +
+`interrupt`: 	인터럽트 번호 (`int`) +
+`pin`: 	      핀 번호 	            _(Arduino Due, Zero, MKR1000 only)_ +
+`ISR`: 	      인터럽트가 생기면 부를 ISR; 이 함수는 매개변수 없고 반환도 없음. 이 함수는 때때로 인터럽트 서비스 루틴으로 참조됨. +
+`mode`: 	     인터럽트가 언제 트리거 되야하는지 정의함. 4개 상수는 타당한 값으로 미리 정의 됨: +
 
 * *LOW* to trigger the interrupt whenever the pin is low, +
 * *CHANGE* to trigger the interrupt whenever the pin changes value +
@@ -81,7 +83,7 @@ For more information on interrupts, see http://gammon.com.au/interrupts[Nick Gam
 
 [float]
 === 반환
-Nothing
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -92,7 +94,7 @@ Nothing
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant code
 
 
 [source,arduino]
@@ -117,7 +119,7 @@ void blink() {
 ----
 
 [float]
-=== Interrupt Numbers
+=== 인터럽트 번호
 Normally you should use digitalPinToInterrupt(pin), rather than place an interrupt number directly into your sketch. The specific pins with interrupts, and their mapping to interrupt number varies on each type of board. Direct use of interrupt numbers may seem simple, but it can cause compatibility trouble when your sketch is run on a different board.
 
 However, older sketches often have direct interrupt numbers. Often number 0 (for digital pin 2) or number 1 (for digital pin 3) were used. The table below shows the available interrupt pins on various boards.
