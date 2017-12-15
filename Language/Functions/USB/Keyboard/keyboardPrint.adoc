@@ -13,10 +13,9 @@ title: Keyboard.print()
 --
 
 [float]
-=== 설명
-Sends a keystroke to a connected computer.
+=연결된 컴퓨터에 입력키를 보냅니다.
 
-`Keyboard.print()` must be called after initiating link:../keyboardbegin[Keyboard.begin()].
+`Keyboard.print()`는 link:../keyboardbegin[Keyboard.begin()]을 시작한 후에 호출해야 합니다.
 [%hardbreaks]
 
 
@@ -27,11 +26,11 @@ Sends a keystroke to a connected computer.
 
 [float]
 === 매개변수
-`character` : a char or int to be sent to the computer as a keystroke characters : a string to be sent to the computer as a keystroke.
+`character` :char 또는 int는 키입력한 문자로 컴퓨터에 전송됩니다. 키입력으로 컴퓨터에 전송할 문자열입니다.
 
 [float]
 === 반환
-`size_t` : number of bytes sent.
+`size_t` : 바이트의 수가 보내집니다.
 
 --
 // OVERVIEW SECTION ENDS
@@ -72,7 +71,7 @@ void loop() {
 
 [float]
 === 주의와 경고
-When you use the `Keyboard.print()` command, the Arduino takes over your keyboard! Make sure you have control before you use the command. A pushbutton to toggle the keyboard control state is effective.
+`Keyboard.print()`명령을 사용하면 오직 Arduino가 키보드를 조절합니다. 명령을 사용하기 전에 제어권이 있는지 확인하십시오. 키보드 컨트롤 상태를 토글하는 푸시 버튼이 효과적입니다..
 
 --
 // HOW TO USE SECTION ENDS
