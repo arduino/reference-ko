@@ -17,11 +17,12 @@ subCategories: [ "고급 입출력" ]
 
 [float]
 === 설명
-Shifts in a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. For each bit, the clock pin is pulled high, the next bit is read from the data line, and then the clock pin is taken low.
-
-If you're interfacing with a device that's clocked by rising edges, you'll need to make sure that the clock pin is low before the first call to `shiftIn()`, e.g. with a call to `digitalWrite(clockPin, LOW)`.
-
-Note: this is a software implementation; Arduino also provides an link:https://www.arduino.cc/en/Reference/SPI[SPI library] that uses the hardware implementation, which is faster but only works on specific pins.
+한번에 한 비트씩의 바이트를 옮긴다.
+최고(가장 왼쪽) 또는 최저(가장 오른쪽) 비트부터 시작한다.
+각 비트에, 클락 핀은 하이로 풀 되고, 다음 비트는 데이터 라인에서 읽히고, 클락 핀은 로우 된다.
+올라가는 에지에 의해 클락되는 장치와 인터페이스하면, `shiftIn()` 이 불리기 전에 클락 핀이 로우되는, 예를 들어 `digitalWrite(clockPin, LOW)`, 것을 확인해야 한다.
+주의: 이것은 소프트웨어 구현임;
+아두이노는 link:https://www.arduino.cc/en/Reference/SPI[SPI library] 를 제공하는데 그것은 하드웨어 구현을 사용하며, 그것은 빠르지만 특정 핀에서만 돌아간다.
 [%hardbreaks]
 
 
@@ -32,16 +33,16 @@ Note: this is a software implementation; Arduino also provides an link:https://w
 
 [float]
 === 매개변수
-`dataPin`: the pin on which to input each bit (int)
+`dataPin`: 각 비트에 입력할 핀 (int)
 
-`clockPin`: the pin to toggle to signal a read from *dataPin*
+`clockPin`: *dataPin* 에서 읽은 시그널을 토글할 핀
 
-`bitOrder`: which order to shift in the bits; either *MSBFIRST* or *LSBFIRST*.
-(Most Significant Bit First, or, Least Significant Bit First)
+`bitOrder`: 비트들 안에서 어떤 순서로 옮길지;  *MSBFIRST* 또는 *LSBFIRST*.
+(MSB 우선, 또는, LSB 우선)
 
 [float]
 === 반환
-the value read (byte)
+읽은 값 (byte)
 
 --
 // OVERVIEW SECTION ENDS
