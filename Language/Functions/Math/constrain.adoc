@@ -36,9 +36,9 @@ subCategories: [ "수학" ]
 === 반환
 x: x가 a 와 b 사이에 있으면
 
-a: x가 a 보다 작으면
+a: x가 a보다 작으면
 
-b: x가 a 보다 크면
+b: x가 b보다 크면
 
 --
 // OVERVIEW SECTION ENDS
