@@ -21,7 +21,6 @@ subCategories: [ "고급 입출력" ]
 최고(가장 왼쪽) 또는 최저(가장 오른쪽) 비트부터 시작한다.
 각 비트에, 클락 핀은 하이로 풀 되고, 다음 비트는 데이터 라인에서 읽히고, 클락 핀은 로우 된다.
 올라가는 에지에 의해 클락되는 장치와 인터페이스하면, `shiftIn()` 이 불리기 전에 클락 핀이 로우되는, 예를 들어 `digitalWrite(clockPin, LOW)`, 것을 확인해야 한다.
-Note: this is a software implementation;
 주의: 이것은 소프트웨어 구현임;
 아두이노는 link:https://www.arduino.cc/en/Reference/SPI[SPI library] 를 제공하는데 그것은 하드웨어 구현을 사용하며, 그것은 빠르지만 특정 핀에서만 돌아간다.
 [%hardbreaks]
