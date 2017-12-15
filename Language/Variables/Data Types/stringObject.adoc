@@ -1,4 +1,4 @@
-﻿---
+---
 title: "String()"
 categories: [ "Variables" ]
 subCategories: [ "자료형" ]
