@@ -9,15 +9,15 @@ Reference-ko 는 아두이노 문법의 언어 참조 문서 한국어 저장소
 == 내용 만들고 편집하기
 새 내용으로 기여하기 원하면, 새 파일을 (어떤 텍스트 또는 코드 편집기를 써도 됨)만들고 .adoc 으로 저장하세요.
 파일 이름에 괄호나 어떤 특수문자도 쓰지 마세요.
-https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary.adoc[`reference-en/AsciiDoc_sample/AsciiDoc_Dictionary`] 에서 AsciiDoc 문법에 대한 개요를 찾을 겁니다.
+https://raw.githubusercontent.com/arduino/reference-ko/master/AsciiDoc_sample/AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary.adoc[`reference-ko/AsciiDoc_sample/AsciiDoc_Dictionary`] 에서 AsciiDoc 문법에 대한 개요를 찾을 겁니다.
 이것은 제목, 링크, 이미지, 표, 코드 그리고 다양한 임베드(비디오, 슬라이드쇼, 오디오 등)를 포함합니다.
-그것이 렌더 되는 것을 https://www.arduino.cc/reference/en/asciidoc_sample/asciidoc_dictionary/asciidoc_template-dictionary/[여기] 에서 볼 수 있습니다.
+그것이 렌더 되는 것을 https://www.arduino.cc/reference/ko/asciidoc_sample/asciidoc_dictionary/asciidoc_template-dictionary/[여기] 에서 볼 수 있습니다.
 
-언어 참조 또는 기존 내용 편집으로 기여하고 싶다면, reference-en/AsciiDoc_sample/Reference_Terms 에서 두 템플릿을 찾을 수 있습니다:
+언어 참조 또는 기존 내용 편집으로 기여하고 싶다면, reference-ko/AsciiDoc_sample/Reference_Terms 에서 두 템플릿을 찾을 수 있습니다:
 
-* https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] 사용 ( https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[여기] 에서 렌더) link:http://arduino.cc/en/Reference/AnalogWrite[analogWrite] 같은 용어.
+* https://raw.githubusercontent.com/arduino/reference-ko/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] 사용 ( https://www.arduino.cc/reference/ko/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[여기] 에서 렌더) link:https://www.arduino.cc/reference/ko/language/functions/analog-io/analogwrite/[analogWrite] 같은 용어.
 
-* https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] 사용 ( https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[여기] 에서 렌더) link:http://arduino.cc/en/Reference/Serial[Serial] 같은 함수 그룹.
+* https://raw.githubusercontent.com/arduino/reference-ko/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] 사용 ( https://www.arduino.cc/reference/ko/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[여기] 에서 렌더) link:https://www.arduino.cc/reference/ko/language/functions/communication/serial/[Serial] 같은 함수 그룹.
 
 모든 참조 파일은 설명 적어도 하나, 예제 코드 몇, 그리고 다른 관련 정보(더 볼 것 섹션)에 대한 링크를 포함해야 함을 주의하세요.
 
@@ -29,7 +29,7 @@ Git에 친숙하지 않다면 온라인 인터페이스 Github에 직접 기여�
 어떻게 파일을 편집하고 아두이노 팀에 파일 변경을 제안하는지 배우려면 link:https://help.github.com/articles/editing-files-in-another-user-s-repository/[이 가이드를 따를 수 있습니다]. (Github 팀에서 씀) 
 변경을 제안할 때는, 참조 템플릿 파일에 설명한 지침을 따르세요.
 
-== 당기기 요청 제출
+== 당기기 요청(Pull Request) 제출
 
 우리는 여러분이 아두이노 참조에 기여하길 바라는 것에 기쁩니다: 그것은 공동체를 돕는 가장 좋은 길입니다.
 
@@ -40,7 +40,7 @@ Git에 친숙하지 않다면 온라인 인터페이스 Github에 직접 기여�
 === 폴더 구조
 [source]
 ----
-reference-en
+reference-ko
 ├─ AsciiDoc_sample
 │   ├── AsciiDoc_Dictionary
 │   │   ├── AsciiDoc_Template-Dictionary.adoc
@@ -58,4 +58,4 @@ reference-en
 
 ----
 
-언어 폴더 안에, 파일 트리는 link:https://www.arduino.cc/reference/en[Arduino Reference webpage] 와 똑같은 구조를 따릅니다.
+언어 폴더 안에, 파일 트리는 link:https://www.arduino.cc/reference/ko[Arduino Reference webpage] 와 똑같은 구조를 따릅니다.
