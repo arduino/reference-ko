@@ -14,11 +14,15 @@ title: Serial.readBytesUntil()
 
 [float]
 === 설명
-Serial.readBytesUntil() reads characters from the serial buffer into an array. The function terminates if the terminator character is detected, the determined length has been read, or it times out (see link:../settimeout[Serial.setTimeout()]).
+Serial.readBytesUntil() 은 시리얼 버퍼에서 문자를 읽어서 배열 안으로 넣는다.
+이 함수는 종료문자가 감지되거나, 결정된 길이가 읽혀지거나, 타임아웃(참고 link:../settimeout[Serial.setTimeout()]) 되면 끝난다.
+이 함수는 제공된 종결자 앞의 마지막 문자까지 반환한다.
+종결자 자체는 버퍼에 반환되지 않는다.
 
-`Serial.readBytesUntil()` returns the number of characters read into the buffer. A 0 means no valid data was found.
+`Serial.readBytesUntil()` 은 버퍼에 읽어진 문자 수를 반환한다.
+0은 타당한 자료를 찾지 못했음을 뜻한다.
 
-`Serial.readBytesUntil()` inherits from the link:../../stream[Stream] utility class.
+`Serial.readBytesUntil()` 은 link:../../stream[Stream] utility class 에서 상속된다.
 [%hardbreaks]
 
 
@@ -29,11 +33,11 @@ Serial.readBytesUntil() reads characters from the serial buffer into an array. T
 
 [float]
 === 매개변수
-`character` : the character to search for (`char`)
+`character` : 찾을 문자 (`char`)
 
-`buffer`: the buffer to store the bytes in (`char[]` or `byte[]`)
+`buffer`: 바이트를 저장할 버퍼 (`char[]` or `byte[]`)
 
-`length` : the number of bytes to read (`int`)
+`length` : 읽을 바이트 수 (`int`)
 
 [float]
 === 반환
