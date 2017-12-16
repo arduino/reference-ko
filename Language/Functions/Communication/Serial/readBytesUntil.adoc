@@ -14,10 +14,8 @@ title: Serial.readBytesUntil()
 
 [float]
 === 설명
-Serial.readBytesUntil() 은 시리얼 버퍼에서 문자를 읽어서 배열 안으로 넣는다.
-이 함수는 종료문자가 감지되거나, 결정된 길이가 읽혀지거나, 타임아웃(참고 link:../settimeout[Serial.setTimeout()]) 되면 끝난다.
-이 함수는 제공된 종결자 앞의 마지막 문자까지 반환한다.
-종결자 자체는 버퍼에 반환되지 않는다.
+Serial.readBytesUntil() 은 시리얼 버퍼에서 문자를 읽어서 배열 안으로 넣는다. 이 함수는 종료문자가 감지되거나, 결정된 길이가 읽혀지거나, 타임아웃(참고 link:../settimeout[Serial.setTimeout()]) 되면 끝난다.
+이 함수는 제공된 종결자 앞의 마지막 문자까지 반환한다. 종결자 자체는 버퍼에 반환되지 않는다.
 
 `Serial.readBytesUntil()` 은 버퍼에 읽어진 문자 수를 반환한다.
 0은 타당한 자료를 찾지 못했음을 뜻한다.
@@ -43,6 +41,9 @@ Serial.readBytesUntil() 은 시리얼 버퍼에서 문자를 읽어서 배열 �
 === 반환
 `size_t`
 
+Serial.readBytesUntil() reads characters from the serial buffer into an array. The function terminates if the terminator character is detected, the determined length has been read, or it times out (see link:../settimeout[Serial.setTimeout()]). The function returns the characters up to the last character before the supplied terminator. The terminator itself is not returned in the buffer.
+
+`Serial.readBytesUntil()` ret
 --
 // OVERVIEW SECTION ENDS
 
