@@ -28,7 +28,7 @@ subCategories: [ "상수" ]
 
 |10 (decimal)
 |123
-|none
+|없음
 |
 
 |2 (binary)
