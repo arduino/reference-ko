@@ -91,7 +91,7 @@ myInt = (B11001100 * 256) + B10101010;    // B11001100 is the high byte`
 [%hardbreaks]
 
 [float]
-== Octal (base 8)
+== Octal (밑 8)
 0에서 7까지의 문자만 타당. 접두사 "0"(영)은 8진수를 가리킨다.
 
 
