@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isUpperCase()"
 categories: [ "Functions" ]
 subCategories: [ "문자" ]
@@ -26,7 +26,7 @@ Analyse if a char is upper case (that is a letter in upper case). Returns true i
 === 문법
 [source,arduino]
 ----
-`isUpperCase(thisChar)`
+isUpperCase(thisChar)
 ----
 
 [float]
