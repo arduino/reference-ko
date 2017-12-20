@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isDigit()"
 categories: [ "Functions" ]
 subCategories: [ "문자" ]
