@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isSpace()"
 categories: [ "Functions" ]
 subCategories: [ "문자" ]
@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-Analyse if a char is the space character. Returns true if thisChar contains the space character. 
+공백문자인지 분석. thisChar 가 공백을 포함하면 true 반환.
 [%hardbreaks]
 
 
@@ -25,7 +25,7 @@ Analyse if a char is the space character. Returns true if thisChar contains the 
 === 문법
 [source,arduino]
 ----
-`isSpace(thisChar)`
+isSpace(thisChar)
 ----
 
 [float]
@@ -34,7 +34,7 @@ Analyse if a char is the space character. Returns true if thisChar contains the 
 
 [float]
 === 반환
-`true`: if thisChar is a space.
+`true`: thisChar 가 공백이면.
 
 --
 // OVERVIEW SECTION ENDS
