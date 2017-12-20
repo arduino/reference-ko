@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isAscii()"
 categories: [ "Functions" ]
 subCategories: [ "문자" ]
@@ -25,7 +25,7 @@ char가 아스키인지 분석. thisChar 가 아스키 문자를 포함하면 tr
 === 문법
 [source,arduino]
 ----
-`isAscii(thisChar)`
+isAscii(thisChar)
 ----
 
 [float]

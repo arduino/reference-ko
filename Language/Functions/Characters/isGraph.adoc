@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isGraph()"
 categories: [ "Functions" ]
 subCategories: [ "문자" ]
@@ -25,7 +25,7 @@ subCategories: [ "문자" ]
 === 문법
 [source,arduino]
 ----
-`isGraph(thisChar)`
+isGraph(thisChar)
 ----
 
 [float]

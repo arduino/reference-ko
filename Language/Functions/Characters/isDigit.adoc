@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isDigit()"
 categories: [ "Functions" ]
 subCategories: [ "문자" ]
@@ -34,7 +34,7 @@ isDigit(thisChar)
 
 [float]
 === 반환
-`true`: if thisChar is a number.
+`true`: thisChar 가 숫자이면.
 
 --
 // OVERVIEW SECTION ENDS

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isControl()"
 categories: [ "Functions" ]
 subCategories: [ "문자" ]
@@ -25,7 +25,7 @@ subCategories: [ "문자" ]
 === 문법
 [source,arduino]
 ----
-`isControl(thisChar)`
+isControl(thisChar)
 ----
 
 [float]
