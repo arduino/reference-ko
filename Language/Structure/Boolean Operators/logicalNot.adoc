@@ -68,7 +68,7 @@ x = !y;   // y 의 뒤집어진 값이 x에 저장된다.
 === 더 볼 것
 
 [role="language"]
-* #LANGUAGE# link:../../bitwise-operators/bitwisenot[~ Bitwise NOT]
+* #LANGUAGE# link:../../bitwise-operators/bitwisenot[~ 비트 NOT]
 
 --
 // SEE ALSO SECTION ENDS
