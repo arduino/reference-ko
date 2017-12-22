@@ -25,7 +25,7 @@ AVR C 라이브러리 (AVR은 아두이노가 기반인 Atmel 칩에 대한 참�
 
 [%hardbreaks]
 
-`#include`,  link:../define[`#define`] 비슷한, 는 세미콜론 종결자가 없고, 추가하면 컴파일러가 암호 같은 에러 메시지를 낼 거다.
+`#include`,  link:../define[`#define`] 는 세미콜론 종결자가 없고, 추가하면 컴파일러가 암호 같은 에러 메시지를 낼 거다.
 [%hardbreaks]
 
 --
@@ -41,7 +41,7 @@ AVR C 라이브러리 (AVR은 아두이노가 기반인 Atmel 칩에 대한 참�
 [float]
 === 예제 코드
 이 예는 _ram_ 대신 _flash_ 라이브러리를 포함한다
-This example includes a library that is used to put data into the program space _flash_ instead of _ram_. This saves the ram space for dynamic memory needs and makes large lookup tables more practical.
+This saves the ram space for dynamic memory needs and makes large lookup tables more practical.
 
 
 [source,arduino]

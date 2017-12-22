@@ -68,11 +68,11 @@ while (boolean expression)
 do
 {
  statement(s)
-} while (boolean expression);
+} while (부울 식);
 
-for (initialisation; termination condition; incrementing expr)
+for (초기화; 끝내기 조건; 증가 식)
 {
- statement(s)
+ 문;
 }
 ----
 [%hardbreaks]
