@@ -18,7 +18,7 @@ subCategories: [ "문자" ]
 [float]
 === 설명
 thisChar 가 알파(즉 문자)인지 분석.
-Analyse if a char is alpha (that is a letter). thisChar 가 문자를 포함하면 true 반환. 
+thisChar 가 문자를 포함하면 true 반환. 
 [%hardbreaks]
 
 
