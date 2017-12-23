@@ -24,7 +24,7 @@ subCategories: [ "추가 문법" ]
 이것은 원치 않는 부작용을 일으킬수 있으며, 예들 들어, #define 된 상수이름이 다른 상수 또는 변수 이름을 포함한 경우. 이 경우 텍스트는 #define 된 수자(또는 문자) 로 바뀐다.
 [%hardbreaks]
 
-일반적으로, link:../../../variables/variable-scope\--qualifiers/const[const] 키워드가 상수를 정의하는데 선호되며 #define 대신 사용되어야 한다.
+일반적으로, link:../../../variables/variable-scope\--qualifiers/const[const] 키워드가 상수를 정의하는데 선호되며 #define 대신 const 를 사용하는 게 좋다.
 [%hardbreaks]
 
 [float]

@@ -46,7 +46,7 @@ if (x > 0 || y > 0) { // x 또는 y 가 0보다 크면
 
 [float]
 === 주의와 경고
-boolean || (이중 pipe) 연산자와 bitwise OR 연산자 | (단일 pipe)를 헷갈리지 마시오.
+부울 || (이중 pipe) 연산자와 논리 OR 연산자 | (단일 pipe)를 헷갈리지 마시오.
 [%hardbreaks]
 
 --
@@ -61,7 +61,7 @@ boolean || (이중 pipe) 연산자와 bitwise OR 연산자 | (단일 pipe)를 �
 === 더 볼 것
 
 [role="language"]
-* #LANGUAGE# link:../../bitwise-operators/bitwiseor[| Bitwise OR]
+* #LANGUAGE# link:../../bitwise-operators/bitwiseor[| 비트 OR]
 
 --
 // SEE ALSO SECTION ENDS

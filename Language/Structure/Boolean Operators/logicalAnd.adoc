@@ -18,7 +18,7 @@ subCategories: [ "부울 연산자" ]
 
 [float]
 === 설명
-*논리 AND* 는 피연산자들이 `true` 일때 *만* `true`가 된다.
+*논리 AND* 는 피연산자들이 `true` 일 때 *만* `true` 가 된다.
 [%hardbreaks]
 
 --
@@ -59,7 +59,7 @@ if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) { // 두 스위치 다 HI
 === 더 볼 것
 
 [role="language"]
-* #LANGUAGE# link:../../bitwise-operators/bitwiseand[& (Bitwise AND)]
+* #LANGUAGE# link:../../bitwise-operators/bitwiseand[& (비트 AND)]
 
 --
 // SEE ALSO SECTION ENDS
