@@ -60,7 +60,7 @@ subCategories: [ "디지털 입출력" ]
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant code
 이 코드는 디지털 핀 13을 `OUTPUT` 로 만들고  그것을 `HIGH` 와 `LOW` 사이를 1초 마다 토글한다.
 
 
@@ -83,7 +83,7 @@ void loop()
 
 [float]
 === 주의와 경고
-아나로그 입력 핀은 디지털 핀으로 쓰일 수 있고, A0, A1, 등으로 참조됨.
+아날로그 입력 핀은 디지털 핀으로 쓰일 수 있고, A0, A1 등으로 참조됨.
 
 
 --
