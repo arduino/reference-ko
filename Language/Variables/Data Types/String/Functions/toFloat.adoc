@@ -17,7 +17,8 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Converts a valid String to a float. The input string should start with a digit. If the string contains non-digit characters, the function will stop performing the conversion. For example, the strings "123.45", "123", and "123fish" are converted to 123.45, 123.00, and 123.00 respectively. Note that "123.456" is approximated with 123.46. Note too that floats have only 6-7 decimal digits of precision and that longer strings might be truncated.
+타당한 스르링을 float 으로 변환.
+The input string should start with a digit. If the string contains non-digit characters, the function will stop performing the conversion. For example, the strings "123.45", "123", and "123fish" are converted to 123.45, 123.00, and 123.00 respectively. Note that "123.456" is approximated with 123.46. Note too that floats have only 6-7 decimal digits of precision and that longer strings might be truncated.
 
 [%hardbreaks]
 
@@ -38,7 +39,7 @@ string.toFloat()
 === 반환
 `float`
 
-If no valid conversion could be performed because the string doesn't start with a digit, a zero is returned.
+스트링이 숫자로 시작하지 않으면, 0이 반환됨.
 
 --
 // OVERVIEW SECTION ENDS
