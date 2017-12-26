@@ -17,7 +17,9 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-Get a substring of a String. The starting index is inclusive (the corresponding character is included in the substring), but the optional ending index is exclusive (the corresponding character is not included in the substring). If the ending index is omitted, the substring continues to the end of the String.
+스트링의 서브스트링을 얻음.
+The starting index is inclusive (the corresponding character is included in the substring), but the optional ending index is exclusive (the corresponding character is not included in the substring).
+If the ending index is omitted, the substring continues to the end of the String.
 
 [%hardbreaks]
 
@@ -33,16 +35,16 @@ string.substring(from, to)
 
 [float]
 === 매개변수
-`string`: a variable of type String
+`string`: String 형 변수
 
-`from`: the index to start the substring at
+`from`: 서브스트링이 시작하는 인덱스
 
-`to` (optional): the index to end the substring before
+`to` (옵션): 서브스트링 끝나기 전 인덱스
 
 
 [float]
 === 반환
-The substring.
+서브스트링.
 
 --
 // OVERVIEW SECTION ENDS

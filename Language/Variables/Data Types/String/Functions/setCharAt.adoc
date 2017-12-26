@@ -39,7 +39,7 @@ string.setCharAt(index, c)
 
 [float]
 === 반환
-None
+없음
 
 --
 // OVERVIEW SECTION ENDS
