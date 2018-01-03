@@ -14,7 +14,9 @@ title: Mouse.move()
 
 [float]
 === 설명
-Moves the cursor on a connected computer. The motion onscreen is always relative to the cursor's current location. Before using `Mouse.move()` you must call link:../mousebegin[Mouse.begin()]
+연결된 컴퓨터에서 커서를 움직인다.
+화면에서의 모션은 늘 커서의 현재 위치에 상대적이다.
+`Mouse.move()` 을 쓰기 전에  link:../mousebegin[Mouse.begin()] 을 부르시오.
 [%hardbreaks]
 
 
@@ -25,11 +27,11 @@ Moves the cursor on a connected computer. The motion onscreen is always relative
 
 [float]
 === 매개변수
-`xVal`: amount to move along the x-axis - `signed char`
+`xVal`: x-축을 따라 움직이는 양 - `signed char`
 
-`yVal`: amount to move along the y-axis - `signed char`
+`yVal`: y-축을 따라 움직이는 양 - `signed char`
 
-`wheel`: amount to move scroll wheel - `signed char`
+`wheel`: 스크롤 휠 움직이는 양 - `signed char`
 [float]
 === 반환
 Nothing
@@ -127,8 +129,7 @@ int readAxis(int axisNumber) {
 
 [float]
 === 주의와 경고
-When you use the `Mouse.move()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
-
+`Mouse.move()` 명령을 쓸 때, 아두이노가 마우스를 차지한다! 명령을 사용하기 전에 제어권이 있는지 확인하십시오. 마우스 컨트롤 상태를 토글하는 푸시 버튼이 효과적이다.
 --
 // HOW TO USE SECTION ENDS
 
