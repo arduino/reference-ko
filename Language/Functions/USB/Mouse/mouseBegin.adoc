@@ -15,7 +15,7 @@ title: Mouse.begin()
 
 [float]
 === 설명
-Begins emulating the mouse connected to a computer. `begin()` must be called before controlling the computer. To end control, use link:../mouseend[Mouse.end()].
+컴퓨터에 연결된 마우스 에뮬리이트 시작. `begin()` 은 컴퓨터 제어 전에 불려야 한다. 제어를 마치려면, link:../mouseend[Mouse.end()] 를 쓴다.
 [%hardbreaks]
 
 
@@ -26,11 +26,11 @@ Begins emulating the mouse connected to a computer. `begin()` must be called bef
 
 [float]
 === 매개변수
-Nothing
+없음
 
 [float]
 === 반환
-Nothing
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,7 +44,7 @@ Nothing
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant code
 
 
 [source,arduino]
@@ -86,4 +86,3 @@ void loop(){
 
 --
 // SEE ALSO SECTION ENDS
-
