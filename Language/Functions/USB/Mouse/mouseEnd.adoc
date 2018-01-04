@@ -14,7 +14,7 @@ title: Mouse.end()
 
 [float]
 === 설명
-Stops emulating the mouse connected to a computer. To start control, use link:../mousebegin[Mouse.begin()].
+컴퓨터에 연결된 마우스 에뮬레이트 멈춤. 제어를 시작하려면, link:../mousebegin[Mouse.begin()] 쓰세요.
 [%hardbreaks]
 
 
@@ -25,11 +25,11 @@ Stops emulating the mouse connected to a computer. To start control, use link:..
 
 [float]
 === 매개변수
-Nothing
+없음
 
 [float]
 === 반환
-Nothing
+없음
 
 --
 // OVERVIEW SECTION ENDS
@@ -43,7 +43,7 @@ Nothing
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant code
 
 
 [source,arduino]
