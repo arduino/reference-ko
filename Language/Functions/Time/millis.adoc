@@ -17,7 +17,7 @@ subCategories: [ "시간" ]
 
 [float]
 === 설명
-아두이노 보드가 현재 프로그램을 돌리기 시작한 후 지난 밀리 초 수를 반환. 이 숫자는 약 50 일 후에 오버플로우(0이 된다).
+아두이노 보드가 현재 프로그램을 돌리기 시작한 후 지난 밀리 초 숫자를 반환한다. 이 숫자는 약 50 일 후에 오버플로우(0으로 돌아감)가 된다.
 
 
 [%hardbreaks]
@@ -34,7 +34,7 @@ subCategories: [ "시간" ]
 
 [float]
 === 반환
-프로그램 시작 후 지난 시간(unsigned long)
+프로그램 시작 후 지난 시간 (unsigned long)
 --
 // OVERVIEW SECTION ENDS
 
@@ -49,7 +49,7 @@ subCategories: [ "시간" ]
 === 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
-이 코드는 아두이노 보드가 시작 후 지난 밀리 초 시간을 읽는다.
+이 코드는 아두이노 보드가 시작한 후 지난 밀리 초 시간을 읽는다.
 [source,arduino]
 ----
 unsigned long time;
@@ -61,15 +61,15 @@ void loop(){
   Serial.print("Time: ");
   time = millis();
 
-  Serial.println(time);    //프로그램 시작후 지난 시간 출력
-  delay(1000);             // 1초 기다림
+  Serial.println(time);    // 프로그램 시작후 지난 시간 출력
+  delay(1000);             // 너무 많은 데이터를 보내지 않기 위해 1초 기다림
 }
 ----
 [%hardbreaks]
 
 [float]
 === 주의와 경고
-millis ()의 반환 값은 unsigned long 이므로 프로그래머가 int 와 같은 작은 자료형으로 산술을 수행하려고하면 논리 오류가 발생할 수 있다. 부호 있는 long 의 최대 값은 부호없는 것의 값의 절반이므로 오류가 발생할 수 있다.
+millis ()의 반환 값은 unsigned long 이므로 프로그래머가 int 와 같은 작은 자료형으로 산술을 수행하려고하면 논리 오류가 발생할 수 있다. signed long 의 최대값의 경우도 unsigned long의 최대값의 절반이기 때문에 오류가 발생할 수 있다.
 --
 // HOW TO USE SECTION ENDS
 
@@ -80,6 +80,11 @@ millis ()의 반환 값은 unsigned long 이므로 프로그래머가 int 와 �
 
 [float]
 === 더 볼 것
+
+[role="language"]
+* #LANGUAGE# link:./delay.adoc[delay()] +
+* #LANGUAGE# link:./delayMicroseconds.adoc[delayMicroseconds()] +
+* #LANGUAGE# link:./micros.adoc[micros()] +
 
 [role="example"]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay]
