@@ -13,9 +13,9 @@ title: Keyboard.print()
 --
 
 [float]
-=연결된 컴퓨터에 입력키를 보냅니다.
+= 연결된 컴퓨터에 입력키를 보냅니다.
 
-`Keyboard.print()`는 link:../keyboardbegin[Keyboard.begin()]을 시작한 후에 호출해야 합니다.
+`Keyboard.print()` 는 link:../keyboardbegin[Keyboard.begin()]을 시작한 후에 호출해야 합니다.
 [%hardbreaks]
 
 
