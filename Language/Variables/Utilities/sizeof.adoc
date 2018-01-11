@@ -36,10 +36,10 @@ sizeof 연산자는 변수 형의 바이트 수, 또는 배열이 점유하는 �
 
 [float]
 === 예제 코드
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Describe what the example code is all about and add relevant code
 `sizeof`  연산자는 배열(문자열 같은)을 다룰 때 쓸모 있는데 여기서 프로그램의 다른 부분을 깨뜨리지 않고 배열 크기를 바꿀 수 있게 하기 편하다.
 
-이 프로그램은 한번에 한 글자씩 텍스트 문자열을 출력한다. 텍스트 구문을 바꾸는 것을 시도해 보시오.
+이 프로그램은 한 번에 한 글자씩 텍스트 문자열을 출력한다. 텍스트 구문을 바꾸는 것을 시도해 보시오.
 
 [source,arduino]
 ----
@@ -64,7 +64,7 @@ void loop() {
 
 [float]
 === 주의와 경고
-`sizeof` 는 전체 바이트 수를 반환하는 것을 주의하세요. int 와 같은 형의 큰 변수는, for 루프는 이렇게 보일 수 있다.
+`sizeof` 는 전체 바이트 수를 반환하는 것을 주의하세요. int 와 같은 큰 변수 형에 대해서는 for 루프는 이렇게 보일 수 있다.
 또한, 적절한 형식의 문자열이 NULL 표시로 끝나는데, 그것은 아스키 값 0을 갖는 것을 주의하세요.
 
 [source,arduino]
