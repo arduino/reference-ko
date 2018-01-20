@@ -34,7 +34,9 @@ ASCII 문자 전체 목록은, http://www.asciitable.com/[ASCIITable.com] 을 �
 
 [float]
 === 매개변수
-`character` : a char or int to be sent to the computer. Can be sent in any notation that's acceptable for a char. For example, all of the below are acceptable and send the same value, 65 or ASCII A:
+`character` : 컴퓨터에 보낼 char 또는 int.
+char 에 허용되는 어느 표기법이든 보낼 수 있다.
+예를들어, 아래 모두 가능하며 65 나 ASCII A나 같은 값을 보낸다:
 [source,arduino]
 ----
 Keyboard.write(65);         // sends ASCII value 65, or A
