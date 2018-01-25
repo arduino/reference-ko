@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-Analyse if a char is printable (that is any character that produces an output, even a blank space). Returns true if thisChar is printable. 
+매개변수로 들어온 문자(char)가 출력할 수 있는지 분석한다. (스페이스바(a blank space)든, 어떠한 문자든 출력을 생성할 수 있는 문자인지 분석한다.) 분석결과 매개변수로 들어온 문자(thisChar)가 출력가능하면 true(참)값을 반환한다. 
 [%hardbreaks]
 
 
@@ -50,7 +50,7 @@ isAlpha(thisChar)
 
 [source,arduino]
 ----
-if (isPrintable(this))      // tests if this is printable char
+if (isPrintable(this))      // 출력가능한 문자(printable char)인지 아닌지 테스트한다.
 {
 	Serial.println("The character is printable");
 }
