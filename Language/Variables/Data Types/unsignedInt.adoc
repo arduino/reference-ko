@@ -62,6 +62,36 @@ unsigned int x;
    x = x + 1;       // x 는 이제 0 - rolls over
 ----
 
+부호없는 변수를 가진 수학은 기대하지 않은 결과를 일으킬 수 있다, 부호없는 변수가 롤오버 안 되더라도.
+
+MCU는 아래 규칙을 적용한다:
+
+계산은 대상변수의 scope 에서 이루어진다.
+예를들어, 대상변수가 부호 있으면, 두 입력 변수가 부호 없더라도, 부호있는 연산을 한다.
+
+그러나 중간 결과가 필요하면, 중간결과의 scope는 코드에서 정해지지 않는다.
+이 경우, MCU 는 부호 없는 연산을 하는데, 왜냐면 두 입력이 부호없기 때문이다!
+ 
+
+
+[source,arduino]
+----
+unsigned int x=5;
+unsigned int y=10;
+int result;
+
+   result = x - y; // 5 - 10 = -5, as expected
+   result = (x - y)/2; // 5 - 10 in unsigned math is 65530!  65530/2 = 32765 
+   
+   // solution: use signed variables, or do the calculation step by step.
+   result = x - y; // 5 - 10 = -5, as expected
+   result = result / 2; //  -5/2 = -2 (only integer math, decimal places are dropped)
+----
+왜 부호없는 변수를 쓸까?
+
+- 롤 오버 필요, 예를들어. 카운터
+- 부호있는 변수는 약간 작지만, long/float의 메모리와 속도 손실을 피하려 한다.
+--
 
 --
 // HOW TO USE SECTION ENDS
