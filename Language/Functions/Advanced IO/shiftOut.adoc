@@ -24,7 +24,7 @@ subCategories: [ "고급 입출력" ]
 주의 - 올라가는 에지에 의해 클락되는 장치와 인터페이스하면, `shiftOut()` 이 불리기 전에 클락 핀이 로우되는, 예를 들어 `digitalWrite(clockPin, LOW)`, 것을 확인해야 한다.
 
 이것은 소프트웨어 구현임;
-아두이노는 link:https://www.arduino.cc/en/Reference/SPI[SPI library] 를 제공하는데 그것은 하드웨어 구현을 사용하며, 그것은 빠르지만 특정 핀에서만 돌아간다.
+아두이노는 https://www.arduino.cc/en/Reference/SPI[SPI library] 를 제공하는데 그것은 하드웨어 구현을 사용하며, 그것은 빠르지만 특정 핀에서만 돌아간다.
 [%hardbreaks]
 
 
@@ -58,7 +58,7 @@ subCategories: [ "고급 입출력" ]
 [float]
 === 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-For accompanying circuit, see the http://arduino.cc/en/Tutorial/ShiftOut[tutorial on controlling a 74HC595 shift register].
+For accompanying circuit, see the https://arduino.cc/en/Tutorial/ShiftOut[tutorial on controlling a 74HC595 shift register].
 
 [source,arduino]
 ----
