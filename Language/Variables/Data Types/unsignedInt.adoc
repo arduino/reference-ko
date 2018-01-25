@@ -62,13 +62,16 @@ unsigned int x;
    x = x + 1;       // x 는 이제 0 - rolls over
 ----
 
-Math with unsigned variables may produce unexpected results, even if your unsigned variable never rolls over.
+부호없는 변수를 가진 수학은 기대하지 않은 결과를 일으킬 수 있다, 부호없는 변수가 롤오버 안 되더라도.
 
-The MCU applies the following rules:
+MCU는 아래 규칙을 적용한다:
 
-The calculation is done in the scope of the destination variable. E.g. if the destination variable is signed, it will do signed math, even if both input variables are unsigned.
+계산은 대상변수의 scope 에서 이루어진다.
+예를들어, 대상변수가 부호 있으면, 부호있는 연산을, 두 입력 변수가 부호 없더라도, 부호있는 연산을 한다.
 
-However with a calculation which requires an intermediate result, the scope of the intermediate result is unspecified by the code. In this case, the MCU will do unsigned math for the intermediate result, because both inputs are unsigned!
+그러나 중간 결과가 필요하면, 중간결과의 scope는 코드에서 정해지지 않는다.
+이 경우, MCU 는 부호 없는 연산을 하는데, 왜냐면 두 입력이 부호없기 때문이다!
+ 
 
 
 [source,arduino]
@@ -84,10 +87,10 @@ int result;
    result = x - y; // 5 - 10 = -5, as expected
    result = result / 2; //  -5/2 = -2 (only integer math, decimal places are dropped)
 ----
-Why use unsigned variables at all?
+왜 부호없는 변수를 쓸까?
 
-- The rollover behaviour is desired, e.g. counters
-- The signed variable is a bit too small, but you want to avoid the memory and speed loss of long/float.
+- 롤 오버 필요, 예를들어. 카운터
+- 부호있는 변수는 약간 작지만, long/float의 메모리와 속도 손실을 피하려 한다.
 --
 
 --
