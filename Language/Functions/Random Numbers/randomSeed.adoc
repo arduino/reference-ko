@@ -48,24 +48,24 @@ Conversely, it can occasionally be useful to use pseudo-random sequences that re
 --
 
 [float]
-=== 예제 코드
+=== 
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-코드 설명 필요.
+
 
 [source,arduino]
 ----
-long randNumber;
+long randNumber;              //랜덤 값을 저장할 long 타입 변수 선언
 
 void setup(){
-  Serial.begin(9600);
-  randomSeed(analogRead(0));
+  Serial.begin(9600);         //랜덤 값을 씨리얼모니터로 확인하기위해 씨리얼통신을 시작하는 함수
+  randomSeed(analogRead(0));  //randomSeed의 매개변수로 0번 채널(A0번 핀)에서 읽은 아날로그 값을 전달
 }
 
 void loop(){
-  randNumber = random(300);
-  Serial.println(randNumber);
+  randNumber = random(300);   //randNumber 변수에 0 ~ 299 값 중 랜덤한 값을 저장
+  Serial.println(randNumber); //randNumber 변수의 값을 씨리얼모니터에 한 줄로 출력
 
-  delay(50);
+  delay(50);                  //0.05초 지연 후 다음 루프 실행
 }
 ----
 
