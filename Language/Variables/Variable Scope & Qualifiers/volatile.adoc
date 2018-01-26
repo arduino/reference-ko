@@ -65,7 +65,7 @@ volatile 변수가 byte(예 16비트 int 또는 32비트 long)보다 크면, 마
 // 인터럽트 핀이 상태를 바꿀 때마다 LED를 토글한다
 
 int pin = 13;
-volatile int state = LOW;
+volatile byte state = LOW;
 
 void setup()
 {
@@ -84,6 +84,15 @@ void blink()
 }
 
 ----
+[source,arduino]
+----
+#include <util/atomic.h> // this library includes the ATOMIC_BLOCK macro.
+volatile int input_from_interrupt;
+
+ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+     // code with interrupts blocked (consecutive atomic operations will not get interrupted)
+     int result = input_from_interrupt;
+   }
 
 --
 // HOW TO USE SECTION ENDS
