@@ -16,7 +16,7 @@ aliases: [ /language/functions/advanced-io/noTone/ ]
 
 [float]
 === 설명
-`tone()` 에 의해 트리거된 구형파의 생성을 멈춘다. tone 가 생성되지 않았을 때는 아무 효과 없다.
+`tone()` 에 의해 시작된 구형파의 발생을 멈춥니다. tone이 발생하고 있지 않을 때에는 아무 효과가 없습니다.
 
 [%hardbreaks]
 
@@ -46,7 +46,7 @@ aliases: [ /language/functions/advanced-io/noTone/ ]
 
 [float]
 === 주의와 경고
-여러 핀에서 다른 피치를 연주하려면, 다음 핀에 `tone()` 을 부르기 전에  noTone() 을 부를 필요가 있다.
+여러 핀에서 다른 높이의 음을 내려면, 다음 핀에 대해 `tone()` 을 호출하기 전에  `noTone()` 을 호출해야 합니다.
 
 [%hardbreaks]
 
