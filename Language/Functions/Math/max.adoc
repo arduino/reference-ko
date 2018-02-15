@@ -54,7 +54,7 @@ subCategories: [ "수학" ]
 
 [source,arduino]
 ----
-sensVal = max(senVal, 20); // sensVal을 sensVal 또는 20 중 큰 값 할당
+sensVal = max(sensVal, 20); // sensVal을 sensVal 또는 20 중 큰 값 할당
                            // (sensVal 이 적어도 20임을 보장)
 ----
 [%hardbreaks]
