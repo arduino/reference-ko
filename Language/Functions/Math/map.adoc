@@ -36,7 +36,7 @@ subCategories: [ "수학" ]
 
 [float]
 === 문법
-
+`map(value, fromLow, fromHigh, toLow, toHigh)`
 
 
 [float]
