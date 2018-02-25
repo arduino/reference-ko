@@ -1,11 +1,11 @@
 ---
 title: "^="
-title_expanded: compound bitwise xor
+title_expanded: 복합 비트 xor
 categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+subCategories: [ "복합 연산자" ]
 ---
 
-= ^= Compound Bitwise XOR
+= ^= 복합 비트 XOR
 
 
 // OVERVIEW SECTION STARTS
@@ -13,7 +13,7 @@ subCategories: [ "Compound Operators" ]
 --
 
 [float]
-=== Description
+=== 설명
 The compound bitwise XOR operator `^=` is often used with a variable and a constant to toggle (invert) particular bits in a variable.
 [%hardbreaks]
 
@@ -26,7 +26,7 @@ A review of the Bitwise XOR `^` operator:
 [%hardbreaks]
 
 [float]
-=== Syntax
+=== 문법
 [source,arduino]
 ----
 x ^= y;   // equivalent to x = x ^ y;
@@ -47,7 +47,7 @@ x ^= y;   // equivalent to x = x ^ y;
 --
 
 [float]
-=== Example Code
+=== 예제 코드
 Bits that are "bitwise XORed" with 0 are left unchanged. So if myByte is a byte variable,
 [source,arduino]
 ----
@@ -62,7 +62,7 @@ myByte ^ B11111111 = ~myByte;
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== 주의와 경고
 Because we are dealing with bits in a bitwise operator - it is convenient to use the binary formatter with constants. The numbers are still the same value in other representations, they are just not as easy to understand. Also, B00000000 is shown for clarity, but zero in any number format is zero.
 [%hardbreaks]
 
@@ -105,7 +105,7 @@ myByte ^= B00000011 == B10101001;
 --
 
 [float]
-=== See also
+=== 더 볼 것
 
 [role="language"]
 * #LANGUAGE#  link:../../bitwise-operators/bitwisexor[& Bitwise XOR]
