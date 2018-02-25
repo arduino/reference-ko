@@ -51,7 +51,7 @@ sum = operand1 + operand2;
 [source,arduino]
 ----
 int a = 5, b = 10, c = 0;
-c = a + b; // 변수 'c' 는 이 문장이 실행되면 15가 된다
+c = a + b; // 변수 'c' 는 이 문장이 실행되면 15가 된다.
 ----
 [%hardbreaks]
 
