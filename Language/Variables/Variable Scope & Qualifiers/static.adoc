@@ -89,3 +89,13 @@ int randomWalk(int moveSize){
 
 --
 // HOW TO USE SECTION ENDS
+
+// SEE ALSO SECTION STARTS
+[#see_also]
+--
+
+[float]
+=== 더 볼 것
+
+--
+// SEE ALSO SECTION ENDS
