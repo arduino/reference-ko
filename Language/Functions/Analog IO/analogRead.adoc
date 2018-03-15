@@ -12,12 +12,12 @@ subCategories: [ "아날로그 입출력" ]
 
 [float]
 === 설명
-특정 핀에서 값을 읽는다. 아두이노 보드는 6채널(미니와 나노는 8채널, 메가는 16채널), 10비트 아나로그에서 디지털로 변환기를 포함한다. 이것은 0에서 5V 사이의 입력 전압을 0에서 1024 사이의 값으로 매핑하는 것을 뜻한다.
-이것은 5볼트 / 1024 단위 즉 단위당 .0049볼트(4.9mV) 분해능을 낸다.
-입력 범위와 분해능은 link:../analogreference[analogReference()] 을 써서 바뀔 수 있다.
+지정한 아날로그 핀에서 값을 읽습니다. 아두이노 보드는 6채널(미니와 나노는 8채널, 메가는 16채널), 10비트의 아날로그-디지털 변환기를 가지고 있습니다. 이는, 0에서 5V 사이의 입력 전압을 0에서 1024 사이의 정수 값으로 대응시키는 것을 뜻합니다.
+이는 해상도가 5V/1024 혹은 0.0049V (0.49mV) 단위라는 것을 뜻합니다.
+입력 범위와 해상도는 link:../analogreference[analogReference()] 를 사용해서 바꿀 수 있습니다.
 
 
-아나로그 입력을 읽는 데는 약 100마이크로초(0.0001초) 걸리므로, 최대 읽기율은 1초에 약 1만번이다.
+아날로그 입력을 읽는 데는 약 100마이크로초(0.0001초)가 걸리므로, 최대 읽기 속도는 1초에 약 1만 번입니다.
 [%hardbreaks]
 
 
@@ -28,7 +28,8 @@ subCategories: [ "아날로그 입출력" ]
 
 [float]
 === 매개변수
-`pin`: 읽을 아나로그 입력 핀(대부분 보드에서 0에서 5까지, 미니와 나노에서 0에서 7까지, 메가에서 0에서 15까지) 번호
+`pin`: 읽을 아날로그 입력 핀(대부분의 보드에서 0~5, Mini와 Nano는 0
+~7, Mega는 0~15) 번호
 
 [float]
 === 반환
@@ -47,14 +48,14 @@ int(0 에서 1023)
 [float]
 === 예제 코드
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-이 코드는 아나로그 핀의 전압을 읽어서 표시한다.
+이 코드는 아날로그 핀의 전압을 읽어서 표시합니다.
 
 
 [source,arduino]
 ----
-int analogPin = 3;     // 전위차계 와이퍼(중간 단자)가 아나로그 핀 3에 연결됨
-                       // 바깥쪽은 그라운드와 +5
-int val = 0;           // 읽은 값 저장할 변수
+int analogPin = 3;     // 가변 저항의 가운데 핀이 아날로그 핀 3에 연결됨
+                       // 바깥쪽은 그라운드와 +5V에 연결됨
+int val = 0;           // 읽은 값을 저장할 변수
 
 void setup()
 {
@@ -63,7 +64,7 @@ void setup()
 
 void loop()
 {
-  val = analogRead(analogPin);     // 입력 핀 읽음
+  val = analogRead(analogPin);     // 입력 핀 읽기
   Serial.println(val);             // 값 디버그
 }
 ----
@@ -71,7 +72,7 @@ void loop()
 
 [float]
 === 주의와 경고
-아나로그 핀이 아무데도 연결되지 않으면, analogRead()가 반환하는 값은 여러 요인(e.g. 다른 아나로그 입력 값, 여러분의 손이 보드에 얼마나 가까운가 등)에 따라 변한다
+아날로그 입력 핀이 아무데도 연결되지 않으면, analogRead()가 반환하는 값은 여러 요인(e.g. 다른 아날로그 입력 값, 여러분의 손이 보드에 얼마나 가까운가 등)에 따라 변합니다.
 
 
 --
@@ -83,7 +84,7 @@ void loop()
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../zero-due-mkr-family/analogreadresolution[analogReadResolution()]
