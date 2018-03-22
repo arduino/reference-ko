@@ -112,7 +112,7 @@ myByte |= B00000011 == B10101011;
 === 더 볼 것
 
 [role="language"]
-* #LANGUAGE#  link:../../bitwise-operators/bitwiseor[& Bitwise OR]
+* #LANGUAGE#  link:../../bitwise-operators/bitwiseor[| Bitwise OR]
 
 --
 // SEE ALSO SECTION ENDS
