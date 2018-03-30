@@ -18,7 +18,7 @@ subCategories: [ "스트링개체 연산자" ]
 
 [float]
 === 설명
-스트링의 개별 문자에 접근하는 것을 허용.
+String의 개별 문자에 접근하는 것을 허용.
 
 [%hardbreaks]
 
@@ -34,13 +34,13 @@ char thisChar = string1[n]
 === 매개변수
 `char thisChar` - 문자 변수
 
-`string1` - 스트링 변수
+`string1` - String 변수
 
 `int n` - 숫자 변수
 
 [float]
 === 반환
-The nth char of the string. Same as charAt().
+String의  n번째 char. Same as charAt().
 스트링의 n번째 문자. charAt()와 같음.
 
 --
