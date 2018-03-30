@@ -1,4 +1,4 @@
-﻿---
+--
 title: "=="
 title_expanded: 비교
 categories: [ "Data Types" ]
@@ -34,7 +34,7 @@ string1 == string2
 
 [float]
 === 매개변수
-`string1, string2` - a string 변수
+`string1, string2` - String 변수
 
 [float]
 === 반환
