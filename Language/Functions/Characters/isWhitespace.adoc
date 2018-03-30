@@ -25,9 +25,7 @@ thisChar 가 공백일 때 true 반환.
 [float]
 === 문법
 [source,arduino]
-----
-isWhitespace(thisChar)
-----
+`isWhitespace(thisChar)`
 
 [float]
 === 매개변수
