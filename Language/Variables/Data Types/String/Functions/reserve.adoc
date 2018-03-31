@@ -1,4 +1,4 @@
-﻿---
+---
 title: "reserve()"
 categories: [ "Data Types" ]
 subCategories: [ "스트링개체 함수" ]
@@ -85,5 +85,4 @@ void loop() {
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
 --
-// SEE ALSO SECTION ENDS
 // SEE ALSO SECTION ENDS
