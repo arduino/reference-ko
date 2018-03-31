@@ -27,11 +27,11 @@ This function is part of the Stream class, and is called by any class that inher
 
 [float]
 === 매개변수
-Nothing
+없음
 
 [float]
 === 반환
-A String read from a stream.
+String을 stream 에서 읽음.
 
 --
 // OVERVIEW SECTION ENDS
