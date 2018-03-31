@@ -1,4 +1,4 @@
-﻿---
+---
 title: "trim()"
 categories: [ "Data Types" ]
 subCategories: [ "스트링개체 함수" ]
