@@ -1,4 +1,4 @@
-﻿---
+---
 title: "toCharArray()"
 categories: [ "Data Types" ]
 subCategories: [ "스트링개체 함수" ]
@@ -17,7 +17,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 설명
-스트리의 문자를 제공되는 버퍼에 복사.
+String의 문자를 제공되는 버퍼에 복사.
 [%hardbreaks]
 
 
