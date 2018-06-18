@@ -33,7 +33,7 @@ This function is part of the Stream class, and is called by any class that inher
 
 [float]
 === 반환
-`boolean`
+`bool`
 
 --
 // OVERVIEW SECTION ENDS
