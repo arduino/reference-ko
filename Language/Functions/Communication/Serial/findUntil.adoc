@@ -34,7 +34,7 @@ The function returns true if the target string is found, false if it times out.
 
 [float]
 === 반환
-`boolean`
+`bool`
 
 --
 // OVERVIEW SECTION ENDS
