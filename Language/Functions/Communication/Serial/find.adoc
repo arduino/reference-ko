@@ -30,7 +30,7 @@ Serial.find() inherits from the link:../../stream[stream] utility class.
 
 [float]
 === 반환
-`boolean`
+`bool`
 
 --
 // OVERVIEW SECTION ENDS
