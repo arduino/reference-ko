@@ -19,6 +19,7 @@ subCategories: [ "비교 연산자" ]
 [float]
 === 설명
 왼쪽 변수와 연산자 오른쪽 변수를 비교. 왼쪽 피연산자가 오른쪽 피연산자보다 크면 true 반환.
+Please note that you may compare variables of different data types, but that could generate unpredictable results, it is therefore recommended to compare variables of the same data type including the signed/unsigned type.
 [%hardbreaks]
 
 
