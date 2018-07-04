@@ -63,7 +63,7 @@ void loop()
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../constants/integerconstants[Integer Constants]

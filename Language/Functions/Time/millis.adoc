@@ -79,7 +79,7 @@ millis ()의 반환 값은 unsigned long 이므로 프로그래머가 int 와 �
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:./delay.adoc[delay()] +

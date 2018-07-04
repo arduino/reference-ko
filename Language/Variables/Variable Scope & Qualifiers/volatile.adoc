@@ -23,7 +23,7 @@ subCategories: [ "변수 scope 및 한정어" ]
 
 특히, 그것은 컴파일러가 변수를 저장 레지스터가 아니라 RAM으로 부터 변수를 로드하도록 지시하는데, 그것은 프로그램 변수가 저장되고 다루어지는 임시 메모리 위치이다. 어떤 조건에서, 레지스터에 저장된 변수에 대한 값은 부정확할 수 있다.
 
-변수는 그 값이 나타나는 코드 섹션을 의 넘어 바뀔 수 있을 때(예:동시 실행 thread 와 같은) 마다 volatile 로 선언되어야 한다. 
+변수는 그 값이 나타나는 코드 섹션을 의 넘어 바뀔 수 있을 때(예:동시 실행 thread 와 같은) 마다 volatile 로 선언되어야 한다.
 아두이노에서, 이것이 발생할 만한 유일한 장소는 인터럽트와 관련한 코드섹션이며, 인터럽트 서비스 루틴이라 불린다.
 
 [float]
@@ -103,7 +103,7 @@ ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]

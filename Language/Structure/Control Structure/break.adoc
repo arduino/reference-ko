@@ -57,7 +57,7 @@ for (x = 0; x < 255; x ++)
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 

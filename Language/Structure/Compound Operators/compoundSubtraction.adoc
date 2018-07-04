@@ -63,7 +63,7 @@ x -= 2;      // x 는 18
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../arithmetic-operators/subtraction[Normal Subtraction]

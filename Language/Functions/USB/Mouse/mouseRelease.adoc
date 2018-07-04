@@ -91,7 +91,7 @@ When you use the `Mouse.release()` command, the Arduino takes over your mouse! M
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../mouseclick[Mouse.click()]

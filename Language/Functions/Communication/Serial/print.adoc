@@ -133,7 +133,7 @@ As of version 1.0, serial transmission is asynchronous; `Serial.print()` will re
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../begin[begin()]

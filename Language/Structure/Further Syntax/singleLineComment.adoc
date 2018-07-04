@@ -67,7 +67,7 @@ digitalWrite(led, HIGH);   // LED 켜기 (HIGH 는 전압 레벨)
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 

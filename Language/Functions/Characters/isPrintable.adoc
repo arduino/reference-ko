@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-매개변수로 들어온 문자(char)가 출력할 수 있는지 분석한다. (스페이스바(a blank space)든, 어떠한 문자든 출력을 생성할 수 있는 문자인지 분석한다.) 분석결과 매개변수로 들어온 문자(thisChar)가 출력가능하면 true(참)값을 반환한다. 
+문자가 출력 가능한지 (공백이더라도, 출력을 생성하는 문자인지) 분석합니다. thisChar가 출력 가능하다면 true를 반환합니다.
 [%hardbreaks]
 
 
@@ -30,11 +30,11 @@ isAlpha(thisChar)
 
 [float]
 === 매개변수
-`thisChar`: variable. *허용되는 자료형:* char
+`thisChar`: 변수. *허용되는 자료형:* char
 
 [float]
 === 반환
-`true`: if thisChar is printable.
+`true`: thisChar가 출력 가능할 때.
 
 --
 // OVERVIEW SECTION ENDS
@@ -50,7 +50,7 @@ isAlpha(thisChar)
 
 [source,arduino]
 ----
-if (isPrintable(this))      // 출력가능한 문자(printable char)인지 아닌지 테스트한다.
+if (isPrintable(this))      // 출력 가능한 문자인지 테스트.
 {
 	Serial.println("The character is printable");
 }
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

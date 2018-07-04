@@ -17,7 +17,7 @@ subCategories: [ "비트 및 바이트" ]
 
 [float]
 === 설명
-특정 비트(bit)의 값을 계산한다(bit 0 은 1, bit 1 은 2, bit 2 는 4, 등.).
+특정 비트(bit)의 값을 계산합니다(bit 0은 1, bit 1은 2, bit 2는 4, 등등).
 
 [%hardbreaks]
 
@@ -33,7 +33,7 @@ subCategories: [ "비트 및 바이트" ]
 
 [float]
 === 반환
-비트 값.
+비트의 값.
 
 --
 // OVERVIEW SECTION ENDS

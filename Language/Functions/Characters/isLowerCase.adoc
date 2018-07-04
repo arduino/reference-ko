@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-소문자인지 분석. thisChar가 소문자를 포함하면 true 반환.
+문자가 소문자인지 분석합니다. thisChar가 소문자이면 true를 반환합니다.
 [%hardbreaks]
 
 
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

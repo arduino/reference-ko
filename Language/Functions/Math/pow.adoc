@@ -61,7 +61,7 @@ subCategories: [ "수학" ]
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="definition"]
 * #DEFINITION# link:../../../variables/data-types/float[float]

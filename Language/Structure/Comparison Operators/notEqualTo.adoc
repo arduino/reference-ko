@@ -67,7 +67,7 @@ if (x!=y)      // x 가 y 와 같지 않으면
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 

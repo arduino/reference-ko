@@ -71,7 +71,7 @@ if (x>y)      // tests if x is greater (bigger) than y
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 

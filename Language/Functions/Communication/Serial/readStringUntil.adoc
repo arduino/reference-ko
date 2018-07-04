@@ -43,7 +43,7 @@ The entire String read from the serial buffer, until the terminator character is
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../serial[Serial]

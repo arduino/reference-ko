@@ -67,7 +67,7 @@ y = x--;      // x contains 0, but y still contains 1
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 

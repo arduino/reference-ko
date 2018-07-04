@@ -71,7 +71,7 @@ MCU는 아래 규칙을 적용한다:
 
 그러나 중간 결과가 필요하면, 중간결과의 scope는 코드에서 정해지지 않는다.
 이 경우, MCU 는 부호 없는 연산을 하는데, 왜냐면 두 입력이 부호없기 때문이다!
- 
+
 
 
 [source,arduino]
@@ -81,8 +81,8 @@ unsigned int y=10;
 int result;
 
    result = x - y; // 5 - 10 = -5, as expected
-   result = (x - y)/2; // 5 - 10 in unsigned math is 65530!  65530/2 = 32765 
-   
+   result = (x - y)/2; // 5 - 10 in unsigned math is 65530!  65530/2 = 32765
+
    // solution: use signed variables, or do the calculation step by step.
    result = x - y; // 5 - 10 = -5, as expected
    result = result / 2; //  -5/2 = -2 (only integer math, decimal places are dropped)
@@ -102,7 +102,7 @@ int result;
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../constants/integerconstants[Integer Constants]

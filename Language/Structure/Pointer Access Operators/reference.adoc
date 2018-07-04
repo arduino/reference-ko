@@ -61,7 +61,7 @@ result = *p;  // 'result' 는 'p' 가 가리키는 주소 값을 얻음
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 

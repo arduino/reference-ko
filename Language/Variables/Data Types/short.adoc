@@ -57,7 +57,7 @@ short 는 16비트 자료형이다.
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../constants/integerconstants[Integer Constants]

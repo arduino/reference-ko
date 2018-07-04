@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-내용을 출력가능한지(스페이스는 출력가능하지만 내용은 없음). thisChar 가 어떤 내용을 출력가능하면 true 반환.
+문자가 내용을 가지고 출력 가능한지를 분석합니다 (공백은 출력 가능하지만 내용이 없습니다.). thisChar가 출력 가능하다면 true를 반환합니다.
 [%hardbreaks]
 
 
@@ -30,11 +30,11 @@ isGraph(thisChar)
 
 [float]
 === 매개변수
-`thisChar`: variable. *허용되는 자료형:* char
+`thisChar`: 변수. *허용되는 자료형:* char
 
 [float]
 === 반환
-`true`: if thisChar is printable.
+`true`: thisChar가 출력 가능할 때.
 
 --
 // OVERVIEW SECTION ENDS
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

@@ -17,8 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-thisChar 가 알파(즉 문자)인지 분석.
-thisChar 가 문자를 포함하면 true 반환. 
+문자가 알파벳인지를 판단합니다. thisChar가 알파벳이라면 참을 반환합니다.
 [%hardbreaks]
 
 
@@ -35,7 +34,7 @@ isAlpha(thisChar)
 
 [float]
 === 반환
-`true`: thisChar 가 알파일 때.
+`true`: thisChar가 알파벳일 때.
 
 --
 // OVERVIEW SECTION ENDS
@@ -51,7 +50,7 @@ isAlpha(thisChar)
 
 [source,arduino]
 ----
-if (isAlpha(this))      // this 가 letter 인지
+if (isAlpha(this))      // this가 알파벳인지 테스트
 {
 	Serial.println("The character is a letter");
 }
@@ -71,7 +70,7 @@ else
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

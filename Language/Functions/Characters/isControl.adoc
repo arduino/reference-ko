@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-제어문자인지 분석. thisChar이 제어문자이면 true 반환.
+문자가 제어 문자인지 분석합니다. thisChar가 제어 문자이면 true를 반환합니다.
 [%hardbreaks]
 
 
@@ -34,7 +34,7 @@ isControl(thisChar)
 
 [float]
 === 반환
-`true`: if thisChar is a control character.
+`true`: thisChar가 제어 문자일 때.
 
 --
 // OVERVIEW SECTION ENDS
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

@@ -58,7 +58,7 @@ if (x > 0 || y > 0) { // x 또는 y 가 0보다 크면
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../bitwise-operators/bitwiseor[| 비트 OR]

@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-thisChar 가 alphanumeric(글자 또는 숫자)인지 분석. thisChar 가 글자 또는 숫자를 포함하면 true 반환.
+문자가 알파벳, 또는 숫자인지 판단합니다. thisChar가 알파벳, 혹은 숫자이면 true를 반환합니다.
 [%hardbreaks]
 
 
@@ -34,7 +34,7 @@ thisChar 가 alphanumeric(글자 또는 숫자)인지 분석. thisChar 가 글�
 
 [float]
 === 반환
-`true`: thisChar 가 alphanumeric 이면.
+`true`: thisChar가 문자, 혹은 숫자일 때.
 
 --
 // OVERVIEW SECTION ENDS
@@ -50,7 +50,7 @@ thisChar 가 alphanumeric(글자 또는 숫자)인지 분석. thisChar 가 글�
 
 [source,arduino]
 ----
-if (isAlphaNumeric(this))      // tests if this isa letter or a number
+if (isAlphaNumeric(this))      // this가 문자 혹은 숫자인지 테스트
 {
 	Serial.println("The character is alphanumeric");
 }
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

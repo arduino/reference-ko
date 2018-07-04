@@ -50,7 +50,7 @@ x <= y;   // is true if x is smaller than or equal to y and it is false if x is 
 ----
 if (x<=y)      // x가 y보다 작거나 같으면
 {
-// 
+//
 }
 ----
 [%hardbreaks]
@@ -71,7 +71,7 @@ if (x<=y)      // x가 y보다 작거나 같으면
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 

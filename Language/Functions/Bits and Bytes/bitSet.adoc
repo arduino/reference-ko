@@ -12,7 +12,7 @@ subCategories: [ "비트 및 바이트" ]
 
 
 // OVERVIEW SECTION STARTS
-숫자 변수를 설정 (1을 씀) .
+숫자 변수의 한 비트를 1로 설정합니다.
 [#overview]
 --
 
@@ -28,9 +28,9 @@ subCategories: [ "비트 및 바이트" ]
 
 [float]
 === 매개변수
-`x`: 비트를 쓸 숫자 변수
+`x`: 비트를 설정할 숫자 변수
 
-`n`: 설정할 비트, 0에서 시작 least-significant (가장 오른쪽) bit
+`n`: 설정할 비트의 위치, LSB(맨 오른쪽 비트)가 0, 왼쪽으로 갈수록 1씩 증가
 
 [float]
 === 반환

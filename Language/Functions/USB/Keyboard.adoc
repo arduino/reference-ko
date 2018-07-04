@@ -61,7 +61,7 @@ link:../keyboard/keyboardwrite[Keyboard.write()]
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="example"]
 * #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl]: Demonstrates the Mouse and 키보드 commands in one program.

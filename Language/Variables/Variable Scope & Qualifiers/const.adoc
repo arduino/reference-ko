@@ -70,7 +70,7 @@ link:../../data-types/array[arrays] 를 위해, `const` 를 쓸 필요가 있을
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../../structure/further-syntax/define[#define]

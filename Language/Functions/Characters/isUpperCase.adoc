@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-대문자인지 분석. thisChar가 대문자이면 true 반환
+문자가 대문자인지 분석합니다. thisChar가 대문자면 true를 반환합니다.
 [%hardbreaks]
 
 
@@ -34,7 +34,7 @@ isUpperCase(thisChar)
 
 [float]
 === 반환
-`true`: thisChar 가 대문자이면.
+`true`: thisChar가 대문자면.
 
 --
 // OVERVIEW SECTION ENDS
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

@@ -50,7 +50,7 @@ subCategories: [ "비트 연산자" ]
 [source,arduino]
 ----
 int a = 5;        // 이진수: 0000000000000101
-int b = a << 3;   // 이진수: 0000000000101000, 즉 십진수 40 
+int b = a << 3;   // 이진수: 0000000000101000, 즉 십진수 40
 ----
 [%hardbreaks]
 
@@ -109,7 +109,7 @@ void printOut1(int c) {
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 

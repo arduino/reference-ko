@@ -56,7 +56,7 @@ if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) { // 두 스위치 다 HI
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../bitwise-operators/bitwiseand[& (비트 AND)]
