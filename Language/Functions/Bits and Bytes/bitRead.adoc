@@ -17,7 +17,7 @@ subCategories: [ "비트 및 바이트" ]
 
 [float]
 === 설명
-숫자의 한 비트를 읽음.
+숫자의 한 비트를 읽습니다.
 [%hardbreaks]
 
 
@@ -30,7 +30,7 @@ subCategories: [ "비트 및 바이트" ]
 === 매개변수
 `x`: 읽을 숫자
 
-`n`: 읽을 비트, least-significant (가장 오른쪽) bit 0에서 시작
+`n`: 읽을 비트, LSB(맨 오른쪽 비트)가 0, 왼쪽으로 갈수록 1씩 증가
 
 
 [float]

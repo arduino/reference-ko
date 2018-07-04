@@ -53,7 +53,7 @@ unsigned char myChar = 240;
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../../functions/communication/serial/println[Serial.println]

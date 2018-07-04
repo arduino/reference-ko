@@ -70,7 +70,7 @@ if (x>=y)      // tests if x is greater (bigger) than or equal to y
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 
 --

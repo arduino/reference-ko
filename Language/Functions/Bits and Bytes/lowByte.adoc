@@ -17,7 +17,7 @@ subCategories: [ "비트 및 바이트" ]
 
 [float]
 === 설명
-변수의 low-order (가장 오른쪽) 바이트를 추출(e.g. word)
+변수(예: 워드)의 가장 낮은(오른쪽) 바이트를 추출합니다
 
 [%hardbreaks]
 
@@ -29,7 +29,7 @@ subCategories: [ "비트 및 바이트" ]
 
 [float]
 === 매개변수
-`x`: 값
+`x`: 값 (어떤 자료형이든)
 
 [float]
 === 반환
@@ -43,7 +43,7 @@ subCategories: [ "비트 및 바이트" ]
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../../variables/data-types/word[word()]

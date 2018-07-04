@@ -58,7 +58,7 @@ char 자료형은 부호있는 형이므로, 그것은 -128 에서 127 까지 �
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../../functions/communication/serial/println[Serial.println]

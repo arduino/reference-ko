@@ -45,7 +45,7 @@ The number of bytes available to write.
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../begin[begin()] +

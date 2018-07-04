@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-punctuation ( 즉 쉼표, 세미콜론, 느낌표 등등)인지 분석. thisChar 가 punctuation 이면 true 반환. 
+문자가 구두점인지(즉 쉼표, 세미콜론, 느낌표 등)인지 분석합니다. thisChar가 구두점이면 true를 반환.
 [%hardbreaks]
 
 
@@ -34,7 +34,7 @@ isPunct(thisChar)
 
 [float]
 === 반환
-`true`: thisChar  punctuation 일 때.
+`true`: thisChar가 구두점일 때.
 
 --
 // OVERVIEW SECTION ENDS
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

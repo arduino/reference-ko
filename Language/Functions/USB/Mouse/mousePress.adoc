@@ -96,7 +96,7 @@ When you use the `Mouse.press()` command, the Arduino takes over your mouse! Mak
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../mouseclick[Mouse.click()]

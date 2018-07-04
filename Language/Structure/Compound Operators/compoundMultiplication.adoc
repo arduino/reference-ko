@@ -64,7 +64,7 @@ x *= 2;      // x 는 4
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../arithmetic-operators/multiplication[Normal Multiplication]

@@ -17,19 +17,16 @@ subCategories: [ "디지털 입출력" ]
 
 [float]
 === 설명
-`HIGH` 또는 `LOW` 값을 디지털 핀에 쓴다.
+`HIGH` 또는 `LOW` 값을 디지털 핀에 출력합니다.
 
-핀이 `pinMode()` 로 `OUTPUT` 으로 설정되면, 그 전압은 해당 값으로 설정될 거다: 5V (또는 3.3V 보드에서 3.3V) 는 `HIGH`, 0V (ground) 는 `LOW`.
+핀이 `pinMode()` 를 통해 `OUTPUT` 으로 설정되면, 그 핀의 전압은 `HIGH` 일 때 5V(또는 3.3V 보드에서 3.3V), `LOW` 일 때 0V (ground)로 설정됩니다.
 [%hardbreaks]
 
-핀이 `INPUT` 으로 설정되면, `digitalWrite()` 는  (`HIGH`) 를 활성화 또는 (`LOW`) 를 비활성화 입력 핀의 내부 풀업.
-`pinMode()` 를 `INPUT_PULLUP` 으로 설정하여 내부 풀업 저항을 활성화하는 것을 권장한다.
-
-디지털 핀 투토리얼에 더 많은 정보가 있다.
+핀이 `INPUT` 으로 설정되면, `digitalWrite()` 는 입력 핀의 내부 풀업 저항을 활성화 (`HIGH`) 또는 비활성화 (`LOW`)할 것입니다. 내장 풀업 저항을 활성화하기 위해서는 `pinMode()` 를 `INPUT_PULLUP` 으로 설정하는 것을 권장합니다. 디지털 핀 튜토리얼을 보면 더 많은 정보가 있습니다.
 [%hardbreaks]
 
-`pinMode()` 를 `OUTPUT` 로 설정하지 않고, LED를 핀에 연결하면, `digitalWrite(HIGH)` 가 불릴 때, LED 가 흐리게 나타날 수 있다.
-명시적으로 `pinMode()` 를 설정하지 않으면, `digitalWrite()` 는 내부 풀업 저항을 가능하게 할 것이고, 그것은 큰 전류-제한 저항처럼 동작한다.
+`pinMode()` 를 `OUTPUT` 으로 설정하지 않고 LED를 핀에 연결하면, `digitalWrite(HIGH)` 가 불릴 때 LED 불빛이 흐리게 나타날 수 있습니다.
+명시적으로 `pinMode()` 를 설정하지 않으면 `digitalWrite()` 는 내부 풀업 저항을 활성화시킬 것이고, 그것은 마치 전류를 제한하는 큰 저항처럼 동작할 것입니다.
 
 [%hardbreaks]
 
@@ -61,29 +58,28 @@ subCategories: [ "디지털 입출력" ]
 [float]
 === 예제 코드
 // Describe what the example code is all about and add relevant code
-이 코드는 디지털 핀 13을 `OUTPUT` 로 만들고  그것을 `HIGH` 와 `LOW` 사이를 1초 마다 토글한다.
-
+이 코드는 디지털 핀 13을 `OUTPUT` 로 만들고 1초마다 `HIGH` 와 `LOW` 사이를 전환합니다.
 
 //[source,arduino]
 ----
 void setup()
 {
-  pinMode(13, OUTPUT);          // 디지털 핀 13 을 출력으로
+  pinMode(13, OUTPUT);          // 디지털 핀 13 을 출력으로 설정
 }
 
 void loop()
 {
-  digitalWrite(13, HIGH);       // 디지털 핀 13 켬
-  delay(1000);                  // 1초 기다림
-  digitalWrite(13, LOW);        // 디지털 핀 13 끔
-  delay(1000);                  // 1초 기다림
+  digitalWrite(13, HIGH);       // 디지털 핀 13 켜기
+  delay(1000);                  // 1초 기다리기
+  digitalWrite(13, LOW);        // 디지털 핀 13 끄기
+  delay(1000);                  // 1초 기다리기
 }
 ----
 [%hardbreaks]
 
 [float]
 === 주의와 경고
-아날로그 입력 핀은 디지털 핀으로 쓰일 수 있고, A0, A1 등으로 참조됨.
+A0, A1 등을 통해 아날로그 입력 핀을 디지털 핀으로 사용할 수 있습니다.
 
 
 --
@@ -95,7 +91,7 @@ void loop()
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="example"]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/DigitalPins[Tutorial: Digital Pins]

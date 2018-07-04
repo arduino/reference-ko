@@ -49,7 +49,7 @@ none
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

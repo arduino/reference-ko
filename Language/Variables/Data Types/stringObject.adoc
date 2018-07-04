@@ -152,7 +152,7 @@ String stringOne =  String(5.698, 3);                                // using a 
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 

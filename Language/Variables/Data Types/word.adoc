@@ -32,7 +32,7 @@ word는 16비트 부호없는 숫자, 0에서 65535까지를 저장한다. unsig
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 

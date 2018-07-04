@@ -83,7 +83,7 @@ In this state it can sink current, e.g. light an LED that is connected through a
 [float]
 === INPUT 으로 구성된 핀
 `pinMode()` 에서 `INPUT` 로 설정된 아두이노(ATmega)는 _high-impedance_ state 에 있다고 말한다.
-`INPUT` 으로 구성된 핀들은 그들이 샘플링 하는 데 극도로 작은 요구를 하고, 핀 앞에는 100 메가 옴의 직렬 저항과 동일. 
+`INPUT` 으로 구성된 핀들은 그들이 샘플링 하는 데 극도로 작은 요구를 하고, 핀 앞에는 100 메가 옴의 직렬 저항과 동일.
 이것은 센서를 읽기 좋게 만든다.
 [%hardbreaks]
 
@@ -136,7 +136,7 @@ Pins configured as outputs can be damaged or destroyed if they are connected to 
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 

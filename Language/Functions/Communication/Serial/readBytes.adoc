@@ -46,7 +46,7 @@ The number of bytes placed in the buffer (`size_t`)
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../stream[stream]

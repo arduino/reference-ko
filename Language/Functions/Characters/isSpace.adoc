@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-공백문자인지 분석. thisChar 가 공백을 포함하면 true 반환.
+문자가 스페이스인지 분석합니다. thisChar가 스페이스면 true를 반환합니다.
 [%hardbreaks]
 
 
@@ -30,11 +30,11 @@ isSpace(thisChar)
 
 [float]
 === 매개변수
-`thisChar`: variable. *허용되는 자료형:* char
+`thisChar`: 변수. *허용되는 자료형:* char
 
 [float]
 === 반환
-`true`: thisChar 가 공백이면.
+`true`: thisChar가 스페이스면.
 
 --
 // OVERVIEW SECTION ENDS
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

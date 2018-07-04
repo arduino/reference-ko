@@ -38,7 +38,7 @@ C 언어 등호기호 `=` 는 할당 연산자라 불린다. 등식 또는 같�
 
 [source,arduino]
 ----
-int sensVal;              // 이름 sensVal 인 정수 변수 선언 
+int sensVal;              // 이름 sensVal 인 정수 변수 선언
 sensVal = analogRead(0);  // 아나로그 핀 0에 입력한 (디지털화 된) 입력 전압을 SensVal 에 저장
 ----
 [%hardbreaks]
@@ -58,7 +58,7 @@ sensVal = analogRead(0);  // 아나로그 핀 0에 입력한 (디지털화 된) 
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../control-structure/if[if (conditional operators)]

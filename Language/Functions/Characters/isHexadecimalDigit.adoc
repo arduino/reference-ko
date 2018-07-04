@@ -17,7 +17,7 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-16진수인지 분석. thisChar가 16진수 포함하면 true 출력.
+문자가 16진수 숫자(A-F, 0-9)인지 분석합니다. thisChar가 16진수 숫자이면 true를 반환합니다.
 [%hardbreaks]
 
 
@@ -34,7 +34,7 @@ isHexadecimalDigit(thisChar)
 
 [float]
 === 반환
-`true`: thisChar 가 16진수 이면.
+`true`: thisChar가 16진수 숫자일 때.
 
 --
 // OVERVIEW SECTION ENDS
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

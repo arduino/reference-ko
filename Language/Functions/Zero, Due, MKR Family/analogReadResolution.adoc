@@ -106,7 +106,7 @@ Using a 16 bit resolution (or any resolution *higher* than actual hardware capab
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="example"]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of the analog input pins]

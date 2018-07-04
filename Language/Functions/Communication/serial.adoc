@@ -77,7 +77,7 @@ link:../serial/serialevent[serialEvent()]
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/ReadAsciiString[ReadAsciiString^]

@@ -101,7 +101,7 @@ for (i = 0; i < 5; i = i + 1) {
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 [role="language"]
 * #LANGUAGE# link:../../utilities/progmem[PROGMEM]
 

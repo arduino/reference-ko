@@ -41,7 +41,7 @@ string1 == string2
 스트링의 n 번째 문자. charAt() 과 같다.
 
 `true`: string1 이 string2 와 같으면
- 
+
 `false`: 아니면
 --
 
@@ -57,7 +57,7 @@ string1 == string2
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

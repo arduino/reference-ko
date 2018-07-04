@@ -62,7 +62,7 @@ Nothing
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="example"]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/SerialEvent[SerialEvent Tutorial]

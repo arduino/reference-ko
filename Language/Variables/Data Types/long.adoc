@@ -59,7 +59,7 @@ long 변수는 숫자 저장을 위한 확장된 크기 변수이며, 32비트(4
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../constants/integerconstants[Integer Constants]

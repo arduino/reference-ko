@@ -48,7 +48,7 @@ byte 는 8비트 부호없는 숫자, 0부터 255까지를 저장한다.
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../conversion/bytecast[byte()]

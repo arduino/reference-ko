@@ -35,7 +35,7 @@ string.equalsIgnoreCase(string2)
 
 [float]
 === 반환
-`true`: string 과 string2 이 같으면(대소문자 무시) 
+`true`: string 과 string2 이 같으면(대소문자 무시)
 
 `false`: 아니면
 --
@@ -51,7 +51,7 @@ string.equalsIgnoreCase(string2)
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

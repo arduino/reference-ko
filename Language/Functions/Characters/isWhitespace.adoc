@@ -17,8 +17,8 @@ subCategories: [ "문자" ]
 
 [float]
 === 설명
-thisChar 가 공백(즉 formfeed ('\f'), newline ('\n'), carriage return ('\r'), 수평 탭 ('\t'), 그리고 수직 탭 ('\v'))인지 분석.
-thisChar 가 공백일 때 true 반환.
+문자가 공백(white space)인지 분석합니다. white space란 스페이스, formfeed ('\f'), newline ('\n'), carriage return ('\r'), 수평 탭 ('\t'), 그리고 수직 탭 ('\v')을 말합니다.
+thisChar가 공백 문자이면 true를 반환합니다.
 [%hardbreaks]
 
 
@@ -33,7 +33,7 @@ thisChar 가 공백일 때 true 반환.
 
 [float]
 === 반환
-`true` : thisChar가 공백일 때.
+`true` : thisChar가 공백 문자일 때.
 
 --
 // OVERVIEW SECTION ENDS
@@ -69,7 +69,7 @@ else
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]

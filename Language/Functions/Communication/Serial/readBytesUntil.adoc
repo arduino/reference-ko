@@ -53,7 +53,7 @@ Serial.readBytesUntil() reads characters from the serial buffer into an array. T
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../stream[Stream]

@@ -12,20 +12,18 @@ subCategories: [ "아날로그 입출력" ]
 
 [float]
 === 설명
-아나로그 값(http://arduino.cc/en/Tutorial/PWM[PWM 파형])을 핀에 쓴다.
-LED를 다양한 밝기로 켜거나 다양한 속도로 모터를 돌리는 데 쓸 수 있다.
- `analogWrite()` 을 부르면, 핀은 특정 듀티 사이클의 구형파를 만들어서 
-같은 핀에 다음 `analogWrite()` (또는 `digitalRead()` 또는 `digitalWrite()` )가 불릴 때까지 있는다.
-대부분 핀에서 PWM 신호의 주파수는 약 490 Hz이다.
-우노에서 그리고 비슷한 보드에서, 핀 5와 6은 약 980 Hz 주파수를 가진다.
+아날로그 값(http://arduino.cc/en/Tutorial/PWM[PWM 파])을 핀에 출력합니다.
+LED를 다양한 밝기로 켜거나 다양한 속도로 모터를 돌리는 데 쓸 수 있습니다.
+ `analogWrite()` 를 호출하면, 해당 핀에 다음 `analogWrite()` (또는 `digitalRead()` 또는 `digitalWrite()` )가 불릴 때까지 특정 듀티 사이클의 구형파를 발생시킵니다.
+대부분 핀에서 PWM 신호의 주파수는 약 490Hz입니다. Uno, 혹은 비슷한 보드에서, 5, 6번 핀은 약 980Hz의 주파수를 가집니다.
 [%hardbreaks]
-대부분의 아두이노 보드(tATmega168 또는 ATmega328P를 가진 것)에서, 이 함수는 핀 3, 5, 6, 9, 10, 그리고 11에서 동작한다.
-아두이노 메가에서, 핀 2 - 13 그리고 44 - 46 에서 동작한다.
-ATmega8을 가진 오래된 아두이노 보드는 9, 10, 그리고 11 핀에서 `analogWrite()` 만 지원한다.
-아두이노 DUE는 `analogWrite()` 을 핀 2 에서 13까지, 그리고 핀 DAC0과 DAC1에서 지원한다.
-PWM 핀과 달리, DAC0과 DAC1은 디지털에서 아나로그로 바꾸는 컨버터이며, 실제 아나로그 출력처럼 동작한다.
-`analogWrite()` 을 부르기 전에 핀을 출력으로 설정하기 위해 `pinMode()` 을 부를 필요가 없다.
-`analogWrite` 함수는 아나로그 핀 또는 `analogRead` 함수와 아무 관련이 없다.
+대부분의 아두이노 보드(ATmega168 또는 ATmega328P가 장착된)에서, 이 함수는 3, 5, 6, 9, 10, 11번 핀에서 동작합니다.
+아두이노 메가에서는 2 - 13번 핀 그리고 44 - 46번 핀에서 동작합니다.
+ATmega8을 탑재한 구형 아두이노 보드는 9, 10, 11번 핀에서만 `analogWrite()` 를 지원합니다.
+아두이노 DUE는 2번 핀에서 13번 핀까지, 그리고 DAC0과 DAC1 핀에서  `analogWrite()` 를 지원합니다.
+PWM 핀과 달리, DAC0과 DAC1은 디지털을 아날로그로 바꾸는 컨버터이며, 실제 아날로그 출력처럼 동작합니다.
+`analogWrite()` 를 부르기 전에 핀을 출력으로 설정하기 위해 `pinMode()` 를 부를 필요는 없습니다.
+`analogWrite` 함수는 아날로그 핀 또는 `analogRead` 함수와 아무 관련이 없습니다.
 [%hardbreaks]
 
 [float]
@@ -34,8 +32,8 @@ PWM 핀과 달리, DAC0과 DAC1은 디지털에서 아나로그로 바꾸는 컨
 
 [float]
 === 매개변수
-`pin`: 쓸 핀. 허용되는 자료형: int. +
-`value`: 듀티 사이클: 0 (늘 꺼짐)과 255 (늘 켜짐) 사이. 허용되는 자료형: int
+`pin`: 출력할 핀. 허용되는 자료형: int
+`value`: 듀티 사이클: 0 (언제나 꺼짐)과 255 (언제나 켜짐) 사이. 허용되는 자료형: int
 
 [float]
 === 반환
@@ -50,13 +48,13 @@ PWM 핀과 달리, DAC0과 DAC1은 디지털에서 아나로그로 바꾸는 컨
 
 [float]
 === 예제 코드
-출력을 전위차계로부터 읽은 값에 비례하는 LED로 설정한다.
+가변 저항으로부터 읽은 값에 비례하게 LED 출력을 설정합니다.
 
 [source,arduino]
 ----
-int ledPin = 9;      // LED 연결 디지털 핀 9
-int analogPin = 3;   // 전위차계 연결 아나로그 핀 3
-int val = 0;         // 읽은 값 저장할 변수
+int ledPin = 9;      // LED는 디지털 핀 9번에 연결
+int analogPin = 3;   // 가변저항은 아날로그 핀 3번에 연결
+int val = 0;         // 읽은 값을 저장할 변수
 
 void setup()
 {
@@ -65,8 +63,8 @@ void setup()
 
 void loop()
 {
-  val = analogRead(analogPin);   // 입력 핀 읽기
-  analogWrite(ledPin, val / 4);  // analogRead 값은 0부터  1023까지, analogWrite 값은 0 부터 255까지
+  val = analogRead(analogPin);   // 입력 핀에서 값 읽기
+  analogWrite(ledPin, val / 4);  // analogRead 값은 0부터 1023까지, analogWrite 값은 0 부터 255까지
 }
 ----
 [%hardbreaks]
@@ -74,9 +72,9 @@ void loop()
 
 [float]
 === 주의 및 경고
-핀 5와 6에서 생성된 PWM 출력은 예상보다 높은 듀티 사이클을 가질 거다.
-이것은 `millis()` 와 `delay()` 함수의 상호작용 때문인데, 그것은 같은 내부 타이머를 공유하여 이들 PWM 출력을 생성하는데 쓰인다.
-이것은 대부분 낮은 듀티-사이클 설정(e.g. 0 - 10)에서 발견되며 0의 값이 핀 5와 6에서 출력을 완전히 끄지 않는 결과가 나올 수 있다.
+핀 5와 6에서 생성된 PWM 출력은 예상보다 높은 듀티 사이클을 가질 것입니다.
+이것은 PWM 출력을 생성하기 위해 같은 내부 타이머를 공유하는 `millis()` 와 `delay()` 함수의 상호작용 때문입니다.
+이는 대부분 낮은 듀티 사이클 설정(예: 0 - 10)에서 발견되며, 값을 0으로 설정해도 핀 5와 6이 출력을 완전히 끄지 않는 결과가 나올 수 있습니다.
 
 --
 // HOW TO USE SECTION ENDS
@@ -87,7 +85,7 @@ void loop()
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../zero-due-mkr-family/analogwriteresolution[analogWriteResolution()]

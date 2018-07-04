@@ -17,11 +17,10 @@ subCategories: [ "디지털 입출력" ]
 
 [float]
 === 설명
-특정 핀을 입력 또는 출력으로 동작하도록 구성한다.
-(http://arduino.cc/en/Tutorial/DigitalPins[digital pins])의 설명을 보면 핀의 기능이 자세히 나온다.
+특정 핀을 입력 또는 출력으로 동작하도록 설정합니다. (http://arduino.cc/en/Tutorial/DigitalPins[digital pins])의 설명을 보면 핀들의 기능이 자세히 나옵니다.
 
 [%hardbreaks]
-아두이노 1.0.1부터, 내부 풀업 저항을 INPUT_PULLUP 모드로 활성화 할 수 있다. 게다가, INPUT 모드는 명시적으로 내부 풀업을 비활성화한다.
+아두이노 1.0.1부터, INPUT_PULLUP 모드를 통해 내부 풀업 저항을 활성화할 수 있습니다. 덧붙여, INPUT 모드는 명시적으로 내부 풀업을 비활성화합니다.
 
 [%hardbreaks]
 
@@ -34,7 +33,7 @@ subCategories: [ "디지털 입출력" ]
 === 매개변수
 `pin`: 모드를 설정하려는 핀 번호
 
-`mode`: `INPUT`, `OUTPUT`, 또는 `INPUT_PULLUP`. ((http://arduino.cc/en/Tutorial/DigitalPins[digital pins]) 페이지를 보면 기능의 완전 자세한 설명이 있다.)
+`mode`: `INPUT`, `OUTPUT`, 또는 `INPUT_PULLUP`. ((http://arduino.cc/en/Tutorial/DigitalPins[digital pins]) 페이지를 보면 더 자세한 기능 설명이 있습니다.)
 
 //Check how to add links
 
@@ -54,7 +53,7 @@ subCategories: [ "디지털 입출력" ]
 
 [float]
 === 예제 코드
-이 코드는 디지털 핀 13을 `OUTPUT` 으로 만들고 `HIGH` 와 `LOW` 를 토글함
+이 코드는 디지털 핀 13을 `OUTPUT` 으로 만들고 `HIGH` 와 `LOW` 를 전환합니다.
 
 
 //[source,arduino]
@@ -76,7 +75,7 @@ void loop()
 
 [float]
 === 주의와 경고
-아나로그 입력 핀은 A0, A1 등으로 참조되어 디지털 핀으로 쓸 수 있다,
+A0, A1 등으로 아날로그 입력 핀을 디지털 핀으로 사용할 수 있습니다.
 
 --
 // HOW TO USE SECTION ENDS
@@ -87,7 +86,7 @@ void loop()
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="example"]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/DigitalPins[Description of the pins on an Arduino board^]

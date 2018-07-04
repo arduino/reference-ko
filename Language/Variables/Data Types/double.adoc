@@ -51,7 +51,7 @@ double 변수를 포함하는 다른 소스에서 코드를 빌린 사용자는 
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 --
 // SEE ALSO SECTION ENDS

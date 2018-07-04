@@ -78,7 +78,7 @@ delay(100);
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]

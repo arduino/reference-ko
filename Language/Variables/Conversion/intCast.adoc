@@ -46,7 +46,7 @@ subCategories: [ "변환" ]
 --
 
 [float]
-=== 더 볼 것
+=== 더보기
 
 [role="language"]
 * #LANGUAGE# link:../../data-types/int[int]
