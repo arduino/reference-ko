@@ -1,6 +1,6 @@
 ---
 title: ">>"
-title_expanded: 오른쪽으로 비트 옮김
+title_expanded: 비트 오른쪽으로 옮김
 categories: [ "Structure" ]
 subCategories: [ "비트 연산자" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "비트 연산자" ]
 
 
 
-= >> 오른쪽으로 비트 옮김
+= >>  비트 오른쪽으로 옮김
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,7 @@ subCategories: [ "비트 연산자" ]
 
 [float]
 === 설명
-오른쪽으로 비트 옮김 연산자 `>>` 는 왼쪽 피연산자의 비트가 오른쪽 피연산자에 의해 지정된 위치 수 만큼 오른쪽으로 옮기도록 한다.
+비트 오른쪽으로 옮김 연산자 `>>` 는 왼쪽 피연산자의 비트를 오른쪽 피연산자에 의해 지정된 위치 수 만큼 오른쪽으로 옮긴다.
 [%hardbreaks]
 
 
