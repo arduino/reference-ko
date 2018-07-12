@@ -32,7 +32,7 @@ subCategories: [ "비트 연산자" ]
 
 [float]
 === 매개변수
-`변수`: *허용되는 자료형: * byte, int, long +
+`변수`: *허용되는 자료형:* byte, int, long +
 `비트 수`: 숫자 < = 32. *허용되는 자료형:* int
 
 --
