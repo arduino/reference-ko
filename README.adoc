@@ -34,8 +34,6 @@ Git에 친숙하지 않다면 온라인 인터페이스 Github를 통해 직접 
 
 여러분의 기여는 존재하는 코드나 전체 설명을 더하거나 바꾸는 것이니, 기여하기 전에 언제나 기존의 이슈를 참조하거나 새 이슈를 여세요.
 
-아두이노 참조에 대한 여러분의 기여는 Creative Commons Attribution-Share Alike 3.0 라이센스에 의거하여 라이선스됩니다. https://creativecommons.org/licenses/by-sa/3.0/ 를 보세요.
-
 === 폴더 구조
 [source]
 ----
@@ -58,3 +56,9 @@ reference-ko
 ----
 
 Language 폴더 안의 파일 트리는 link:https://www.arduino.cc/reference/ko[Arduino Reference webpage]와 똑같은 구조를 따릅니다.
+
+=== License
+
+Please note that your contribution to the Arduino Reference is licensed under a Creative Commons Attribution-Share Alike 3.0 License. see https://creativecommons.org/licenses/by-sa/3.0/
+
+image:https://i.creativecommons.org/l/by-sa/3.0/88x31.png[Creative Commons License, title="Creative Commons License"] This work is licensed under a link:https://creativecommons.org/licenses/by-sa/3.0/deed.en[Creative Commons Attribution-ShareAlike 3.0 Unported License].
