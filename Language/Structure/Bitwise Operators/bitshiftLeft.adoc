@@ -1,6 +1,6 @@
 ---
 title: "<<"
-title_expanded: 왼쪽으로 비트 옮김
+title_expanded: 비트 왼쪽으로 옮김
 categories: [ "Structure" ]
 subCategories: [ "비트 연산자" ]
 ---
