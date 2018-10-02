@@ -25,7 +25,7 @@ subCategories: [ "문자" ]
 === 문법
 [source,arduino]
 ----
-isAlpha(thisChar)
+isPrintable(thisChar)
 ----
 
 [float]
