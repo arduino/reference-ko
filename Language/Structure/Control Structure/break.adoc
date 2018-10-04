@@ -35,11 +35,12 @@ subCategories: [ "제어 구조" ]
 아래 코드에서, 센서값이 임계값을 넘을 때 제어는 `for` 를 빠져나간다.
 [source,arduino]
 ----
+int threshold = 40;
 for (x = 0; x < 255; x ++)
 {
     analogWrite(PWMpin, x);
     sens = analogRead(sensorPin);
-    if (sens > 40){      // bail out on sensor detect
+    if (sens > threshold){      // bail out on sensor detect
        x = 0;
        break;
     }
