@@ -50,7 +50,7 @@ subCategories: [ "디지털 입출력" ]
 핀 13을 입력으로 선언된 핀 7과 같은 값으로 설정
 
 
-//[source,arduino]
+[source,arduino]
 ----
 int ledPin = 13;   // LED는 디지털 핀 13에 연결됨
 int inPin = 7;     // pushbutton은 디지털 핀 7에 연결됨
