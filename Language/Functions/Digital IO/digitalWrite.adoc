@@ -60,7 +60,7 @@ subCategories: [ "디지털 입출력" ]
 // Describe what the example code is all about and add relevant code
 이 코드는 디지털 핀 13을 `OUTPUT` 로 만들고 1초마다 `HIGH` 와 `LOW` 사이를 전환합니다.
 
-//[source,arduino]
+[source,arduino]
 ----
 void setup()
 {
