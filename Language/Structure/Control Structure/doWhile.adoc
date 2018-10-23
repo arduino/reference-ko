@@ -23,6 +23,7 @@ subCategories: [ "제어 구조" ]
 === 문법
 [source,arduino]
 ----
+int x = 0;
 do
 {
     // 문 블럭
