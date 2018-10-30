@@ -70,7 +70,7 @@ volatile byte state = LOW;
 void setup()
 {
   pinMode(pin, OUTPUT);
-  attachInterrupt(0, blink, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(2), blink, CHANGE);
 }
 
 void loop()
