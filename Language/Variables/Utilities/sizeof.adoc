@@ -69,7 +69,7 @@ void loop() {
 
 [source,arduino]
 ----
-for (i = 0; i < (sizeof(myInts)/sizeof(int)); i++) {
+for (i = 0; i < (sizeof(myInts)/sizeof(myInts[0])); i++) {
   // myInts[i] 가지고 무언가를 함
 }
 ----
