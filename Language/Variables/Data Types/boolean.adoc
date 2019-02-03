@@ -76,7 +76,6 @@ void loop()
 === 더보기
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/constants/constants[constants]
 
 --
 // SEE ALSO SECTION ENDS
