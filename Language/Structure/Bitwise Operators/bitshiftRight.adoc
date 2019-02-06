@@ -48,8 +48,8 @@ subCategories: [ "비트 연산자" ]
 
 [source,arduino]
 ----
-int a = 40;       // 이진수: 0000000000101000
-int b = a >> 3;   // 이진수: 0000000000000101, 즉 십진수 5
+int a = 40;     // 이진수: 0000000000101000
+int b = a >> 3; // 이진수: 0000000000000101, 즉 십진수 5
 ----
 [%hardbreaks]
 
@@ -61,7 +61,7 @@ x가 int 형이면, 최상위 비트는 부호 비트, x가 음인지 아닌지 
 
 [source,arduino]
 ----
-int x = -16;     // binary: 1111111111110000
+int x = -16;  // binary: 1111111111110000
 int y = 3;
 int result = x >> y;  // binary: 1111111111111110
 ----
@@ -69,7 +69,7 @@ int result = x >> y;  // binary: 1111111111111110
 
 [source,arduino]
 ----
-int x = -16;                   // binary: 1111111111110000
+int x = -16;  // binary: 1111111111110000
 int y = 3;
 int result = (unsigned int)x >> y;  // binary: 0001111111111110
 ----
@@ -78,7 +78,7 @@ int result = (unsigned int)x >> y;  // binary: 0001111111111110
 [source,arduino]
 ----
 int x = 1000;
-int y = x >> 3;   // 정수 나눗셈 1000 나누기 8, 결과 y = 125.
+int y = x >> 3; // 정수 나눗셈 1000 나누기 8, 결과 y = 125.
 ----
 
 --

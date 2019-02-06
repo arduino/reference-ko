@@ -23,8 +23,7 @@ subCategories: [ "제어 구조" ]
 === 문법
 [source,arduino]
 ----
-if (condition)
-{
+if (condition) {
   //statement(s)
 }
 ----
@@ -41,17 +40,22 @@ condition: 부울 식 i.e., `true` 또는 `false`
 
 [source,arduino]
 ----
-if (x > 120) digitalWrite(LEDpin, HIGH);
+if (x > 120) {
+  digitalWrite(LEDpin, HIGH);
+}
 
-if (x > 120)
-digitalWrite(LEDpin, HIGH);
+if (x > 120) {
+  digitalWrite(LEDpin, HIGH);
+}
 
-if (x > 120){ digitalWrite(LEDpin, HIGH); }
+if (x > 120) {
+  digitalWrite(LEDpin, HIGH);
+}
 
-if (x > 120){
+if (x > 120) {
   digitalWrite(LEDpin1, HIGH);
   digitalWrite(LEDpin2, HIGH);
-}                                 // 모두 옳음
+} // 모두 옳음
 ----
 [%hardbreaks]
 

@@ -56,19 +56,17 @@ subCategories: [ "디지털 입출력" ]
 이 코드는 디지털 핀 13을 `OUTPUT` 으로 만들고 `HIGH` 와 `LOW` 를 전환합니다.
 
 
-//[source,arduino]
+[source,arduino]
 ----
-void setup()
-{
+void setup() {
   pinMode(13, OUTPUT);          // 디지털 핀 13 을 출력으로 설정
 }
 
-void loop()
-{
-  digitalWrite(13, HIGH);       // sets the digital pin 13 on
-  delay(1000);                  // waits for a second
-  digitalWrite(13, LOW);        // sets the digital pin 13 off
-  delay(1000);                  // waits for a second
+void loop() {
+  digitalWrite(13, HIGH); // sets the digital pin 13 on
+  delay(1000);            // waits for a second
+  digitalWrite(13, LOW);  // sets the digital pin 13 off
+  delay(1000);            // waits for a second
 }
 ----
 [%hardbreaks]

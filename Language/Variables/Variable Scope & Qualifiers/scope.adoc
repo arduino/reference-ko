@@ -48,21 +48,18 @@ subCategories: [ "변수 scope 및 한정어" ]
 ----
 int gPWMval;  // 아무 함수나 이 변수를 볼 것임.
 
-void setup()
-{
+void setup() {
   // ...
 }
 
-void loop()
-{
+void loop() {
   int i;    // "i" 는  "loop" 안에서만 볼 수 있음
   float f;  // "f" 는 "loop" 안에서만 볼 수 있음
   // ...
 
-  for (int j = 0; j <100; j++){
-  // 변수 j 는 for-loop 안에서만 접근 가능
+  for (int j = 0; j < 100; j++) {
+    // 변수 j 는 for-loop 안에서만 접근 가능
   }
-
 }
 ----
 [%hardbreaks]

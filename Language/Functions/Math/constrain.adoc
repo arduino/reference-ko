@@ -56,7 +56,7 @@ b: x가 b보다 크면
 이 코드는 센서 값을 10에서 150 사이로 제한.
 [source,arduino]
 ----
-sensVal = constrain(sensVal, 10, 150);    // 센서 값을 10에서 150 사이로 제한. 
+sensVal = constrain(sensVal, 10, 150);  // 센서 값을 10에서 150 사이로 제한. 
 ----
 
 --

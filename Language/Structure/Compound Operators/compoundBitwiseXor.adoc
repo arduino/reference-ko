@@ -29,7 +29,7 @@ A review of the Bitwise XOR `^` operator:
 === 문법
 [source,arduino]
 ----
-x ^= y;   // equivalent to x = x ^ y;
+x ^= y; // equivalent to x = x ^ y;
 ----
 
 [float]

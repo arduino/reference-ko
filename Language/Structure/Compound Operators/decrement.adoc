@@ -26,8 +26,8 @@ subCategories: [ "복합 연산자" ]
 === 문법
 [source,arduino]
 ----
-x-- ;   // x 를 1 감소시키고 옛 x 값 반환
---x ;   // x 를 1 감소시키고 새 x 값 반환
+x-- ; // x 를 1 감소시키고 옛 x 값 반환
+--x ; // x 를 1 감소시키고 새 x 값 반환
 ----
 
 [float]
@@ -53,8 +53,8 @@ x-- ;   // x 를 1 감소시키고 옛 x 값 반환
 [source,arduino]
 ----
 x = 2;
-y = --x;      // x now contains 1, y contains 1
-y = x--;      // x contains 0, but y still contains 1
+y = --x;  // x now contains 1, y contains 1
+y = x--;  // x contains 0, but y still contains 1
 ----
 
 --

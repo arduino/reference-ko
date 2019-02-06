@@ -51,8 +51,10 @@ product = operand1 * operand2;
 
 [source,arduino]
 ----
-int a = 5, b = 10, c = 0;
-c = a * b; // 변수 'c' 는 이 연산이 실행된 후 50이 됨
+int a = 5;
+int b = 10;
+int c = 0;
+c = a * b;  // 변수 'c' 는 이 연산이 실행된 후 50이 됨
 ----
 [%hardbreaks]
 
@@ -67,9 +69,10 @@ c = a * b; // 변수 'c' 는 이 연산이 실행된 후 50이 됨
 
 [source,arduino]
 ----
-float a = 5.5, b = 6.6;
+float a = 5.5;
+float b = 6.6;
 int c = 0;
-c = a * b; // 변수 'c' 는 기대되는 값 36.3 이 아니라 36 값을 저장함
+c = a * b;  // 변수 'c' 는 기대되는 값 36.3 이 아니라 36 값을 저장함
 ----
 [%hardbreaks]
 

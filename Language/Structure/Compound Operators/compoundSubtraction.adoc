@@ -27,7 +27,7 @@ subCategories: [ "복합 연산자" ]
 === 문법
 [source,arduino]
 ----
-x -= y;   //  x = x - y; 와 같다.
+x -= y; // x = x - y; 와 같다.
 ----
 
 [float]
@@ -50,7 +50,7 @@ x -= y;   //  x = x - y; 와 같다.
 [source,arduino]
 ----
 x = 20;
-x -= 2;      // x 는 18
+x -= 2; // x 는 18
 ----
 
 

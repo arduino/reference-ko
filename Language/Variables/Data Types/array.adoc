@@ -47,9 +47,9 @@ myPins에서 명시적으로 크기를 선택하지 않고 배열을 선언한�
 
 [source,arduino]
 ----
-int myArray[10]={9,3,2,4,3,2,7,8,9,11};
-     // myArray[9]    contains 11
-     // myArray[10]   is invalid and contains random information (other memory address)
+int myArray[10]={9, 3, 2, 4, 3, 2, 7, 8, 9, 11};
+// myArray[9]    contains 11
+// myArray[10]   is invalid and contains random information (other memory address)
 ----
 
 이런 까닭에 배열에 액세스할 때 조심해야 한다. 배열 끝을 지나서 액세스(선언한 배열 크기 - 1 보다 큰 인덱스 번호 사용)하면 다른 목적으로 사용중인 메모리를 읽는다. 이 위치에서부터 읽는 것은 무효 데이터를 얻는 것 말고는 아무 일을 안 할 거다. 임의 메모리 위치에 쓰는 것은 분명 나쁜 생각이며, 충돌 또는 프로그램 오작동 같은 불행한 결과가 될 수 있다. 찾기 어려운 버그가 될 수 있다.

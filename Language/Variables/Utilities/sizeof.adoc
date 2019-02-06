@@ -46,18 +46,18 @@ subCategories: [ "유틸리티" ]
 char myStr[] = "this is a test";
 int i;
 
-void setup(){
+void setup() {
   Serial.begin(9600);
 }
 
 void loop() {
-  for (i = 0; i < sizeof(myStr) - 1; i++){
+  for (i = 0; i < sizeof(myStr) - 1; i++) {
     Serial.print(i, DEC);
     Serial.print(" = ");
     Serial.write(myStr[i]);
     Serial.println();
   }
-  delay(5000); // 프로그램을 느리게
+  delay(5000);  // 프로그램을 느리게
 }
 ----
 [%hardbreaks]
@@ -69,7 +69,7 @@ void loop() {
 
 [source,arduino]
 ----
-for (i = 0; i < (sizeof(myInts)/sizeof(myInts[0])); i++) {
+for (i = 0; i < (sizeof(myInts) / sizeof(myInts[0])); i++) {
   // myInts[i] 가지고 무언가를 함
 }
 ----

@@ -38,7 +38,7 @@ word는 16비트 부호없는 숫자, 0에서 65535까지를 저장한다. unsig
 
 [source,arduino]
 ----
-  word w = 10000;
+word w = 10000;
 ----
 
 --

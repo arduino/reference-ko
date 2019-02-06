@@ -23,23 +23,23 @@ Called when data is available. Use `Serial.read()` to capture this data.
 
 [source,arduino]
 ----
-void serialEvent(){
-//statements
+void serialEvent() {
+  //statements
 }
 ----
 Arduino Mega only:
 [source,arduino]
 ----
-void serialEvent1(){
-//statements
+void serialEvent1() {
+  //statements
 }
 
-void serialEvent2(){
-//statements
+void serialEvent2() {
+  //statements
 }
 
-void serialEvent3(){
-//statements
+void serialEvent3() {
+  //statements
 }
 ----
 

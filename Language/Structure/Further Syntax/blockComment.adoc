@@ -53,10 +53,10 @@ subCategories: [ "추가 문법" ]
 */
 
 /*
-  if (gwb == 0){   // 여러줄 주석 안에 한줄 주석 좋다OK inside a multi-line comment
-  x = 3;           /* 그러나 여러줄 주석이 있다 - 이건 안 된다 */
+  if (gwb == 0) { // 여러줄 주석 안에 한줄 주석 좋다OK inside a multi-line comment
+    x = 3;  /* 그러나 여러줄 주석이 있다 - 이건 안 된다 */
   }
-// 주석 닫는 것을 잊지 마세요.- 짝이 맞아야 함!
+  // 주석 닫는 것을 잊지 마세요.- 짝이 맞아야 함!
 */
 ----
 [%hardbreaks]

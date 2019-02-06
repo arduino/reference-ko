@@ -36,14 +36,12 @@ subCategories: [ "스케치" ]
 ----
 int buttonPin = 3;
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
   pinMode(buttonPin, INPUT);
 }
 
-void loop()
-{
+void loop() {
   // ...
 }
 ----

@@ -54,8 +54,7 @@ subCategories: [ "인터럽트" ]
 ----
 void setup() {}
 
-void loop()
-{
+void loop() {
   noInterrupts();
   // 여기에 중요한 시간에 민감한 코드
   interrupts();

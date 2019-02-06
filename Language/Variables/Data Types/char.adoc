@@ -44,8 +44,8 @@ char 자료형은 부호있는 형이므로, 그것은 -128 에서 127 까지 �
 
 [source,arduino]
 ----
-  char myChar = 'A';
-  char myChar = 65;      // 둘 다 같음.
+char myChar = 'A';
+char myChar = 65; // 둘 다 같음.
 ----
 
 

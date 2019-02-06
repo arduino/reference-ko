@@ -53,19 +53,17 @@ int(0 에서 1023)
 
 [source,arduino]
 ----
-int analogPin = 3;     // 가변 저항의 가운데 핀이 아날로그 핀 3에 연결됨
-                       // 바깥쪽은 그라운드와 +5V에 연결됨
-int val = 0;           // 읽은 값을 저장할 변수
+int analogPin = 3;  // 가변 저항의 가운데 핀이 아날로그 핀 3에 연결됨
+                    // 바깥쪽은 그라운드와 +5V에 연결됨
+int val = 0;        // 읽은 값을 저장할 변수
 
-void setup()
-{
-  Serial.begin(9600);              //  시리얼 설정
+void setup() {
+  Serial.begin(9600); //  시리얼 설정
 }
 
-void loop()
-{
-  val = analogRead(analogPin);     // 입력 핀 읽기
-  Serial.println(val);             // 값 디버그
+void loop() {
+  val = analogRead(analogPin);  // 입력 핀 읽기
+  Serial.println(val);          // 값 디버그
 }
 ----
 [%hardbreaks]

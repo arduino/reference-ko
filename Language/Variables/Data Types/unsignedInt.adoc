@@ -45,7 +45,7 @@ unsigned int 와(부호있는) int의 차이는 가장 높은 비트(때때로 "
 
 [source,arduino]
 ----
-  unsigned int ledPin = 13;
+unsigned int ledPin = 13;
 ----
 [%hardbreaks]
 
@@ -57,9 +57,9 @@ unsigned int 와(부호있는) int의 차이는 가장 높은 비트(때때로 "
 [source,arduino]
 ----
 unsigned int x;
-   x = 0;
-   x = x - 1;       // x 는 이제 65535 - 음의 방향 으로 roll over
-   x = x + 1;       // x 는 이제 0 - rolls over
+x = 0;
+x = x - 1;  // x 는 이제 65535 - 음의 방향 으로 roll over
+x = x + 1;  // x 는 이제 0 - rolls over
 ----
 
 부호없는 변수를 가진 수학은 기대하지 않은 결과를 일으킬 수 있다, 부호없는 변수가 롤오버 안 되더라도.
@@ -76,16 +76,16 @@ MCU는 아래 규칙을 적용한다:
 
 [source,arduino]
 ----
-unsigned int x=5;
-unsigned int y=10;
+unsigned int x = 5;
+unsigned int y = 10;
 int result;
 
-   result = x - y; // 5 - 10 = -5, as expected
-   result = (x - y)/2; // 5 - 10 in unsigned math is 65530!  65530/2 = 32765
+result = x - y; // 5 - 10 = -5, as expected
+result = (x - y)/2; // 5 - 10 in unsigned math is 65530!  65530/2 = 32765
 
-   // solution: use signed variables, or do the calculation step by step.
-   result = x - y; // 5 - 10 = -5, as expected
-   result = result / 2; //  -5/2 = -2 (only integer math, decimal places are dropped)
+// solution: use signed variables, or do the calculation step by step.
+result = x - y; // 5 - 10 = -5, as expected
+result = result / 2;  //  -5/2 = -2 (only integer math, decimal places are dropped)
 ----
 왜 부호없는 변수를 쓸까?
 

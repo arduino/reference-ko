@@ -26,7 +26,7 @@ subCategories: [ "비교 연산자" ]
 === 문법
 [source,arduino]
 ----
-x <= y;   // is true if x is smaller than or equal to y and it is false if x is greater than y
+x <= y; // is true if x is smaller than or equal to y and it is false if x is greater than y
 ----
 
 [float]
@@ -48,9 +48,8 @@ x <= y;   // is true if x is smaller than or equal to y and it is false if x is 
 
 [source,arduino]
 ----
-if (x<=y)      // x가 y보다 작거나 같으면
-{
-//
+if (x <= y) { // x가 y보다 작거나 같으면
+  //
 }
 ----
 [%hardbreaks]

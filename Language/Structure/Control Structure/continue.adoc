@@ -37,14 +37,13 @@ subCategories: [ "제어 구조" ]
 아래 코드는 0에서 255까지의 코드 값을 `PWMpin` 에 쓰지만, 41에서 119 의 범위 값은 건너뛴다.
 [source,arduino]
 ----
-for (x = 0; x <= 255; x ++)
-{
-    if (x > 40 && x < 120){      // 값 중 건너뛸 것을 만듦
-        continue;
-    }
+for (x = 0; x <= 255; x ++) {
+  if (x > 40 && x < 120) {  // 값 중 건너뛸 것을 만듦
+    continue;
+  }
 
-    analogWrite(PWMpin, x);
-    delay(50);
+  analogWrite(PWMpin, x);
+  delay(50);
 }
 ----
 

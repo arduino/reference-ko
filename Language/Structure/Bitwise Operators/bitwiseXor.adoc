@@ -57,14 +57,14 @@ int z = x ^ y;  // 2진수: 0110, 즉 10진수 6
 ----
 // Blink_Pin_5
 // demo for Exclusive OR
-void setup(){
-DDRD = DDRD | B00100000; // 디지털 핀 5를 OUTPUT 으로
-Serial.begin(9600);
+void setup() {
+  DDRD = DDRD | B00100000;  // 디지털 핀 5를 OUTPUT 으로
+  Serial.begin(9600);
 }
 
-void loop(){
-PORTD = PORTD ^ B00100000;  // 비트 5 (디지털 5) 뒤집기, 다른 것은 그대로
-delay(100);
+void loop() {
+  PORTD = PORTD ^ B00100000;  // 비트 5 (디지털 5) 뒤집기, 다른 것은 그대로
+  delay(100);
 }
 ----
 

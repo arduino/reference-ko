@@ -27,7 +27,7 @@ Please note that you may compare variables of different data types, but that cou
 === 문법
 [source,arduino]
 ----
-x >= y;   //x가 y 보다 크거나 같으면 참
+x >= y; //x가 y 보다 크거나 같으면 참
 ----
 
 [float]
@@ -49,9 +49,8 @@ x >= y;   //x가 y 보다 크거나 같으면 참
 
 [source,arduino]
 ----
-if (x>=y)      // tests if x is greater (bigger) than or equal to y
-{
-// do something only if the comparison result is true
+if (x >= y) { // tests if x is greater (bigger) than or equal to y
+  // do something only if the comparison result is true
 }
 ----
 [%hardbreaks]

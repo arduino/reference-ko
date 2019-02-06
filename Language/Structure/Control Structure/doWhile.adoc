@@ -26,7 +26,7 @@ subCategories: [ "제어 구조" ]
 int x = 0;
 do
 {
-    // 문 블럭
+  // 문 블럭
 } while (condition);
 ----
 `condition` 은 `true` 또는 `false` 를 계산하는 부울 식이다.
@@ -45,11 +45,9 @@ do
 
 [source,arduino]
 ----
-do
-{
+do {
   delay(50);          // 센서 안정화를 위해 기다림
   x = readSensors();  // 센서 확인
-
 } while (x < 100);
 ----
 

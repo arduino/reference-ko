@@ -62,17 +62,15 @@ subCategories: [ "디지털 입출력" ]
 
 [source,arduino]
 ----
-void setup()
-{
-  pinMode(13, OUTPUT);          // 디지털 핀 13 을 출력으로 설정
+void setup() {
+  pinMode(13, OUTPUT);    // 디지털 핀 13 을 출력으로 설정
 }
 
-void loop()
-{
-  digitalWrite(13, HIGH);       // 디지털 핀 13 켜기
-  delay(1000);                  // 1초 기다리기
-  digitalWrite(13, LOW);        // 디지털 핀 13 끄기
-  delay(1000);                  // 1초 기다리기
+void loop() {
+  digitalWrite(13, HIGH); // 디지털 핀 13 켜기
+  delay(1000);            // 1초 기다리기
+  digitalWrite(13, LOW);  // 디지털 핀 13 끄기
+  delay(1000);            // 1초 기다리기
 }
 ----
 [%hardbreaks]

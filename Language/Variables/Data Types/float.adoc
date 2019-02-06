@@ -37,7 +37,7 @@ float 로 수학을 하면, 소수점을 더해야 하며, 그러지 않으면 i
 
 [float]
 === 문법
-`float var=val;`
+`float var = val;`
 
 `var` - float 변수 이름
 `val` - 변수에 할당할 값
@@ -60,16 +60,16 @@ float 로 수학을 하면, 소수점을 더해야 하며, 그러지 않으면 i
 
 [source,arduino]
 ----
-  float myfloat;
-  float sensorCalbrate = 1.117;
+float myfloat;
+float sensorCalbrate = 1.117;
 
-  int x;
-  int y;
-  float z;
+int x;
+int y;
+float z;
 
-  x = 1;
-  y = x / 2;            // y 는 0이 되고, int 는 분수를 저장할 수 없다.
-  z = (float)x / 2.0;   // z 는 이제 .5 가 됨 (2.0을 써야 하며 2는 안 됨)
+x = 1;
+y = x / 2;          // y 는 0이 되고, int 는 분수를 저장할 수 없다.
+z = (float)x / 2.0; // z 는 이제 .5 가 됨 (2.0을 써야 하며 2는 안 됨)
 ----
 
 

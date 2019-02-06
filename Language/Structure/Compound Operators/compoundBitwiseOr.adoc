@@ -33,7 +33,7 @@ subCategories: [ "복합 연산자" ]
 === 문법
 [source,arduino]
 ----
-x |= y;   //  x = x | y; 와 같음
+x |= y; // x = x | y; 와 같음
 ----
 
 [float]

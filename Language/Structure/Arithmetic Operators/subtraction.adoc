@@ -51,8 +51,10 @@ difference = operand1 - operand2;
 
 [source,arduino]
 ----
-int a = 5, b = 10, c = 0;
-c = a - b; // 이 문이 실행되면 변수 'c' 는 -5 값을 얻는다.
+int a = 5;
+int b = 10;
+int c = 0;
+c = a - b;  // 이 문이 실행되면 변수 'c' 는 -5 값을 얻는다.
 ----
 [%hardbreaks]
 
@@ -66,9 +68,10 @@ c = a - b; // 이 문이 실행되면 변수 'c' 는 -5 값을 얻는다.
 
 [source,arduino]
 ----
-float a = 5.5, b = 6.6;
+float a = 5.5;
+float b = 6.6;
 int c = 0;
-c = a - b; // 변수 'c' 는 -1.1이 아니고 -1 값만 저장
+c = a - b;  // 변수 'c' 는 -1.1이 아니고 -1 값만 저장
 ----
 [%hardbreaks]
 
