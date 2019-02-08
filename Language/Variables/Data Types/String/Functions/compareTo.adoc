@@ -25,25 +25,22 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 문법
-[source,arduino]
-----
-string.compareTo(string2)
-----
+`myString.compareTo(myString2)`
 
 [float]
 === 매개변수
-`string`: 스트링 형 변수
+`myString`: 스트링 형 변수
 
-`string2`: 스트링 형 다른 변수
+`myString2`: 스트링 형 다른 변수
 
 
 [float]
 === 반환
-`음수`: string 이 string2 앞에
+`음수`: myString 이 myString2 앞에
 
-`0`: string 이 string2 와 같음
+`0`: myString 이 myString2 와 같음
 
-`양수`: string 이 string2 뒤에
+`양수`: myString 이 myString2 뒤에
 --
 
 // OVERVIEW SECTION ENDS

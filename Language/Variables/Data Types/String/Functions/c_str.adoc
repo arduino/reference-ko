@@ -24,10 +24,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 문법
-[source,arduino]
-----
-string.c_str()
-----
+`myString.c_str()`
 
 [float]
 === 매개변수

@@ -31,16 +31,16 @@ subCategories: [ "스트링개체 연산자" ]
 === 문법
 [source,arduino]
 ----
-string1 < string2
+myString1 < myString2
 ----
 
 [float]
 === 매개변수
-`string1, string2`: variables of type String
+`myString1, myString2`: variables of type String
 
 [float]
 === 반환
-`true`: 만약 string1 이 string2 보다 크면
+`true`: 만약 myString1 이 myString2 보다 크면
 
 `false`: 아니면
 --

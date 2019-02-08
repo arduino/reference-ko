@@ -23,10 +23,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 문법
-[source,arduino]
-----
-string.reserve(size)
-----
+`myString.reserve(size)`
 
 [float]
 === 매개변수

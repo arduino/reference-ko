@@ -25,16 +25,12 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 문법
-[source,arduino]
-----
-string.indexOf(val)
-
-string.indexOf(val, from)
-----
+`myString.indexOf(val)` +
+`myString.indexOf(val, from)`
 
 [float]
 === 매개변수
-`string`: 스트링 형 변수
+`myString`: 스트링 형 변수
 
 `val`: 찾을 값 - char 또는 스트링
 

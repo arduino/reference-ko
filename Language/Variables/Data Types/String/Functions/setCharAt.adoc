@@ -23,14 +23,11 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 문법
-[source,arduino]
-----
-string.setCharAt(index, c)
-----
+`myString.setCharAt(index, c)`
 
 [float]
 === 매개변수
-`string`: 스트링 형 변수
+`myString`: 스트링 형 변수
 
 `index`: 문자를 설정한 위치의 인덱스
 

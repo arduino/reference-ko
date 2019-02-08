@@ -23,19 +23,16 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 문법
-[source,arduino]
-----
-string.equalsIgnoreCase(string2)
-----
+`myString.equalsIgnoreCase(myString2)`
 
 [float]
 === 매개변수
-`string, string2`: 스트링 형 변수
+`myString, myString2`: 스트링 형 변수
 
 
 [float]
 === 반환
-`true`: string 과 string2 이 같으면(대소문자 무시)
+`true`: myString 과 myString2 이 같으면(대소문자 무시)
 
 `false`: 아니면
 --
