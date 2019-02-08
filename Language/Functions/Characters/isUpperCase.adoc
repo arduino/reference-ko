@@ -50,7 +50,7 @@ isUpperCase(thisChar)
 
 [source,arduino]
 ----
-if (isUpperCase(this))      // tests if this is an upeer case letter
+if (isUpperCase(this))      // tests if this is an upper case letter
 {
 	Serial.println("The character is upper case");
 }
