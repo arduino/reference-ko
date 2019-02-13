@@ -140,7 +140,7 @@ void loop(){
 * #LANGUAGE# link:../../math/map[map()]
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of the analog input pins]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of the analog input pins^]
 
 --
 // SEE ALSO SECTION ENDS
