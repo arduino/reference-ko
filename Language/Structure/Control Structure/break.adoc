@@ -36,7 +36,7 @@ subCategories: [ "제어 구조" ]
 [source,arduino]
 ----
 int threshold = 40;
-for (x = 0; x < 255; x ++) {
+for (x = 0; x < 255; x++) {
   analogWrite(PWMpin, x);
   sens = analogRead(sensorPin);
   if (sens > threshold) { // bail out on sensor detect
