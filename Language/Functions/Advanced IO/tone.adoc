@@ -76,10 +76,10 @@ subCategories: [ "고급 입출력" ]
 * #LANGUAGE# link:../../analog-io/analogwrite[analogWrite()]
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone[Tone^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone[Pitch follower^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone3[Simple Keyboard^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone4[multiple tones^]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/toneMelody[Tone^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/tonePitchFollower[Pitch follower^]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/toneKeyboard[Simple Keyboard^]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/toneMultiple[multiple tones^]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/PWM[PWM^]
 
 --
