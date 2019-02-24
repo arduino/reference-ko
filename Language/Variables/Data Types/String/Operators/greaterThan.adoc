@@ -1,4 +1,4 @@
-﻿---
+---
 title: ">"
 title_expanded: 더 큰
 categories: [ "Data Types" ]
