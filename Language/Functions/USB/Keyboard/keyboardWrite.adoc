@@ -20,7 +20,7 @@ ASCII 문자 또는 추가 link:../keyboardmodifiers[keyboard modifiers and spec
 
 키보드에 있는 ASCII 문자만 지원된다.
 예를들어,ASCII 8 (백스페이스) 은 동작하지만 ASCII 25 (Substitution) 은 안 된다.
-대문자를 보낼 때, Keyboard.write() 는 키보드에서 치는 것처럼 shift 명령 더하기 원하는 문자를 보낸다.
+대문자를 보낼 때, `Keyboard.write()` 는 키보드에서 치는 것처럼 shift 명령 더하기 원하는 문자를 보낸다.
 숫자 형을 보내면, ASCII 문자로 보낸다(예. Keyboard.write(97) 는 'a'를 보냄).
 
 ASCII 문자 전체 목록은, http://www.asciitable.com/[ASCIITable.com] 을 보세요.
