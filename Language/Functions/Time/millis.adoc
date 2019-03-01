@@ -87,7 +87,7 @@ millis ()의 반환 값은 unsigned long 이므로 프로그래머가 int 와 �
 * #LANGUAGE# link:./micros.adoc[micros()] +
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay^]
 
 --
 // SEE ALSO SECTION ENDS

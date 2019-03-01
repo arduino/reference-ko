@@ -91,7 +91,7 @@ RX에서 나타나는 시리얼 통신은 기록되고, PWM (link:../../analog-i
 === 더보기
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay^]
 
 --
 // SEE ALSO SECTION ENDS

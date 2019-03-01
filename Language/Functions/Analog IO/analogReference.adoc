@@ -84,7 +84,7 @@ AREF 핀에 32K옴짜리 내부 저항이 있기 때문에, 5K옴 저항이 참�
 === 더보기
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of analog input pins]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of analog input pins^]
 
 --
 // SEE ALSO SECTION ENDS
