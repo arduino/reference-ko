@@ -25,7 +25,7 @@ subCategories: [ "문자" ]
 === 문법
 [source,arduino]
 ----
-`isAlphaNumeric(thisChar)`
+isAlphaNumeric(thisChar)
 ----
 
 [float]
@@ -50,7 +50,7 @@ subCategories: [ "문자" ]
 
 [source,arduino]
 ----
-if (isAlphaNumeric(this))      // this가 문자 혹은 숫자인지 테스트
+if (isAlphaNumeric(myChar))      // myChar가 문자 혹은 숫자인지 테스트
 {
 	Serial.println("The character is alphanumeric");
 }

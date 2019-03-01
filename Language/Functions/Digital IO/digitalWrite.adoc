@@ -94,7 +94,7 @@ A0, A1 등을 통해 아날로그 입력 핀을 디지털 핀으로 사용할 �
 === 더보기
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/DigitalPins[Tutorial: Digital Pins]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/DigitalPins[Tutorial: Digital Pins^]
 
 --
 // SEE ALSO SECTION ENDS

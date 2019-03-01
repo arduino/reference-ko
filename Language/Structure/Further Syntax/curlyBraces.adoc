@@ -49,7 +49,7 @@ subCategories: [ "추가 문법" ]
 [source,arduino]
 ----
 void myfunction(datatype argument){
-  statements(s)
+  // any statement(s)
 }
 ----
 [%hardbreaks]
@@ -62,12 +62,12 @@ void myfunction(datatype argument){
 ----
 while (boolean expression)
 {
- statement(s)
+  // any statement(s)
 }
 
 do
 {
- statement(s)
+  // any statement(s)
 } while (부울 식);
 
 for (초기화; 끝내기 조건; 증가 식)
@@ -87,16 +87,16 @@ for (초기화; 끝내기 조건; 증가 식)
 ----
 if (boolean expression)
 {
- statement(s)
+  // any statement(s)
 }
 
 else if (boolean expression)
 {
- statement(s)
+  // any statement(s)
 }
 else
 {
- statement(s)
+  // any statement(s)
 }
 ----
 [%hardbreaks]

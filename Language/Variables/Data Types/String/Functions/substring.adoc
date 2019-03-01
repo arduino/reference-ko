@@ -1,4 +1,4 @@
-﻿---
+---
 title: "substring()"
 categories: [ "Data Types" ]
 subCategories: [ "스트링개체 함수" ]
@@ -26,16 +26,12 @@ If the ending index is omitted, the substring continues to the end of the String
 
 [float]
 === 문법
-[source,arduino]
-----
-string.substring(from)
-
-string.substring(from, to)
-----
+`myString.substring(from)` +
+`myString.substring(from, to)`
 
 [float]
 === 매개변수
-`string`: String 형 변수
+`myString`: String 형 변수
 
 `from`: 서브스트링이 시작하는 인덱스
 
@@ -62,6 +58,6 @@ string.substring(from, to)
 === 더보기
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
+* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials^]
 --
 // SEE ALSO SECTION ENDS

@@ -1,5 +1,5 @@
 ---
-title: if...else
+title: if
 categories: [ "Structure" ]
 subCategories: [ "제어 구조" ]
 ---
@@ -8,7 +8,7 @@ subCategories: [ "제어 구조" ]
 
 
 
-= if (조건) 그리고 ==, !=, <, > (비교 연산자)
+= if
 
 
 // OVERVIEW SECTION STARTS

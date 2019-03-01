@@ -1,4 +1,4 @@
-﻿---
+---
 title: "endsWith()"
 categories: [ "Data Types" ]
 subCategories: [ "스트링개체 함수" ]
@@ -24,21 +24,18 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 문법
-[source,arduino]
-----
-string.endsWith(string2)
-----
+`myString.endsWith(myString2)`
 
 [float]
 === 매개변수
-`string`: 스트링 형 변수
+`myString`: 스트링 형 변수
 
-`string2`: 또다른 스트링 형 변수
+`myString2`: 또다른 스트링 형 변수
 
 
 [float]
 === 반환
-`true`: string 이 string2의 문자들로 끝날 때
+`true`: myString 이 myString2의 문자들로 끝날 때
 
 `false`: 아니면
 
@@ -58,6 +55,6 @@ string.endsWith(string2)
 === 더보기
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
+* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials^]
 --
 // SEE ALSO SECTION ENDS

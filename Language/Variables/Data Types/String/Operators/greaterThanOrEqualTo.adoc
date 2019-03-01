@@ -32,17 +32,17 @@ subCategories: [ "스트링개체 연산자" ]
 === 문법
 [source,arduino]
 ----
-string1 >= string2
+myString1 >= myString2
 ----
 
 [float]
 === 매개변수
-`string1, string2`: variables of type String
+`myString1, myString2`: variables of type String
 
 
 [float]
 === 반환
-`true`: string1 이 string2 보다 크거나 같으면
+`true`: myString1 이 myString2 보다 크거나 같으면
 
 `false`: 아니면
 --
@@ -62,6 +62,6 @@ string1 >= string2
 === 더보기
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
+* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials^]
 --
 // SEE ALSO SECTION ENDS

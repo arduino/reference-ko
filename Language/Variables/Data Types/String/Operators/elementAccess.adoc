@@ -1,4 +1,4 @@
-﻿---
+---
 title: "[] "
 title_expanded: element access
 categories: [ "Data Types" ]
@@ -27,14 +27,14 @@ String의 개별 문자에 접근하는 것을 허용.
 === 문법
 [source,arduino]
 ----
-char thisChar = string1[n]
+char thisChar = myString1[n]
 ----
 
 [float]
 === 매개변수
 `char thisChar` - 문자 변수
 
-`string1` - String 변수
+`myString1` - String 변수
 
 `int n` - 숫자 변수
 
@@ -60,6 +60,6 @@ String의  n번째 char. Same as charAt().
 === 더보기
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
+* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials^]
 --
 // SEE ALSO SECTION ENDS

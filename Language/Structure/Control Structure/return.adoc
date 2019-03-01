@@ -33,7 +33,7 @@ return value; // 두가지 모두 타당
 
 [float]
 === 매개변수
-`value': 변수 또는 상수
+`value`: 변수 또는 상수
 
 --
 // OVERVIEW SECTION ENDS

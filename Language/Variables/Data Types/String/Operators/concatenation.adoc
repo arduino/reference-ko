@@ -1,4 +1,4 @@
-﻿---
+---
 title: "+"
 title_expanded: concatenation
 categories: [ "Data Types" ]
@@ -27,12 +27,12 @@ subCategories: [ "스트링개체 연산자" ]
 === 문법
 [source,arduino]
 ----
-string3 = string1 + string 2; string3 += string2;
+myString3 = myString1 + myString2
 ----
 
 [float]
 === 매개변수
-`string, string1, string2, string3` - a string variable
+`myString1, myString2, myString3` - a String variable
 
 [float]
 === 반환
@@ -56,6 +56,6 @@ new String that is the combination of the original two Strings.
 === 더보기
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
+* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials^]
 --
 // SEE ALSO SECTION ENDS

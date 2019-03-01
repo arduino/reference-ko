@@ -44,7 +44,7 @@ The *Arduino Leonardo* board uses `Serial1` to communicate via TTL (5V) serial o
 
 [float]
 === 함수
-link:../serial/ifserial[If] (Serial) +
+link:../serial/ifserial[if(Serial)] +
 link:../serial/available[available()] +
 link:../serial/availableforwrite[availableForWrite()] +
 link:../serial/begin[begin()] +

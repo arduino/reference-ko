@@ -24,14 +24,11 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 문법
-[source,arduino]
-----
-string.charAt(n)
-----
+`myString.charAt(n)`
 
 [float]
 === 매개변수
-`string`: string 형 변수
+`myString`: string 형 변수
 
 `n`: unsigned int 형 변수
 
@@ -57,6 +54,6 @@ string.charAt(n)
 === 더보기
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
+* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials^]
 --
 // SEE ALSO SECTION ENDS

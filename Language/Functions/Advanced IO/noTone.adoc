@@ -52,3 +52,14 @@ aliases: [ /language/functions/advanced-io/noTone/ ]
 
 --
 // HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+--
+// SEE ALSO SECTION ENDS

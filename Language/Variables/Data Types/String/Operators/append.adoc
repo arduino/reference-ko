@@ -27,12 +27,13 @@ subCategories: [ "스트링개체 연산자" ]
 === 문법
 [source,arduino]
 ----
-string += data
+myString1 += data
 ----
 
 [float]
 === 매개변수
-없음
+`myString1` - String 변수
+
 
 [float]
 === 반환
@@ -55,6 +56,6 @@ string += data
 === 더보기
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
+* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials^]
 --
 // SEE ALSO SECTION ENDS

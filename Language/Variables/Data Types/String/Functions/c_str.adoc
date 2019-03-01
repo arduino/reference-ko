@@ -1,4 +1,4 @@
-﻿---
+---
 title: "c_str()"
 categories: [ "Data Types" ]
 subCategories: [ "스트링개체 함수" ]
@@ -24,10 +24,7 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 문법
-[source,arduino]
-----
-string.c_str()
-----
+`myString.c_str()`
 
 [float]
 === 매개변수
@@ -52,6 +49,6 @@ none
 === 더보기
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
+* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials^]
 --
 // SEE ALSO SECTION ENDS

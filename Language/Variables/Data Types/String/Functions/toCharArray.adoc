@@ -23,14 +23,11 @@ String의 문자를 제공되는 버퍼에 복사.
 
 [float]
 === 문법
-[source,arduino]
-----
-string.toCharArray(buf, len)
-----
+`myString.toCharArray(buf, len)`
 
 [float]
 === 매개변수
-`string`: 스트링 형 변수
+`myString`: 스트링 형 변수
 
 `buf`: 문자를 복사해 넣을 버퍼 (_char []_)
 
@@ -56,6 +53,6 @@ string.toCharArray(buf, len)
 === 더보기
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
+* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials^]
 --
 // SEE ALSO SECTION ENDS
