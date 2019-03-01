@@ -23,19 +23,16 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 문법
-[source,arduino]
-----
-string.equals(string2)
-----
+`myString.equals(myString2)`
 
 [float]
 === 매개변수
-`string, string2`: 스트링 형 변수
+`myString, myString2`: 스트링 형 변수
 
 
 [float]
 === 반환
-`true`: string 이 string2 와 같으면
+`true`: myString 이 myString2 와 같으면
 
 `false`: 아니면
 --

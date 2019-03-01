@@ -23,12 +23,8 @@ subCategories: [ "스트링개체 함수" ]
 
 [float]
 === 문법
-[source,arduino]
-----
-string.remove(index)
-
-string.remove(index, count)
-----
+`myString.remove(index)` +
+`myString.remove(index, count)`
 
 [float]
 === 매개변수

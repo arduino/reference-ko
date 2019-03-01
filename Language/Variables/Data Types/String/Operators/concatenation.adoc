@@ -27,12 +27,12 @@ subCategories: [ "스트링개체 연산자" ]
 === 문법
 [source,arduino]
 ----
-string3 = string1 + string 2; string3 += string2;
+myString3 = myString1 + myString2
 ----
 
 [float]
 === 매개변수
-`string, string1, string2, string3` - a string variable
+`myString1, myString2, myString3` - a String variable
 
 [float]
 === 반환
