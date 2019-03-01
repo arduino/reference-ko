@@ -50,7 +50,7 @@ isAscii(thisChar)
 
 [source,arduino]
 ----
-if (isAscii(this))      // this가 아스키 문자인지 테스트
+if (isAscii(myChar))      // myChar가 아스키 문자인지 테스트
 {
 	Serial.println("The character is Ascii");
 }
