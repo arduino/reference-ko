@@ -22,7 +22,7 @@ title: Mouse.move()
 
 [float]
 === 문법
-`Mouse.move(xVal, yPos, wheel);`
+`Mouse.move(xVal, yVal, wheel);`
 
 
 [float]
