@@ -15,9 +15,9 @@ subCategories: [ "외부 인터럽트" ]
 === 설명
 *인터럽트 가진 디지털 핀*
 
-attachInterrupt 의 첫 매개변수는 인터럽트 번호다.
-일반적으로 digitalPinToInterrupt(pin) 을 써서 실제 디지털 핀을 특정 인터럽트 번호로 변환해야 한다.
-예를 들어, 핀 3에 연결하면, digitalPinToInterrupt(3) 를 attachInterrupt 에 대한 첫번째 매개변수로 쓰세요.
+`attachInterrupt()` 의 첫 매개변수는 인터럽트 번호다.
+일반적으로 `digitalPinToInterrupt(pin)` 을 써서 실제 디지털 핀을 특정 인터럽트 번호로 변환해야 한다.
+예를 들어, 핀 3에 연결하면, `digitalPinToInterrupt(3)` 를 `attachInterrupt()` 에 대한 첫번째 매개변수로 쓰세요.
 
 [options="header"]
 |===================================================
@@ -50,7 +50,7 @@ If you wanted to insure that a program always caught the pulses from a rotary en
 == 인터럽트 서비스 루틴에 대하여
 ISRs are special kinds of functions that have some unique limitations most other functions do not have. An ISR cannot have any parameters, and they shouldn't return anything.
 
-Generally, an ISR should be as short and fast as possible. If your sketch uses multiple ISRs, only one can run at a time, other interrupts will be executed after the current one finishes in an order that depends on the priority they have. millis() relies on interrupts to count, so it will never increment inside an ISR. Since delay() requires interrupts to work, it will not work if called inside an ISR. micros() works initially, but will start behaving erratically after 1-2 ms. delayMicroseconds() does not use any counter, so it will work as normal.
+Generally, an ISR should be as short and fast as possible. If your sketch uses multiple ISRs, only one can run at a time, other interrupts will be executed after the current one finishes in an order that depends on the priority they have. `millis()` relies on interrupts to count, so it will never increment inside an ISR. Since `delay()` requires interrupts to work, it will not work if called inside an ISR. `micros()` works initially, but will start behaving erratically after 1-2 ms. `delayMicroseconds()` does not use any counter, so it will work as normal.
 
 Typically global variables are used to pass data between an ISR and the main program. To make sure variables shared between an ISR and the main program are updated correctly, declare them as `volatile`.
 
@@ -116,11 +116,11 @@ void blink() {
 
 [float]
 === 인터럽트 번호
-Normally you should use digitalPinToInterrupt(pin), rather than place an interrupt number directly into your sketch. The specific pins with interrupts, and their mapping to interrupt number varies on each type of board. Direct use of interrupt numbers may seem simple, but it can cause compatibility trouble when your sketch is run on a different board.
+Normally you should use `digitalPinToInterrupt(pin)`, rather than place an interrupt number directly into your sketch. The specific pins with interrupts, and their mapping to interrupt number varies on each type of board. Direct use of interrupt numbers may seem simple, but it can cause compatibility trouble when your sketch is run on a different board.
 
 However, older sketches often have direct interrupt numbers. Often number 0 (for digital pin 2) or number 1 (for digital pin 3) were used. The table below shows the available interrupt pins on various boards.
 
-Note that in the table below, the interrupt numbers refer to the number to be passed to attachInterrupt(). For historical reasons, this numbering does not always correspond directly to the interrupt numbering on the ATmega chip (e.g. int.0 corresponds to INT4 on the ATmega2560 chip).
+Note that in the table below, the interrupt numbers refer to the number to be passed to `attachInterrupt()`. For historical reasons, this numbering does not always correspond directly to the interrupt numbering on the ATmega chip (e.g. int.0 corresponds to INT4 on the ATmega2560 chip).
 
 [options="header"]
 |===================================================
