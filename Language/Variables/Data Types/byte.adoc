@@ -30,15 +30,6 @@ byte 는 8비트 부호없는 숫자, 0부터 255까지를 저장한다.
 [#howtouse]
 --
 
-[float]
-=== 예제 코드
-// Describe what the example code is all about and add relevant code
-
-
-[source,arduino]
-----
-
-----
 
 --
 // HOW TO USE SECTION ENDS
