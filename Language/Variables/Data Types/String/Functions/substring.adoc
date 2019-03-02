@@ -58,6 +58,6 @@ If the ending index is omitted, the substring continues to the end of the String
 === 더보기
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials^]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials^]
 --
 // SEE ALSO SECTION ENDS
