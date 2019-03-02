@@ -122,7 +122,7 @@ void loop() {
 
 [float]
 === 주의와 경고
-As of version 1.0, serial transmission is asynchronous; `Serial.print()` will return before any characters are transmitted.
+For information on the asyncronicity of `Serial.print()`, see the Notes and Warnings section of the link:../write#howtouse[Serial.write() reference page].
 
 --
 // HOW TO USE SECTION ENDS
