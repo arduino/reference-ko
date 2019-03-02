@@ -29,7 +29,11 @@ This function is part of the Stream class, and can be called by any class that i
 
 [float]
 === 매개변수
-`stream.findUntil(target, terminal)`
+`stream` : an instance of a class that inherits from Stream
+
+`target` : the string to search for (char)
+
+`terminal` : the terminal string in the search (char)
 
 [float]
 === 반환
