@@ -27,7 +27,7 @@ This function is part of the Stream class, and can be called by any class that i
 
 [float]
 === 매개변수
-없음
+`stream` : an instance of a class that inherits from Stream
 
 [float]
 === 반환

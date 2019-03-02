@@ -27,6 +27,8 @@ This function is part of the Stream class, and can be called by any class that i
 
 [float]
 === 매개변수
+`stream` : an instance of a class that inherits from Stream.
+
 `terminator` : the character to search for (`char`)
 
 [float]
