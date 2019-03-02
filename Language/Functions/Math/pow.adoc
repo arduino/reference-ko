@@ -4,12 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "수학" ]
 ---
 
-
-
-
-
 = pow(base, exponent)
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "수학" ]
 
 [float]
 === 설명
-숫자 거듭제곱 값 계산. `Pow()` 는 숫자를 분수 제곱하는 데 쓸 수 있다. 이것은 곡선의 지수 매핑을 생성할 때 쓸모 있다.
+숫자 거듭제곱 값 계산. `pow()` 는 숫자를 분수 제곱하는 데 쓸 수 있다. 이것은 곡선의 지수 매핑을 생성할 때 쓸모 있다.
 
 [%hardbreaks]
 
