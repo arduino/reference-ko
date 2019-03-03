@@ -22,7 +22,8 @@ This function is part of the Stream class, and can be called by any class that i
 
 [float]
 === 문법
-`stream.find(target)`
+`stream.find(target)` +
+`stream.find(target, length)`
 
 
 [float]
@@ -30,6 +31,8 @@ This function is part of the Stream class, and can be called by any class that i
 `stream` : an instance of a class that inherits from Stream.
 
 `target` : the string to search for (char)
+
+`length` : length of the target (size_t)
 
 [float]
 === 반환
