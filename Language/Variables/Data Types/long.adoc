@@ -48,7 +48,7 @@ long 변수는 숫자 저장을 위한 확장된 크기 변수이며, 32비트(4
 
 [source,arduino]
 ----
-  long speedOfLight = 186000L;   // 정수 상수 에서  'L' 설명을 보시오.
+long speedOfLight = 186000L;  // 정수 상수 에서  'L' 설명을 보시오.
 ----
 
 --

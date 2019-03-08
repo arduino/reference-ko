@@ -49,8 +49,8 @@ subCategories: [ "비트 연산자" ]
 
 [source,arduino]
 ----
-int a = 5;        // 이진수: 0000000000000101
-int b = a << 3;   // 이진수: 0000000000101000, 즉 십진수 40
+int a = 5;      // 이진수: 0000000000000101
+int b = a << 3; // 이진수: 0000000000101000, 즉 십진수 40
 ----
 [%hardbreaks]
 
@@ -59,7 +59,7 @@ int b = a << 3;   // 이진수: 0000000000101000, 즉 십진수 40
 값 x를 y 비트 옮기면(x << y), 가장 왼쪽에 있는 y 비트를 잃어 문자 그대로 존재하지 않게 됨:
 [source,arduino]
 ----
-int x = 5;        // 이진수: 0000000000000101
+int x = 5;  // 이진수: 0000000000000101
 int y = 14;
 int result = x << y;  // 이진수: 0100000000000000 - 101에서 처음의 1은 버려짐
 ----
@@ -88,10 +88,10 @@ void printOut1(int c) {
   for (int bits = 7; bits > -1; bits--) {
     // Compare bits 7-0 in byte
     if (c & (1 << bits)) {
-      Serial.print ("1");
+      Serial.print("1");
     }
     else {
-      Serial.print ("0");
+      Serial.print("0");
     }
   }
 }

@@ -49,19 +49,17 @@ for (초기화; 조건; 증가) {
 [source,arduino]
 ----
 // Dim an LED using a PWM pin
-int PWMpin = 10; // LED in series with 470 ohm resistor on pin 10
+int PWMpin = 10;  // LED in series with 470 ohm resistor on pin 10
 
-void setup()
-{
+void setup() {
   // no setup needed
 }
 
-void loop()
-{
-   for (int i=0; i <= 255; i++){
-      analogWrite(PWMpin, i);
-      delay(10);
-   }
+void loop() {
+  for (int i = 0; i <= 255; i++) {
+    analogWrite(PWMpin, i);
+    delay(10);
+  }
 }
 ----
 [%hardbreaks]
@@ -78,8 +76,8 @@ C++ `for` 루프는 다른 컴퓨터 언어, BASIC 포함,에서 발견되는 `f
 
 [source,arduino]
 ----
-for(int x = 2; x < 100; x = x * 1.5){
-println(x);
+for (int x = 2; x < 100; x = x * 1.5) {
+  println(x);
 }
 ----
 
@@ -90,14 +88,15 @@ println(x);
 
 [source,arduino]
 ----
-void loop()
-{
-   int x = 1;
-   for (int i = 0; i > -1; i = i + x){
-      analogWrite(PWMpin, i);
-      if (i == 255) x = -1;             // 정점에서 방향 바꿈
-      delay(10);
-   }
+void loop() {
+  int x = 1;
+  for (int i = 0; i > -1; i = i + x) {
+    analogWrite(PWMpin, i);
+    if (i == 255) {
+      x = -1; // 정점에서 방향 바꿈
+    }
+    delay(10);
+  }
 }
 ----
 

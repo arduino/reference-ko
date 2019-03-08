@@ -52,19 +52,17 @@ PWM 핀과 달리, DAC0과 DAC1은 디지털을 아날로그로 바꾸는 컨버
 
 [source,arduino]
 ----
-int ledPin = 9;      // LED는 디지털 핀 9번에 연결
-int analogPin = 3;   // 가변저항은 아날로그 핀 3번에 연결
-int val = 0;         // 읽은 값을 저장할 변수
+int ledPin = 9;     // LED는 디지털 핀 9번에 연결
+int analogPin = 3;  // 가변저항은 아날로그 핀 3번에 연결
+int val = 0;        // 읽은 값을 저장할 변수
 
-void setup()
-{
-  pinMode(ledPin, OUTPUT);   // 핀을 출력으로 설정
+void setup() {
+  pinMode(ledPin, OUTPUT);  // 핀을 출력으로 설정
 }
 
-void loop()
-{
-  val = analogRead(analogPin);   // 입력 핀에서 값 읽기
-  analogWrite(ledPin, val / 4);  // analogRead 값은 0부터 1023까지, analogWrite 값은 0 부터 255까지
+void loop() {
+  val = analogRead(analogPin);  // 입력 핀에서 값 읽기
+  analogWrite(ledPin, val / 4); // analogRead 값은 0부터 1023까지, analogWrite 값은 0 부터 255까지
 }
 ----
 [%hardbreaks]

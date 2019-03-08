@@ -27,7 +27,7 @@ Please note that you may compare variables of different data types, but that cou
 === 문법
 [source,arduino]
 ----
-x == y;   // x와 y가 같으면 참, x와 y가 같지 않으면 거짓
+x == y; // x와 y가 같으면 참, x와 y가 같지 않으면 거짓
 ----
 
 [float]
@@ -49,9 +49,8 @@ x == y;   // x와 y가 같으면 참, x와 y가 같지 않으면 거짓
 
 [source,arduino]
 ----
-if (x==y)      // x 와 y 가 같으면
-{
-// 비교결과 참일 때 무엇을 함
+if (x == y) { // x 와 y 가 같으면
+  // 비교결과 참일 때 무엇을 함
 }
 ----
 [%hardbreaks]

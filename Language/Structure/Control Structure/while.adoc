@@ -25,7 +25,7 @@ subCategories: [ "제어 구조" ]
 === 문법
 [source,arduino]
 ----
-while(condition){
+while(condition) {
   // 문
 }
 ----
@@ -46,7 +46,7 @@ while(condition){
 [source,arduino]
 ----
 var = 0;
-while(var < 200){
+while (var < 200) {
   // 200번 반복
   var++;
 }

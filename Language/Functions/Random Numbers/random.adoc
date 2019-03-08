@@ -58,7 +58,7 @@ min 과 max-1 (`long`) 사이의 임의 값.
 ----
 long randNumber;
 
-void setup(){
+void setup() {
   Serial.begin(9600);
 
   // if analog input pin 0 is unconnected, random analog

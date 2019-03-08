@@ -49,13 +49,11 @@ subCategories: [ "자료형" ]
 ----
 unsigned long time;
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
 }
 
-void loop()
-{
+void loop() {
   Serial.print("Time: ");
   time = millis();
   // 프로그램이 시작된 때부터의 시간 출력

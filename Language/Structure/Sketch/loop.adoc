@@ -36,20 +36,20 @@ link:../setup[setup()] 함수를 생성한 후, 그것은 초기 변수를 초�
 int buttonPin = 3;
 
 // setup 은 시리얼과 버튼 핀을 초기화함
-void setup()
-{
+void setup() {
   Serial.begin(9600);
   pinMode(buttonPin, INPUT);
 }
 
 // loop 는 버튼 핀을 매번 체크하고,
 // 그것이 눌려지면 시리얼을 보냄
-void loop()
-{
-  if (digitalRead(buttonPin) == HIGH)
+void loop() {
+  if (digitalRead(buttonPin) == HIGH) {
     Serial.write('H');
-  else
+  }
+  else {
     Serial.write('L');
+  }
   delay(1000);
 }
 ----

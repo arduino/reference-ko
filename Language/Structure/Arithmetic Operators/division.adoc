@@ -52,8 +52,10 @@ result = numerator / denominator;
 
 [source,arduino]
 ----
-int a = 50, b = 10, c = 0;
-c = a / b; // 변수 'c' 는 이 문장 실행후 5가 된다.
+int a = 50;
+int b = 10;
+int c = 0;
+c = a / b;  // 변수 'c' 는 이 문장 실행후 5가 된다.
 ----
 [%hardbreaks]
 
@@ -65,9 +67,10 @@ c = a / b; // 변수 'c' 는 이 문장 실행후 5가 된다.
 
 [source,arduino]
 ----
-float a = 55.5, b = 6.6;
+float a = 55.5;
+float b = 6.6;
 int c = 0;
-c = a / b; // 변수 'c' 는 8을 저장하며, 8.409가 아님
+c = a / b;  // 변수 'c' 는 8을 저장하며, 8.409가 아님
 ----
 [%hardbreaks]
 

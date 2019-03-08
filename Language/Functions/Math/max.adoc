@@ -55,7 +55,7 @@ subCategories: [ "수학" ]
 [source,arduino]
 ----
 sensVal = max(sensVal, 20); // sensVal을 sensVal 또는 20 중 큰 값 할당
-                           // (sensVal 이 적어도 20임을 보장)
+                            // (sensVal 이 적어도 20임을 보장)
 ----
 [%hardbreaks]
 
@@ -67,10 +67,10 @@ sensVal = max(sensVal, 20); // sensVal을 sensVal 또는 20 중 큰 값 할당
 
 [source,arduino]
 ----
-max(a--, 0);   // 이것을 피하세요 - 그른 결과 나옴
+max(a--, 0);  // 이것을 피하세요 - 그른 결과 나옴
 
-max(a, 0);           // 대신 이렇게 쓰세요 -
-a--;     // 함수 밖 수학 지킴
+max(a, 0);  // 대신 이렇게 쓰세요 -
+a--;  // 함수 밖 수학 지킴
 ----
 
 --

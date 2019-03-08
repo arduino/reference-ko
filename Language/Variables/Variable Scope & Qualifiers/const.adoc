@@ -42,13 +42,10 @@ subCategories: [ "변수 scope 및 한정어" ]
 ----
 const float pi = 3.14;
 float x;
-
 // ....
 
-x = pi * 2;    // const 를 수학에 쓰는 건 좋다
-
-pi = 7;        // 불법 - 상수에 쓸 (변경할) 수 없다
-
+x = pi * 2; // const 를 수학에 쓰는 건 좋다
+pi = 7;     // 불법 - 상수에 쓸 (변경할) 수 없다
 
 ----
 [%hardbreaks]

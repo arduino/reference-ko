@@ -45,7 +45,7 @@ short 는 16비트 자료형이다.
 
 [source,arduino]
 ----
- short ledPin = 13
+short ledPin = 13
 ----
 
 --

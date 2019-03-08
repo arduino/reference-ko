@@ -99,7 +99,7 @@ myByte & B11111111 = myByte;
 [source,arduino]
 ----
 myByte =  B10101010;
-myByte &= B11111100; // results in B10101000
+myByte &= B11111100;  // results in B10101000
 ----
 
 [%hardbreaks]

@@ -53,19 +53,17 @@ subCategories: [ "시간" ]
 
 [source,arduino]
 ----
-int outPin = 8;                 // 디지털 핀 8
+int outPin = 8;               // 디지털 핀 8
 
-void setup()
-{
-  pinMode(outPin, OUTPUT);      // 디지털 핀을 출력으로
+void setup() {
+  pinMode(outPin, OUTPUT);    // 디지털 핀을 출력으로
 }
 
-void loop()
-{
-  digitalWrite(outPin, HIGH);   // 핀을 켠다
-  delayMicroseconds(50);        // 50 마이크로 초 쉰다
-  digitalWrite(outPin, LOW);    // 핀을 끈다
-  delayMicroseconds(50);        // 50 마이크로 초 쉰다
+void loop() {
+  digitalWrite(outPin, HIGH); // 핀을 켠다
+  delayMicroseconds(50);      // 50 마이크로 초 쉰다
+  digitalWrite(outPin, LOW);  // 핀을 끈다
+  delayMicroseconds(50);      // 50 마이크로 초 쉰다
 }
 ----
 [%hardbreaks]

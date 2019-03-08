@@ -36,7 +36,8 @@ subCategories: [ "포인터 액세스 연산자" ]
 [source,arduino]
 ----
 int *p;       // int 자료형에 대한 포인터 선언
-int i = 5, result = 0;
+int i = 5;
+int result = 0;
 p = &i;       // 'p'  'i' 의 주소를 포함
 result = *p;  // 'result' 는 'p' 가 가리키는 주소 값을 얻음
               // i.e., 'i' 의 값을 얻는데 그것은 5

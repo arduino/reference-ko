@@ -42,13 +42,11 @@ subCategories: [ "자료형" ]
 // 행동은 함수 "setup" 그리고 "loop" 에수 수행된다
 //  그러나 더 큰 프로그램에서는 보고되는 정보가 없다
 
-void setup()
-{
+void setup() {
   // ...
 }
 
-void loop()
-{
+void loop() {
   // ...
 }
 ----

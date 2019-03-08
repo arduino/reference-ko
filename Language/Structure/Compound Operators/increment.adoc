@@ -53,8 +53,8 @@ x++;  // x 를 1 증가시키고 옛 x 값 반환
 [source,arduino]
 ----
 x = 2;
-y = ++x;      // x now contains 3, y contains 3
-y = x++;      // x contains 4, but y still contains 3
+y = ++x;  // x now contains 3, y contains 3
+y = x++;  // x contains 4, but y still contains 3
 ----
 
 --

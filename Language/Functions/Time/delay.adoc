@@ -52,19 +52,17 @@ subCategories: [ "시간" ]
 
 [source,arduino]
 ----
-int ledPin = 13;                 // LED 연결 디지털 핀 13
+int ledPin = 13;              // LED 연결 디지털 핀 13
 
-void setup()
-{
-  pinMode(ledPin, OUTPUT);      // 디지털 핀을 출력으로
+void setup() {
+  pinMode(ledPin, OUTPUT);    // 디지털 핀을 출력으로
 }
 
-void loop()
-{
-  digitalWrite(ledPin, HIGH);   // LED 켬
-  delay(1000);                  // 1초 기다림
-  digitalWrite(ledPin, LOW);    // LED 끔
-  delay(1000);                  // 1초 기다림
+void loop() {
+  digitalWrite(ledPin, HIGH); // LED 켬
+  delay(1000);                // 1초 기다림
+  digitalWrite(ledPin, LOW);  // LED 끔
+  delay(1000);                // 1초 기다림
 }
 ----
 [%hardbreaks]

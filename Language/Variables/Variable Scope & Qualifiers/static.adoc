@@ -40,12 +40,12 @@ static 으로 선언된 변수는 함수가 처음 불릴 때 한 번만 만들�
 [source,arduino]
 ----
 /* RandomWalk
-* Paul Badger 2007
-* RandomWalk wanders up and down randomly between two
-* endpoints. The maximum move in one loop is governed by
-* the parameter "stepsize".
-* A static variable is moved up and down a random amount.
-* This technique is also known as "pink noise" and "drunken walk".
+  Paul Badger 2007
+  RandomWalk wanders up and down randomly between two
+  endpoints. The maximum move in one loop is governed by
+  the parameter "stepsize".
+  A static variable is moved up and down a random amount.
+  This technique is also known as "pink noise" and "drunken walk".
 */
 
 #define randomWalkLowRange -20
@@ -55,29 +55,28 @@ int stepsize;
 int thisTime;
 int total;
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
 }
 
-void loop()
-{        //  randomWalk 함수 테스트
+void loop() {
+  // randomWalk 함수 테스트
   stepsize = 5;
   thisTime = randomWalk(stepsize);
   Serial.println(thisTime);
-   delay(10);
+  delay(10);
 }
 
-int randomWalk(int moveSize){
-  static int  place;     // variable to store value in random walk - static 으로 선언되어서 
-                         // 다른 함수가 그 값을 바꿀 수 없음
+int randomWalk(int moveSize) {
+  static int  place;  // variable to store value in random walk - static 으로 선언되어서
+  // 다른 함수가 그 값을 바꿀 수 없음
 
   place = place + (random(-moveSize, moveSize + 1));
 
-  if (place < randomWalkLowRange){                              // 위와 아래 한계 체크
+  if (place < randomWalkLowRange) {                             // 위와 아래 한계 체크
     place = randomWalkLowRange + (randomWalkLowRange - place);  // 양의 방향에서 뒤로 가는 것을 반영
   }
-  else if(place > randomWalkHighRange){
+  else if (place > randomWalkHighRange) {
     place = randomWalkHighRange - (place - randomWalkHighRange);  // 양의 방향에서 뒤로 가는 것을 반영
   }
 

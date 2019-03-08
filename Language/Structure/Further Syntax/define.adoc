@@ -62,13 +62,13 @@ subCategories: [ "추가 문법" ]
 
 [source,arduino]
 ----
-#define ledPin 3;    // 이것은 에러
+#define ledPin 3; // 이것은 에러
 ----
 
 비슷하게, #define 뒤에 등호를 넣는 것도 암호같은 에러를 만들 거다.
 [source,arduino]
 ----
-#define ledPin  = 3  // 이것도 에러
+#define ledPin = 3 // 이것도 에러
 ----
 [%hardbreaks]
 

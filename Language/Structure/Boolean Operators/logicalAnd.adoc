@@ -37,8 +37,8 @@ subCategories: [ "부울 연산자" ]
 
 [source,arduino]
 ----
-if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) { // 두 스위치 다 HIGH
-    // 문
+if (digitalRead(2) == HIGH && digitalRead(3) == HIGH) { // 두 스위치 다 HIGH
+  // 문
 }
 ----
 [%hardbreaks]

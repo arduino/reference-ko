@@ -28,16 +28,13 @@ subCategories: [ "제어 구조" ]
 === 문법
 [source,arduino]
 ----
-if (condition1)
-{
+if (condition1) {
   // do Thing A
 }
-else if (condition2)
-{
+else if (condition2) {
   // do Thing B
 }
-else
-{
+else {
   // do Thing C
 }
 ----
@@ -54,16 +51,13 @@ else
 아래는 온도 센서 코드에서 뽑았다
 [source,arduino]
 ----
-if (temperature >= 70)
-{
+if (temperature >= 70) {
   //Danger! Shut down the system
 }
-else if (temperature >= 60 && temperature < 70)
-{
+else if (temperature >= 60 && temperature < 70) {
   //Warning! User attention required
 }
-else
-{
+else {
   //Safe! Continue usual tasks...
 }
 ----

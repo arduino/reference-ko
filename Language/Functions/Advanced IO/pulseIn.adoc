@@ -65,13 +65,11 @@ subCategories: [ "고급 입출력" ]
 int pin = 7;
 unsigned long duration;
 
-void setup()
-{
+void setup() {
   pinMode(pin, INPUT);
 }
 
-void loop()
-{
+void loop() {
   duration = pulseIn(pin, HIGH);
 }
 ----

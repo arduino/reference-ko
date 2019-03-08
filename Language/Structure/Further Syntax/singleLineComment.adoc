@@ -39,12 +39,10 @@ subCategories: [ "추가 문법" ]
 줄을 주석으로 표시하는 두 방법이 있다:
 [source,arduino]
 ----
-// Pin 13 has an LED connected on most Arduino boards.
+// pin 13 has an LED connected on most Arduino boards.
 // give it a name:
 int led = 13;
-
-
-digitalWrite(led, HIGH);   // LED 켜기 (HIGH 는 전압 레벨)
+digitalWrite(led, HIGH);  // LED 켜기 (HIGH 는 전압 레벨)
 ----
 [%hardbreaks]
 

@@ -54,8 +54,7 @@ interrupts 를 다시 가능하게 (link:../nointerrupts[nointerrupts()] 에 의
 ----
 void setup() {}
 
-void loop()
-{
+void loop() {
   noInterrupts();
   // critical, time-sensitive code here
   interrupts();
