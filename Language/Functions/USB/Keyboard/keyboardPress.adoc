@@ -14,7 +14,7 @@ title: Keyboard.press()
 
 [float]
 === 설명
-`Keyboard.press()` 가 호출되면 키보드에서 키를 누른 상태로 유지되는 것처럼 작동합니다.  link:../keyboardmodifiers[modifier keys]를 사용할 때 유용합니다. 키눌림을 끝내려면 link:../keyboardrelease[Keyboard.release()] 또는 link:../keyboardreleaseall[Keyboard.releaseAll()]를 사용하십시오.
+`Keyboard.press()` 가 호출되면 키보드에서 키를 누른 상태로 유지되는 것처럼 작동합니다. link:../keyboardmodifiers[modifier keys]를 사용할 때 유용합니다. 키눌림을 끝내려면 link:../keyboardrelease[Keyboard.release()] 또는 link:../keyboardreleaseall[Keyboard.releaseAll()]를 사용하십시오.
 
 `press()`를 사용하기전에 link:../keyboardbegin[Keyboard.begin()]를 호출해야합니다.
 [%hardbreaks]
