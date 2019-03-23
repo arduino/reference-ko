@@ -44,14 +44,13 @@ subCategories: [ "유틸리티" ]
 [source,arduino]
 ----
 char myStr[] = "this is a test";
-int i;
 
 void setup() {
   Serial.begin(9600);
 }
 
 void loop() {
-  for (i = 0; i < sizeof(myStr) - 1; i++) {
+  for (byte i = 0; i < sizeof(myStr) - 1; i++) {
     Serial.print(i, DEC);
     Serial.print(" = ");
     Serial.write(myStr[i]);
@@ -69,7 +68,7 @@ void loop() {
 
 [source,arduino]
 ----
-for (i = 0; i < (sizeof(myInts) / sizeof(myInts[0])); i++) {
+for (byte i = 0; i < (sizeof(myInts) / sizeof(myInts[0])); i++) {
   // myInts[i] 가지고 무언가를 함
 }
 ----

@@ -73,8 +73,7 @@ BASIC, 자바와 달리, C++ 컴파일러는 배열 액세스가 선언한 배�
 
 [source,arduino]
 ----
-int i;
-for (i = 0; i < 5; i = i + 1) {
+for (byte i = 0; i < 5; i = i + 1) {
   Serial.println(myPins[i]);
 }
 ----
