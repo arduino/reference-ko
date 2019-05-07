@@ -80,7 +80,7 @@ Nothing
 === 더보기
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/SerialEvent[SerialEvent Tutorial^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/SerialEvent[SerialEvent^]
 
 [role="language"]
 * #LANGUAGE# link:../begin[begin()]
