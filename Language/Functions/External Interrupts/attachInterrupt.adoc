@@ -59,7 +59,7 @@ For more information on interrupts, see http://gammon.com.au/interrupts[Nick Gam
 [float]
 === 문법
 `attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);`	(권고) +
-`attachInterrupt(interrupt, ISR, mode);`	(권하지 않음) + 
+`attachInterrupt(interrupt, ISR, mode);`	(권하지 않음) +
 `attachInterrupt(pin, ISR, mode);`	(권하지 않음 Arduino Due, Zero, MKR1000, 101 전용)
 
 
