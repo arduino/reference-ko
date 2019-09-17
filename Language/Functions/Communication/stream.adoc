@@ -57,3 +57,14 @@ link:../stream/streamsettimeout[setTimeout()]
 
 --
 // FUNCTIONS SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== 더보기
+
+--
+// SEE ALSO SECTION ENDS
