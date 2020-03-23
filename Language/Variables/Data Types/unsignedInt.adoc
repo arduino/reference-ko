@@ -91,7 +91,7 @@ result = result / 2;  //  -5/2 = -2 (only integer math, decimal places are dropp
 
 - 롤 오버 필요, 예를들어. 카운터
 - 부호있는 변수는 약간 작지만, long/float의 메모리와 속도 손실을 피하려 한다.
---
+
 
 --
 // HOW TO USE SECTION ENDS

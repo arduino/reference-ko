@@ -89,7 +89,7 @@ ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
   // code with interrupts blocked (consecutive atomic operations will not get interrupted)
   int result = input_from_interrupt;
 }
-
+----
 --
 // HOW TO USE SECTION ENDS
 

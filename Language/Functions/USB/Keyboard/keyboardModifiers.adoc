@@ -28,7 +28,6 @@ ASCII 값과 이들이 나타내는 문자 또는 함수에 대한 자세한 내
 
 |===
 |Key	|16진수 값	|10진수 값
-
 |KEY_LEFT_CTRL	|0x80	|128
 |KEY_LEFT_SHIFT	|0x81	|129
 |KEY_LEFT_ALT	|0x82	|130
@@ -64,6 +63,6 @@ ASCII 값과 이들이 나타내는 문자 또는 함수에 대한 자세한 내
 |KEY_F10	|0xCB	|203
 |KEY_F11	|0xCC	|204
 |KEY_F12	|0xCD	|205
-
+|===
 --
 // OVERVIEW SECTION ENDS
