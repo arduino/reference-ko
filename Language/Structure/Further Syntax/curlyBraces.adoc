@@ -2,7 +2,7 @@
 title: "{}"
 title_expanded: 중괄호
 categories: [ "Structure" ]
-subCategories: [ "추가 문법" ]
+subCategories: [ "Further Syntax" ]
 ---
 
 

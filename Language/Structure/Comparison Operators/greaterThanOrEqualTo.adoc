@@ -2,7 +2,7 @@
 title: ">="
 title_expanded: 크거나 같음
 categories: [ "Structure" ]
-subCategories: [ "비교 연산자" ]
+subCategories: [ "Comparison Operators" ]
 ---
 
 

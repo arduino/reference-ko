@@ -1,7 +1,7 @@
 ---
 title: 상수
 categories: [ "Variables" ]
-subCategories: [ "상수" ]
+subCategories: [ "Constants" ]
 ---
 
 

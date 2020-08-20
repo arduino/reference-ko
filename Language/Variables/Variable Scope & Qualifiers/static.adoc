@@ -1,7 +1,7 @@
 ---
 title: static
 categories: [ "Variables" ]
-subCategories: [ "변수 scope 및 한정어" ]
+subCategories: [ "Variable Scope & Qualifiers" ]
 ---
 
 

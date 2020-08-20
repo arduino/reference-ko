@@ -1,7 +1,7 @@
 ---
 title: randomSeed()
 categories: [ "Functions" ]
-subCategories: [ "난수" ]
+subCategories: [ "Random Numbers" ]
 ---
 
 

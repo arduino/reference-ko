@@ -2,7 +2,7 @@
 title: "|="
 title_expanded: 복합 비트 OR
 categories: [ "Structure" ]
-subCategories: [ "복합 연산자" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 

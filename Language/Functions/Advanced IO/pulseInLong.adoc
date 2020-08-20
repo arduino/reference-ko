@@ -1,7 +1,7 @@
 ---
 title: pulseInLong()
 categories: [ "Functions" ]
-subCategories: [ "고급 입출력" ]
+subCategories: [ "Advanced I/O" ]
 ---
 
 

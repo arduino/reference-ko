@@ -2,7 +2,7 @@
 title: "|"
 title_expanded: 비트 OR
 categories: [ "Structure" ]
-subCategories: [ "비트 연산자" ]
+subCategories: [ "Bitwise Operators" ]
 ---
 
 

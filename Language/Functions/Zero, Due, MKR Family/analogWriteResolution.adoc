@@ -1,7 +1,7 @@
 ---
 title: analogWriteResolution()
 categories: [ "Functions" ]
-subCategories: [ "제로, 두에 및 MKR 제품군" ]
+subCategories: [ "Zero, Due & MKR Family" ]
 ---
 
 

@@ -2,7 +2,7 @@
 title: "%"
 title_expanded: "나머지"
 categories: [ "Structure" ]
-subCategories: [ "산술 연산자" ]
+subCategories: [ "Arithmetic Operators" ]
 ---
 
 

@@ -2,7 +2,7 @@
 title: "&"
 title_expanded: 참조 연산자
 categories: [ "Structure" ]
-subCategories: [ "포인터 액세스 연산자" ]
+subCategories: [ "Pointer Access Operators" ]
 ---
 
 

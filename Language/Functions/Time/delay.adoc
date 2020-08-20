@@ -1,7 +1,7 @@
 ---
 title: delay()
 categories: [ "Functions" ]
-subCategories: [ "시간" ]
+subCategories: [ "Time" ]
 ---
 
 

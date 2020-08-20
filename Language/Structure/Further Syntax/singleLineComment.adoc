@@ -2,7 +2,7 @@
 title: "//"
 title_expanded: 한줄 주석
 categories: [ "Structure" ]
-subCategories: [ "추가 문법" ]
+subCategories: [ "Further Syntax" ]
 ---
 
 
