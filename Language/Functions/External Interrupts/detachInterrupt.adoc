@@ -24,8 +24,9 @@ subCategories: [ "External Interrupts" ]
 
 [float]
 === 문법
-`detachInterrupt()` +
-`detachInterrupt(pin)` 	(Arduino Due 만)
+`detachInterrupt(digitalPinToInterrupt(pin)) (권장)` + 
+`detachInterrupt(interrupt) (권장하지 않음)` +
+`detachInterrupt(pin)` 	(권장하지 않음. 이 구문은 Arduino SAMD Boards, Uno WiFi Rev2, Due 및 101에서만 동작)
 
 [float]
 === 매개변수
