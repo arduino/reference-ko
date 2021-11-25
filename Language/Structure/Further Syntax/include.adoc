@@ -25,7 +25,7 @@ AVR C 라이브러리 (AVR은 아두이노가 기반인 Atmel 칩에 대한 참�
 
 [%hardbreaks]
 
-`#include`,  link:../define[`#define`] 는 세미콜론 종결자가 없고, 추가하면 컴파일러가 암호 같은 에러 메시지를 낼 거다.
+`#include`,  link:../define[`#define`] 는 세미콜론 종결자가 없고, 추가하면 컴파일러가 암호 같은 에러 메시지를 낼 것이다.
 [%hardbreaks]
 
 --
