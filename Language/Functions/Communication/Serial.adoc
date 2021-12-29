@@ -15,22 +15,27 @@ subCategories: [ "Communication" ]
 --
 
 [float]
-=== 설명
-아두이노 보드와 컴퓨터(또는 다른 장치) 사이에 통신할 때 쓰임.
-모든 아두이노 보드는 적어도 한 시리얼 포트(UART 또는 USART로도 알려짐)를 가진다: 시리얼. 그것은 디지털 핀 0(RX)과 1(TX)에서 USB를 통해 컴퓨터와 통신한다.
-따라서, 이들 기능을 사용한면, 핀 0과 1을 디지털 입력 또는 출력으로 쓸 수 없다. +
-아누이노 환경의 빌트인 시리얼 모니터를 아두이노 보드와 통신할 때 쓸 수 있다.
-툴바에서 시리얼 모니터 버튼을 누르고 `begin()` 을 부틀 때 쓴 같은 baud rate를 선택하세요.
+=== Description
+아두이노 보드와 컴퓨터, 또는 다른 장치 사이에 통신할 때 사용됩니다.
+모든 아두이노 보드는 최소 하나 이상의 시리얼 포트(UART 또는 USART)를 갖습니다.
+[options="header"]
+|================================================================================================================================================
+| Board                | USB CDC name                     | Serial pins                   | Serial1 pins     | Serial2 pins      | Serial3 pins
+| Uno, Nano, Mini      |                                  | 0(RX), 1(TX)                  |                  |                   |
+| Mega                 |                                  | 0(RX), 1(TX)                  | 19(RX), 18(TX)   | 17(RX), 16(TX)    | 15(RX), 14(TX)
+| Leonardo, Micro, Yún | Serial                           |                               | 0(RX), 1(TX)     |                   |
+| Uno WiFi Rev.2       |                                  | Connected to USB              | 0(RX), 1(TX)     | Connected to NINA |
+| MKR boards           | Serial                           |                               | 13(RX), 14(TX)   |                   |
+| Zero                 | SerialUSB (Native USB Port only) | Connected to Programming Port | 0(RX), 1(TX)     |                   |
+| Due                  | SerialUSB (Native USB Port only) | 0(RX), 1(TX)                  | 19(RX), 18(TX)   | 17(RX), 16(TX)    | 15(RX), 14(TX)
+| 101                  | Serial                           |                               | 0(RX), 1(TX)     |                   |
+|================================================================================================================================================
 
+Uno, Nano, Mini 및 Mega의 디지털 핀 0(RX)과 1(TX)는 USB를 통해 컴퓨터와 시리얼로 통신합니다. 이 핀에 무언가를 연결할 경우 보드에 스케치 업로드를 포함해서 통신을 방해할 수 있습니다.
 [%hardbreaks]
-TX/RX 핀의 시리얼 통신은 TTL 로직 레벨 (보드에 따라 5V 또는 3.3V)을 사용한다
-이들 핀을 RS232 시리얼 포트에 직접 연결하지 마세요; 그들은 +/- 12V에서 동작하고 아두이노 보드를 망가뜨릴 수 있다.
+아두이노에 내장된 시리얼 모니터를 사용하여 아두이노 보드와 통신할 수 있습니다. 툴바의 시리얼 모니터 버튼을 클릭하고, `begin()`을 호출할 때와 동일한 보레이트를 선택합니다.
 [%hardbreaks]
-The *Arduino Mega* has three additional serial ports: `Serial1` on pins 19 (RX) and 18 (TX), `Serial2` on pins 17 (RX) and 16 (TX), `Serial3` on pins 15 (RX) and 14 (TX). To use these pins to communicate with your personal computer, you will need an additional USB-to-serial adaptor, as they are not connected to the Mega's USB-to-serial adaptor. To use them to communicate with an external TTL serial device, connect the TX pin to your device's RX pin, the RX to your device's TX pin, and the ground of your Mega to your device's ground.
-[%hardbreaks]
-The *Arduino DUE* has three additional 3.3V TTL serial ports: `Serial1` on pins 19 (RX) and 18 (TX); `Serial2` on pins 17 (RX) and 16 (TX), `Serial3` on pins 15 (RX) and 14 (TX). Pins 0 and 1 are also connected to the corresponding pins of the ATmega16U2 USB-to-TTL Serial chip, which is connected to the USB debug port. Additionally, there is a native USB-serial port on the SAM3X chip, SerialUSB'.
-[%hardbreaks]
-The *Arduino Leonardo* board uses `Serial1` to communicate via TTL (5V) serial on pins 0 (RX) and 1 (TX). `Serial` is reserved for USB CDC communication. For more information, refer to the Leonardo getting started page and hardware page.
+Serial 외에 추가적인 시리얼 포트를 사용하여 통신할 경우, 이 포트는 USB 시리얼 포트와 연결되어 있지 않기 때문에 추가적인 USB-Serial 어댑터가 필요합니다. 어댑터를 사용해서 외부 TTL 장치와 통신하려면, 어댑터의 TX 핀을 장치의 RX 핀에, 어댑터의 RX 핀을 장치의 TX 핀에 교차 연결하고, 두 장치의 접지들을 연결합니다.
 
 --
 // OVERVIEW SECTION ENDS
@@ -43,7 +48,7 @@ The *Arduino Leonardo* board uses `Serial1` to communicate via TTL (5V) serial o
 '''
 
 [float]
-=== 함수
+=== Functions
 link:../serial/ifserial[if(Serial)] +
 link:../serial/available[available()] +
 link:../serial/availableforwrite[availableForWrite()] +
@@ -77,10 +82,10 @@ link:../serial/serialevent[serialEvent()]
 --
 
 [float]
-=== 더보기
+=== See also
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/en/Tutorial/ReadAsciiString[ReadAsciiString^]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/ReadASCIIString[ReadASCIIString^]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/ASCIITable[ASCII TAble^]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/Dimmer[Dimmer^]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/Graph[Graph^]
